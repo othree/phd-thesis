@@ -1,17 +1,21 @@
-This is XeTeX, Version 3.1415926-2.5-0.9999.3 (TeX Live 2013) (format=xelatex 2013.12.12)  17 DEC 2013 18:18
+This is XeTeX, Version 3.1415926-2.5-0.9999.3 (TeX Live 2013) (format=xetex 2013.12.14)  29 DEC 2013 20:56
 entering extended mode
  restricted \write18 enabled.
  file:line:error style messages enabled.
  %&-line parsing enabled.
 **my_ntust_thesis.tex
 (./my_ntust_thesis.tex
-LaTeX2e <2011/06/27>
-Babel <3.9f> and hyphenation patterns for 78 languages loaded.
-(./ntust_report.cls
-Document Class: ntust_report 2005/03/16 v0.1 Modified Standard LaTeX document c
-lass
-(/usr/local/texlive/2013/texmf-dist/tex/latex/base/size12.clo
-File: size12.clo 2007/10/19 v1.4h Standard LaTeX file (size option)
+./my_ntust_thesis.tex:4: Undefined control sequence.
+l.4 \documentclass
+                  [12pt, a4paper]{ntust_report}
+? 
+./my_ntust_thesis.tex:4: Emergency stop.
+l.4 \documentclass
+                  [12pt, a4paper]{ntust_report}
+End of file on the terminal!
+
+No pages of output.
+v1.4h Standard LaTeX file (size option)
 )
 \c@part=\count80
 \c@chapter=\count81
@@ -1215,10 +1219,10 @@ Underfull \hbox (badness 10000) detected at line 1
 
 ] [9]) (./my_ntust_thesis.aux) ) 
 Here is how much of TeX's memory you used:
- 18739 strings out of 493938
- 400556 string characters out of 6148856
+ 18744 strings out of 493938
+ 400762 string characters out of 6148856
  412506 words of memory out of 5000000
- 21741 multiletter control sequences out of 15000+600000
+ 21746 multiletter control sequences out of 15000+600000
  9003 words of font info for 63 fonts, out of 8000000 for 9000
  1144 hyphenation exceptions out of 8191
  46i,11n,45p,967b,405s stack positions out of 5000i,500n,10000p,200000b,80000s
