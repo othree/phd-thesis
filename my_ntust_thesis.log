@@ -1,4 +1,4 @@
-This is XeTeX, Version 3.1415926-2.5-0.9999.3 (TeX Live 2013) (format=xelatex 2013.12.14)  12 JAN 2014 01:19
+This is XeTeX, Version 3.1415926-2.5-0.9999.3 (TeX Live 2013) (format=xelatex 2013.12.14)  14 JAN 2014 22:08
 entering extended mode
  restricted \write18 enabled.
  file:line:error style messages enabled.
@@ -1185,7 +1185,7 @@ Underfull \hbox (badness 10000) detected at line 498
 Chapter 1.
 [1
 
-] [2]) (./sections/relative-work.tex [3] [4]
+] [2] [3]) (./sections/relative-work.tex [4]
 Chapter 2.
 File: figures/dyna_rm.eps Graphic file (type eps)
 <figures/dyna_rm.eps>) (./sections/method.tex [5
@@ -1213,15 +1213,11 @@ Underfull \hbox (badness 10000) detected at line 1
 
 ) [10
 
-] [11]) (./my_ntust_thesis.aux)
-
-LaTeX Warning: Label(s) may have changed. Rerun to get cross-references right.
-
- ) 
+] [11]) (./my_ntust_thesis.aux) ) 
 Here is how much of TeX's memory you used:
  18744 strings out of 493938
  400762 string characters out of 6148856
- 412506 words of memory out of 5000000
+ 417506 words of memory out of 5000000
  21746 multiletter control sequences out of 15000+600000
  9003 words of font info for 63 fonts, out of 8000000 for 9000
  1144 hyphenation exceptions out of 8191
