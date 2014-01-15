@@ -1,4 +1,4 @@
-This is XeTeX, Version 3.1415926-2.5-0.9999.3 (TeX Live 2013) (format=xelatex 2013.12.14)  14 JAN 2014 22:08
+This is XeTeX, Version 3.1415926-2.5-0.9999.3 (TeX Live 2013) (format=xelatex 2013.12.14)  15 JAN 2014 23:18
 entering extended mode
  restricted \write18 enabled.
  file:line:error style messages enabled.
@@ -1134,7 +1134,7 @@ Underfull \hbox (badness 10000) detected at line 452
 (./frontpages/my_ackn.tex) [3
 
 ]
-Underfull \hbox (badness 10000) detected at line 469
+Underfull \hbox (badness 10000) detected at line 470
 \EU1/標楷體(0)/bx/n/20.74 目 錄
  []
 
@@ -1160,7 +1160,7 @@ File: ursfs.fd 1998/03/24 rsfs font definition file (jk)
  [4
 
 ]
-Underfull \hbox (badness 10000) detected at line 485
+Underfull \hbox (badness 10000) detected at line 486
 \EU1/標楷體(0)/bx/n/20.74 圖 目 錄
  []
 
@@ -1171,7 +1171,7 @@ Underfull \hbox (badness 10000) detected at line 485
  [5
 
 ]
-Underfull \hbox (badness 10000) detected at line 498
+Underfull \hbox (badness 10000) detected at line 499
 \EU1/標楷體(0)/bx/n/20.74 表 目 錄
  []
 
@@ -1185,42 +1185,50 @@ Underfull \hbox (badness 10000) detected at line 498
 Chapter 1.
 [1
 
-] [2] [3]) (./sections/relative-work.tex [4]
+] [2] [3]) (./sections/relative-work.tex [4] [5]
 Chapter 2.
 File: figures/dyna_rm.eps Graphic file (type eps)
-<figures/dyna_rm.eps>) (./sections/method.tex [5
+<figures/dyna_rm.eps>) (./sections/database.tex [6
 
 ]
 Chapter 3.
-) (./sections/Design.tex [6
+[7
 
-]
+]) (./sections/method.tex [8]
 Chapter 4.
-) (./sections/evaluation.tex [7
+) (./sections/Design.tex [9
 
 ]
 Chapter 5.
-) (./sections/Conclusion.tex [8
+) (./sections/evaluation.tex [10
 
 ]
 Chapter 6.
-) (./backpages/ntust_backpages.tex [9
+) (./sections/Conclusion.tex [11
+
+]
+Chapter 7.
+) (./backpages/ntust_backpages.tex [12
 
 ] (./my_ntust_thesis.bbl
 Underfull \hbox (badness 10000) detected at line 1
 \EU1/標楷體(0)/bx/n/20.74 參 考 文 獻
  []
 
-) [10
+) [13
 
-] [11]) (./my_ntust_thesis.aux) ) 
+] [14]) (./my_ntust_thesis.aux)
+
+LaTeX Warning: Label(s) may have changed. Rerun to get cross-references right.
+
+ ) 
 Here is how much of TeX's memory you used:
- 18744 strings out of 493938
- 400762 string characters out of 6148856
- 417506 words of memory out of 5000000
- 21746 multiletter control sequences out of 15000+600000
- 9003 words of font info for 63 fonts, out of 8000000 for 9000
+ 18753 strings out of 493938
+ 400941 string characters out of 6148856
+ 415507 words of memory out of 5000000
+ 21751 multiletter control sequences out of 15000+600000
+ 9011 words of font info for 64 fonts, out of 8000000 for 9000
  1144 hyphenation exceptions out of 8191
  46i,11n,45p,967b,405s stack positions out of 5000i,500n,10000p,200000b,80000s
 
-Output written on my_ntust_thesis.pdf (18 pages).
+Output written on my_ntust_thesis.pdf (21 pages).
