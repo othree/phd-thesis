@@ -36,4 +36,15 @@ D.~Wagner, ``Resilient aggregation in sensor networks,'' in {\em Proceedings of
   the 2nd ACM Workshop on Security of Ad Hoc and Sensor Networks (SASN)},
   (Washington DC, USA), pp.~78--87, ACM, Oct 2004.
 
+\bibitem{citeulike:5485398}
+J.~A. Nelder and R.~W.~M. Wedderburn, ``{Generalized Linear Models},'' {\em
+  Journal of the Royal Statistical Society. Series A (General)}, vol.~135,
+  no.~3, pp.~370--384, 1972.
+
+\bibitem{boser1992}
+B.~E. Boser, I.~M. Guyon, and V.~N. Vapnik, ``A training algorithm for optimal
+  margin classifiers,'' in {\em Proceedings of the 5th Annual Workshop on
+  Computational Learning Theory (COLT'92)} (D.~Haussler, ed.), (Pittsburgh, PA,
+  USA), pp.~144--152, ACM Press, July 1992.
+
 \end{thebibliography}

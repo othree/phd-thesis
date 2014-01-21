@@ -1,4 +1,35 @@
 \renewcommand\thetable{\arabic{chapter}-\arabic{table}}
 %\renewcommand\thefigure{\arabic{chapter}-\arabic{figure}}
 \renewcommand{\theequation}{\arabic{chapter}-\arabic{equation}}
-\chapter{研究方法}
+\chapter{資料探勘}
+
+資料探勘技術方法繁多，Fayyad根據其處理的問題形式基本上可以分為分類、分群、迴歸尋找關聯等四種主要的問題類型，分類
+
+分群
+
+迴歸
+
+關聯
+
+本研究後期確定主要的探勘目標後，使用的資料探勘方式為迴歸為主，分類分群為輔助，以下分別介紹各種使用的的分析方法：
+
+\section{Generalized Linear Model}
+
+廣義線性模型是由Nelder and Wedderburn\cite{citeulike:5485398}所提出，比起迴歸分析(simple regression)更為彈性，此模型是假設資料點的分佈有一分佈模式，且X與Y之間的關係是由一連結函數(Link Function)建立，如log function、power function等，其定義之XY關係模型如下：
+
+\begin{equation} g(E(y)) = x\beta + O, y~F \end{equation} 
+
+$g(.)$是為所選的鏈結函數，O是偏移(offset)變數，F則是y的分佈模型，其是用牛頓法(Newton-Raphson Method)不斷的調整$\beta$使的$x\beta + O$逼近$g(E(y))$，最後最接近的方程式即為XY兩者的關系式。比起迴歸分析，此方法還需要了解Y值分佈狀況，選擇出最適合的分佈函數，並假設XY間的鏈結函數形式，雖然越多的參數選擇代表了更多的模型不確定性，但廣義線性模型卻能夠提供比迴歸分析更廣的應用範圍，也可能得到更接近真實的關係模型。
+
+\section{Support Vector Machine}
+
+SVM最早是BOSER\cite{boser1992}等人，在1992年的COLT (Computational Learning Theory)所提出，SVM是一個基於統計學習理論的分類方法，用來處理二元分割的問題，其原理是將原本無法線性分割的問題轉換到一個不同維度的空間(kernel)後，假設該空間存在一超平面(hyperplane)，可以正確的將資料分開，並將尋找此一超平面的問題轉換為一最佳化問題，求解後即可得到二元分割邊界的方程式。而後Harris Drucker, et. al.,[9] 將此二元分割問題轉換為迴歸分析問題，故SVM也可以處理迴歸問題。
+
+\section{Artificial Neural Networks}
+
+其是希望能模擬建構出人腦內的神經網路，以處理各種複雜的問題，人類大腦是由大約千兆個神經元(Neuron)所構成，而每個神經元又會和其他約一萬個神經元連結，構成一個龐大且複雜的神經網路，這樣複雜的一個神經網路讓人類可以學習並了解各種事物與知識。McCulloch and Pitts[6]所提出的模型為後續類神經網路發展的雛形，一個標準的類神經網路可以分為輸入層(input layer)、隱藏層(hidden layer)、輸出層(output layer)，輸入層(input layer)負責接受各種求解問題需要的量化數據和資料，經由隱藏層(hidden layer)的不斷自我更新學習的模型處理過後，在輸出層(output layer)就可以得到想要的解答，類神經網路可以處理的問題種類多樣，其模型的品質多數也都不錯，缺點是學習時間長，且得到的模型為一個黑盒子，難以解釋其物理或是數學模型上的意義。
+
+\section{Genetic Programming}
+\section{Weighted Genetic Programming}
+\section{K-means}
+\section{Nearest Neightborhood}
