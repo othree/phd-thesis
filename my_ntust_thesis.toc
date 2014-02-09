@@ -8,26 +8,28 @@
 \contentsline {section}{\numberline {1.1}動機與目的}{1}{section.1.1}
 \contentsline {section}{\numberline {1.2}研究方法}{2}{section.1.2}
 \contentsline {section}{\numberline {1.3}論文架構}{3}{section.1.3}
-\contentsline {chapter}{\numberline {2}Preliminaries}{6}{chapter.2}
-\contentsline {chapter}{\numberline {3}校舍耐震資料庫}{7}{chapter.3}
-\contentsline {section}{\numberline {3.1}收集範圍}{7}{section.3.1}
-\contentsline {subsection}{\numberline {3.1.1}初步評估}{8}{subsection.3.1.1}
-\contentsline {subsection}{\numberline {3.1.2}詳細評估}{9}{subsection.3.1.2}
-\contentsline {subsection}{\numberline {3.1.3}補強設計}{9}{subsection.3.1.3}
-\contentsline {subsection}{\numberline {3.1.4}補強工程}{9}{subsection.3.1.4}
-\contentsline {chapter}{\numberline {4}資料探勘}{10}{chapter.4}
-\contentsline {section}{\numberline {4.1}Generalized Linear Model}{10}{section.4.1}
+\contentsline {chapter}{\numberline {2}Preliminaries}{5}{chapter.2}
+\contentsline {chapter}{\numberline {3}校舍耐震資料庫}{6}{chapter.3}
+\contentsline {section}{\numberline {3.1}收集範圍}{6}{section.3.1}
+\contentsline {subsection}{\numberline {3.1.1}初步評估}{7}{subsection.3.1.1}
+\contentsline {subsection}{\numberline {3.1.2}詳細評估}{8}{subsection.3.1.2}
+\contentsline {subsection}{\numberline {3.1.3}補強設計}{8}{subsection.3.1.3}
+\contentsline {subsection}{\numberline {3.1.4}補強工程}{8}{subsection.3.1.4}
+\contentsline {chapter}{\numberline {4}資料探勘}{9}{chapter.4}
+\contentsline {section}{\numberline {4.1}Generalized Linear Model}{9}{section.4.1}
 \contentsline {section}{\numberline {4.2}Support Vector Machine}{10}{section.4.2}
-\contentsline {section}{\numberline {4.3}Artificial Neural Networks}{11}{section.4.3}
+\contentsline {section}{\numberline {4.3}Artificial Neural Networks}{10}{section.4.3}
 \contentsline {section}{\numberline {4.4}Genetic Programming}{11}{section.4.4}
 \contentsline {section}{\numberline {4.5}Weighted Genetic Programming}{11}{section.4.5}
 \contentsline {section}{\numberline {4.6}K-means}{11}{section.4.6}
-\contentsline {section}{\numberline {4.7}Nearest Neightborhood}{11}{section.4.7}
+\contentsline {section}{\numberline {4.7}Two-Step Classification}{11}{section.4.7}
 \contentsline {chapter}{\numberline {5}耐震能力預測}{12}{chapter.5}
+\contentsline {section}{\numberline {5.1}Is 值預測}{12}{section.5.1}
+\contentsline {section}{\numberline {5.2}CDR 值預測}{12}{section.5.2}
 \contentsline {chapter}{\numberline {6}破壞構件預測}{13}{chapter.6}
 \contentsline {chapter}{\numberline {7}補強經費預測}{14}{chapter.7}
 \contentsline {chapter}{\numberline {8}結論與後續工作}{15}{chapter.8}
 \contentsline {section}{\numberline {8.1}Future Work}{15}{section.8.1}
 \contentsline {chapter}{參考文獻}{16}{section.8.1}
-\contentsline {chapter}{授權書}{18}{chapter*.5}
+\contentsline {chapter}{授權書}{17}{chapter*.5}
 \contentsfinish 

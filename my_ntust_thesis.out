@@ -22,11 +22,13 @@
 \BOOKMARK [1][-]{section.4.4}{Genetic\040Programming}{chapter.4}% 22
 \BOOKMARK [1][-]{section.4.5}{Weighted\040Genetic\040Programming}{chapter.4}% 23
 \BOOKMARK [1][-]{section.4.6}{K-means}{chapter.4}% 24
-\BOOKMARK [1][-]{section.4.7}{Nearest\040Neightborhood}{chapter.4}% 25
+\BOOKMARK [1][-]{section.4.7}{Two-Step\040Classification}{chapter.4}% 25
 \BOOKMARK [0][-]{chapter.5}{耐震能力預測}{}% 26
-\BOOKMARK [0][-]{chapter.6}{破壞構件預測}{}% 27
-\BOOKMARK [0][-]{chapter.7}{補強經費預測}{}% 28
-\BOOKMARK [0][-]{chapter.8}{結論與後續工作}{}% 29
-\BOOKMARK [1][-]{section.8.1}{Future\040Work}{chapter.8}% 30
-\BOOKMARK [0][-]{section.8.1}{參考文獻}{}% 31
-\BOOKMARK [0][-]{chapter*.5}{授權書}{}% 32
+\BOOKMARK [1][-]{section.5.1}{Is 值預測}{chapter.5}% 27
+\BOOKMARK [1][-]{section.5.2}{CDR 值預測}{chapter.5}% 28
+\BOOKMARK [0][-]{chapter.6}{破壞構件預測}{}% 29
+\BOOKMARK [0][-]{chapter.7}{補強經費預測}{}% 30
+\BOOKMARK [0][-]{chapter.8}{結論與後續工作}{}% 31
+\BOOKMARK [1][-]{section.8.1}{Future\040Work}{chapter.8}% 32
+\BOOKMARK [0][-]{section.8.1}{參考文獻}{}% 33
+\BOOKMARK [0][-]{chapter*.5}{授權書}{}% 34
