@@ -1,4 +1,4 @@
-This is XeTeX, Version 3.1415926-2.5-0.9999.3 (TeX Live 2013) (format=xelatex 2013.12.14)  2 MAR 2014 18:19
+This is XeTeX, Version 3.1415926-2.5-0.9999.3 (TeX Live 2013) (format=xelatex 2013.12.14)  2 MAR 2014 21:28
 entering extended mode
  restricted \write18 enabled.
  file:line:error style messages enabled.
@@ -1364,7 +1364,7 @@ Overfull \hbox (3.33133pt too wide) in paragraph at lines 9--10
 
 [12
 
-]) (./sections/crack-component.tex [13] [14]
+] [13]) (./sections/crack-component.tex [14]
 Chapter 6.
 ) (./sections/retrofit-cost.tex [15
 
