@@ -1,4 +1,4 @@
-This is XeTeX, Version 3.1415926-2.5-0.9999.3 (TeX Live 2013) (format=xelatex 2013.12.14)  26 FEB 2014 20:58
+This is XeTeX, Version 3.1415926-2.5-0.9999.3 (TeX Live 2013) (format=xelatex 2013.12.14)  2 MAR 2014 18:19
 entering extended mode
  restricted \write18 enabled.
  file:line:error style messages enabled.
@@ -1356,28 +1356,34 @@ LaTeX Warning: Command \nobreakspace invalid in math mode on input line 14.
 
 ] [10]) (./sections/aseicmic-ability.tex [11]
 Chapter 5.
+
+Overfull \hbox (3.33133pt too wide) in paragraph at lines 9--10
+[]\EU1/標楷體(0)/m/n/12 而 除 了 數 值 量 化 的 耐 震 能 力 指 標 外，|  本 研 究 還 將  |「校 舍 是 否 需 要 
+補 強」（$\OML/cmm/m/it/12 D[]sR$\EU1/標楷體(0)/m/n/12 ）|
+ []
+
 [12
 
-]) (./sections/crack-component.tex [13]
+]) (./sections/crack-component.tex [13] [14]
 Chapter 6.
-) (./sections/retrofit-cost.tex [14
+) (./sections/retrofit-cost.tex [15
 
 ]
 Chapter 7.
-) (./sections/conclusion.tex [15
+) (./sections/conclusion.tex [16
 
 ]
 Chapter 8.
-) (./backpages/ntust_backpages.tex [16
+) (./backpages/ntust_backpages.tex [17
 
 ] (./my_ntust_thesis.bbl
 Underfull \hbox (badness 10000) detected at line 1
 \EU1/標楷體(0)/bx/n/20.74 參 考 文 獻
  []
 
-) [17
+) [18
 
-] [18])
+] [19])
 Package atveryend Info: Empty hook `BeforeClearDocument' on input line 73.
 Package atveryend Info: Empty hook `AfterLastShipout' on input line 73.
  (./my_ntust_thesis.aux)
@@ -1388,10 +1394,10 @@ Package atveryend Info: Empty hook `AtVeryVeryEnd' on input line 73.
 Here is how much of TeX's memory you used:
  25594 strings out of 493938
  500479 string characters out of 6148856
- 528267 words of memory out of 5000000
+ 528269 words of memory out of 5000000
  28541 multiletter control sequences out of 15000+600000
  9371 words of font info for 65 fonts, out of 8000000 for 9000
  1144 hyphenation exceptions out of 8191
  46i,12n,48p,967b,405s stack positions out of 5000i,500n,10000p,200000b,80000s
 
-Output written on my_ntust_thesis.pdf (26 pages).
+Output written on my_ntust_thesis.pdf (27 pages).
