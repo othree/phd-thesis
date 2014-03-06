@@ -1,4 +1,4 @@
-This is XeTeX, Version 3.1415926-2.5-0.9999.3 (TeX Live 2013) (format=xelatex 2013.12.14)  2 MAR 2014 21:28
+This is XeTeX, Version 3.1415926-2.5-0.9999.3 (TeX Live 2013) (format=xelatex 2013.12.14)  6 MAR 2014 21:57
 entering extended mode
  restricted \write18 enabled.
  file:line:error style messages enabled.
@@ -1342,11 +1342,10 @@ File: figures/dyna_rm.eps Graphic file (type eps)
 
 ]
 Chapter 3.
-[6
-
-]
 File: figures/trad-school-buildings.png Graphic file (type QTm)
- <use  "figures/trad-school-buildings.png" > [7]) (./sections/method.tex
+<use  "figures/trad-school-buildings.png" > [6
+
+] [7]) (./sections/method.tex
 [8]
 Chapter 4.
 
@@ -1392,10 +1391,10 @@ Package atveryend Info: Empty hook `AtEndAfterFileList' on input line 73.
 Package atveryend Info: Empty hook `AtVeryVeryEnd' on input line 73.
  ) 
 Here is how much of TeX's memory you used:
- 25594 strings out of 493938
- 500479 string characters out of 6148856
- 528269 words of memory out of 5000000
- 28541 multiletter control sequences out of 15000+600000
+ 25593 strings out of 493938
+ 500460 string characters out of 6148856
+ 528286 words of memory out of 5000000
+ 28540 multiletter control sequences out of 15000+600000
  9371 words of font info for 65 fonts, out of 8000000 for 9000
  1144 hyphenation exceptions out of 8191
  46i,12n,48p,967b,405s stack positions out of 5000i,500n,10000p,200000b,80000s
