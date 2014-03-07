@@ -1,4 +1,4 @@
-This is XeTeX, Version 3.1415926-2.5-0.9999.3 (TeX Live 2013) (format=xelatex 2013.12.14)  6 MAR 2014 21:57
+This is XeTeX, Version 3.1415926-2.5-0.9999.3 (TeX Live 2013) (format=xelatex 2013.12.14)  7 MAR 2014 21:46
 entering extended mode
  restricted \write18 enabled.
  file:line:error style messages enabled.
@@ -1345,15 +1345,14 @@ Chapter 3.
 File: figures/trad-school-buildings.png Graphic file (type QTm)
 <use  "figures/trad-school-buildings.png" > [6
 
-] [7]) (./sections/method.tex
-[8]
+] [7] [8]) (./sections/method.tex [9] [10]
 Chapter 4.
 
 LaTeX Warning: Command \nobreakspace invalid in math mode on input line 14.
 
-[9
+[11
 
-] [10]) (./sections/aseicmic-ability.tex [11]
+] [12]) (./sections/aseicmic-ability.tex [13]
 Chapter 5.
 
 Overfull \hbox (3.33133pt too wide) in paragraph at lines 9--10
@@ -1361,28 +1360,28 @@ Overfull \hbox (3.33133pt too wide) in paragraph at lines 9--10
 補 強」（$\OML/cmm/m/it/12 D[]sR$\EU1/標楷體(0)/m/n/12 ）|
  []
 
-[12
+[14
 
-] [13]) (./sections/crack-component.tex [14]
+] [15]) (./sections/crack-component.tex [16]
 Chapter 6.
-) (./sections/retrofit-cost.tex [15
+) (./sections/retrofit-cost.tex [17
 
 ]
 Chapter 7.
-) (./sections/conclusion.tex [16
+) (./sections/conclusion.tex [18
 
 ]
 Chapter 8.
-) (./backpages/ntust_backpages.tex [17
+) (./backpages/ntust_backpages.tex [19
 
 ] (./my_ntust_thesis.bbl
 Underfull \hbox (badness 10000) detected at line 1
 \EU1/標楷體(0)/bx/n/20.74 參 考 文 獻
  []
 
-) [18
+) [20
 
-] [19])
+] [21])
 Package atveryend Info: Empty hook `BeforeClearDocument' on input line 73.
 Package atveryend Info: Empty hook `AfterLastShipout' on input line 73.
  (./my_ntust_thesis.aux)
@@ -1391,12 +1390,12 @@ Package atveryend Info: Empty hook `AtEndAfterFileList' on input line 73.
 Package atveryend Info: Empty hook `AtVeryVeryEnd' on input line 73.
  ) 
 Here is how much of TeX's memory you used:
- 25593 strings out of 493938
- 500460 string characters out of 6148856
- 528286 words of memory out of 5000000
- 28540 multiletter control sequences out of 15000+600000
+ 25594 strings out of 493938
+ 500468 string characters out of 6148856
+ 528321 words of memory out of 5000000
+ 28541 multiletter control sequences out of 15000+600000
  9371 words of font info for 65 fonts, out of 8000000 for 9000
  1144 hyphenation exceptions out of 8191
  46i,12n,48p,967b,405s stack positions out of 5000i,500n,10000p,200000b,80000s
 
-Output written on my_ntust_thesis.pdf (27 pages).
+Output written on my_ntust_thesis.pdf (29 pages).
