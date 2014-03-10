@@ -1,4 +1,4 @@
-This is XeTeX, Version 3.1415926-2.5-0.9999.3 (TeX Live 2013) (format=xelatex 2013.12.14)  7 MAR 2014 21:46
+This is XeTeX, Version 3.1415926-2.5-0.9999.3 (TeX Live 2013) (format=xelatex 2013.12.14)  10 MAR 2014 23:35
 entering extended mode
  restricted \write18 enabled.
  file:line:error style messages enabled.
@@ -1345,7 +1345,8 @@ Chapter 3.
 File: figures/trad-school-buildings.png Graphic file (type QTm)
 <use  "figures/trad-school-buildings.png" > [6
 
-] [7] [8]) (./sections/method.tex [9] [10]
+] [7] [8] [9])
+(./sections/method.tex [10]
 Chapter 4.
 
 LaTeX Warning: Command \nobreakspace invalid in math mode on input line 14.
