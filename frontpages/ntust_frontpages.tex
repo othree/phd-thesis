@@ -64,16 +64,19 @@
 
 
 \begin{figure}[htbp]
-	\begin{minipage}[b]{5cm} 
+	\begin{minipage}[t]{5cm} 
 		\raggedright
 		\includegraphics[width=1.1in]{frontpages/ntust_logo.eps}
 		\label{fig:ntust_logo}
+		\vspace{0.5cm}
 	\end{minipage}% 
 	\begin{minipage}[b]{0.5\textwidth} 
 	\centering
 	\makebox[3cm][c]{\Huge{\univCname}}\\  %顯示中文校名
 	\vspace{0.5cm}
 	\makebox[3cm][c]{\Huge{\deptCname}}\\ %顯示中文系所名
+	\vspace{0.5cm}
+	\makebox[3cm][c]{\Huge{\degreeCname 論文}}\\ %顯示論文種類 (中文)
 	\vspace{0.5cm}
 	\end{minipage}%
 \\ 
@@ -82,15 +85,13 @@
 %\hfill
 
 
-\vspace{1cm}
-\makebox[6cm][s]{\textbf{\Huge{\degreeCname 論文}}}\\ %顯示論文種類 (中文)
 %\makebox[8cm][s]{\textbf{\Huge{\degreeCname 論文（初稿）}}}\\ %顯示論文種類 (中文)
 \vspace{1cm}
 %
 % Set the line spacing to single for the titles (to compress the lines)
 \renewcommand{\baselinestretch}{1}   %行距 1 倍
 %\large % it needs a font size changing command to be effective
-\Large{\cTitle}\\  % 中文題目
+\textbf{\LARGE{\cTitle}}\\  % 中文題目
 %
 \vspace{1cm}
 %

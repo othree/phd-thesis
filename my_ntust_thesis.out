@@ -24,7 +24,7 @@
 \BOOKMARK [1][-]{section.4.5}{Weighted\040Genetic\040Programming}{chapter.4}% 24
 \BOOKMARK [1][-]{section.4.6}{K-means}{chapter.4}% 25
 \BOOKMARK [1][-]{section.4.7}{Two-Step\040Classification}{chapter.4}% 26
-\BOOKMARK [0][-]{chapter.5}{耐震能力與校舍設計關係模型}{}% 27
+\BOOKMARK [0][-]{chapter.5}{校舍資訊與耐震能力之關係模型}{}% 27
 \BOOKMARK [1][-]{section.5.1}{Is 值與校舍設計之關係模型}{chapter.5}% 28
 \BOOKMARK [2][-]{subsection.5.1.1}{資料前處理}{section.5.1}% 29
 \BOOKMARK [2][-]{subsection.5.1.2}{資料探勘}{section.5.1}% 30
@@ -37,9 +37,10 @@
 \BOOKMARK [2][-]{subsection.5.3.1}{資料前處理}{section.5.3}% 37
 \BOOKMARK [2][-]{subsection.5.3.2}{資料探勘}{section.5.3}% 38
 \BOOKMARK [2][-]{subsection.5.3.3}{結果}{section.5.3}% 39
-\BOOKMARK [0][-]{chapter.6}{校舍設計、現況與破壞構件之關係模型}{}% 40
-\BOOKMARK [0][-]{chapter.7}{校舍設計、現況與補強經費之關係模型}{}% 41
-\BOOKMARK [0][-]{chapter.8}{結論與後續工作}{}% 42
-\BOOKMARK [1][-]{section.8.1}{Future\040Work}{chapter.8}% 43
-\BOOKMARK [0][-]{section.8.1}{參考文獻}{}% 44
-\BOOKMARK [0][-]{chapter*.5}{授權書}{}% 45
+\BOOKMARK [0][-]{chapter.6}{校舍資訊與破壞構件之關係模型}{}% 40
+\BOOKMARK [0][-]{chapter.7}{校舍資訊與補強經費之關係模型}{}% 41
+\BOOKMARK [0][-]{chapter.8}{結論與討論}{}% 42
+\BOOKMARK [1][-]{section.8.1}{結論}{chapter.8}% 43
+\BOOKMARK [1][-]{section.8.2}{討論}{chapter.8}% 44
+\BOOKMARK [0][-]{section.8.2}{參考文獻}{}% 45
+\BOOKMARK [0][-]{chapter*.5}{授權書}{}% 46
