@@ -6,14 +6,62 @@
 
 初步評估階段資料的耐震能力指標是 $Is$ 值，此一數值為專業人士於現場良策、調查後，使用國家地震中心的專家根據過往的實驗數據統計分析後，所設計出的一個評估表計算而得到的，為一初步的評估值，較詳細評估所計算的耐震能力指標可靠度來的低，但仍是校舍補強計畫初期的篩選工作中非常重要的數值。詳細評估和補強設計階段的耐震能力指標則是 $CDR$ 值，$CDR$ 值是由專業人士根據校舍的設計與實際狀況建製結構模型，並進行非線性的推垮分析所得到的，此數值與建築物之設計參數為高度非線性的關係，也是最接近校舍建築物實際耐震能力的量化指標。
 
-而除了數值量化的耐震能力指標外，本研究還將「校舍是否需要補強」（$D_isR$）這個二元指標作為耐震能力來作為校舍耐震資料庫中的第三個耐震能力指標， $Is$、$CDR$、$D_isR$ 這三個耐震能力指標的預測模型，即為本研究所取得的第一個校舍耐震資料庫隱含知識，以下便針對不同指標的預測模型的資料探勘流程與結果詳細介紹。
+而除了數值量化的耐震能力指標外，本研究還將「校舍是否需要補強」（$D_isR$）這個二元指標作為耐震能力來作為校舍耐震資料庫中的第三個耐震能力指標，$Is$、$CDR$、$D_isR$ 這三個耐震能力指標的預測模型，即為本研究所取得的第一個校舍耐震資料庫隱含知識，以下便針對不同指標的預測模型的資料探勘流程與結果詳細介紹。
 
 \section{Is 值與校舍設計之關係模型}
 
 校舍耐震資料庫中的初步評估資料表的耐震能力索引是為 $Is$ 值，初步評估是校舍耐震能力補強作業中，很重要的篩選過程，因為建築物的詳細評估所需要的金額極高，評估需要的時間也很長久，因此需要一個速度、價錢和可靠度都可以接受的評估方法，用比較短的時間找出耐震能力有疑慮的校舍，盡早處理。而地震中心所設計的初步評估表即為一個速度、價錢和可靠度都可以接受的評估方法，只要根據建築物的設計參數，像是樓層數、長度、深度、柱子尺寸以及校舍現況等，就可以快速的得到一個極具參考價值的耐震能力指標，而其計算的原理也與詳細評估的耐震能力指標索引 $CDR$ 值一樣，為耐震容量與耐震需求的比。找出 $Is$ 值與校舍設計參數之間的關係模型，可以進一步分析初步評估表中各種數據的重要性，並將結果回饋到此一初步評估表，將初步評估表調整的更為精簡，負責評估的人員也可以更快速的完成此意評估表格。
 
+The proposed prediction model, based on data-mining technology, has six steps – business understanding, data understanding, data preparation, modeling, evaluation, and deployment – as recommended in the cross industry standard process for data mining (CRISP-DM) proposed by Chapman et al. (2000) (Fig. 9). The objective of this work is to construct a prediction model for the aseismic ability indices of school buildings and collect complete data. Hence, the major tasks are data preparation, modeling, and evaluation. Fig. 10 shows the procedural plan based on needs and the methods chosen. 
+
 \subsection{資料前處理}
+
+首先，從國震中心的校舍耐震資料庫中，將各棟校舍的 $Is$ 值與其校舍的相關資料挑出並整合在一起，第一步是過濾掉明顯不合理的錯誤資料，這些資料通常是人為的錯誤造成的，而過濾的方法則是使用國陣中心建議的過濾條件：
+
+\begin{itemize}
+\item 校舍總長或總深度超過兩百公尺
+\item 有任意牆厚度超過五十公分
+\item 有任意柱的長或寬超過一百公分
+\item 柱間垮距超過八公尺或小於兩公尺
+\end{itemize}
+
+大約有八百筆資料符合這組基本的過濾條件，而在初步的過濾之後，前處理的第二個步驟則是減少資料屬性的維度，主成分分析（Principal component analysis）是很常使用的資料前處理方法，這個分析方法可以找出所有資料屬性中，重要度較高的屬性。
+
+analysis of school buildings is based on the design patterns of school buildings; the goal is to find several design patterns. Hence, the attributes for analysis are the geometric information of school buildings, such as dimensions and quantity of walls and columns, and width and height of school buildings. Other attributes, such as year of construction and locale, may not be incorporated into PCA analysis. After continuous testing and adjustment, five major attributes are obtained and the importance of constitutional fields is considered as the basis for naming. The five attributes are as follows: corridor column information; classroom column design information; wall design information; data for number of walls; and, data for number of classroom columns.
+
+This work uses 10-fold cross validation to validate the prediction model. After preparation, data are grouped by first dividing data randomly and equally into 10 clusters. One cluster is then chosen as a dataset for validation and the remaining nine clusters are combined into one training dataset.
+
 \subsection{資料探勘}
+
+After data preparation, clustering analysis is utilized to find hidden design patterns of school buildings. This study uses the K-means and two-step clustering methods. Fig. 11 shows the node deployment for clustering using the SPSS Clementine (2007) software. The parameter choices for the two methods are as follows.
+
+\subsubsection{K-means}
+
+The most important parameter with this clustering method is the initial group, k. Although many researchers have developed methods for choosing the initial K value, no method can confirm that it has found the best K value. The best K can be found only based on researcher understanding and problem testing. In this study, K-means clustering is set to stop after 20 iterations. If the K value is too large and cannot be completely converged after 20 operations, some data points will continue to change the clusters to which they belong. When the K value is reduced to <6, Clustering models can be completely converged after 20 iterations, become stable, and no longer change cluster label of all data bit. The K value chosen is 5, and three major clusters are obtained. The remaining two clusters have few data and are considered outliers. The distribution of three major clusters are 28\%, 56\%, and 16\%.
+
+\subsubsection{Two-Step}
+
+This clustering method has two features. The first is enhanced scalability. The algorithm has low complexity. Computing time does not grow nonlinearly as data volume increases. The other feature is that it can determine the number of clusters, unlike K-means clustering, which requires manual designation of parameters. However, this work can designate the upper and lower limits for the number of clusters. This work sets the limit to 2–8 clusters based on experience with K-means clustering. Consequently, all data are divided into two clusters, accounting for 54\% and 45\% of all data.
+
+The prediction model is built only after clustering is completed. This work uses a GLM, simple regression, and ANNs to build the prediction model based on three groups of data – not clustered in advance, clustered by K-means, and clustered by the two-step method in advance. In total, nine prediction models are generated. Fig. 12 shows the node configuration within SPSS Clementine. Below are the parameters chosen for the three methods. 
+
+\subsubsection{Generalized linear model}
+
+The GLM assumes a relationship between input variables and a predictor; this relationship can be built by a link function such as identity function, log function, logit function, or power function. After available link functions testing on some data, the prediction model performs best when using log function as the link function; hence, this work chose the log function. The distribution function of the predictor is based on the actual distribution of data. This work chose the normal distribution, which is close to the real data distribution. The prediction model constructed using the normal 591 distribution performed better than those with other distribution types.
+
+\subsubsection{Simple regression}
+
+Simple regression in this work uses the least square method by adopting the building design parameters as independent variables $X$ and the aseismic ability of buildings as dependant variables $Y$. The linear equation between regressed design parameters and aseismic indices serve as the model for predicting aseismic ability $Y$ based on building design parameters $X$.
+
+\subsubsection{Artificial neural networks}
+
+Generally, ANNs must decide on such parameters as number of hidden layers, number of neurons in each layer, learning rate, and stop condition. Aside from directly setting these parameters, methods such as dynamic, multiple, and Prune methods are available for adjusting and finding the optimal size and structure of the neural network. The dynamic method starts with a small neural network (two hidden layers with two neurons for each layer), expands network size gradually, and decides on the further expansion based on model performance before and after expansion. The multiple methods constructs multiple neural networks simultaneously, trains all neural networks to reach the ``stop condition,'' and then selects the group with the best performance. In contrast with the dynamic method, which slowly builds a large neural network from a small one, the Prune method first builds a large network and then removes neurons with low importance based on training. This work chooses the exhaustive Prune method, a special application of the Prune method. The initial neural network has two hidden layers, one with 30 neurons and the other with 20 neurons. The stop condition is set to 250 training cycles. Under this limit, the prediction model built by the exhaustive Prune method performs best.
+
+
+\subsection{驗證}
+
+Validation work has two purposes. The first is to ensure model reliability instead of to generate only good performance during data training. The second is to serve as a benchmark for comparing the performance of different prediction models. This work uses 10-fold cross validation to assess and compare the performance of prediction models. This method divides a fixed amount of data into 10 groups, conducts 10 rounds of model building and validation, chooses a different group of data for testing, trains the model with remaining nine groups of data, and uses test group data to validate model accuracy. After validation for 10 times, the accuracy of the 10 models is obtained and their average is taken as the accuracy of this algorithm. This study uses linear correlation, mean absolute prediction error (MAPE), and hit rate as the indices for comparing the prediction model performance.
+
 \subsection{結果}
 
 
