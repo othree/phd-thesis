@@ -25,44 +25,99 @@ The proposed prediction model, based on data-mining technology, has six steps �
 \item 柱間垮距超過八公尺或小於兩公尺
 \end{itemize}
 
-大約有八百筆資料符合這組基本的過濾條件，而在初步的過濾之後，前處理的第二個步驟則是減少資料屬性的維度，主成分分析（Principal component analysis）是很常使用的資料前處理方法，這個分析方法可以找出所有資料屬性中，重要度較高的屬性。
+大約有八百筆資料符合這組基本的過濾條件，而在初步的過濾之後，前處理的第二個步驟則是減少資料屬性的維度，主成分分析（Principal component analysis）是很常使用的資料前處理方法，這個分析方法可以找出所有資料屬性中，重要度較高的屬性，它是把原始的多個資料屬性，透過向量轉換的方式，線性組合出主要的資料屬性。
 
-analysis of school buildings is based on the design patterns of school buildings; the goal is to find several design patterns. Hence, the attributes for analysis are the geometric information of school buildings, such as dimensions and quantity of walls and columns, and width and height of school buildings. Other attributes, such as year of construction and locale, may not be incorporated into PCA analysis. After continuous testing and adjustment, five major attributes are obtained and the importance of constitutional fields is considered as the basis for naming. The five attributes are as follows: corridor column information; classroom column design information; wall design information; data for number of walls; and, data for number of classroom columns.
+Roughly 800 bits of valid data are obtained. After filtering using these conditions. Principal component analysis (PCA) is then used to reduce the dimensionality of data attributes. Notably, PCA, a very common data preparation method, can identify very important attributes among various attributes. The goal is to convert the original variables through vector transition into mutually independent variables of a linear combination. The ideal situation is that principal components obtained from linear combination retain most of the information of original variables.
 
-This work uses 10-fold cross validation to validate the prediction model. After preparation, data are grouped by first dividing data randomly and equally into 10 clusters. One cluster is then chosen as a dataset for validation and the remaining nine clusters are combined into one training dataset.
+校舍的分群則是基於校舍的設計模式，目標是要找出校舍建築物的幾種特定設計模式，也就是要分析校舍的幾何設計參數、柱量、牆量等等，經過不斷的測試及調整，最後找出了五個主要成分屬性：
 
-\subsection{資料探勘}
+\begin{itemize}
+\item 走廊柱資訊
+\item 教室柱資訊
+\item 強設計資訊
+\item 牆量資訊
+\item 柱量資訊
+\end{itemize}
+
+
+Clustering analysis of school buildings is based on the design patterns of school buildings; the goal is to find several design patterns. Hence, the attributes for analysis are the geometric information of school buildings, such as dimensions and quantity of walls and columns, and width and height of school buildings. Other attributes, such as year of construction and locale, may not be incorporated into PCA analysis. After continuous testing and adjustment, five major attributes are obtained and the importance of constitutional fields is considered as the basis for naming. The five attributes are as follows: corridor column information; classroom column design information; wall design information; data for number of walls; and, data for number of classroom columns.
+
+
+
+在前面的處理完成後，還使用分群分析將校舍分群，以幫助後續的 $Is$ 值關係模型的建立，分群的目標是將校舍依照不同的設計模式特性區分開來，將相近設計的校舍放在同一群集，分群的依據是主成分分析法所找出的五種主要校舍設計相關屬性，圖十一是使用 SPSS Clemitine 進行此一分群分析時的節點設計圖，分別使用的 K-means 和 Two-Step 兩種分群演算法，其參數設定如下：
 
 After data preparation, clustering analysis is utilized to find hidden design patterns of school buildings. This study uses the K-means and two-step clustering methods. Fig. 11 shows the node deployment for clustering using the SPSS Clementine (2007) software. The parameter choices for the two methods are as follows.
 
 \subsubsection{K-means}
 
+此一分群方法最重要的設定參數是初始的群集數 $k$，雖然有許多研究都在研究如何找出最佳的 $k$ 值，但是目前仍沒有一個方法可以宣稱它找到 $k$ 值是最佳的，唯有對該領域的專業了解以及詳細的測試才能得到最佳的 $k$ 值，在本分析案例中，K-means 分群的停止條件是設定為 20 次迭代，如果 $k$ 太大，那會造成分群結果無法在 20 次迭代內收斂，如果 $k$ 小於 6，則分群的結果就可以在 20 次迭代內完整的收斂，每筆資料都會故底定在所屬的群集內，不在變動，最後挑選的 $k$ 值是 5，而根據此意參數的分群結果可以找出三個主要的校舍群集，分別的比例是 28\%、56\% 和 16\%。
+
 The most important parameter with this clustering method is the initial group, k. Although many researchers have developed methods for choosing the initial K value, no method can confirm that it has found the best K value. The best K can be found only based on researcher understanding and problem testing. In this study, K-means clustering is set to stop after 20 iterations. If the K value is too large and cannot be completely converged after 20 operations, some data points will continue to change the clusters to which they belong. When the K value is reduced to <6, Clustering models can be completely converged after 20 iterations, become stable, and no longer change cluster label of all data bit. The K value chosen is 5, and three major clusters are obtained. The remaining two clusters have few data and are considered outliers. The distribution of three major clusters are 28\%, 56\%, and 16\%.
 
 \subsubsection{Two-Step}
 
+Two-Step 分群有兩個優點，一是複雜度不高，運算時間與資料數量間之關係為線性關係，第二個優點就是不需要由人工決定分群的群數，演算法即可自己根據資料狀況決定，操作人員只需給予上下限，在本分析中，上下限的設定為最少兩個群集，最多八個群集，而最後的分析結果是所有的資料都被分到兩個群集中，分別佔了 54\% 和 45\%。
+
 This clustering method has two features. The first is enhanced scalability. The algorithm has low complexity. Computing time does not grow nonlinearly as data volume increases. The other feature is that it can determine the number of clusters, unlike K-means clustering, which requires manual designation of parameters. However, this work can designate the upper and lower limits for the number of clusters. This work sets the limit to 2–8 clusters based on experience with K-means clustering. Consequently, all data are divided into two clusters, accounting for 54\% and 45\% of all data.
+
+
+
+
+
+
+此資料探勘分析還用了十群交叉驗證來驗證結果的可靠度，因此資料前處理的最後一個步驟就是將整理好的資料隨機分為十組。
+
+This work uses 10-fold cross validation to validate the prediction model. After preparation, data are grouped by first dividing data randomly and equally into 10 clusters. One cluster is then chosen as a dataset for validation and the remaining nine clusters are combined into one training dataset.
+
+\subsection{資料探勘}
+
+完成資料前處理，將校舍的群集分好之後，才開始建立 $Is$ 值與校舍設計參數的關係模型，本分析使用了廣義線性模型、線性回歸和類神經網路三種分析方法，每種方法都有三種分析資料群，分別為先經過 K-means 分群的資料、先經過 Two-step 分群的資料及沒有先經過分群的資料。圖 12 為使用 SPSS Clemitine 分析時的節點設計圖。以下分別對三種分析方法的參數設定作說明。
 
 The prediction model is built only after clustering is completed. This work uses a GLM, simple regression, and ANNs to build the prediction model based on three groups of data – not clustered in advance, clustered by K-means, and clustered by the two-step method in advance. In total, nine prediction models are generated. Fig. 12 shows the node configuration within SPSS Clementine. Below are the parameters chosen for the three methods. 
 
 \subsubsection{Generalized linear model}
 
-The GLM assumes a relationship between input variables and a predictor; this relationship can be built by a link function such as identity function, log function, logit function, or power function. After available link functions testing on some data, the prediction model performs best when using log function as the link function; hence, this work chose the log function. The distribution function of the predictor is based on the actual distribution of data. This work chose the normal distribution, which is close to the real data distribution. The prediction model constructed using the normal 591 distribution performed better than those with other distribution types.
+廣義線性模型是假設在輸入參數和預測目邊之間有一個可以用連結函數表達的關係，這個連結函數可能是指數函數、對數函數、Logistic 函數等，經由一些測試資料的測試，我們選擇使用對數函數作為連結函數，並且根據實際的資料分布選擇了常態分布作為輸入參數的分布函數，而關係模型的分布也選擇常態分布，因其表現教其他分布形式較好。
+
+The GLM assumes a relationship between input variables and a predictor; this relationship can be built by a link function such as identity function, log function, logit function, or power function. After available link functions testing on some data, the prediction model performs best when using log function as the link function; hence, this work chose the log function. The distribution function of the predictor is based on the actual distribution of data. This work chose the normal distribution, which is close to the real data distribution. The prediction model constructed using the normal distribution performed better than those with other distribution types.
 
 \subsubsection{Simple regression}
+
+線性回歸是選擇使用最小平方根法來建立校舍建築物的設計參數與其耐震能力 $Is$ 之間的關係，這也是最常使用的回歸方法之一。
 
 Simple regression in this work uses the least square method by adopting the building design parameters as independent variables $X$ and the aseismic ability of buildings as dependant variables $Y$. The linear equation between regressed design parameters and aseismic indices serve as the model for predicting aseismic ability $Y$ based on building design parameters $X$.
 
 \subsubsection{Artificial neural networks}
+
+類神經網路需要決定的參數包括隱藏層的數量、每層的神經元數量、學習率、停止條件等，除了直接設定神經網路的參數，還有一些方法可以使用，例如 dynamic、multiple 或是 prune method 可以用來調整並找出最佳的神經網路大小和結構，dynamic method 是從一個小型的神經網路開始（兩個隱藏層、每層兩個神經元），慢慢成長，並且比較成長前後的神經網路效能與結果，Multiple method 則是同時產生各種不同的神經網路，並且一起訓練到達停止條件，然後在從中挑選出表現最好的一個，而 Prune Method 則是從一個大的類神經網路開始，慢慢的把重要度低的神經元節點拿掉。本分析最後挑選的是 Exhaustive Prune Method，是 Prune Method 的一種修改形式，對於節點的篩選要求較高，是所有方法中最花時間的，但是通常也可以找到最好的結果。其他的類神經網路設定參數為：初始的神經網路為兩層隱藏層，其中一層有 30 個神經元、一層有 20 個神經元，停止條件為 250 個訓練循環，在這個設定下，Exhaustive Prune Method 是表現最好的方法。
 
 Generally, ANNs must decide on such parameters as number of hidden layers, number of neurons in each layer, learning rate, and stop condition. Aside from directly setting these parameters, methods such as dynamic, multiple, and Prune methods are available for adjusting and finding the optimal size and structure of the neural network. The dynamic method starts with a small neural network (two hidden layers with two neurons for each layer), expands network size gradually, and decides on the further expansion based on model performance before and after expansion. The multiple methods constructs multiple neural networks simultaneously, trains all neural networks to reach the ``stop condition,'' and then selects the group with the best performance. In contrast with the dynamic method, which slowly builds a large neural network from a small one, the Prune method first builds a large network and then removes neurons with low importance based on training. This work chooses the exhaustive Prune method, a special application of the Prune method. The initial neural network has two hidden layers, one with 30 neurons and the other with 20 neurons. The stop condition is set to 250 training cycles. Under this limit, the prediction model built by the exhaustive Prune method performs best.
 
 
 \subsection{驗證}
 
+驗證有兩個主要的目的，一是確保資料探勘找到的關係模型的可靠度，而不會找到只適用於該組訓練資料集的關係模型，第二個目的是可以用來作為比較不同分析方法的指標數據，本分析使用的驗證方式是十群交叉驗證，這個方法將所有的資料等分成十份，每次挑選九組出來作為訓練資料集，留下一組作為驗證資料集，如此可以得到十組模型以及其可靠度的指標，求此十組指標平均值即可得到代表此關係模型的可靠度代表值，而本分析所選擇的指標有三個，線性關係、絕對平均誤差（Mean Absolute Prediction Error, MAPE）以及 hit rate。
+
 Validation work has two purposes. The first is to ensure model reliability instead of to generate only good performance during data training. The second is to serve as a benchmark for comparing the performance of different prediction models. This work uses 10-fold cross validation to assess and compare the performance of prediction models. This method divides a fixed amount of data into 10 groups, conducts 10 rounds of model building and validation, chooses a different group of data for testing, trains the model with remaining nine groups of data, and uses test group data to validate model accuracy. After validation for 10 times, the accuracy of the 10 models is obtained and their average is taken as the accuracy of this algorithm. This study uses linear correlation, mean absolute prediction error (MAPE), and hit rate as the indices for comparing the prediction model performance.
 
 \subsection{結果}
+
+
+This work constructed nine prediction models; three are directly generated by the GLM, simple regression, and ANNs. The mixed model of K-means and two-step clustering generated three prediction models. Hence, nine models were obtained and 10-fold cross validation is used to compare the performance of the three reference indices – R2, MAPE, and hit rate. Notably, R2, the linear correlation is
+
+\begin{equation} R^2 = \dfrac{\sum{(\hat{y_i} - \tilde{y})^2}}{\sum{(y_i - \tilde{y})^2}} \label{eq:RSQ}\end{equation} 
+
+where yi is the aseismic CDR of school buildings obtained using nonlinear analysis of the database, yi is the CDR obtained from the prediction model, and y~ is the average aseismic CDR of school 651 buildings obtained using nonlinear analysis. The correlation between aseismic CDR of school buildings obtained via the prediction model and nonlinear analysis can be determined based on linear correlation. A high CDR indicates a strong correlation and many opportunities to make correct predictions. The MAPE is derived as
+
+\begin{equation} MAPE = \dfrac{\sum{\dfrac{y_i - \hat{y_i}}{y_i}}}{N} \label{eq:MAPE}\end{equation} 
+
+
+where N is the number of samples. The MAPE is used to judge the  degree of error of prediction models as the prediction result always has errors, although the prediction mode has an adequately high R2. The hit rate is derived as 
+hit rate
+
+When 0<a<1 and I{L} = 1, hit rate is utilized to determine the percentage of data predicted correctly by the prediction model, that is, prediction model accuracy. In this work, the hit rate is
+
+ranked by setting a equal to 0.1 and 0.2, which are utilized as two assessment indices that average and rank the performance of accuracy. Table 1 lists the assessment indices of the nine prediction models. The prediction model that performs best is that built using the GLM with K-means clustering. The second best prediction model is that built via the GLM with two-step clustering. Fig. 13 compares the actual CDR and CDR obtained using the K-means and GLM prediction models. The slope of the regression curve equation approaches 1, indicating a strong correlation between school building design data and aseismic ability of building. However, the scattered distribution of actual data points corresponds to a high R2 and high MAPE. After a thorough comparison of the nonlinear analysis by ANNs, the GLM, and linear analysis by simple regression, the ANNs perform better than the GLM and linear analysis by simple regression all aspects, confirming that the design parameters of school buildings have a nonlinear relationship with aseismic ability, which conforms to the fact that the aseismic CDR in this work is obtained using nonlinear analysis. Although the GLM ranks high in comprehensive assessment, its hitate is worse than that of ANNs; ANNs also have a higher MAPE. Hence, it is possible to determine which prediction method is suitable based on actual needs when predicting the aseismic ability of school buildings. We recommend using ANNs for accurate prediction of the aseismic abilities of school buildings; however, the drawback in using ANNs is that the prediction model generated is a black box. We recommend using the GLM to minimize total error. When building prediction models by clustering first and then comparing the performance of the three assessment methods, the prediction model built with clustered data performs slightly better than those built directly, indicating that traditional school buildings are already a subcluster of various architectural patterns. One feature of subclusters is their weak correlation with the aseismic ability of school buildings. Hence, information added to the cluster will not markedly improve prediction model quality. The budgets and priorities for reinforcing school buildings are based on the aseismic abilities of school buildings. This work analyzed the sequencing result of aseismic ability of school buildings by sequencing school buildings based on CDR values, dividing them into 10 equal zones, and comparing the zone number of actual and predicted values. Table 2 shows the zoning result. When Error = 0, the predicted and actual values have the same zone number; when Error = 1, predicted and actual values are in adjacent zones; when Error = 2, predicted and actual values are separated by one zone. The prediction model built by the GLM with K-means clustering performs best. The zoning error of this prediction model <1 is 70.8\%, and the zoning error <2 is 88.9\%, indicating that the prediction model already has sufficient accuracy when sequencing is used.
 
 
 \section{CDR 值與校舍設計之關係模型}
