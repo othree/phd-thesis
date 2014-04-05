@@ -1,4 +1,4 @@
-This is XeTeX, Version 3.1415926-2.5-0.9999.3 (TeX Live 2013) (format=xelatex 2013.12.14)  1 APR 2014 22:44
+This is XeTeX, Version 3.1415926-2.5-0.9999.3 (TeX Live 2013) (format=xelatex 2013.12.14)  5 APR 2014 16:25
 entering extended mode
  restricted \write18 enabled.
  file:line:error style messages enabled.
@@ -1368,40 +1368,45 @@ Overfull \hbox (7.3571pt too wide) in paragraph at lines 132--145
  [] 
  []
 
-[27] [28] [29]) (./sections/crack-component.tex [30]
+[27] [28] [29] [30] [31] [32] [33] [34] [35] [36])
+(./sections/crack-component.tex [37]
 Chapter 6.
-) (./sections/retrofit-cost.tex [31
+) (./sections/retrofit-cost.tex [38
 
 ]
 Chapter 7.
-) (./sections/conclusion.tex [32
+) (./sections/conclusion.tex [39
 
 ]
 Chapter 8.
-) (./backpages/ntust_backpages.tex [33
+) (./backpages/ntust_backpages.tex [40
 
 ] (./my_ntust_thesis.bbl
 Underfull \hbox (badness 10000) detected at line 1
 \EU1/標楷體(0)/m/n/20.74 參 考 文 獻
  []
 
-) [34
+) [41
 
-] [35])
+] [42])
 Package atveryend Info: Empty hook `BeforeClearDocument' on input line 73.
 Package atveryend Info: Empty hook `AfterLastShipout' on input line 73.
  (./my_ntust_thesis.aux)
 Package atveryend Info: Empty hook `AtVeryEndDocument' on input line 73.
 Package atveryend Info: Empty hook `AtEndAfterFileList' on input line 73.
+
+
+LaTeX Warning: Label(s) may have changed. Rerun to get cross-references right.
+
 Package atveryend Info: Empty hook `AtVeryVeryEnd' on input line 73.
  ) 
 Here is how much of TeX's memory you used:
- 25598 strings out of 493938
- 500202 string characters out of 6148856
- 534734 words of memory out of 5000000
- 28542 multiletter control sequences out of 15000+600000
+ 25604 strings out of 493938
+ 500260 string characters out of 6148856
+ 534957 words of memory out of 5000000
+ 28548 multiletter control sequences out of 15000+600000
  10188 words of font info for 70 fonts, out of 8000000 for 9000
  1144 hyphenation exceptions out of 8191
  46i,12n,48p,2467b,427s stack positions out of 5000i,500n,10000p,200000b,80000s
 
-Output written on my_ntust_thesis.pdf (44 pages).
+Output written on my_ntust_thesis.pdf (51 pages).
