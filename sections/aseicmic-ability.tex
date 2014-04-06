@@ -178,7 +178,18 @@ The budgets and priorities for reinforcing school buildings are based on the ase
 
 \subsection{資料前處理}
 
+人工輸入的資料很容易發生單位錯誤或是格式不正確的資料，而資料的品質對於資料探勘的結果優劣影響很大，因此需要在資料前處理時把這些問題都處理過，資料前處理的最主要目標是讓處理過的資料能夠很確實的反映出分析問題所要尋找的資料特性，使用的方法包括資料過濾、屬性過濾、新屬性的生成等，首先，本分析中第一個前處理工作就是資料過濾，要把有問題的資料，不合理的資料都過濾掉，過濾的條件則是依照國震中心所建議的典型校舍特性的過濾條件：
+
 Manually inputting data may result in incorrect units or formats because controlling data quality in the real world is difficult. Hence, it is necessary to pre-process data before building the relational model. Quality, as an important part of soft computing and data analysis, has considerable influence on subsequent analytic results or even on the reliability of the generated model. Apart from the actual data, the researcher also refers to expert advice from NCREE for data pre-processing. The main target of data pre-processing is to ensure the accuracy and adjustment of the data in a format that clearly reflects the target of analysis. Pre-processing includes data screening, property screening, and new property synthesis. Data screening is divided into two stages. The first stage is the rationality screening of the data. Pre-existing mistakes are unavoidable because the data in the School Building Database were entered manually; the obligation is to identify such mistakes. Most of the school buildings were I-type shaped buildings; a very common design. . With regard to the properties of these school buildings, the NCREE (2005) suggests the following screening conditions:
+
+\begin{itemize}
+\item 校舍深度介於六到二十公尺之間
+\item 校舍垮距介於二到八公尺之間
+\item 每間教室至少有一個垮、兩個柱
+\item 
+\item 校舍的破壞地表加速度是長向較小
+\end{itemize}
+
 
 \begin{itemize}
 \item Total depth of the school building should exceed 20 meters or is less than 6 meters
@@ -188,8 +199,18 @@ Manually inputting data may result in incorrect units or formats because control
 \item The collapse ground acceleration of the major direction is greater than that of the minor direction
 \end{itemize}
 
+由於並不是所有的校舍都有進行過詳細評估，因此第二個步驟就是要挑選出同時有基本設計資料以及詳細評估的 $CDR$ 值的資料，接著，由於校舍資料庫中的原始資料，每棟校舍都有上百個資料屬性，因此接著要對屬性進行篩選與合併，與國震中心之專家討論過後，挑選過濾掉大部分的屬性，但是仍然有約三十多個屬性，因此為了能夠繼續減少資料屬性，本分析接著還繼續對這些資料的屬性進行分類，根據其屬性分布挑選出一組典型校舍子集來分析，這個挑選出來的子集其特性為：
+
 In the second stage, choosing school buildings with both basic design parameters and minimum destruction ground acceleration is necessary because not all school buildings have detailed information.￼According to the raw data in the seismic￼assessment database for school buildings, each data set contains hundreds of properties. Based on our judgment with expert which are non-structural and low importance, and synthesize some properties with similarity. There are still more than 30 properties left after this reduction process. This study further classifies school building records into subsets based on similarities in property values, and chooses one subset with major population as the data set for further studying. After the classification of school buildings, we try to do further reduction and finally determine a set of key properties which is optimal to represent the seismic characteristics of individual school buildings. The choice is based on data distribution, and a subset that correctly represents I-shaped school buildings. The features of this subset adopted in this study are listed below:
 ￼
+\begin{itemize}
+\item 沒有走廊柱
+\item 只有一種教室柱
+\item 校舍沒有 RC 牆
+\item 沒有四面圍束磚牆
+\item 沒有三面圍束磚牆
+\end{itemize}
+
 \begin{itemize}
 \item No corridor columns
 \item Only use one type of classroom column
@@ -197,6 +218,8 @@ In the second stage, choosing school buildings with both basic design parameters
 \item School buildings have no brick walls with four-side confinement
 \item School buildings have no brick walls with three-side confinement
 \end{itemize}
+
+最後前處理完成的資料總共有~107~筆。總共有十二種屬性
 
 After finalizing the data for the first and second stages, 107 datasets conform to the above condition. Twelve properties are then chosen for the screened data with reference to expert advice, displayed as P1 to P12 in Table 1. In addition to the screening based on existing properties, this study synthesizes two new properties, P13 and P14. They represent the number of classrooms and number of spans for a single classroom, respectively, based on expert advice and existing data. In P11, SDS stands for design spectral response accelerations at short-periods, and in P12, SD1 stands for design spectral response accelerations at 1 sec. These two parameters represent the magnitude of the seismic force at the building’s location, and are very important parameters for analyzing the aseismic ability of buildings by non-linear analysis.
 
