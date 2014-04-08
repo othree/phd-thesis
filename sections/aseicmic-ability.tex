@@ -219,12 +219,16 @@ In the second stage, choosing school buildings with both basic design parameters
 \item School buildings have no brick walls with three-side confinement
 \end{itemize}
 
-最後前處理完成的資料總共有~107~筆。總共有十二種屬性
+最後前處理完成的資料總共有~107~筆。並且依照專家建議挑選出~12~個屬性，分別為表~1~中的 $P_1$ 到 $P_{12}$，其中~$P_{11}$，$S_{DS}$~ 是校舍的設計地表加速度，~$P_{12}$，$S_{D1}$~則是一秒週期的設計譜加速度，都是分析校舍耐震能力時非常重要的參數，另外也根據專家的建議，使用現有的資料組合出兩個新的屬性，分別是 $P_{13}$ 和 $P_{14}$，分別代表了校舍的教室數量和校舍建築物的垮距。
 
 After finalizing the data for the first and second stages, 107 datasets conform to the above condition. Twelve properties are then chosen for the screened data with reference to expert advice, displayed as P1 to P12 in Table 1. In addition to the screening based on existing properties, this study synthesizes two new properties, P13 and P14. They represent the number of classrooms and number of spans for a single classroom, respectively, based on expert advice and existing data. In P11, SDS stands for design spectral response accelerations at short-periods, and in P12, SD1 stands for design spectral response accelerations at 1 sec. These two parameters represent the magnitude of the seismic force at the building’s location, and are very important parameters for analyzing the aseismic ability of buildings by non-linear analysis.
 
+前處理的最後一個步驟是資料的正規化，因為不同屬性的物理意義不一樣，其數值的數量級差異也很大，如果有一個重要參數其數量級很小，那就會增加探勘的難度，因此為了減少數量級差異造成的影響力落差，要先把參數經過正規化處理，正規化的方法很多，可以把屬性的數值調整至~0~到~1~的區間，也可以用標準差和平均值來作調整，其最重要的目標是要保留原始數值的分布，本分析則是對~$P_2$、$P_3$、$P_7$、$P_9$~和~$P_{10}$~除以~1000，讓這些屬性的數值和其他屬性的數值比較接近。
+
 The last step of data preprocessing is normalization. The purpose of normalization is to balance the impacts of the parameters in different scales. If an input parameter has small values of mean and standard deviation, but is of high importance and if the result is also sensitive to this parameter, then it is necessary to use data normalization to prevent its influence from being overshadowed by other larger scale parameters. Normalization methods include converting the data into the range of 0 to 1, using the maximum and minimum values, and converting data to the standard deviation of its mean. The normalization principle adopted in this paper is to retain the original values as far as possible, so only a few parameters with large values, such as P2, P3, P7, P9 and P10, are divided by 1000 to make their scale comparable to other parameters.
-￼￼￼￼￼￼￼￼￼￼￼
+
+完成以上所有的前處理工作後，可以得到~107~筆校舍資料，每筆資料有~14~個屬性，本分析就是針對這個資料集作分析。
+
 After the three pre-processing steps, 107 datasets and 14 properties were obtained. The subsequent analysis was based on this dataset.
 
 \subsection{資料探勘}
