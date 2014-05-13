@@ -50,12 +50,12 @@
 \contentsline {chapter}{\numberline {7}校舍資訊與補強經費之關係模型}{45}{chapter.7}
 \contentsline {section}{\numberline {7.1}資料前處理}{45}{section.7.1}
 \contentsline {subsection}{\numberline {7.1.1}資料篩選}{46}{subsection.7.1.1}
-\contentsline {subsection}{\numberline {7.1.2}屬性篩選}{46}{subsection.7.1.2}
-\contentsline {section}{\numberline {7.2}資料探勘}{48}{section.7.2}
-\contentsline {section}{\numberline {7.3}結果}{48}{section.7.3}
-\contentsline {chapter}{\numberline {8}結論與討論}{49}{chapter.8}
-\contentsline {section}{\numberline {8.1}結論}{49}{section.8.1}
-\contentsline {section}{\numberline {8.2}討論}{49}{section.8.2}
-\contentsline {chapter}{參考文獻}{50}{section.8.2}
-\contentsline {chapter}{授權書}{51}{chapter*.13}
+\contentsline {subsection}{\numberline {7.1.2}屬性篩選}{47}{subsection.7.1.2}
+\contentsline {section}{\numberline {7.2}資料探勘}{52}{section.7.2}
+\contentsline {section}{\numberline {7.3}結果}{52}{section.7.3}
+\contentsline {chapter}{\numberline {8}結論與討論}{53}{chapter.8}
+\contentsline {section}{\numberline {8.1}結論}{53}{section.8.1}
+\contentsline {section}{\numberline {8.2}討論}{53}{section.8.2}
+\contentsline {chapter}{參考文獻}{54}{section.8.2}
+\contentsline {chapter}{授權書}{55}{chapter*.13}
 \contentsfinish 

@@ -1,4 +1,4 @@
-This is XeTeX, Version 3.1415926-2.5-0.9999.3 (TeX Live 2013) (format=xelatex 2013.12.14)  11 MAY 2014 17:48
+This is XeTeX, Version 3.1415926-2.5-0.9999.3 (TeX Live 2013) (format=xelatex 2013.12.14)  13 MAY 2014 18:24
 entering extended mode
  restricted \write18 enabled.
  file:line:error style messages enabled.
@@ -1426,32 +1426,36 @@ Chapter 6.
 Chapter 7.
 [45
 
-] [46] [47]) (./sections/conclusion.tex [48]
+] [46] [47] [48] [49] [50]) (./sections/conclusion.tex [51] [52]
 Chapter 8.
-) (./backpages/ntust_backpages.tex [49
+) (./backpages/ntust_backpages.tex [53
 
 ] (./my_ntust_thesis.bbl
 Underfull \hbox (badness 10000) detected at line 1
 \EU1/標楷體(0)/bx/n/20.74 參 考 文 獻
  []
 
-) [50
+) [54
 
-] [51])
+] [55])
 Package atveryend Info: Empty hook `BeforeClearDocument' on input line 74.
 Package atveryend Info: Empty hook `AfterLastShipout' on input line 74.
  (./my_ntust_thesis.aux)
 Package atveryend Info: Empty hook `AtVeryEndDocument' on input line 74.
 Package atveryend Info: Empty hook `AtEndAfterFileList' on input line 74.
+
+
+LaTeX Warning: Label(s) may have changed. Rerun to get cross-references right.
+
 Package atveryend Info: Empty hook `AtVeryVeryEnd' on input line 74.
  ) 
 Here is how much of TeX's memory you used:
- 25713 strings out of 493938
- 502318 string characters out of 6148856
+ 25715 strings out of 493938
+ 502396 string characters out of 6148856
  539789 words of memory out of 5000000
- 28649 multiletter control sequences out of 15000+600000
+ 28651 multiletter control sequences out of 15000+600000
  10212 words of font info for 73 fonts, out of 8000000 for 9000
  1144 hyphenation exceptions out of 8191
  46i,12n,48p,2467b,427s stack positions out of 5000i,500n,10000p,200000b,80000s
 
-Output written on my_ntust_thesis.pdf (60 pages).
+Output written on my_ntust_thesis.pdf (64 pages).
