@@ -249,13 +249,13 @@ RMSE is the index used in the current study to judge the quality of models, and 
 
 where n is the number of datasets, $y$ is the estimated value obtained from the equation, and $\hat{y}$ is the actual unit-less deviation index value (the smaller the better). The ground acceleration of the minimum destruction obtained from the nonlinear analysis was distributed between 0.04 and 0.5, and therefore, the relationship model has a sufficient recognition rate. Experts from NCREE recommend that the RMSE must be below 0.04. The control group is the relationship model obtained from the artificial neural network. In applying the relationship model constructed by SPSS Clementine and choosing the Exhaustive Prune method to adjust the number of tiers and nodes, the initial neural network has two hidden tiers with 30 and 20 neurons, respectively. The neurons have been trained for 250 iterations, and those with a low degree of importance are removed during the training period based on the situation. The resulting RMSE is 0.041, which is close to the target of 0.04. In this paper we use WGP to create an aseismic ability prediction model for real school buildings. The quality of our model is similar to models built using Artificial Neural Networks. However, Artificial Neural Network based models are complicated; their mechanism is in a black box. The WGP model, on the other hand, is just an equation of the building’s design parameters and its aseismic ability. Thus, it can easily be ported to other platforms and programming languages for use in many applications. The optimum model obtained from the GP pattern is represented by the relationship equation below. Function nodes in a tree topology, displayed in Figure 8, uses several symbols and text to represent the F of that node.
 
-"+" 代表 $f = x_1 + x_2$;
-"-" 代表 $f = x_1 - x_2$;
-"×" 代表 $f = x_1 \times x_2$;
-"÷" 代表 $f = x_1 / x_2$;
-"pow" 代表次方函數 $f = {x_1} ^ {x_2}$
+``+'' 代表 $f = x_1 + x_2$; \\ \indent
+``-'' 代表 $f = x_1 - x_2$; \\ \indent
+``×'' 代表 $f = x_1 \times x_2$; \\ \indent
+``÷'' 代表 $f = x_1 / x_2$; \\ \indent
+``pow'' 代表次方函數 $f = {x_1} ^ {x_2}$
 
-結果使用~GP~方法所建立的關係模型其表現並不好，~RMSE~只能達到~0.056~，而根據圖九可以發現，其實使用~GP~方法並沒有正確的建立~$AC$~和校舍設計參數間的關係模型，因為他只使用了三個輸入參數，而且其方程式也非常的線性，可以推斷出此一個關係模型的複雜度很高，而~$GP$~方法並不能正確的找出這個關係。
+結果使用~GP~方法所建立的關係模型其表現並不好，~RMSE~只能達到~0.056~，而根據圖九可以發現，其實使用~GP~方法並沒有正確的建立~$AC$~和校舍設計參數間的關係模型，因為他只使用了三個輸入參數，而且其方程式也非常的線性，可以推斷出此一個關係模型的複雜度很高，而~GP~方法並不能正確的找出這個關係。
 
 The performance of this model is not ideal because the RMSE can only reach 0.056. Based on Figure 9, the relationship model generated did not correctly build the relationship between the design parameters of school buildings, and ground acceleration of the minimum destruction. As only three input parameters were used, it resulted in the minimum equation as the linear equation. This can be attributed to the fact that this seismic ability model for school buildings has high complexity, and the application of GP pattern alone cannot obtain the relationship between them. The WGP pattern was then used to build the relationship equation between the design parameters of school buildings, and ground acceleration of the minimum destruction because it could be used for relationships that are more complex than with the GP pattern.
 
