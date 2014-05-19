@@ -47,15 +47,18 @@
 \contentsline {subsection}{\numberline {5.3.2}資料探勘}{43}{subsection.5.3.2}
 \contentsline {subsection}{\numberline {5.3.3}結果}{43}{subsection.5.3.3}
 \contentsline {chapter}{\numberline {6}校舍資訊與破壞構件之關係模型}{44}{chapter.6}
-\contentsline {chapter}{\numberline {7}校舍資訊與補強經費之關係模型}{45}{chapter.7}
-\contentsline {section}{\numberline {7.1}資料前處理}{45}{section.7.1}
-\contentsline {subsection}{\numberline {7.1.1}資料篩選}{46}{subsection.7.1.1}
-\contentsline {subsection}{\numberline {7.1.2}屬性篩選}{47}{subsection.7.1.2}
-\contentsline {section}{\numberline {7.2}資料探勘}{52}{section.7.2}
-\contentsline {section}{\numberline {7.3}結果}{52}{section.7.3}
-\contentsline {chapter}{\numberline {8}結論與討論}{54}{chapter.8}
-\contentsline {section}{\numberline {8.1}結論}{54}{section.8.1}
-\contentsline {section}{\numberline {8.2}討論}{54}{section.8.2}
-\contentsline {chapter}{參考文獻}{55}{section.8.2}
-\contentsline {chapter}{授權書}{56}{chapter*.20}
+\contentsline {section}{\numberline {6.1}資料前處理}{44}{section.6.1}
+\contentsline {section}{\numberline {6.2}資料探勘}{47}{section.6.2}
+\contentsline {section}{\numberline {6.3}結果}{48}{section.6.3}
+\contentsline {chapter}{\numberline {7}校舍資訊與補強經費之關係模型}{49}{chapter.7}
+\contentsline {section}{\numberline {7.1}資料前處理}{49}{section.7.1}
+\contentsline {subsection}{\numberline {7.1.1}資料篩選}{50}{subsection.7.1.1}
+\contentsline {subsection}{\numberline {7.1.2}屬性篩選}{51}{subsection.7.1.2}
+\contentsline {section}{\numberline {7.2}資料探勘}{56}{section.7.2}
+\contentsline {section}{\numberline {7.3}結果}{56}{section.7.3}
+\contentsline {chapter}{\numberline {8}結論與討論}{58}{chapter.8}
+\contentsline {section}{\numberline {8.1}結論}{58}{section.8.1}
+\contentsline {section}{\numberline {8.2}討論}{58}{section.8.2}
+\contentsline {chapter}{參考文獻}{59}{section.8.2}
+\contentsline {chapter}{授權書}{60}{chapter*.20}
 \contentsfinish 
