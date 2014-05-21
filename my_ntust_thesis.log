@@ -1,4 +1,4 @@
-This is XeTeX, Version 3.1415926-2.5-0.9999.3 (TeX Live 2013) (format=xelatex 2013.12.14)  19 MAY 2014 18:26
+This is XeTeX, Version 3.1415926-2.5-0.9999.3 (TeX Live 2013) (format=xelatex 2013.12.14)  21 MAY 2014 22:14
 entering extended mode
  restricted \write18 enabled.
  file:line:error style messages enabled.
@@ -1367,12 +1367,7 @@ File: se-ascii-print.def 2011/12/02 v1.10 stringenc: Printable ASCII characters
 )
 [1
 
-]
-Overfull \hbox (11.82814pt too wide) detected at line 358
-\EU1/標楷體(0)/m/n/20.74 中 文 摘 要
- []
-
-(./frontpages/my_cabstract.tex)
+] (./frontpages/my_cabstract.tex)
 
 Package Fancyhdr Warning: \headheight is too small (12.0pt): 
  Make it at least 16.0pt.
@@ -1421,15 +1416,6 @@ LaTeX Font Info:    Try loading font information for U+rsfs on input line 1.
 (/usr/local/texlive/2013/texmf-dist/tex/latex/jknapltx/ursfs.fd
 File: ursfs.fd 1998/03/24 rsfs font definition file (jk)
 )
-Overfull \hbox (1.15817pt too wide) detected at line 5
- \EU1/TimesNewRoman(0)/m/n/12 VII
- []
-
-
-Overfull \hbox (5.15427pt too wide) detected at line 6
- \EU1/TimesNewRoman(0)/m/n/12 VIII
- []
-
 
 Package Fancyhdr Warning: \headheight is too small (12.0pt): 
  Make it at least 16.0pt.
@@ -1859,6 +1845,13 @@ Package Fancyhdr Warning: \headheight is too small (12.0pt):
  This may cause the page layout to be inconsistent, however.
 
 [48]
+
+Package Fancyhdr Warning: \headheight is too small (12.0pt): 
+ Make it at least 16.0pt.
+ We now make it that large for the rest of the document.
+ This may cause the page layout to be inconsistent, however.
+
+[49]
 Chapter 7.
 
 Package Fancyhdr Warning: \headheight is too small (12.0pt): 
@@ -1866,16 +1859,9 @@ Package Fancyhdr Warning: \headheight is too small (12.0pt):
  We now make it that large for the rest of the document.
  This may cause the page layout to be inconsistent, however.
 
-[49
+[50
 
 ]
-
-Package Fancyhdr Warning: \headheight is too small (12.0pt): 
- Make it at least 16.0pt.
- We now make it that large for the rest of the document.
- This may cause the page layout to be inconsistent, however.
-
-[50]
 
 Package Fancyhdr Warning: \headheight is too small (12.0pt): 
  Make it at least 16.0pt.
@@ -1917,14 +1903,25 @@ Package Fancyhdr Warning: \headheight is too small (12.0pt):
  We now make it that large for the rest of the document.
  This may cause the page layout to be inconsistent, however.
 
-[56]) (./sections/conclusion.tex
+[56]
+Overfull \hbox (5.34454pt too wide) in paragraph at lines 106--114
+ [] 
+ []
+
 
 Package Fancyhdr Warning: \headheight is too small (12.0pt): 
  Make it at least 16.0pt.
  We now make it that large for the rest of the document.
  This may cause the page layout to be inconsistent, however.
 
-[57]
+[57]) (./sections/conclusion.tex
+
+Package Fancyhdr Warning: \headheight is too small (12.0pt): 
+ Make it at least 16.0pt.
+ We now make it that large for the rest of the document.
+ This may cause the page layout to be inconsistent, however.
+
+[58]
 Chapter 8.
 ) (./backpages/ntust_backpages.tex
 
@@ -1933,7 +1930,7 @@ Package Fancyhdr Warning: \headheight is too small (12.0pt):
  We now make it that large for the rest of the document.
  This may cause the page layout to be inconsistent, however.
 
-[58
+[59
 
 ] (./my_ntust_thesis.bbl
 Underfull \hbox (badness 10000) detected at line 1
@@ -1947,27 +1944,27 @@ Package Fancyhdr Warning: \headheight is too small (12.0pt):
  We now make it that large for the rest of the document.
  This may cause the page layout to be inconsistent, however.
 
-[59
+[60
 
-] [60])
-Package atveryend Info: Empty hook `BeforeClearDocument' on input line 93.
-Package atveryend Info: Empty hook `AfterLastShipout' on input line 93.
+] [61])
+Package atveryend Info: Empty hook `BeforeClearDocument' on input line 92.
+Package atveryend Info: Empty hook `AfterLastShipout' on input line 92.
  (./my_ntust_thesis.aux)
-Package atveryend Info: Empty hook `AtVeryEndDocument' on input line 93.
-Package atveryend Info: Empty hook `AtEndAfterFileList' on input line 93.
+Package atveryend Info: Empty hook `AtVeryEndDocument' on input line 92.
+Package atveryend Info: Empty hook `AtEndAfterFileList' on input line 92.
 
 
 LaTeX Warning: There were multiply-defined labels.
 
-Package atveryend Info: Empty hook `AtVeryVeryEnd' on input line 93.
+Package atveryend Info: Empty hook `AtVeryVeryEnd' on input line 92.
  ) 
 Here is how much of TeX's memory you used:
- 27271 strings out of 493938
- 530518 string characters out of 6148856
- 568993 words of memory out of 5000000
- 30189 multiletter control sequences out of 15000+600000
- 13315 words of font info for 88 fonts, out of 8000000 for 9000
+ 27269 strings out of 493938
+ 530487 string characters out of 6148856
+ 569062 words of memory out of 5000000
+ 30188 multiletter control sequences out of 15000+600000
+ 13307 words of font info for 87 fonts, out of 8000000 for 9000
  1144 hyphenation exceptions out of 8191
  46i,12n,48p,2467b,439s stack positions out of 5000i,500n,10000p,200000b,80000s
 
-Output written on my_ntust_thesis.pdf (69 pages).
+Output written on my_ntust_thesis.pdf (70 pages).
