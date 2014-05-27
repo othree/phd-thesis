@@ -5,6 +5,8 @@
 %%% 參考文獻
 \newpage
 %\bibliographystyle{unsrt}
+\cleardoublepage
+\phantomsection
 \addcontentsline{toc}{chapter}{\nameRef}
 \renewcommand{\bibname}{\protect\makebox[5cm][s]{\nameRef}}
 %  \makebox{} is fragile; need protect
@@ -33,5 +35,7 @@
 % 在口試完成後，再將已簽名的授權書放入以便裝訂
 % create an entry in table of contents for 授權書
 % 目前送出空白頁
+\cleardoublepage
+\phantomsection
 \newpage{\thispagestyle{empty}\addcontentsline{toc}{chapter}{\nameCopyrightForm}\mbox{}\clearpage}
-
+\newpage
