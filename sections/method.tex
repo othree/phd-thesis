@@ -108,7 +108,12 @@ $R^2$
 
 \subsubsection{平均絕對百分比誤差 MAPE}
 
-Mean Absolute Percentage Error
+MAPE (Mean Absolute Percetage Error)~的公式如下：
+
+\begin{equation} MAPE = \dfrac{\sum{\abs{y_i - \hat{y_i}}}}{N} \times 100\% \label{eq:MAPE}\end{equation}
+
+其中~$N$~是資料的總數，~$y_i$~是使用探勘得到的關係模型所求得的輸出屬性預測值，~$\hat{y_i}$~則是該屬性的實際值
+
 
 \subsubsection{均方根誤差 RMSE}
 
@@ -121,6 +126,11 @@ Mean Absolute Percentage Error
 
 \subsubsection{命中率 Hit Rate}
 
+命中率（Hit Rate）是用來判斷關係模型的正確率的，其定義為：
+
+\begin{equation} \text{Hit Rate} = \dfrac{ \sum{I\{(1 - \alpha)y_i \le \hat{y_i} \le (1 + \alpha)y_i \}} }{N} \label{eq:hitrate}\end{equation} 
+
+其中~$I\{L\} \in \{0, 1\}$~，如果~$L$~為真，則~$I\{L\}$~為~1~，反之則為~0~，~$y$~是透過資料所建立的關係模型所求得的輸出屬性預測值，~$\hat{y}$~則是輸出屬性的實際值，而~$\alpha$~為命中率的容許誤差，且~$0 \le \alpha \le 1$~，如果~$\alpha = 0.1$~則表示誤差~$10\%$~內都算是有預測模型有預測命中。Hit Rate 越高代表關係模型的結果越好。
 
 
 
