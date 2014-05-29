@@ -1,0 +1,51 @@
+This is BibTeX, Version 0.99d (TeX Live 2013)
+Capacity: max_strings=35307, hash_size=35307, hash_prime=30011
+The top-level auxiliary file: my_ntust_thesis.aux
+The style file: ieeetr.bst
+Database file #1: my_bib.bib
+Warning--empty author in ncree03049
+Warning--empty author in ncree08035
+Warning--empty author in ncree09015
+Warning--empty author in ncree09026
+You've used 16 entries,
+            1876 wiz_defined-function locations,
+            569 strings with 5968 characters,
+and the built_in function-call counts, 3615 in all, are:
+= -- 361
+> -- 102
+< -- 4
++ -- 42
+- -- 26
+* -- 263
+:= -- 505
+add.period$ -- 19
+call.type$ -- 16
+change.case$ -- 13
+chr.to.int$ -- 0
+cite$ -- 20
+duplicate$ -- 199
+empty$ -- 369
+format.name$ -- 26
+if$ -- 897
+int.to.chr$ -- 0
+int.to.str$ -- 16
+missing$ -- 14
+newline$ -- 54
+num.names$ -- 14
+pop$ -- 53
+preamble$ -- 1
+purify$ -- 0
+quote$ -- 0
+skip$ -- 119
+stack$ -- 0
+substring$ -- 196
+swap$ -- 73
+text.length$ -- 4
+text.prefix$ -- 0
+top$ -- 0
+type$ -- 0
+warning$ -- 4
+while$ -- 29
+width$ -- 18
+write$ -- 158
+(There were 4 warnings)
