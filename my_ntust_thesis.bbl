@@ -29,6 +29,11 @@ B.~E. Boser, I.~M. Guyon, and V.~N. Vapnik, ``A training algorithm for optimal
   Computational Learning Theory (COLT'92)} (D.~Haussler, ed.), (Pittsburgh, PA,
   USA), pp.~144--152, ACM Press, July 1992.
 
+\bibitem{drucker1997support}
+H.~Drucker, C.~J. Burges, L.~Kaufman, A.~Smola, and V.~Vapnik, ``Support vector
+  regression machines,'' {\em Advances in neural information processing
+  systems}, vol.~9, pp.~155--161, 1997.
+
 \bibitem{mcculloch1943logical}
 W.~S. McCulloch and W.~Pitts, ``A logical calculus of the ideas immanent in
   nervous activity,'' {\em The Bulletin of Mathematical Biophysics}, vol.~5,

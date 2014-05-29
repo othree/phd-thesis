@@ -1,4 +1,4 @@
-This is XeTeX, Version 3.1415926-2.5-0.9999.3 (TeX Live 2013) (format=xelatex 2013.12.14)  28 MAY 2014 16:40
+This is XeTeX, Version 3.1415926-2.5-0.9999.3 (TeX Live 2013) (format=xelatex 2013.12.14)  29 MAY 2014 16:57
 entering extended mode
  restricted \write18 enabled.
  file:line:error style messages enabled.
@@ -1179,6 +1179,9 @@ File: watermark/ntust_watermark.eps Graphic file (type eps)
  <watermark/ntust_watermark.eps>))
 (./my_ntust_thesis.aux
 
+LaTeX Warning: Label `eq:RSQ' multiply defined.
+
+
 LaTeX Warning: Label `eq:MAPE' multiply defined.
 
 
@@ -1376,7 +1379,17 @@ File: se-ascii-print.def 2011/12/02 v1.10 stringenc: Printable ASCII characters
 )
 [1
 
-] (./frontpages/my_cabstract.tex)
+]
+Underfull \hbox (badness 10000) detected at line 321
+\EU1/標楷體(0)/m/n/12 學 生：| 
+ []
+
+
+Underfull \hbox (badness 10000) detected at line 324
+\EU1/標楷體(0)/m/n/12 指 導 教 授：| 
+ []
+
+(./frontpages/my_cabstract.tex)
 
 Package Fancyhdr Warning: \headheight is too small (12.0pt): 
  Make it at least 16.0pt.
@@ -1391,7 +1404,7 @@ Package Fancyhdr Warning: \headheight is too small (12.0pt):
  This may cause the page layout to be inconsistent, however.
 
 [2]
-Underfull \hbox (badness 10000) detected at line 453
+Underfull \hbox (badness 10000) detected at line 452
 \EU1/標楷體(0)/bx/n/20.74 誌 謝
  []
 
@@ -1405,7 +1418,7 @@ Package Fancyhdr Warning: \headheight is too small (12.0pt):
 [3
 
 ]
-Underfull \hbox (badness 10000) detected at line 471
+Underfull \hbox (badness 10000) detected at line 470
 \EU1/標楷體(0)/bx/n/20.74 目 錄
  []
 
@@ -1425,15 +1438,6 @@ LaTeX Font Info:    Try loading font information for U+rsfs on input line 1.
 (/usr/local/texlive/2013/texmf-dist/tex/latex/jknapltx/ursfs.fd
 File: ursfs.fd 1998/03/24 rsfs font definition file (jk)
 )
-Overfull \hbox (1.15817pt too wide) detected at line 5
- \EU1/TimesNewRoman(0)/m/n/12 VII
- []
-
-
-Overfull \hbox (5.15427pt too wide) detected at line 6
- \EU1/TimesNewRoman(0)/m/n/12 VIII
- []
-
 
 Package Fancyhdr Warning: \headheight is too small (12.0pt): 
  Make it at least 16.0pt.
@@ -1461,7 +1465,7 @@ Package Fancyhdr Warning: \headheight is too small (12.0pt):
  This may cause the page layout to be inconsistent, however.
 
 [6]
-Underfull \hbox (badness 10000) detected at line 487
+Underfull \hbox (badness 10000) detected at line 486
 \EU1/標楷體(0)/bx/n/20.74 圖 目 錄
  []
 
@@ -1479,7 +1483,7 @@ Package Fancyhdr Warning: \headheight is too small (12.0pt):
 [7
 
 ]
-Underfull \hbox (badness 10000) detected at line 500
+Underfull \hbox (badness 10000) detected at line 499
 \EU1/標楷體(0)/bx/n/20.74 表 目 錄
  []
 
@@ -1629,15 +1633,15 @@ Package Fancyhdr Warning: \headheight is too small (12.0pt):
 
 [16]
 
-LaTeX Warning: Command \nobreakspace invalid in math mode on input line 53.
-
-
 Package Fancyhdr Warning: \headheight is too small (12.0pt): 
  Make it at least 16.0pt.
  We now make it that large for the rest of the document.
  This may cause the page layout to be inconsistent, however.
 
 [17]
+
+LaTeX Warning: Command \nobreakspace invalid in math mode on input line 59.
+
 
 Package Fancyhdr Warning: \headheight is too small (12.0pt): 
  Make it at least 16.0pt.
@@ -1658,14 +1662,24 @@ Package Fancyhdr Warning: \headheight is too small (12.0pt):
  We now make it that large for the rest of the document.
  This may cause the page layout to be inconsistent, however.
 
-[20]) (./sections/aseicmic-ability.tex
+[20]
+Missing character: There is no （ in font Times New Roman/OT:script=latn;languag
+e=DFLT;mapping=tex-text;!
+
 
 Package Fancyhdr Warning: \headheight is too small (12.0pt): 
  Make it at least 16.0pt.
  We now make it that large for the rest of the document.
  This may cause the page layout to be inconsistent, however.
 
-[21]
+[21]) (./sections/aseicmic-ability.tex
+
+Package Fancyhdr Warning: \headheight is too small (12.0pt): 
+ Make it at least 16.0pt.
+ We now make it that large for the rest of the document.
+ This may cause the page layout to be inconsistent, however.
+
+[22]
 Chapter 5.
 
 Package Fancyhdr Warning: \headheight is too small (12.0pt): 
@@ -1673,16 +1687,9 @@ Package Fancyhdr Warning: \headheight is too small (12.0pt):
  We now make it that large for the rest of the document.
  This may cause the page layout to be inconsistent, however.
 
-[22
+[23
 
 ]
-
-Package Fancyhdr Warning: \headheight is too small (12.0pt): 
- Make it at least 16.0pt.
- We now make it that large for the rest of the document.
- This may cause the page layout to be inconsistent, however.
-
-[23]
 
 Package Fancyhdr Warning: \headheight is too small (12.0pt): 
  Make it at least 16.0pt.
@@ -1732,10 +1739,6 @@ Package Fancyhdr Warning: \headheight is too small (12.0pt):
  This may cause the page layout to be inconsistent, however.
 
 [30]
-Overfull \hbox (7.3571pt too wide) in paragraph at lines 132--145
- [] 
- []
-
 
 Package Fancyhdr Warning: \headheight is too small (12.0pt): 
  Make it at least 16.0pt.
@@ -1743,6 +1746,10 @@ Package Fancyhdr Warning: \headheight is too small (12.0pt):
  This may cause the page layout to be inconsistent, however.
 
 [31]
+Overfull \hbox (7.3571pt too wide) in paragraph at lines 132--145
+ [] 
+ []
+
 
 Package Fancyhdr Warning: \headheight is too small (12.0pt): 
  Make it at least 16.0pt.
@@ -1847,14 +1854,21 @@ Package Fancyhdr Warning: \headheight is too small (12.0pt):
  We now make it that large for the rest of the document.
  This may cause the page layout to be inconsistent, however.
 
-[46]) (./sections/crack-component.tex
+[46]
 
 Package Fancyhdr Warning: \headheight is too small (12.0pt): 
  Make it at least 16.0pt.
  We now make it that large for the rest of the document.
  This may cause the page layout to be inconsistent, however.
 
-[47]
+[47]) (./sections/crack-component.tex
+
+Package Fancyhdr Warning: \headheight is too small (12.0pt): 
+ Make it at least 16.0pt.
+ We now make it that large for the rest of the document.
+ This may cause the page layout to be inconsistent, however.
+
+[48]
 Chapter 6.
 
 Package Fancyhdr Warning: \headheight is too small (12.0pt): 
@@ -1862,7 +1876,7 @@ Package Fancyhdr Warning: \headheight is too small (12.0pt):
  We now make it that large for the rest of the document.
  This may cause the page layout to be inconsistent, however.
 
-[48
+[49
 
 ]
 
@@ -1871,21 +1885,14 @@ Package Fancyhdr Warning: \headheight is too small (12.0pt):
  We now make it that large for the rest of the document.
  This may cause the page layout to be inconsistent, however.
 
-[49]
+[50]
 
 Package Fancyhdr Warning: \headheight is too small (12.0pt): 
  Make it at least 16.0pt.
  We now make it that large for the rest of the document.
  This may cause the page layout to be inconsistent, however.
 
-[50]) (./sections/retrofit-cost.tex
-
-Package Fancyhdr Warning: \headheight is too small (12.0pt): 
- Make it at least 16.0pt.
- We now make it that large for the rest of the document.
- This may cause the page layout to be inconsistent, however.
-
-[51]
+[51]) (./sections/retrofit-cost.tex
 
 Package Fancyhdr Warning: \headheight is too small (12.0pt): 
  Make it at least 16.0pt.
@@ -1900,6 +1907,13 @@ Package Fancyhdr Warning: \headheight is too small (12.0pt):
  This may cause the page layout to be inconsistent, however.
 
 [53]
+
+Package Fancyhdr Warning: \headheight is too small (12.0pt): 
+ Make it at least 16.0pt.
+ We now make it that large for the rest of the document.
+ This may cause the page layout to be inconsistent, however.
+
+[54]
 Chapter 7.
 
 LaTeX Warning: Command \nobreakspace invalid in math mode on input line 7.
@@ -1919,7 +1933,7 @@ Package Fancyhdr Warning: \headheight is too small (12.0pt):
  We now make it that large for the rest of the document.
  This may cause the page layout to be inconsistent, however.
 
-[54
+[55
 
 ]
 
@@ -1934,13 +1948,6 @@ LaTeX Warning: Command \nobreakspace invalid in math mode on input line 19.
 
 LaTeX Warning: Command \nobreakspace invalid in math mode on input line 20.
 
-
-Package Fancyhdr Warning: \headheight is too small (12.0pt): 
- Make it at least 16.0pt.
- We now make it that large for the rest of the document.
- This may cause the page layout to be inconsistent, however.
-
-[55]
 
 Package Fancyhdr Warning: \headheight is too small (12.0pt): 
  Make it at least 16.0pt.
@@ -1982,14 +1989,21 @@ Package Fancyhdr Warning: \headheight is too small (12.0pt):
  We now make it that large for the rest of the document.
  This may cause the page layout to be inconsistent, however.
 
-[61]) (./sections/conclusion.tex
+[61]
 
 Package Fancyhdr Warning: \headheight is too small (12.0pt): 
  Make it at least 16.0pt.
  We now make it that large for the rest of the document.
  This may cause the page layout to be inconsistent, however.
 
-[62]
+[62]) (./sections/conclusion.tex
+
+Package Fancyhdr Warning: \headheight is too small (12.0pt): 
+ Make it at least 16.0pt.
+ We now make it that large for the rest of the document.
+ This may cause the page layout to be inconsistent, however.
+
+[63]
 Chapter 8.
 ) (./backpages/ntust_backpages.tex
 
@@ -1998,7 +2012,7 @@ Package Fancyhdr Warning: \headheight is too small (12.0pt):
  We now make it that large for the rest of the document.
  This may cause the page layout to be inconsistent, however.
 
-[63
+[64
 
 ] (./my_ntust_thesis.bbl
 Underfull \hbox (badness 10000) detected at line 1
@@ -2011,7 +2025,7 @@ Package Fancyhdr Warning: \headheight is too small (12.0pt):
  We now make it that large for the rest of the document.
  This may cause the page layout to be inconsistent, however.
 
-[64
+[65
 
 
 ])
@@ -2021,7 +2035,7 @@ Package Fancyhdr Warning: \headheight is too small (12.0pt):
  We now make it that large for the rest of the document.
  This may cause the page layout to be inconsistent, however.
 
-[65] [66
+[66] [67
 
 ])
 Package atveryend Info: Empty hook `BeforeClearDocument' on input line 92.
@@ -2036,12 +2050,12 @@ LaTeX Warning: There were multiply-defined labels.
 Package atveryend Info: Empty hook `AtVeryVeryEnd' on input line 92.
  ) 
 Here is how much of TeX's memory you used:
- 27293 strings out of 493938
- 531030 string characters out of 6148856
- 569207 words of memory out of 5000000
- 30209 multiletter control sequences out of 15000+600000
+ 27294 strings out of 493938
+ 531058 string characters out of 6148856
+ 569218 words of memory out of 5000000
+ 30210 multiletter control sequences out of 15000+600000
  13323 words of font info for 89 fonts, out of 8000000 for 9000
  1144 hyphenation exceptions out of 8191
- 46i,12n,48p,2467b,462s stack positions out of 5000i,500n,10000p,200000b,80000s
+ 46i,12n,48p,2467b,464s stack positions out of 5000i,500n,10000p,200000b,80000s
 
-Output written on my_ntust_thesis.pdf (75 pages).
+Output written on my_ntust_thesis.pdf (76 pages).

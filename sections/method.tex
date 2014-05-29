@@ -3,7 +3,7 @@
 \renewcommand{\theequation}{\arabic{chapter}-\arabic{equation}}
 \chapter{資料探勘}
 
-過往在各種不同商業、工業、學術等領域都隨著產業逐步的數位化，有各種資料庫甚至資料倉儲系統的建置與資料收集，例如零售業的交易紀錄，各種學術實驗的結果記錄等等，而隨著時間推移，這些資料庫和倉儲系統收集的資料數量都成長的非常龐大，資料間的關係和複雜度也越來越複雜，這些資料除了當初建置的目的和資料的統計分析外，研究人員還開始思考更進一步的資料應用，希望能把資料中以往隱藏不可見的知識找出來，因此資料探勘 (Data Mining) 此一研究領域就因應而生。資料探勘的方法包括統計、線上分析處理 (OLAP、on-line analytical processing)、情報檢索 (information retrieval)、機器學習 (machine learning)、模式識別 (pattern recognition) 等。
+過往在各種不同商業、工業、學術等領域都隨著產業逐步的數位化，有各種資料庫甚至資料倉儲系統的建置與資料收集，例如零售業的交易紀錄，各種學術實驗的結果記錄等等，而隨著時間推移，這些資料庫和倉儲系統收集的資料數量都成長的非常龐大，資料間的關係和複雜度也越來越複雜，這些資料除了當初建置的目的和資料的統計分析外，研究人員還開始思考更進一步的資料應用，希望能把資料中以往隱藏不可見的知識找出來，因此資料探勘（Data Mining）此一研究領域就因應而生。資料探勘的方法包括統計、線上分析處理（OLAP、on-line analytical processing)、情報檢索（information retrieval)、機器學習（machine learning)、模式識別（pattern recognition）等。
 
 資料探勘的流程也有多種規範，其中最廣為被使用的是~CRISP-DM\cite{shearer2000crisp}（Cross Industry Standard Process for Data Mining），是由~SPSS~以及~NCR~兩大廠商在~1990年開始發展的，它的流程架構如圖~\ref{fig:CRISP-DM}~所示，將一個完整的資料探勘流程分為六個步驟，分別為：
 
@@ -43,24 +43,30 @@ PCA, a very common data preparation method, can identify very important attribut
 
 資料探勘的方法分為分類、分群、迴歸尋找關聯~\cite{fayyad1996data}，其中迴歸是最常使用到的一種，本研究的主要目標皆可以歸納為迴歸類的問題，因此使用到的迴歸演算法最多，接著才是作為輔助用的分類和分群演算法。
 
+資料探勘所建立的模型可以簡單的定義為：
+
+\begin{equation} y = f(x) \label{eq:ModelEqu}\end{equation} 
+
+$f(.)$~就是透過資料探勘分析學習而得到的模型函數，~$x$~代表輸入參數，輸入參數是為各種已知的屬性資料，例如可以簡單透過量測得到的校舍尺寸資訊，~$y$~則是代表輸出參數，也就是希望透過這個模型所得到的，比較難取得的屬性資料，例如需要經過詳細評估才能的到的校舍~CDR~值。
+
 \subsection{迴歸方法}
 
 \subsubsection{Generalized Linear Model}
 
-廣義線性模型是由Nelder and Wedderburn~\cite{citeulike:5485398}所提出，比起迴歸分析(simple regression)更為彈性，此模型是假設資料點的分佈有一分佈模式，且X與Y之間的關係是由一連結函數(Link Function)建立，如log function、power function等，其定義之XY關係模型如下：
+廣義線性模型是由Nelder and Wedderburn~\cite{citeulike:5485398}所提出，比起迴歸分析（simple regression）更為彈性，此模型是假設資料點的分佈有一分佈模式，且輸入參數~$x$~與輸出參數~$y$~之間的關係是由一連結函數（Link Function）建立，如~log function、power function~等，其定義之~$x$~$y$~間之關係模型如下：
 
 
 \begin{equation} g(E(y)) = x\beta + O, y~F \label{eq:GLM}\end{equation} 
 
-$g(.)$是為所選的鏈結函數，O是偏移(offset)變數，F則是y的分佈模型，其是用牛頓法(Newton-Raphson Method)不斷的調整$\beta$使的$x\beta + O$逼近$g(E(y))$，最後最接近的方程式即為XY兩者的關系式。比起迴歸分析，此方法還需要了解Y值分佈狀況，選擇出最適合的分佈函數，並假設XY間的鏈結函數形式，雖然越多的參數選擇代表了更多的模型不確定性，但廣義線性模型卻能夠提供比迴歸分析更廣的應用範圍，也可能得到更接近真實的關係模型。
+$g(.)$是為所選的鏈結函數，~$O$~是偏移（offset）變數，~$F$~則是~$y$~的分佈模型，其是用牛頓法（Newton-Raphson Method）不斷的調整~$\beta$~使的~$x\beta + O$~逼近~$g(E(y))$~，最後最接近的方程式即為~$x$~$y$~兩者的關系式。比起迴歸分析，此方法還需要了解~$y$~值分佈狀況，選擇出最適合的分佈函數，並假設~$x$~$y$~間的鏈結函數形式，雖然越多的參數選擇代表了更多的模型不確定性，但廣義線性模型卻能夠提供比迴歸分析更廣的應用範圍，也可能得到更接近真實的關係模型。
 
 \subsubsection{Support Vector Machine}
 
-SVM最早是BOSER~\cite{boser1992}等人，在1992年的COLT (Computational Learning Theory)所提出，SVM是一個基於統計學習理論的分類方法，用來處理二元分割的問題，其原理是將原本無法線性分割的問題轉換到一個不同維度的空間(kernel)後，假設該空間存在一超平面(hyperplane)，可以正確的將資料分開，並將尋找此一超平面的問題轉換為一最佳化問題，求解後即可得到二元分割邊界的方程式。而後Harris Drucker, et. al.,[9] 將此二元分割問題轉換為迴歸分析問題，故SVM也可以處理迴歸問題。
+SVM最早是BOSER~\cite{boser1992}等人，在~1992~年的~COLT（Computational Learning Theory）所提出，~SVM~是一個基於統計學習理論的分類方法，用來處理二元分割的問題，其原理是將原本無法線性分割的問題轉換到一個不同維度的空間（kernel）後，假設該空間存在一超平面（hyperplane），可以正確的將資料分開，並將尋找此一超平面的問題轉換為一最佳化問題，求解後即可得到二元分割邊界的方程式。而後~Harris Drucker, et. al.,\cite{drucker1997support} 將此二元分割問題轉換為迴歸分析問題，故~SVM~也可以處理迴歸問題。
 
 \subsubsection{Artificial Neural Networks}
 
-其是希望能模擬建構出人腦內的神經網路，以處理各種複雜的問題，人類大腦是由大約千兆個神經元(Neuron)所構成，而每個神經元又會和其他約一萬個神經元連結，構成一個龐大且複雜的神經網路，這樣複雜的一個神經網路讓人類可以學習並了解各種事物與知識。McCulloch and Pitts~\cite{mcculloch1943logical}所提出的模型為後續類神經網路發展的雛形，一個標準的類神經網路可以分為輸入層(input layer)、隱藏層(hidden layer)、輸出層(output layer)，輸入層(input layer)負責接受各種求解問題需要的量化數據和資料，經由隱藏層(hidden layer)的不斷自我更新學習的模型處理過後，在輸出層(output layer)就可以得到想要的解答，類神經網路可以處理的問題種類多樣，其模型的品質多數也都不錯，缺點是學習時間長，且得到的模型為一個黑盒子，難以解釋其物理或是數學模型上的意義。
+其是希望能模擬建構出人腦內的神經網路，以處理各種複雜的問題，人類大腦是由大約千兆個神經元(Neuron)所構成，而每個神經元又會和其他約一萬個神經元連結，構成一個龐大且複雜的神經網路，這樣複雜的一個神經網路讓人類可以學習並了解各種事物與知識。McCulloch and Pitts~\cite{mcculloch1943logical}所提出的模型為後續類神經網路發展的雛形，一個標準的類神經網路可以分為輸入層（input layer）、隱藏層（hidden layer）、輸出層（output layer），輸入層負責接受各種求解問題需要的量化數據和資料，經由隱藏層的不斷自我更新學習的模型處理過後，在輸出層就可以得到想要的解答，類神經網路可以處理的問題種類多樣，其模型的品質多數也都不錯，缺點是學習時間長，且得到的模型為一個黑盒子，難以解釋其物理或是數學模型上的意義。
 
 \subsubsection{Genetic Programming}
 
@@ -69,14 +75,11 @@ SVM最早是BOSER~\cite{boser1992}等人，在1992年的COLT (Computational Lear
 \subsubsection{Weighted Genetic Programming}
 
 
-\subsection{分類方法}
+\subsection{分群方法}
 
 \subsubsection{Two-Step Classification}
 
 Based on of the massive volume of basic data for school build- ings in the database, this study chooses two-step clustering method. The basic concept was first proposed by Zhang, Ramakrishnan and Livny~\cite{zhang1996birch} for handling large amounts of data. This method has two major steps. The first step sequences data and pre-clusters sequences into small subclusters based on the similarity of adjacent data, thereby reducing the amount of data. The second step divides several small subclusters into the desired number of clusters using a hierarchical clustering method. The hierarchical clustering method then combines close subclusters slowly until the stop condition is met. The computing speed of this method is influenced slightly by the volume of data.
-
-
-\subsection{分群方法}
 
 \subsubsection{K-means}
 
@@ -104,7 +107,11 @@ As proposed by MacQueen~\cite{macqueen67}, K-means is one of the most common clu
 
 \subsubsection{決定係數 Coefficient of determination}
 
-$R^2$
+決定係數（Coefficient of determination）又稱為~$R^2$~，其公式為：
+
+\begin{equation} R^2 = 1 - \dfrac{SS_{res}}{SS_{tot}} = \dfrac{SS_{reg}}{SS_{tot}} = \dfrac{\sum{(\hat{y_i} - \tilde{y})^2}}{\sum{(y_i - \tilde{y})^2}} \label{eq:RSQ}\end{equation} 
+
+其中 $y_i$ 是關係模型輸出屬性之值， $\hat{y_i}$ 則是該輸出屬性之實際值，$\tilde{y}$ 則是所有資料的輸出屬性實際值之平均，透過此一指標可以了解輸出屬性中有多少比例的資訊是由輸入屬性的變量所產生的，也代表著關係模型的正確性，而其值恰巧為關係係數~$R$（correlation coefficient）的平方，透過關係係數可以了解實際的輸出屬性數值與透過關係模型得到的推估值之間的線性關係，線性關係越高表示兩者之間越接近，也代表著關係模型所建立關係之正確性。
 
 \subsubsection{平均絕對百分比誤差 MAPE}
 
@@ -112,7 +119,7 @@ MAPE (Mean Absolute Percetage Error)~的公式如下：
 
 \begin{equation} MAPE = \dfrac{\sum{\abs{y_i - \hat{y_i}}}}{N} \times 100\% \label{eq:MAPE}\end{equation}
 
-其中~$N$~是資料的總數，~$y_i$~是使用探勘得到的關係模型所求得的輸出屬性預測值，~$\hat{y_i}$~則是該屬性的實際值
+其中~$N$~是資料的總數，~$y_i$~是使用探勘得到的關係模型所求得的輸出屬性預測值，~$\hat{y_i}$~則是該屬性的實際值，此一指標代表了模型產出結果的平均誤差，可以呈現模型的準確度，數值越低代表模型品質越好。
 
 
 \subsubsection{均方根誤差 RMSE}
@@ -121,14 +128,14 @@ MAPE (Mean Absolute Percetage Error)~的公式如下：
 
 \begin{equation} RMSE = \sqrt{\dfrac{\sum{(y_i - \hat{y_i})^2}}{N}} \label{eq:RMSE}\end{equation}
 
-其中~$N$~是資料的總數，~$y$~是透過資料所建立的關係模型所求得的輸出屬性預測值，~$\hat{y}$~則是輸出屬性的實際值，此一指標代表了模型產出結果的平均誤差，越小越好，其可接受範圍則要根據輸出屬性的數量級和問題複雜度而定。
+其中~$N$~是資料的總數，~$y$~是透過資料所建立的關係模型所求得的輸出屬性預測值，~$\hat{y}$~則是輸出屬性的實際值，此一指標代表了模型產出結果的平均誤差，數值越低越好，和~MAPE~相比，其差異在~MAPE~指表現了模型輸出數值的誤差平均，而~RMSE~還包含了誤差量的離散度資訊在內，~MAPE~表現相同的模型，其單筆資料誤差值分布越離散，~RMSE~的表現會越差，其可接受範圍則要根據輸出屬性的數量級和問題複雜度而定。
 
 
 \subsubsection{命中率 Hit Rate}
 
 命中率（Hit Rate）是用來判斷關係模型的正確率的，其定義為：
 
-\begin{equation} \text{Hit Rate} = \dfrac{ \sum{I\{(1 - \alpha)y_i \le \hat{y_i} \le (1 + \alpha)y_i \}} }{N} \label{eq:hitrate}\end{equation} 
+\begin{equation} \text{Hit Rate} = \dfrac{ \sum{I\{(1 - \alpha)y_i \le \hat{y_i} \le（1 + \alpha)y_i \}} }{N} \label{eq:hitrate}\end{equation} 
 
 其中~$I\{L\} \in \{0, 1\}$~，如果~$L$~為真，則~$I\{L\}$~為~1~，反之則為~0~，~$y$~是透過資料所建立的關係模型所求得的輸出屬性預測值，~$\hat{y}$~則是輸出屬性的實際值，而~$\alpha$~為命中率的容許誤差，且~$0 \le \alpha \le 1$~，如果~$\alpha = 0.1$~則表示誤差~$10\%$~內都算是有預測模型有預測命中。Hit Rate 越高代表關係模型的結果越好。
 
