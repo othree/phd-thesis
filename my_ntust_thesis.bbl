@@ -39,6 +39,11 @@ W.~S. McCulloch and W.~Pitts, ``A logical calculus of the ideas immanent in
   nervous activity,'' {\em The Bulletin of Mathematical Biophysics}, vol.~5,
   no.~4, pp.~115--133, 1943.
 
+\bibitem{larose2005discovering}
+D.~T. Larose, {\em Discovering knowledge in data: an introduction to data
+  mining}.
+\newblock John Wiley \& Sons, 2005.
+
 \bibitem{zhang1996birch}
 T.~Zhang, R.~Ramakrishnan, and M.~Livny, ``Birch: an efficient data clustering
   method for very large databases,'' in {\em ACM SIGMOD Record}, vol.~25,

@@ -1,4 +1,4 @@
-This is XeTeX, Version 3.1415926-2.5-0.9999.3 (TeX Live 2013) (format=xelatex 2013.12.14)  29 MAY 2014 16:57
+This is XeTeX, Version 3.1415926-2.5-0.9999.3 (TeX Live 2013) (format=xelatex 2013.12.14)  29 MAY 2014 17:34
 entering extended mode
  restricted \write18 enabled.
  file:line:error style messages enabled.
@@ -1380,12 +1380,12 @@ File: se-ascii-print.def 2011/12/02 v1.10 stringenc: Printable ASCII characters
 [1
 
 ]
-Underfull \hbox (badness 10000) detected at line 321
+Underfull \hbox (badness 10000) detected at line 323
 \EU1/標楷體(0)/m/n/12 學 生：| 
  []
 
 
-Underfull \hbox (badness 10000) detected at line 324
+Underfull \hbox (badness 10000) detected at line 326
 \EU1/標楷體(0)/m/n/12 指 導 教 授：| 
  []
 
@@ -1396,15 +1396,19 @@ Package Fancyhdr Warning: \headheight is too small (12.0pt):
  We now make it that large for the rest of the document.
  This may cause the page layout to be inconsistent, however.
 
-[1] (./frontpages/my_eabstract.tex)
+[1
+
+] (./frontpages/my_eabstract.tex)
 
 Package Fancyhdr Warning: \headheight is too small (12.0pt): 
  Make it at least 16.0pt.
  We now make it that large for the rest of the document.
  This may cause the page layout to be inconsistent, however.
 
-[2]
-Underfull \hbox (badness 10000) detected at line 452
+[2
+
+]
+Underfull \hbox (badness 10000) detected at line 456
 \EU1/標楷體(0)/bx/n/20.74 誌 謝
  []
 
@@ -1418,7 +1422,7 @@ Package Fancyhdr Warning: \headheight is too small (12.0pt):
 [3
 
 ]
-Underfull \hbox (badness 10000) detected at line 470
+Underfull \hbox (badness 10000) detected at line 476
 \EU1/標楷體(0)/bx/n/20.74 目 錄
  []
 
@@ -1438,6 +1442,15 @@ LaTeX Font Info:    Try loading font information for U+rsfs on input line 1.
 (/usr/local/texlive/2013/texmf-dist/tex/latex/jknapltx/ursfs.fd
 File: ursfs.fd 1998/03/24 rsfs font definition file (jk)
 )
+Overfull \hbox (1.15817pt too wide) detected at line 5
+ \EU1/TimesNewRoman(0)/m/n/12 VII
+ []
+
+
+Overfull \hbox (5.15427pt too wide) detected at line 6
+ \EU1/TimesNewRoman(0)/m/n/12 VIII
+ []
+
 
 Package Fancyhdr Warning: \headheight is too small (12.0pt): 
  Make it at least 16.0pt.
@@ -1445,6 +1458,7 @@ Package Fancyhdr Warning: \headheight is too small (12.0pt):
  This may cause the page layout to be inconsistent, however.
 
 [4
+
 
 ]
 
@@ -1465,7 +1479,7 @@ Package Fancyhdr Warning: \headheight is too small (12.0pt):
  This may cause the page layout to be inconsistent, however.
 
 [6]
-Underfull \hbox (badness 10000) detected at line 486
+Underfull \hbox (badness 10000) detected at line 494
 \EU1/標楷體(0)/bx/n/20.74 圖 目 錄
  []
 
@@ -1482,8 +1496,9 @@ Package Fancyhdr Warning: \headheight is too small (12.0pt):
 
 [7
 
+
 ]
-Underfull \hbox (badness 10000) detected at line 499
+Underfull \hbox (badness 10000) detected at line 509
 \EU1/標楷體(0)/bx/n/20.74 表 目 錄
  []
 
@@ -1499,6 +1514,7 @@ Package Fancyhdr Warning: \headheight is too small (12.0pt):
  This may cause the page layout to be inconsistent, however.
 
 [8
+
 
 ]) (./sections/introduction.tex
 Chapter 1.
@@ -1541,8 +1557,7 @@ Package Fancyhdr Warning: \headheight is too small (12.0pt):
 
 [5]
 Chapter 2.
-File: figures/dyna_rm.eps Graphic file (type eps)
-<figures/dyna_rm.eps>
+) (./sections/database.tex
 
 Package Fancyhdr Warning: \headheight is too small (12.0pt): 
  Make it at least 16.0pt.
@@ -1551,21 +1566,7 @@ Package Fancyhdr Warning: \headheight is too small (12.0pt):
 
 [6
 
-]) (./sections/database.tex
-
-Package Fancyhdr Warning: \headheight is too small (12.0pt): 
- Make it at least 16.0pt.
- We now make it that large for the rest of the document.
- This may cause the page layout to be inconsistent, however.
-
-[7]
-
-Package Fancyhdr Warning: \headheight is too small (12.0pt): 
- Make it at least 16.0pt.
- We now make it that large for the rest of the document.
- This may cause the page layout to be inconsistent, however.
-
-[8]
+]
 Chapter 3.
 File: figures/trad-school-buildings.png Graphic file (type QTm)
 <use  "figures/trad-school-buildings.png" >
@@ -1575,7 +1576,7 @@ Package Fancyhdr Warning: \headheight is too small (12.0pt):
  We now make it that large for the rest of the document.
  This may cause the page layout to be inconsistent, however.
 
-[9
+[7
 
 ]
 
@@ -1584,7 +1585,21 @@ Package Fancyhdr Warning: \headheight is too small (12.0pt):
  We now make it that large for the rest of the document.
  This may cause the page layout to be inconsistent, however.
 
-[10]
+[8]
+
+Package Fancyhdr Warning: \headheight is too small (12.0pt): 
+ Make it at least 16.0pt.
+ We now make it that large for the rest of the document.
+ This may cause the page layout to be inconsistent, however.
+
+[9]
+
+Package Fancyhdr Warning: \headheight is too small (12.0pt): 
+ Make it at least 16.0pt.
+ We now make it that large for the rest of the document.
+ This may cause the page layout to be inconsistent, however.
+
+[10]) (./sections/method.tex
 
 Package Fancyhdr Warning: \headheight is too small (12.0pt): 
  Make it at least 16.0pt.
@@ -1592,20 +1607,6 @@ Package Fancyhdr Warning: \headheight is too small (12.0pt):
  This may cause the page layout to be inconsistent, however.
 
 [11]
-
-Package Fancyhdr Warning: \headheight is too small (12.0pt): 
- Make it at least 16.0pt.
- We now make it that large for the rest of the document.
- This may cause the page layout to be inconsistent, however.
-
-[12]) (./sections/method.tex
-
-Package Fancyhdr Warning: \headheight is too small (12.0pt): 
- Make it at least 16.0pt.
- We now make it that large for the rest of the document.
- This may cause the page layout to be inconsistent, however.
-
-[13]
 Chapter 4.
 File: figures/1196px-CRISP-DM_Process_Diagram.png Graphic file (type QTm)
 <use  "figures/1196px-CRISP-DM_Process_Diagram.png" >
@@ -1615,7 +1616,7 @@ Package Fancyhdr Warning: \headheight is too small (12.0pt):
  We now make it that large for the rest of the document.
  This may cause the page layout to be inconsistent, however.
 
-[14
+[12
 
 ]
 
@@ -1624,7 +1625,24 @@ Package Fancyhdr Warning: \headheight is too small (12.0pt):
  We now make it that large for the rest of the document.
  This may cause the page layout to be inconsistent, however.
 
+[13]
+
+Package Fancyhdr Warning: \headheight is too small (12.0pt): 
+ Make it at least 16.0pt.
+ We now make it that large for the rest of the document.
+ This may cause the page layout to be inconsistent, however.
+
+[14]
+
+Package Fancyhdr Warning: \headheight is too small (12.0pt): 
+ Make it at least 16.0pt.
+ We now make it that large for the rest of the document.
+ This may cause the page layout to be inconsistent, however.
+
 [15]
+
+LaTeX Warning: Command \nobreakspace invalid in math mode on input line 59.
+
 
 Package Fancyhdr Warning: \headheight is too small (12.0pt): 
  Make it at least 16.0pt.
@@ -1632,6 +1650,8 @@ Package Fancyhdr Warning: \headheight is too small (12.0pt):
  This may cause the page layout to be inconsistent, however.
 
 [16]
+File: figures/anns-network.png Graphic file (type QTm)
+ <use  "figures/anns-network.png" >
 
 Package Fancyhdr Warning: \headheight is too small (12.0pt): 
  Make it at least 16.0pt.
@@ -1639,9 +1659,6 @@ Package Fancyhdr Warning: \headheight is too small (12.0pt):
  This may cause the page layout to be inconsistent, however.
 
 [17]
-
-LaTeX Warning: Command \nobreakspace invalid in math mode on input line 59.
-
 
 Package Fancyhdr Warning: \headheight is too small (12.0pt): 
  Make it at least 16.0pt.
@@ -1656,6 +1673,9 @@ Package Fancyhdr Warning: \headheight is too small (12.0pt):
  This may cause the page layout to be inconsistent, however.
 
 [19]
+Missing character: There is no （ in font Times New Roman/OT:script=latn;languag
+e=DFLT;mapping=tex-text;!
+) (./sections/aseicmic-ability.tex
 
 Package Fancyhdr Warning: \headheight is too small (12.0pt): 
  Make it at least 16.0pt.
@@ -1663,23 +1683,6 @@ Package Fancyhdr Warning: \headheight is too small (12.0pt):
  This may cause the page layout to be inconsistent, however.
 
 [20]
-Missing character: There is no （ in font Times New Roman/OT:script=latn;languag
-e=DFLT;mapping=tex-text;!
-
-
-Package Fancyhdr Warning: \headheight is too small (12.0pt): 
- Make it at least 16.0pt.
- We now make it that large for the rest of the document.
- This may cause the page layout to be inconsistent, however.
-
-[21]) (./sections/aseicmic-ability.tex
-
-Package Fancyhdr Warning: \headheight is too small (12.0pt): 
- Make it at least 16.0pt.
- We now make it that large for the rest of the document.
- This may cause the page layout to be inconsistent, however.
-
-[22]
 Chapter 5.
 
 Package Fancyhdr Warning: \headheight is too small (12.0pt): 
@@ -1687,9 +1690,23 @@ Package Fancyhdr Warning: \headheight is too small (12.0pt):
  We now make it that large for the rest of the document.
  This may cause the page layout to be inconsistent, however.
 
-[23
+[21
 
 ]
+
+Package Fancyhdr Warning: \headheight is too small (12.0pt): 
+ Make it at least 16.0pt.
+ We now make it that large for the rest of the document.
+ This may cause the page layout to be inconsistent, however.
+
+[22]
+
+Package Fancyhdr Warning: \headheight is too small (12.0pt): 
+ Make it at least 16.0pt.
+ We now make it that large for the rest of the document.
+ This may cause the page layout to be inconsistent, however.
+
+[23]
 
 Package Fancyhdr Warning: \headheight is too small (12.0pt): 
  Make it at least 16.0pt.
@@ -1739,6 +1756,10 @@ Package Fancyhdr Warning: \headheight is too small (12.0pt):
  This may cause the page layout to be inconsistent, however.
 
 [30]
+Overfull \hbox (7.3571pt too wide) in paragraph at lines 132--145
+ [] 
+ []
+
 
 Package Fancyhdr Warning: \headheight is too small (12.0pt): 
  Make it at least 16.0pt.
@@ -1746,10 +1767,6 @@ Package Fancyhdr Warning: \headheight is too small (12.0pt):
  This may cause the page layout to be inconsistent, however.
 
 [31]
-Overfull \hbox (7.3571pt too wide) in paragraph at lines 132--145
- [] 
- []
-
 
 Package Fancyhdr Warning: \headheight is too small (12.0pt): 
  Make it at least 16.0pt.
@@ -1892,14 +1909,14 @@ Package Fancyhdr Warning: \headheight is too small (12.0pt):
  We now make it that large for the rest of the document.
  This may cause the page layout to be inconsistent, however.
 
-[51]) (./sections/retrofit-cost.tex
+[51]
 
 Package Fancyhdr Warning: \headheight is too small (12.0pt): 
  Make it at least 16.0pt.
  We now make it that large for the rest of the document.
  This may cause the page layout to be inconsistent, however.
 
-[52]
+[52]) (./sections/retrofit-cost.tex
 
 Package Fancyhdr Warning: \headheight is too small (12.0pt): 
  Make it at least 16.0pt.
@@ -2051,11 +2068,11 @@ Package atveryend Info: Empty hook `AtVeryVeryEnd' on input line 92.
  ) 
 Here is how much of TeX's memory you used:
  27294 strings out of 493938
- 531058 string characters out of 6148856
- 569218 words of memory out of 5000000
+ 531087 string characters out of 6148856
+ 568153 words of memory out of 5000000
  30210 multiletter control sequences out of 15000+600000
  13323 words of font info for 89 fonts, out of 8000000 for 9000
  1144 hyphenation exceptions out of 8191
- 46i,12n,48p,2467b,464s stack positions out of 5000i,500n,10000p,200000b,80000s
+ 46i,12n,48p,2467b,513s stack positions out of 5000i,500n,10000p,200000b,80000s
 
 Output written on my_ntust_thesis.pdf (76 pages).
