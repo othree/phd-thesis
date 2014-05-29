@@ -1,4 +1,4 @@
-This is XeTeX, Version 3.1415926-2.5-0.9999.3 (TeX Live 2013) (format=xelatex 2013.12.14)  29 MAY 2014 18:11
+This is XeTeX, Version 3.1415926-2.5-0.9999.3 (TeX Live 2013) (format=xelatex 2013.12.14)  29 MAY 2014 18:23
 entering extended mode
  restricted \write18 enabled.
  file:line:error style messages enabled.
@@ -2078,7 +2078,7 @@ Package atveryend Info: Empty hook `AtVeryVeryEnd' on input line 96.
 Here is how much of TeX's memory you used:
  27414 strings out of 493938
  532984 string characters out of 6148856
- 569891 words of memory out of 5000000
+ 570891 words of memory out of 5000000
  30323 multiletter control sequences out of 15000+600000
  13323 words of font info for 89 fonts, out of 8000000 for 9000
  1144 hyphenation exceptions out of 8191
