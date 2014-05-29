@@ -312,19 +312,18 @@
 % Set the line spacing to single for the names (to compress the lines)
 \renewcommand{\baselinestretch}{1}   %行距 1 倍
 % it needs a font size changing command to be effective
-%\large{\cTitle}\\  %中文題目
-%\vspace{0.83cm}
+\LARGE{\textbf{\cTitle}}\\  %中文題目
+\vspace{0.83cm}
 % \makebox is a text box with specified width;
 % option s: stretch
 % use \makebox to make sure
 % each text field occupies the same width
-%\makebox[1.5cm][s]{\large{學生：}}
-%\makebox[3cm][l]{\large{\myCname}} %學生中文姓名
-%\hfill
-%
-%\makebox[3cm][s]{\large{指導教授：}}
-%\makebox[3cm][l]{\large{\advisorCnameA}} \\ %教授A中文姓名
-%
+\makebox[3cm][s]{\normalsize{學生：}}
+\makebox[2.5cm][l]{\normalsize{\myCname}} \\ %學生中文姓名
+
+\makebox[3cm][s]{\normalsize{指導教授：}}
+\makebox[2.5cm][l]{\normalsize{\advisorCnameA}} \\ %教授A中文姓名
+
 % 判斷是否有共同指導的教授 B
 \ifx \advisorCnameB  \itsempty
 \relax % 沒有 B 教授，所以不佔版面，不印任何空白
@@ -353,9 +352,9 @@
 \vspace{0.38cm}
 %
 %\large{\univCname}\large{\deptCname}\\ %校名系所名
-%\vspace{0.83cm}
+\vspace{0.83cm}
 %\vfill
-\makebox[2.5cm][c	]{\Large{中文摘要}}\\
+\makebox[2.5cm][c]{\Large{中文摘要}}\\
 \end{center}
 % Resume the line spacing to the desired setting
 \renewcommand{\baselinestretch}{\mybaselinestretch}   %恢復原設定
@@ -382,18 +381,18 @@
 % Set the line spacing to single for the names (to compress the lines)
 \renewcommand{\baselinestretch}{1}   %行距 1 倍
 %\large % it needs a font size changing command to be effective
-%\large{\eTitle}\\  %英文題目
-%\vspace{0.83cm}
+\large{\textbf{\eTitle}}\\  %英文題目
+\vspace{0.83cm}
 % \makebox is a text box with specified width;
 % option s: stretch
 % use \makebox to make sure
 % each text field occupies the same width
-%\makebox[2cm][s]{\large{Student: }}
-%\makebox[5cm][l]{\large{\myEname}} %學生英文姓名
+\makebox[1.7cm][s]{\normalsize{Student: }}
+\makebox[4cm][l]{\normalsize{\myEname}} \\ %學生英文姓名
 %\hfill
 %
-%\makebox[2cm][s]{\large{Advisor: }}
-%\makebox[5cm][l]{\large{\advisorEnameA}} \\ %教授A英文姓名
+\makebox[1.7cm][s]{\normalsize{Advisor: }}
+\makebox[4cm][l]{\normalsize{\advisorEnameA}} \\ %教授A英文姓名
 %
 % 判斷是否有共同指導的教授 B
 \ifx \advisorCnameB  \itsempty
@@ -430,7 +429,7 @@
 \fi
 %
 %\large{\univEname}\\  %英文校名
-%\vspace{0.83cm}
+\vspace{0.83cm}
 %\vfill
 %
 \large{ABSTRACT}\\
