@@ -299,7 +299,15 @@ where n is the number of datasets, $y$ is the estimated value obtained from the 
 ``÷'' 代表 $f = x_1 / x_2$; \\ \indent
 ``pow'' 代表次方函數 $f = {x_1} ^ {x_2}$
 
-結果使用~GP~方法所建立的關係模型其表現並不好，~RMSE~只能達到~0.056~，而根據圖九可以發現，其實使用~GP~方法並沒有正確的建立~$AC$~和校舍設計參數間的關係模型，因為他只使用了三個輸入參數，而且其方程式也非常的線性，可以推斷出此一個關係模型的複雜度很高，而~GP~方法並不能正確的找出這個關係。
+結果使用~GP~方法所建立的關係模型其表現並不好，~RMSE~只能達到~0.056~，而根據圖~\ref{fig:4LGP}~可以發現，其實使用~GP~方法並沒有正確的建立~$AC$~和校舍設計參數間的關係模型，因為他只使用了三個輸入參數，而且其方程式也非常的線性，可以推斷出此一個關係模型的複雜度很高，而~GP~方法並不能正確的找出這個關係。
+
+\begin{figure}[hbtp]
+  \begin{center}
+    \includegraphics[width=1.0\textwidth]{figures/4-layer-gp.png}
+    \caption{Four Layer GP Structure for Aseismic Programming} 
+    \label{fig:4LGP}
+  \end{center}
+\end{figure}
 
 The performance of this model is not ideal because the RMSE can only reach 0.056. Based on Figure 9, the relationship model generated did not correctly build the relationship between the design parameters of school buildings, and ground acceleration of the minimum destruction. As only three input parameters were used, it resulted in the minimum equation as the linear equation. This can be attributed to the fact that this seismic ability model for school buildings has high complexity, and the application of GP pattern alone cannot obtain the relationship between them. The WGP pattern was then used to build the relationship equation between the design parameters of school buildings, and ground acceleration of the minimum destruction because it could be used for relationships that are more complex than with the GP pattern.
 
@@ -307,7 +315,16 @@ The performance of this model is not ideal because the RMSE can only reach 0.056
 
 \subsubsection{Weighted Genetic Programming}
 
-WGP~是本分析第二個使用的方法，和~GP~一樣選擇了五層的運算樹，其他的基因演算的參數也都和~GP~分析中使用的一樣，~200~組基因演化~5000~代，交配率是~0.8~，突變率是~0.1~，而唯一不一樣的參數則是權重~$w$~的範圍，設定為~+10~到~-10~間，在此設定下分析~30~次，從中挑出表現最好的一組關係模型，其~RMSE~直在表二中，圖10是此關係模型的運算樹結構，其符號定義與~GP~方法運算樹使用的一樣，唯一不同的是黑色實心點，代表的是~$f = w_1x_1$~，此關係模型的方程式如下：
+WGP~是本分析第二個使用的方法，和~GP~一樣選擇了五層的運算樹，其他的基因演算的參數也都和~GP~分析中使用的一樣，~200~組基因演化~5000~代，交配率是~0.8~，突變率是~0.1~，而唯一不一樣的參數則是權重~$w$~的範圍，設定為~+10~到~-10~間，在此設定下分析~30~次，從中挑出表現最好的一組關係模型，其~RMSE~直在表二中，圖~\ref{fig:4LWGP}~是此關係模型的運算樹結構，其符號定義與~GP~方法運算樹使用的一樣，唯一不同的是黑色實心點，代表的是~$f = w_1x_1$~，此關係模型的方程式如下：
+
+\begin{figure}[hbtp]
+  \begin{center}
+    \includegraphics[width=1.0\textwidth]{figures/4-layer-wgp.png}
+    \caption{Four Layer WGP Structure for Aseismic Programming} 
+    \label{fig:4LWGP}
+  \end{center}
+\end{figure}
+
 
 WGP was used as the second model, which also chose five tiers of the operation tree. The optimum setting of GA is the same with GP: 200 populations of 5000 progressive iterations, a crossover rate of 0.8, and a mutation rate of 0.1. The best group was chosen after the analysis was conducted 30 times. Contrary to GP, the weight was set from +10 to -10 within the weighted (w) range. Table 2 shows the RMSE of the model generated, and the four-tier optimum equation is shown as Equation (9). The tree topology generated is displayed in Figure 10, and uses the same symbol as the GP tree topology to represent the same operator. The other symbol that was used is a black solid dot, which represents f=w1x1.
 
@@ -335,7 +352,15 @@ I is the usage coefficient that intends to keep the seismic design at the conser
 
 \begin{equation} AC = C_E + T  \label{eq:AC}\end{equation}
 
-基於之前的結果，本分析只使用~WGP~來分析，基因演算的參數也和之前一樣，~4~或~5~層的運算樹，~200~初始基因，~5000~個演化週期，交配率為~0.8~，突變率為~0.1~，訓練出~30~組模型後，從中挑選出最好的模型，結果~$T$~的模型為一個~4~層的運算樹，如圖~11。
+基於之前的結果，本分析只使用~WGP~來分析，基因演算的參數也和之前一樣，~4~或~5~層的運算樹，~200~初始基因，~5000~個演化週期，交配率為~0.8~，突變率為~0.1~，訓練出~30~組模型後，從中挑選出最好的模型，結果~$T$~的模型為一個~4~層的運算樹，如圖~\ref{fig:4LWGPTuning}。
+
+\begin{figure}[hbtp]
+  \begin{center}
+    \includegraphics[width=1.0\textwidth]{figures/4-layer-wgp.png}
+    \caption{Four Layer WGP Structure for Tuning Aseismic Ability Index} 
+    \label{fig:4LWGPTuning}
+  \end{center}
+\end{figure}
 
 Based on the analysis above, this study only uses the WGP pattern to build the model, and this can be applied to complicated situations. Parameters chosen are: the operation tree has four to five tiers, 200 populations of 5000 progressive iterations, crossover rate of 0.8, mutation rate of 0.1, and choosing the best group after the analysis was conducted 30 times. The optimum T generated from the four-tier operation tree is shown in the equation below, and the tree topology is displayed in Figure 11.
 
