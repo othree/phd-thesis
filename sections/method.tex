@@ -87,11 +87,26 @@ SVM最早是BOSER~\cite{boser1992}等人，在~1992~年的~COLT（Computational 
 
 \subsection{分群方法}
 
-\subsubsection{Two-Step Classification}
+\subsubsection{兩步分群}
 
-Based on of the massive volume of basic data for school build- ings in the database, this study chooses two-step clustering method. The basic concept was first proposed by Zhang, Ramakrishnan and Livny~\cite{zhang1996birch} for handling large amounts of data. This method has two major steps. The first step sequences data and pre-clusters sequences into small subclusters based on the similarity of adjacent data, thereby reducing the amount of data. The second step divides several small subclusters into the desired number of clusters using a hierarchical clustering method. The hierarchical clustering method then combines close subclusters slowly until the stop condition is met. The computing speed of this method is influenced slightly by the volume of data.
+modify required
+
+由於各種學術、商業研究所處理的問題資料量越來越大，分群演算法所需要的運算時間也急遽的成長，為了讓分群演算在處理大量的資料時也能有良好的效能表現，而發展出兩步分群（Two-Step Clustering），其是由~Zhang，Ramakrishnan~與~Livny\cite{zhang1996birch}~所提出，此一方法分為兩個主要步驟：第一步是先把資料依據其與相鄰資料的相適度來排序並分成數個小群集，接著第二步再使用階層式分群方法，將這些群集慢慢組合或拆分直到達成停止條件。兩步分群的演算費時和資料量呈線性關係，因此資料量成長時也不會讓運算時間成長到無法應用的程度。
+
+Based on of the massive volume of basic data for school buildings in the database, this study chooses two-step clustering method. The basic concept was first proposed by Zhang, Ramakrishnan and Livny~\cite{zhang1996birch} for handling large amounts of data. This method has two major steps. The first step sequences data and pre-clusters sequences into small subclusters based on the similarity of adjacent data, thereby reducing the amount of data. The second step divides several small subclusters into the desired number of clusters using a hierarchical clustering method. The hierarchical clustering method then combines close subclusters slowly until the stop condition is met. The computing speed of this method is influenced slightly by the volume of data.
 
 \subsubsection{K-means}
+
+K-means~是由~MacQueen\cite{macqueen67}~所提出，也是最常被使用的分群演算法之一，屬於機器學習方法，其主要步驟為：
+
+\begin{enumerate}
+\item 使用者決定要將資料分為幾個群集，群集數為~$K$~。
+\item 將資料隨機分到~$K$~個群組，並且計算出此時分群狀態下的每個群組的中心點。
+\item 講每個資料點重新分群到，選擇群組中心離它最近的那個群組。
+\item 用新的分群狀態計算出新的群組中心點。
+\item 重複步驟~3~和~4~直到每個資料的群組都穩定不再有變化。
+\end{enumerate}
+
 
 As proposed by MacQueen~\cite{macqueen67}, K-means is one of the most common clustering methods and has a wide application scope. Notably, it is a machine learning method; its principal steps are as follows.
 
