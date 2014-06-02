@@ -44,6 +44,37 @@ W.~S. McCulloch and W.~Pitts, ``A logical calculus of the ideas immanent in
   nervous activity,'' {\em The Bulletin of Mathematical Biophysics}, vol.~5,
   no.~4, pp.~115--133, 1943.
 
+\bibitem{holland1975adaptation}
+J.~H. Holland, {\em Adaptation in natural and artificial systems: An
+  introductory analysis with applications to biology, control, and artificial
+  intelligence.}
+\newblock U Michigan Press, 1975.
+
+\bibitem{vsevsok2008global}
+D.~{\v{S}}e{\v{s}}ok and R.~Belevi{\v{c}}ius, ``Global optimization of trusses
+  with a modified genetic algorithm,'' {\em Journal of Civil Engineering and
+  management}, vol.~14, no.~3, pp.~147--154, 2008.
+
+\bibitem{koza1992genetic}
+J.~R. Koza, {\em Genetic programming: on the programming of computers by means
+  of natural selection}, vol.~1.
+\newblock MIT press, 1992.
+
+\bibitem{yeh2009knowledge}
+I.~Yeh, L.-C. Lien, {\em et~al.}, ``Knowledge discovery of concrete material
+  using genetic operation trees,'' {\em Expert Systems with Applications},
+  vol.~36, no.~3, pp.~5807--5812, 2009.
+
+\bibitem{tsai2011using}
+H.-C. Tsai, ``Using weighted genetic programming to program squat wall
+  strengths and tune associated formulas,'' {\em Engineering Applications of
+  Artificial Intelligence}, vol.~24, no.~3, pp.~526--533, 2011.
+
+\bibitem{tsai2011predicting}
+H.-C. Tsai and Y.-H. Lin, ``Predicting high-strength concrete parameters using
+  weighted genetic programming,'' {\em Engineering with Computers}, vol.~27,
+  no.~4, pp.~347--355, 2011.
+
 \bibitem{zhang1996birch}
 T.~Zhang, R.~Ramakrishnan, and M.~Livny, ``Birch: an efficient data clustering
   method for very large databases,'' in {\em ACM SIGMOD Record}, vol.~25,

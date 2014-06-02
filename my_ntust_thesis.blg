@@ -7,45 +7,45 @@ Warning--empty author in ncree03049
 Warning--empty author in ncree08035
 Warning--empty author in ncree09015
 Warning--empty author in ncree09026
-You've used 16 entries,
+You've used 22 entries,
             1876 wiz_defined-function locations,
-            569 strings with 5968 characters,
-and the built_in function-call counts, 3615 in all, are:
-= -- 361
-> -- 102
+            605 strings with 7020 characters,
+and the built_in function-call counts, 5272 in all, are:
+= -- 546
+> -- 141
 < -- 4
-+ -- 42
-- -- 26
-* -- 263
-:= -- 505
-add.period$ -- 19
-call.type$ -- 16
-change.case$ -- 13
++ -- 58
+- -- 36
+* -- 369
+:= -- 723
+add.period$ -- 27
+call.type$ -- 22
+change.case$ -- 17
 chr.to.int$ -- 0
-cite$ -- 20
-duplicate$ -- 199
-empty$ -- 369
-format.name$ -- 26
-if$ -- 897
+cite$ -- 26
+duplicate$ -- 286
+empty$ -- 532
+format.name$ -- 36
+if$ -- 1314
 int.to.chr$ -- 0
-int.to.str$ -- 16
-missing$ -- 14
-newline$ -- 54
-num.names$ -- 14
-pop$ -- 53
+int.to.str$ -- 22
+missing$ -- 22
+newline$ -- 74
+num.names$ -- 20
+pop$ -- 68
 preamble$ -- 1
 purify$ -- 0
 quote$ -- 0
-skip$ -- 119
+skip$ -- 183
 stack$ -- 0
-substring$ -- 196
-swap$ -- 73
+substring$ -- 332
+swap$ -- 113
 text.length$ -- 4
 text.prefix$ -- 0
 top$ -- 0
 type$ -- 0
 warning$ -- 4
-while$ -- 29
-width$ -- 18
-write$ -- 158
+while$ -- 47
+width$ -- 24
+write$ -- 221
 (There were 4 warnings)
