@@ -80,7 +80,7 @@ SVM最早是BOSER~\cite{boser1992}等人，在~1992~年的~COLT（Computational 
 
 \subsubsection{Genetic Programming}
 
-Genetic Algorithm是1975年由 John Holland\cite{holland1975adaptation}~所提出的演化求解方法，其是基於生物演化的過程為基礎，假設問題的目標可以轉換為二元的基因序列，再透過模擬生物交配、突變的進化過程，求得最佳化問題的解，和傳統的演化求解方法相比，基因演算法可以比較容易的找到全域最佳解，且其可以快速的找到足夠好的解，即使問題的複雜度很高。Genetic Algorithm 的應用領域相當廣泛，在營建領域也有不少的應用，Huang...et. al.\ref{minshui2009study}~就使用GA預測梁模型受力後會產生破壞的位置極其嚴重性，Šešok和Belevicius\cite{vsevsok2008global}~則使用GA建立一個truss topology最佳化的建議系統。
+Genetic Algorithm是1975年由 John Holland\cite{holland1975adaptation}~所提出的演化求解方法，其是基於生物演化的過程為基礎，假設問題的目標可以轉換為二元的基因序列，再透過模擬生物交配、突變的進化過程，求得最佳化問題的解，和傳統的演化求解方法相比，基因演算法可以比較容易的找到全域最佳解，且其可以快速的找到足夠好的解，即使問題的複雜度很高。Genetic Algorithm 的應用領域相當廣泛，在營建領域也有不少的應用，Huang...et. al.\cite{minshui2009study}~就使用GA預測梁模型受力後會產生破壞的位置極其嚴重性，Šešok和Belevicius\cite{vsevsok2008global}~則使用GA建立一個truss topology最佳化的建議系統。
 
 Genetic Programming 是 1992 年由 Koza\cite{koza1992genetic}~所發表的方法，它是基於發展許久的基因演算法而來，將基因演算法所要演進發展的基因序列換為樹狀結構的分析樹(parse tree)，並藉由與基因演算法相同概念的交配、突變和篩選等機制來達成解析樹的演化，並達成最佳化目標，如果要求得一數學關係方程式，則可以使用運算樹(Operation Tree)作為欲演進的解析樹結構。運算樹是一個二元樹結構，如Fig. 5，其底層的末端點是方程樹的輸入變數或是其它常數、數值等，其餘的分支節點都是運算子(operator)，藉由置換各個節點的輸入數值和運算子，就可以組成各種可能的數學方程式。此一方法的特色是其輸出即為輸入和輸出的關係方程式，且其方程式之形式不受限於基因演算法之特性。在營建領域使用 GP 加上運算樹進行最佳化的應用少有人做，Yeh and Lien\cite{yeh2009knowledge}~使用GP方法來預測混凝土強度。Tsai\cite{tsai2011using}~則使用WGP方法建立出squat wall strengths的方程式，並且還利用一些修剪公式的方法來調整得到的公式，讓公式可以更精簡，但是還保留有一定程度的經度。
 
@@ -88,7 +88,19 @@ Genetic Programming 是 1992 年由 Koza\cite{koza1992genetic}~所發表的方�
 
 \subsubsection{Weighted Genetic Programming}
 
-Weighted Genetic Programming 是由Tsai\cite{tsai2011predicting}~所提出，基於 Genetic Programming 方法發展而來，不同之處在於其運算樹的每個節點前都加上一個權重w，最佳化的過程除了對方程式結構和參數的選擇最佳化外，還要同時最佳化所有的權重，因此其輸出的關係公式可能性遠大於Genetic Programming方法，故可以處理更為複雜的問題。Weighted Genetic Programming的運算樹結構如Fig. 6，每個運算樹都可以組成一個數學方程式，如Fig. 6此一運算樹即可組成方程式( 3 )。
+Weighted Genetic Programming 是由Tsai\cite{tsai2011predicting}~所提出，基於 Genetic Programming 方法發展而來，不同之處在於其運算樹的每個節點前都加上一個權重~$w$~，最佳化的過程除了對方程式結構和參數的選擇最佳化外，還要同時最佳化所有的權重，因此其輸出的關係公式可能性遠大於Genetic Programming方法，故可以處理更為複雜的問題。Weighted Genetic Programming~的運算樹結構如圖~\ref{fig:WGP-sample}，每個運算樹都可以組成一個數學方程式，如圖~\ref{fig:WGP-sample}~之運算樹即可組成方程式如下：
+
+\begin{equation} w_1(w_3(\dfrac{w_7P_2}{w_8P_6}) - w_4sin(w_9c))+w_2 \times cos(w_{12}c \times w_{11}P_1) \label{eq:WGP-sample}\end{equation} 
+
+
+\begin{figure}[hbtp]
+  \begin{center}
+    \includegraphics[width=1.0\textwidth]{figures/wgp-sample.pdf}
+    \caption{WGP Structure} 
+    \label{fig:WGP-sample}
+  \end{center}
+\end{figure}
+
 
 運算樹可以分為兩種層級，運算層全部都是運算子節點，輸入層則是輸入參數的選擇，運算層每多一層，需要最佳化的節點和權重都會以等比例成長，運算層的層數也影響到最佳化結果的方程式複雜度，而輸入層則全部都是輸入節點，每層之間的每個連結都有一個權重參數，這些權重即為 WGP 方法最大的特色，這些權重可以讓運算樹組成的方程式有無限多種，也可以用以表示不同參數的重要性，因此雖然加入權重會讓最佳化更費時間，但仍然值得加上權重。
 

@@ -15,7 +15,7 @@
 \contentsline {subsection}{\numberline {3.2.1}初步評估}{10}{subsection.3.2.1}
 \contentsline {subsection}{\numberline {3.2.2}詳細評估}{10}{subsection.3.2.2}
 \contentsline {subsection}{\numberline {3.2.3}補強設計}{12}{subsection.3.2.3}
-\contentsline {subsection}{\numberline {3.2.4}補強工程}{13}{subsection.3.2.4}
+\contentsline {subsection}{\numberline {3.2.4}補強工程}{12}{subsection.3.2.4}
 \contentsline {chapter}{\numberline {4}資料探勘}{14}{chapter.4}
 \contentsline {section}{\numberline {4.1}資料前處理方法}{17}{section.4.1}
 \contentsline {subsubsection}{主成分分析}{17}{section*.14}
@@ -26,34 +26,34 @@
 \contentsline {subsubsection}{類神經網路}{19}{section*.17}
 \contentsline {subsubsection}{Genetic Programming}{19}{section*.19}
 \contentsline {subsubsection}{Weighted Genetic Programming}{20}{section*.20}
-\contentsline {subsection}{\numberline {4.2.2}分群方法}{22}{subsection.4.2.2}
-\contentsline {subsubsection}{兩步分群}{22}{section*.21}
-\contentsline {subsubsection}{K-means}{23}{section*.22}
-\contentsline {section}{\numberline {4.3}探勘結果驗證方法與指標}{24}{section.4.3}
-\contentsline {subsection}{\numberline {4.3.1}驗證方法}{24}{subsection.4.3.1}
-\contentsline {subsubsection}{10 fold cross validation}{24}{section*.23}
-\contentsline {subsection}{\numberline {4.3.2}結果指標}{24}{subsection.4.3.2}
-\contentsline {subsubsection}{決定係數 Coefficient of determination}{24}{section*.24}
-\contentsline {subsubsection}{平均絕對百分比誤差 MAPE}{25}{section*.25}
-\contentsline {subsubsection}{均方根誤差 RMSE}{25}{section*.26}
-\contentsline {subsubsection}{命中率 Hit Rate}{25}{section*.27}
+\contentsline {subsection}{\numberline {4.2.2}分群方法}{23}{subsection.4.2.2}
+\contentsline {subsubsection}{兩步分群}{23}{section*.22}
+\contentsline {subsubsection}{K-means}{24}{section*.23}
+\contentsline {section}{\numberline {4.3}探勘結果驗證方法與指標}{25}{section.4.3}
+\contentsline {subsection}{\numberline {4.3.1}驗證方法}{25}{subsection.4.3.1}
+\contentsline {subsubsection}{10 fold cross validation}{25}{section*.24}
+\contentsline {subsection}{\numberline {4.3.2}結果指標}{25}{subsection.4.3.2}
+\contentsline {subsubsection}{決定係數 Coefficient of determination}{25}{section*.25}
+\contentsline {subsubsection}{平均絕對百分比誤差 MAPE}{25}{section*.26}
+\contentsline {subsubsection}{均方根誤差 RMSE}{26}{section*.27}
+\contentsline {subsubsection}{命中率 Hit Rate}{26}{section*.28}
 \contentsline {chapter}{\numberline {5}校舍資訊與耐震能力之關係模型}{27}{chapter.5}
 \contentsline {section}{\numberline {5.1}Is 值與校舍設計之關係模型}{28}{section.5.1}
 \contentsline {subsection}{\numberline {5.1.1}資料前處理}{28}{subsection.5.1.1}
-\contentsline {subsubsection}{K-means}{30}{section*.28}
-\contentsline {subsubsection}{Two-Step}{31}{section*.29}
+\contentsline {subsubsection}{K-means}{30}{section*.29}
+\contentsline {subsubsection}{Two-Step}{31}{section*.30}
 \contentsline {subsection}{\numberline {5.1.2}資料探勘}{32}{subsection.5.1.2}
-\contentsline {subsubsection}{Generalized linear model}{32}{section*.30}
-\contentsline {subsubsection}{Simple regression}{33}{section*.31}
-\contentsline {subsubsection}{Artificial neural networks}{33}{section*.32}
+\contentsline {subsubsection}{Generalized linear model}{32}{section*.31}
+\contentsline {subsubsection}{Simple regression}{33}{section*.32}
+\contentsline {subsubsection}{Artificial neural networks}{33}{section*.33}
 \contentsline {subsection}{\numberline {5.1.3}驗證}{34}{subsection.5.1.3}
 \contentsline {subsection}{\numberline {5.1.4}結果}{35}{subsection.5.1.4}
 \contentsline {section}{\numberline {5.2}CDR 值與校舍設計之關係模型}{39}{section.5.2}
 \contentsline {subsection}{\numberline {5.2.1}資料前處理}{39}{subsection.5.2.1}
 \contentsline {subsection}{\numberline {5.2.2}資料探勘}{45}{subsection.5.2.2}
-\contentsline {subsubsection}{Genetic Programming}{45}{section*.35}
-\contentsline {subsubsection}{Weighted Genetic Programming}{49}{section*.37}
-\contentsline {subsubsection}{Capacity Index Formulation Tuning}{51}{section*.39}
+\contentsline {subsubsection}{Genetic Programming}{45}{section*.36}
+\contentsline {subsubsection}{Weighted Genetic Programming}{49}{section*.38}
+\contentsline {subsubsection}{Capacity Index Formulation Tuning}{51}{section*.40}
 \contentsline {subsection}{\numberline {5.2.3}結果}{53}{subsection.5.2.3}
 \contentsline {section}{\numberline {5.3}D\_isR 值與校舍設計之關係模型}{56}{section.5.3}
 \contentsline {subsection}{\numberline {5.3.1}資料前處理}{57}{subsection.5.3.1}
@@ -70,6 +70,6 @@
 \contentsline {chapter}{\numberline {8}結論與討論}{73}{chapter.8}
 \contentsline {section}{\numberline {8.1}結論}{73}{section.8.1}
 \contentsline {section}{\numberline {8.2}未來展望}{73}{section.8.2}
-\contentsline {chapter}{參考文獻}{74}{section*.44}
-\contentsline {chapter}{授權書}{77}{section*.46}
+\contentsline {chapter}{參考文獻}{74}{section*.45}
+\contentsline {chapter}{授權書}{77}{section*.47}
 \contentsfinish 

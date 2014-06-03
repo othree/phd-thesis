@@ -1,4 +1,4 @@
-This is XeTeX, Version 3.1415926-2.5-0.9999.3 (TeX Live 2013) (format=xelatex 2013.12.14)  3 JUN 2014 18:18
+This is XeTeX, Version 3.1415926-2.5-0.9999.3 (TeX Live 2013) (format=xelatex 2013.12.14)  4 JUN 2014 01:19
 entering extended mode
  restricted \write18 enabled.
  file:line:error style messages enabled.
@@ -1617,14 +1617,14 @@ Package Fancyhdr Warning: \headheight is too small (12.0pt):
  We now make it that large for the rest of the document.
  This may cause the page layout to be inconsistent, however.
 
-[11]
+[11]) (./sections/method.tex
 
 Package Fancyhdr Warning: \headheight is too small (12.0pt): 
  Make it at least 16.0pt.
  We now make it that large for the rest of the document.
  This may cause the page layout to be inconsistent, however.
 
-[12]) (./sections/method.tex
+[12]
 
 Package Fancyhdr Warning: \headheight is too small (12.0pt): 
  Make it at least 16.0pt.
@@ -1678,8 +1678,8 @@ Package Fancyhdr Warning: \headheight is too small (12.0pt):
 File: figures/anns-network.png Graphic file (type QTm)
  <use  "figures/anns-network.png" >
 
-LaTeX Warning: Reference `minshui2009study' on page 19 undefined on input line 
-83.
+LaTeX Warning: Citation `minshui2009study' on page 19 undefined on input line 8
+3.
 
 
 Package Fancyhdr Warning: \headheight is too small (12.0pt): 
@@ -1695,6 +1695,8 @@ Package Fancyhdr Warning: \headheight is too small (12.0pt):
  This may cause the page layout to be inconsistent, however.
 
 [20]
+File: figures/wgp-sample.pdf Graphic file (type QTm)
+ <use  "figures/wgp-sample.pdf" >
 
 Package Fancyhdr Warning: \headheight is too small (12.0pt): 
  Make it at least 16.0pt.
@@ -1723,16 +1725,16 @@ Package Fancyhdr Warning: \headheight is too small (12.0pt):
  This may cause the page layout to be inconsistent, however.
 
 [24]
-Missing character: There is no （ in font Times New Roman/OT:script=latn;languag
-e=DFLT;mapping=tex-text;!
-
 
 Package Fancyhdr Warning: \headheight is too small (12.0pt): 
  Make it at least 16.0pt.
  We now make it that large for the rest of the document.
  This may cause the page layout to be inconsistent, however.
 
-[25]) (./sections/aseicmic-ability.tex
+[25]
+Missing character: There is no （ in font Times New Roman/OT:script=latn;languag
+e=DFLT;mapping=tex-text;!
+) (./sections/aseicmic-ability.tex
 
 Package Fancyhdr Warning: \headheight is too small (12.0pt): 
  Make it at least 16.0pt.
@@ -2161,10 +2163,10 @@ LaTeX Warning: There were multiply-defined labels.
 Package atveryend Info: Empty hook `AtVeryVeryEnd' on input line 97.
  ) 
 Here is how much of TeX's memory you used:
- 27434 strings out of 493938
- 533301 string characters out of 6148856
- 571604 words of memory out of 5000000
- 30340 multiletter control sequences out of 15000+600000
+ 27438 strings out of 493938
+ 533368 string characters out of 6148856
+ 571711 words of memory out of 5000000
+ 30343 multiletter control sequences out of 15000+600000
  13323 words of font info for 89 fonts, out of 8000000 for 9000
  1144 hyphenation exceptions out of 8191
  46i,12n,48p,2467b,513s stack positions out of 5000i,500n,10000p,200000b,80000s
