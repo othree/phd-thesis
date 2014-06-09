@@ -6,11 +6,15 @@
 \addvspace {10\p@ }
 \contentsline {figure}{\numberline {4.1}{\ignorespaces CRISP-DM 流程圖 (c)Kenneth Jensen, CC BY-SA 3.0\relax }}{15}{figure.caption.13}
 \contentsline {figure}{\numberline {4.2}{\ignorespaces 類神經網路結構圖\nobreakspace {}\cite {larose2005discovering}\relax }}{19}{figure.caption.18}
-\contentsline {figure}{\numberline {4.3}{\ignorespaces WGP Structure\relax }}{21}{figure.caption.21}
+\contentsline {figure}{\numberline {4.3}{\ignorespaces Genetic Programming Opetation Tree Structure\relax }}{21}{figure.caption.20}
+\contentsline {figure}{\numberline {4.4}{\ignorespaces WGP Structure\relax }}{22}{figure.caption.22}
+\contentsline {figure}{\numberline {4.5}{\ignorespaces Unit elements of GP system\relax }}{23}{figure.caption.23}
+\contentsline {subfigure}{\numberline {(a)}{\ignorespaces {GP}}}{23}{figure.caption.23}
+\contentsline {subfigure}{\numberline {(b)}{\ignorespaces {WGP}}}{23}{figure.caption.23}
 \addvspace {10\p@ }
-\contentsline {figure}{\numberline {5.1}{\ignorespaces Four Layer GP Structure for Aseismic Programming\relax }}{48}{figure.caption.37}
-\contentsline {figure}{\numberline {5.2}{\ignorespaces Four Layer WGP Structure for Aseismic Programming\relax }}{49}{figure.caption.39}
-\contentsline {figure}{\numberline {5.3}{\ignorespaces Four Layer WGP Structure for Tuning Aseismic Ability Index\relax }}{52}{figure.caption.41}
+\contentsline {figure}{\numberline {5.1}{\ignorespaces Four Layer GP Structure for Aseismic Programming\relax }}{40}{figure.caption.39}
+\contentsline {figure}{\numberline {5.2}{\ignorespaces Four Layer WGP Structure for Aseismic Programming\relax }}{42}{figure.caption.41}
+\contentsline {figure}{\numberline {5.3}{\ignorespaces Four Layer WGP Structure for Tuning Aseismic Ability Index\relax }}{43}{figure.caption.43}
 \addvspace {10\p@ }
 \addvspace {10\p@ }
 \addvspace {10\p@ }

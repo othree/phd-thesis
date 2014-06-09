@@ -37,7 +37,9 @@
 
 \subsubsection{主成分分析}
 
-PCA, a very common data preparation method, can identify very important attributes among various attributes. The goal is to convert the original variables through vector transition into mutually independent variables of a linear combination. The ideal situation is that principal components obtained from linear combination retain most of the information of original variables.
+主成分分析（Principal Component Analysis）是常見的前處理方法，它可以用來減少資料的維度，其原理是透過向量轉換，將原始的資料轉換成不同維度的屬性資料，且能保持最大量的，輸入屬性對於輸出屬性的貢獻。
+
+% PCA, a very common data preparation method, can identify very important attributes among various attributes. The goal is to convert the original variables through vector transition into mutually independent variables of a linear combination. The ideal situation is that principal components obtained from linear combination retain most of the information of original variables.
 
 \section{資料探勘方法}
 
@@ -53,12 +55,12 @@ $f(.)$~就是透過資料探勘分析學習而得到的模型函數，~$x$~代�
 
 \subsubsection{Generalized Linear Model}
 
-廣義線性模型是由Nelder and Wedderburn~\cite{citeulike:5485398}所提出，比起迴歸分析（simple regression）更為彈性，此模型是假設資料點的分佈有一分佈模式，且輸入參數~$x$~與輸出參數~$y$~之間的關係是由一連結函數（Link Function）建立，如~log function、power function~等，其定義之~$x$~$y$~間之關係模型如下：
+廣義線性模型是由Nelder and Wedderburn~\cite{citeulike:5485398}所提出，比起迴歸分析（simple regression）更為彈性，此模型是假設資料點的分佈有一分佈模式，且輸入參數~$x$~與輸出參數~$y$~之間的關係是由一連結函數（Link Function）建立，如~log function、power function~等，其定義之~$x$~與~$y$~間之關係模型如下：
 
 
-\begin{equation} g(E(y)) = x\beta + O, y~F \label{eq:GLM}\end{equation} 
+\begin{equation} g(E(y)) = x\beta + O, y \sim F \label{eq:GLM}\end{equation} 
 
-$g(.)$是為所選的鏈結函數，~$O$~是偏移（offset）變數，~$F$~則是~$y$~的分佈模型，其是用牛頓法（Newton-Raphson Method）不斷的調整~$\beta$~使的~$x\beta + O$~逼近~$g(E(y))$~，最後最接近的方程式即為~$x$~$y$~兩者的關系式。比起迴歸分析，此方法還需要了解~$y$~值分佈狀況，選擇出最適合的分佈函數，並假設~$x$~$y$~間的鏈結函數形式，雖然越多的參數選擇代表了更多的模型不確定性，但廣義線性模型卻能夠提供比迴歸分析更廣的應用範圍，也可能得到更接近真實的關係模型。
+$g(.)$是為所選的鏈結函數，~$O$~是偏移（offset）變數，~$F$~則是~$y$~的分佈模型，其是用牛頓法（Newton-Raphson Method）不斷的調整~$\beta$~使的~$x\beta + O$~逼近~$g(E(y))$~，最後最接近的方程式即為~$x$~與~$y$~兩者的關系式。比起迴歸分析，此方法還需要了解~$y$~值分佈狀況，選擇出最適合的分佈函數，並假設~$x$~與~$y$~間的鏈結函數形式，雖然越多的參數選擇代表了更多的模型不確定性，但廣義線性模型卻能夠提供比迴歸分析更廣的應用範圍，也可能得到更接近真實的關係模型。
 
 \subsubsection{Support Vector Machine}
 
@@ -78,17 +80,25 @@ SVM最早是BOSER~\cite{boser1992}等人，在~1992~年的~COLT（Computational 
 
 
 
-\subsubsection{Genetic Programming}
+\subsubsection{基因規劃}
 
-Genetic Algorithm是1975年由 John Holland\cite{holland1975adaptation}~所提出的演化求解方法，其是基於生物演化的過程為基礎，假設問題的目標可以轉換為二元的基因序列，再透過模擬生物交配、突變的進化過程，求得最佳化問題的解，和傳統的演化求解方法相比，基因演算法可以比較容易的找到全域最佳解，且其可以快速的找到足夠好的解，即使問題的複雜度很高。Genetic Algorithm 的應用領域相當廣泛，在營建領域也有不少的應用，Huang...et. al.\cite{minshui2009study}~就使用GA預測梁模型受力後會產生破壞的位置極其嚴重性，Šešok和Belevicius\cite{vsevsok2008global}~則使用GA建立一個truss topology最佳化的建議系統。
+基因規劃（Genetic Programming, GP）是基於基因演算法（Genetic Algorithm, GA）發展而來，而~GA~是~1975~年由~John Holland\cite{holland1975adaptation}~所提出的演化求解方法，其是基於生物演化的過程為基礎，假設問題的目標可以轉換為二元的基因序列，再透過模擬生物交配、突變的進化過程，求得最佳化問題的解，和傳統的演化求解方法相比，基因演算法可以比較容易的找到全域最佳解，且其可以快速的找到足夠好的解，即使問題的複雜度很高。Genetic Algorithm 的應用領域相當廣泛，在營建領域也有不少的應用，Huang...et. al.\cite{minshui2009study}~就使用GA預測梁模型受力後會產生破壞的位置極其嚴重性，Šešok和Belevicius\cite{vsevsok2008global}~則使用GA建立一個~truss topology~最佳化的建議系統。
 
-Genetic Programming 是 1992 年由 Koza\cite{koza1992genetic}~所發表的方法，它是基於發展許久的基因演算法而來，將基因演算法所要演進發展的基因序列換為樹狀結構的分析樹(parse tree)，並藉由與基因演算法相同概念的交配、突變和篩選等機制來達成解析樹的演化，並達成最佳化目標，如果要求得一數學關係方程式，則可以使用運算樹(Operation Tree)作為欲演進的解析樹結構。運算樹是一個二元樹結構，如Fig. 5，其底層的末端點是方程樹的輸入變數或是其它常數、數值等，其餘的分支節點都是運算子(operator)，藉由置換各個節點的輸入數值和運算子，就可以組成各種可能的數學方程式。此一方法的特色是其輸出即為輸入和輸出的關係方程式，且其方程式之形式不受限於基因演算法之特性。在營建領域使用 GP 加上運算樹進行最佳化的應用少有人做，Yeh and Lien\cite{yeh2009knowledge}~使用GP方法來預測混凝土強度。Tsai\cite{tsai2011using}~則使用WGP方法建立出squat wall strengths的方程式，並且還利用一些修剪公式的方法來調整得到的公式，讓公式可以更精簡，但是還保留有一定程度的經度。
+基因規劃則是~1992~年由~Koza\cite{koza1992genetic}~所發表的方法，它是基於發展許久的基因演算法而來，將基因演算法所要演進發展的基因序列換為樹狀結構的分析樹（parse tree），並藉由與基因演算法相同概念的交配、突變和篩選等機制來達成解析樹的演化，並達成最佳化目標，如果要求得一數學關係方程式，則可以使用運算樹（operation tree）作為欲演進的解析樹結構。運算樹是一個二元樹結構，如圖~\ref{fig:GP-struct}~，其底層的末端點是方程樹的輸入變數或是其它常數、數值等，其餘的分支節點都是運算子（operator），藉由置換各個節點的輸入數值和運算子，就可以組成各種可能的數學方程式。此一方法的特色是其輸出即為輸入和輸出的關係方程式，且其方程式之形式不受限於基因演算法之特性。在營建領域使用~GP~加上運算樹進行最佳化的應用少有人做，Yeh and Lien\cite{yeh2009knowledge}~使用GP方法來預測混凝土強度。Tsai\cite{tsai2011using}~則使用修改過的~Weighted Genetic Programming~方法建立出~squat wall strengths~的方程式，並且還利用一些修剪公式的方法來調整得到的公式，讓公式可以更精簡，但是還保留有一定程度的經度。
 
-藉由這樣的運算樹設計，再透過GA最佳化輸入參數的選擇、不同運算節點的運算子，GP便可以根據資料建立出一個屬性與所求目標的關係方程式。
+\begin{figure}[hbtp]
+  \begin{center}
+    \includegraphics[width=1.0\textwidth]{figures/gp-struct.pdf}
+    \caption{Genetic Programming Opetation Tree Structure} 
+    \label{fig:GP-struct}
+  \end{center}
+\end{figure}
 
-\subsubsection{Weighted Genetic Programming}
+藉由這樣的運算樹設計，再透過~GA~最佳化輸入參數的選擇、不同運算節點的運算子，~GP~便可以根據資料建立出一個屬性與所求目標的關係方程式。
 
-Weighted Genetic Programming 是由Tsai\cite{tsai2011predicting}~所提出，基於 Genetic Programming 方法發展而來，不同之處在於其運算樹的每個節點前都加上一個權重~$w$~，最佳化的過程除了對方程式結構和參數的選擇最佳化外，還要同時最佳化所有的權重，因此其輸出的關係公式可能性遠大於Genetic Programming方法，故可以處理更為複雜的問題。Weighted Genetic Programming~的運算樹結構如圖~\ref{fig:WGP-sample}，每個運算樹都可以組成一個數學方程式，如圖~\ref{fig:WGP-sample}~之運算樹即可組成方程式如下：
+\subsubsection{加權基因規劃}
+
+加權基因規劃（Weighted Genetic Programming, WGP）是由~Tsai\cite{tsai2011predicting}~所提出，基於~GP~ 方法發展而來，不同之處在於其運算樹的每個節點前都加上一個權重~$w$~，最佳化的過程除了對方程式結構和參數的選擇最佳化外，還要同時最佳化所有的權重，因此其輸出的關係公式可能性遠大於~GP~方法，故可以處理更為複雜的問題。~WGP~的運算樹結構如圖~\ref{fig:WGP-sample}，每個運算樹都可以組成一個數學方程式，如圖~\ref{fig:WGP-sample}~之運算樹即可組成方程式如下：
 
 \begin{equation} w_1(w_3(\dfrac{w_7P_2}{w_8P_6}) - w_4sin(w_9c))+w_2 \times cos(w_{12}c \times w_{11}P_1) \label{eq:WGP-sample}\end{equation} 
 
@@ -102,9 +112,25 @@ Weighted Genetic Programming 是由Tsai\cite{tsai2011predicting}~所提出，基
 \end{figure}
 
 
-運算樹可以分為兩種層級，運算層全部都是運算子節點，輸入層則是輸入參數的選擇，運算層每多一層，需要最佳化的節點和權重都會以等比例成長，運算層的層數也影響到最佳化結果的方程式複雜度，而輸入層則全部都是輸入節點，每層之間的每個連結都有一個權重參數，這些權重即為 WGP 方法最大的特色，這些權重可以讓運算樹組成的方程式有無限多種，也可以用以表示不同參數的重要性，因此雖然加入權重會讓最佳化更費時間，但仍然值得加上權重。
+運算樹可以分為兩種層級，運算層全部都是運算子節點，輸入層則是輸入參數的選擇，運算層每多一層，需要最佳化的節點和權重都會以等比例成長，運算層的層數也影響到最佳化結果的方程式複雜度，而輸入層則全部都是輸入節點，每層之間的每個連結都有一個權重參數，這些權重即為~WGP~方法最大的特色，這些權重可以讓運算樹組成的方程式有無限多種，也可以用以表示不同參數的重要性，因此雖然加入權重會讓最佳化更費時間，但仍然值得加上權重。
 
-Fig. 7(b)是一個構成~WGP~運算樹的基本單元，和GP運算樹的基本單元類似，包含一個父層節點和兩個子層節點，父層的節點是運算節點~$F$，透過權重參數連接到兩個子層節點，子層節點可能是其它的基本單元或是輸入節點，而整個基本單元的輸出~$y$~為：
+圖~\ref{fig:wgp-unit}~是一個構成~WGP~運算樹的基本單元，和圖~~\ref{fig:gp-unit}~所示的~GP~運算樹的基本單元類似，包含一個父層節點和兩個子層節點，父層的節點是運算節點~$F$，透過權重參數連接到兩個子層節點，子層節點可能是其它的基本單元或是輸入節點，而整個基本單元的輸出~$y$~為：
+
+\begin{figure}
+  \begin{center}
+    \subfigure[GP]{
+      \includegraphics[width=0.4\textwidth]{figures/gp-unit.pdf}
+      \label{fig:gp-unit}
+    }
+    ~
+    \subfigure[WGP]{
+      \includegraphics[width=0.4\textwidth]{figures/wgp-unit.pdf}
+      \label{fig:wgp-unit}
+    }
+    \caption{Unit elements of GP system}
+    \label{fig:gps-units}
+  \end{center}
+\end{figure}
 
 \begin{equation} y = \text{one of}\;\begin{cases}
   f_1 = w_1x_1 + w_2x_2 \\
@@ -116,8 +142,7 @@ Fig. 7(b)是一個構成~WGP~運算樹的基本單元，和GP運算樹的基本�
   f_n = \dfrac{1}{sin(w_1x_1)+cos(w_2x_2)}
 \end{cases} \label{eq:WGP-y}\end{equation}
 
-
-運算子F可能有數種選擇，同時配合最佳化演進得來的權重和子層節點的~$x_1$、$x_2$~，便可以計算得到這個基本單元的輸出~$y$，而子層節點的~$x_1$~和~$x_2$~有兩種可能的來源，一是此一基本單元的子層仍為運算層，則其數值要藉由計算該基本單元而來，另一種可能是子層為末端的輸入層，則~$x_1$~、~$x_2$~的值如下：
+運算子~$F$~可能有數種選擇，同時配合最佳化演進得來的權重和子層節點的~$x_1$、$x_2$~，便可以計算得到這個基本單元的輸出~$y$，而子層節點的~$x_1$~和~$x_2$~有兩種可能的來源，一是此一基本單元的子層仍為運算層，則其數值要藉由計算該基本單元而來，另一種可能是子層為末端的輸入層，則~$x_1$~、~$x_2$~的值如下：
 
 \begin{equation} x_i = \text{one of}\; \{1, P_1, P_2, P_3, \cdots P_j, \cdots P_{NI}\},\; j = 0 \sim NI \label{eq:WGP-xi}\end{equation}
 
@@ -138,7 +163,7 @@ modify required
 
 由於各種學術、商業研究所處理的問題資料量越來越大，分群演算法所需要的運算時間也急遽的成長，為了讓分群演算在處理大量的資料時也能有良好的效能表現，而發展出兩步分群（Two-Step Clustering），其是由~Zhang，Ramakrishnan~與~Livny\cite{zhang1996birch}~所提出，此一方法分為兩個主要步驟：第一步是先把資料依據其與相鄰資料的相適度來排序並分成數個小群集，接著第二步再使用階層式分群方法，將這些群集慢慢組合或拆分直到達成停止條件。兩步分群的演算費時和資料量呈線性關係，因此資料量成長時也不會讓運算時間成長到無法應用的程度。
 
-Based on of the massive volume of basic data for school buildings in the database, this study chooses two-step clustering method. The basic concept was first proposed by Zhang, Ramakrishnan and Livny~\cite{zhang1996birch} for handling large amounts of data. This method has two major steps. The first step sequences data and pre-clusters sequences into small subclusters based on the similarity of adjacent data, thereby reducing the amount of data. The second step divides several small subclusters into the desired number of clusters using a hierarchical clustering method. The hierarchical clustering method then combines close subclusters slowly until the stop condition is met. The computing speed of this method is influenced slightly by the volume of data.
+% Based on of the massive volume of basic data for school buildings in the database, this study chooses two-step clustering method. The basic concept was first proposed by Zhang, Ramakrishnan and Livny~\cite{zhang1996birch} for handling large amounts of data. This method has two major steps. The first step sequences data and pre-clusters sequences into small subclusters based on the similarity of adjacent data, thereby reducing the amount of data. The second step divides several small subclusters into the desired number of clusters using a hierarchical clustering method. The hierarchical clustering method then combines close subclusters slowly until the stop condition is met. The computing speed of this method is influenced slightly by the volume of data.
 
 \subsubsection{K-means}
 
@@ -147,22 +172,13 @@ K-means~是由~MacQueen\cite{macqueen67}~所提出，也是最常被使用的分
 \begin{enumerate}
 \item 使用者決定要將資料分為幾個群集，群集數為~$K$~。
 \item 將資料隨機分到~$K$~個群組，並且計算出此時分群狀態下的每個群組的中心點。
-\item 講每個資料點重新分群到，選擇群組中心離它最近的那個群組。
+\item 講每個資料點重新分群到新的群組，新群組的選擇方法為中心離它最近的那個群組。
 \item 用新的分群狀態計算出新的群組中心點。
-\item 重複步驟~3~和~4~直到每個資料的群組都穩定不再有變化。
+\item 重複步驟~3~和~4~直到每個資料點的群組都穩定不再變化。
 \end{enumerate}
 
 
-As proposed by MacQueen~\cite{macqueen67}, K-means is one of the most common clustering methods and has a wide application scope. Notably, it is a machine learning method; its principal steps are as follows.
-
-\begin{enumerate}
-\item A user indicates that data should be grouped into K clusters.
-\item Data are divided randomly and equally into K groups and the center of each cluster are calculated.
-\item Each bit of data should find the proximal center of a cluster and update its cluster label that it belongs to.
-\item Recalculate the new cluster center.
-\item Repeat steps 3 to 4 until the cluster centers of all data do not change.
-\end{enumerate}
-
+% As proposed by MacQueen~\cite{macqueen67}, K-means is one of the most common clustering methods and has a wide application scope. Notably, it is a machine learning method; its principal steps are as follows.
 
 \section{探勘結果驗證方法與指標}
 
@@ -175,7 +191,7 @@ As proposed by MacQueen~\cite{macqueen67}, K-means is one of the most common clu
 
 \subsection{結果指標}
 
-\subsubsection{決定係數 Coefficient of determination}
+\subsubsection{決定係數}
 
 決定係數（Coefficient of determination）又稱為~$R^2$~，其公式為：
 
@@ -183,27 +199,27 @@ As proposed by MacQueen~\cite{macqueen67}, K-means is one of the most common clu
 
 其中 $y_i$ 是關係模型輸出屬性之值， $\hat{y_i}$ 則是該輸出屬性之實際值，$\tilde{y}$ 則是所有資料的輸出屬性實際值之平均，透過此一指標可以了解輸出屬性中有多少比例的資訊是由輸入屬性的變量所產生的，也代表著關係模型的正確性，而其值恰巧為關係係數~$R$（correlation coefficient）的平方，透過關係係數可以了解實際的輸出屬性數值與透過關係模型得到的推估值之間的線性關係，線性關係越高表示兩者之間越接近，也代表著關係模型所建立關係之正確性。
 
-\subsubsection{平均絕對百分比誤差 MAPE}
+\subsubsection{平均絕對百分比誤差}
 
-MAPE (Mean Absolute Percetage Error)~的公式如下：
+平均絕對百分比誤差（Mean Absolute Percetage Error, MAPE）~的公式如下：
 
-\begin{equation} MAPE = \dfrac{\sum{\abs{y_i - \hat{y_i}}}}{N} \times 100\% \label{eq:MAPE}\end{equation}
+\begin{equation} \text{MAPE} = \dfrac{\sum{\abs{y_i - \hat{y_i}}}}{N} \times 100\% \label{eq:MAPE}\end{equation}
 
 其中~$N$~是資料的總數，~$y_i$~是使用探勘得到的關係模型所求得的輸出屬性預測值，~$\hat{y_i}$~則是該屬性的實際值，此一指標代表了模型產出結果的平均誤差，可以呈現模型的準確度，數值越低代表模型品質越好。
 
 
-\subsubsection{均方根誤差 RMSE}
+\subsubsection{均方根誤差}
 
-均方根誤差（Root Mean Squared Error，RMSE）定義如下：
+均方根誤差（Root Mean Squared Error, RMSE）定義如下：
 
-\begin{equation} RMSE = \sqrt{\dfrac{\sum{(y_i - \hat{y_i})^2}}{N}} \label{eq:RMSE}\end{equation}
+\begin{equation} \text{RMSE} = \sqrt{\dfrac{\sum{(y_i - \hat{y_i})^2}}{N}} \label{eq:RMSE}\end{equation}
 
 其中~$N$~是資料的總數，~$y$~是透過資料所建立的關係模型所求得的輸出屬性預測值，~$\hat{y}$~則是輸出屬性的實際值，此一指標代表了模型產出結果的平均誤差，數值越低越好，和~MAPE~相比，其差異在~MAPE~指表現了模型輸出數值的誤差平均，而~RMSE~還包含了誤差量的離散度資訊在內，~MAPE~表現相同的模型，其單筆資料誤差值分布越離散，~RMSE~的表現會越差，其可接受範圍則要根據輸出屬性的數量級和問題複雜度而定。
 
 
-\subsubsection{命中率 Hit Rate}
+\subsubsection{命中率}
 
-命中率（Hit Rate）是用來判斷關係模型的正確率的，其定義為：
+命中率（hit rate）是用來判斷關係模型的正確率的，其定義為：
 
 \begin{equation} \text{Hit Rate} = \dfrac{ \sum{I\{(1 - \alpha)y_i \le \hat{y_i} \le（1 + \alpha)y_i \}} }{N} \label{eq:hitrate}\end{equation} 
 
