@@ -46,13 +46,30 @@
 
 \subsection{詳細評估}
 
-美國針對鋼筋混凝土（RC）建築物之耐震能力規範ATC-40\cite{applied1996seismic}中，建議用來評估建築物耐震能力之方法稱為容量震譜法（capacity spectrum method），此一評估方法可以分為兩個部分，第一部分是進行側推分析（pushover analysis）取得容量震譜（capacity spectrum），流程如Figure 1所示，第二部分是根據建築物所在地的各種相關資訊和規範取得需求震譜（demand spectrum），接著使用容量震譜法（capacity spectrum method）以取得建築物性能點，根據性能點（performance point）座標帶入公式計算可以得到建築物的破壞地表加速度（collapse ground acceleration）以及耐震能力指標（aseismic ability index），如Figure 2所示。
+美國針對鋼筋混凝土（RC）建築物之耐震能力規範ATC-40\cite{applied1996seismic}中，建議用來評估建築物耐震能力之方法稱為容量震譜法（capacity spectrum method），此一評估方法可以分為兩個部分，第一部分是進行側推分析（pushover analysis）取得容量震譜（capacity spectrum），流程如圖~\ref{fig:capacity-curve}~所示，第二部分是根據建築物所在地的各種相關資訊和規範取得需求震譜（demand spectrum），接著使用容量震譜法（capacity spectrum method）以取得建築物性能點，根據性能點（performance point）座標帶入公式計算可以得到建築物的破壞地表加速度（collapse ground acceleration）以及耐震能力指標（aseismic ability index），如圖~\ref{fig:performance-point}~所示。
+
+\begin{figure}[hbtp]
+  \begin{center}
+    \includegraphics[width=1.0\textwidth]{figures/capacity-curve.png}
+    \caption{Flowchart of the calculation of capacity spectrum of buildings} 
+    \label{fig:capacity-curve}
+  \end{center}
+\end{figure}
 
 求取容量震譜的側推分析（pushover analysis）需要先建立建築物完整的非線性分析模型（nonlinear structure model），此模型要由進行評估的專業人士根據建築物的幾何尺寸資訊來建立基本的建築物框架。接著根據建築物的材質計算建築物自身重量以及需要承載的人員和配設物件之重量，並將其附加到柱、牆等承載元件上。接著最重要的是設定建築物各構成元件如樑、柱、牆受力時的非線性行為，這些力與變形的關係多為實驗得到或是利用其他分析模擬方法得到的。至此，側推分析（pushover analysis）要用的數值模型才算建立完成。而側推分析（pushover analysis）其程序是依照規範，使用建議之側力，逐步地給結構模型施加增量外力，將結構物向某一方向推動，每次增量即進行一次結構分析計算每一構件之應力（stress）與變位（strain），之後與上一次的分析結果累加即可得到每一個構件於此受力階段之反應，並判斷構件是否破壞，例如開裂（crack）、降伏（yield），甚至達到極限強度（ultimate force）等，之後各構件依其破壞程度更新其行為，例如改變其勁度，或者將已發生破壞的構件從結構模型中抽離，如此重複分析直到結構不穩定而崩垮為止，側推分析完成後可以得到建築物之容量震譜（capacity spectrum）。
 
 需求震譜（demand spectrum）是根據建築物環境現況，參考規範製成之地震需求頻譜。參考的環境狀況如土層種類，堅硬的土層可以讓建築物有較好的抗震能力。另外靠近斷層的建築物在地震發生時往往會因為斷層於地震時產生的反應而受到嚴重的損害，因此建築物與斷層的距離也納入參考的資料之一，稱為近斷層效應（special effects of near-source earthquakes），其他還需要的資料有地層資料、地震震區等，綜合這些資料並參考規範即可得到該建築物所需符合之需求震譜。
 
-容量震譜法（capacity spectrum method）最後是將需求震譜（demand spectrum）以及容量震譜（capacity spectrum）轉換格式後相疊，求取建築物之性能點（performance point），性能點之物理意義為該建築物在特定水準地震下所能承受之最大變位（strain）及剪力（shear force），但是由於結構物受地震力作用進入非線性行為時，結構物的阻尼效應會產生消能的作用，因此還要視情況對需求曲線進行折減，此為一個迭帶運算的過程，可能需要不斷折減需求曲線，並進行性能點（performance point）正確性的檢核，直到檢核通過，才能得到建築物真正之性能點（performance point）如Figure 2 （d），由建築物性能點（performance point）之座標帶入公式可以求得建築物的破壞地表加速度（collapse ground acceleration）$A_C$，詳細評估所使用的耐震能力值為 $CDR$，其定義如下：
+\begin{figure}[hbtp]
+  \begin{center}
+    \includegraphics[width=1.0\textwidth]{figures/performance-point.png}
+    \caption{Flowchart of the calculation of performance points of buildings} 
+    \label{fig:performance-point}
+  \end{center}
+\end{figure}
+
+容量震譜法（capacity spectrum method）最後是將需求震譜（demand spectrum）以及容量震譜（capacity spectrum）轉換格式後相疊，求取建築物之性能點（performance point），性能點之物理意義為該建築物在特定水準地震下所能承受之最大變位（strain）及剪力（shear force），但是由於結構物受地震力作用進入非線性行為時，結構物的阻尼效應會產生消能的作用，因此還要視情況對需求曲線進行折減，此為一個迭帶運算的過程，可能需要不斷折減需求曲線，並進行性能點（performance point）正確性的檢核，直到檢核通過，才能得到建築物真正之性能點（performance point）如圖~\ref{fig:performance-point}~，由建築物性能點（performance point）之座標帶入公式可以求得建築物的破壞地表加速度（collapse ground acceleration）$A_C$，詳細評估所使用的耐震能力值為 $CDR$，其定義如下：
+
 
 \begin{equation} CDR = \dfrac{A_C}{A_D} \label{eq:CDR}\end{equation} 
 
