@@ -2,8 +2,8 @@
 \contentsline {chapter}{Abstract}{II}{section*.3}
 \contentsline {chapter}{誌謝}{III}{chapter*.4}
 \contentsline {chapter}{目錄}{IV}{section*.5}
-\contentsline {chapter}{圖目錄}{V}{section*.7}
-\contentsline {chapter}{表目錄}{VI}{section*.9}
+\contentsline {chapter}{圖目錄}{VII}{section*.7}
+\contentsline {chapter}{表目錄}{VIII}{section*.9}
 \contentsline {chapter}{\numberline {1}緒論}{1}{chapter.1}
 \contentsline {section}{\numberline {1.1}動機與目的}{1}{section.1.1}
 \contentsline {section}{\numberline {1.2}研究方法}{3}{section.1.2}
@@ -72,5 +72,7 @@
 \contentsline {section}{\numberline {8.2}未來展望}{62}{section.8.2}
 \contentsline {chapter}{參考文獻}{63}{section*.51}
 \contentsline {chapter}{附錄一：典型校舍初步評估表}{66}{chapter*.53}
-\contentsline {chapter}{授權書}{68}{section*.54}
+\contentsline {chapter}{附錄二：典型校舍詳細評估表}{68}{chapter*.54}
+\contentsline {chapter}{附錄三：典型校舍補強設計表}{74}{chapter*.55}
+\contentsline {chapter}{授權書}{88}{section*.56}
 \contentsfinish 
