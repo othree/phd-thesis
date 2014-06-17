@@ -182,7 +182,7 @@ hit rate
 
 \section{CDR 值與校舍設計之關係模型}
 
-校舍耐震資料庫中，詳細評估表的耐震能力索引 $CDR$ 值是用來評估校舍是否需要補強、甚至是拆除的最重要依據，此數值的取得非常耗時耗力，且與校舍結構材料、設計與現況等參數之間為高度非線性的關係，如果能夠取的此一關係模型，對於校舍耐震能力補強計畫的進行，可以有很大的幫助。
+校舍耐震資料庫中，詳細評估表的耐震能力索引~$CDR$~值是用來評估校舍是否需要補強、甚至是拆除的最重要依據，此數值的取得非常耗時耗力，且與校舍結構材料、設計與現況等參數之間為高度非線性的關係，如果能夠取的此一關係模型，對於校舍耐震能力補強計畫的進行，可以有很大的幫助。
 
 \subsection{資料前處理}
 
@@ -321,7 +321,15 @@ WGP~是本分析第二個使用的方法，和~GP~一樣選擇了五層的運算
 
 \begin{equation} AC = {({165 P_{10}}^{8.86 P_6} {P_4}^{4.86} + \dfrac{22.5 P_8 + 39.5 P_{10}}{P_{10}} )}^{-98.6 P_4{P_8}^{-1.3} - 133 P_{10} - 0.05 {P_7}^{1.38 P_{10}} }  \label{eq:WGP_AC}\end{equation}
 
-表二列出了~WGP~方法所建立的校舍設計參數與其最所破壞地表加速度~$AC$~間關係模型的~RMSE~值，其值為~0.039~，比使用類神經網路所建立的關係模型表現還要好，圖12是此模型的推估值與實際直的比較圖，可以看得出來比使用~GP~所建立的模型要來的好。
+表二列出了~WGP~方法所建立的校舍設計參數與其最所破壞地表加速度~$AC$~間關係模型的~RMSE~值，其值為~0.039~，比使用類神經網路所建立的關係模型表現還要好，圖~\ref{fig:WGP}~是此模型的推估值與實際直的比較圖，可以看得出來比使用~GP~所建立的模型要來的好。
+
+\begin{figure}[hbtp]
+  \begin{center}
+    \includegraphics[width=0.75\textwidth]{figures/wgp.pdf}
+    \caption{WGP Programming Result} 
+    \label{fig:WGP}
+  \end{center}
+\end{figure}
 
 % Table 2 shows the RMSE of the optimum relationship equations generated from the two patterns. The RMSE reached 0.039, which is better than the performance of the model built by the artificial neural networks in the contrast group. Figure 12 displays the comparison between the estimated, and the actual values of the model. By comparing the results, the model constructed by the WGP pattern is superior to the model constructed by the GP pattern.
 
@@ -360,7 +368,23 @@ $I$~是確保~$C_E$~值能趨於保守用的係數，在~NCREE~的設計中，�
 
 \subsection{結果}
 
-表二顯示了~NCREE~初步評估~$Is$~值轉換成詳細評估~$AC$~的等價數值~$C_E$~與校舍實際進行詳細評估所得到的最小破壞地表加速度~$AC$~相比的~RMSE~，為值~0.067~，距離目標的~0.04~還有一段距離，圖~13~是~$C_E$~與~$AC$~的比較圖，可以發現其趨勢相近，加上修正因子~$T$~之後，~RMSE~降低為~0.045~，圖~13~顯示了~$C_E + T$~和~$AC$~的比較，可以發現其趨勢更為接近，因此可以確定修正因子確實可以將初步評估的結果停整的更好。
+表二顯示了~NCREE~初步評估~$Is$~值轉換成詳細評估~$AC$~的等價數值~$C_E$~與校舍實際進行詳細評估所得到的最小破壞地表加速度~$AC$~相比的~RMSE~，為值~0.067~，距離目標的~0.04~還有一段距離，圖~\ref{fig:wgp-tuning}~是~$C_E$~與~$AC$~的比較圖，可以發現其趨勢相近，加上修正因子~$T$~之後，~RMSE~降低為~0.045~，圖~13~顯示了~$C_E + T$~和~$AC$~的比較，可以發現其趨勢更為接近，因此可以確定修正因子確實可以將初步評估的結果停整的更好。
+
+\begin{figure}
+  \begin{center}
+    \subfigure[$C_E$]{
+      \includegraphics[width=0.65\textwidth]{figures/ce.pdf}
+      \label{fig:ce}
+    }
+    \\
+    \subfigure[$C_E+T$]{
+      \includegraphics[width=0.65\textwidth]{figures/ce+T.pdf}
+      \label{fig:cet}
+    }
+    \caption{WGP Tuning Result}
+    \label{fig:wgp-tuning}
+  \end{center}
+\end{figure}
 
 % Table 2 shows the RMSE after the revision. The RMSE of the IS formula used by NCREE in the preliminary appraisal is 0.067. Although there is still a gap between the target of 0.04 and this value, the emphasis is on the degree of relationship between them, and the main target is to screen out the school buildings with degrees of higher risk. Figure 13 shows the comparison between the CE converted from IS of NCREE, and the destructive ground acceleration obtained through linear analysis. Even though the data have the correct directional tendency, the model obtained from the GP method is better because of higher deviation, and a linear relationship. Subsequent to adding T to the revised formula, RMSE is reduced to 0.045. Figure 13 shows the comparison, and it can be seen that the directional tendency is quite close, thus reducing the deviation. A good revision effect is observed, making the screening result of the preliminary appraisal more accurate.
 
