@@ -1,4 +1,4 @@
-This is XeTeX, Version 3.1415926-2.5-0.9999.3 (TeX Live 2013) (format=xelatex 2013.12.14)  17 JUN 2014 22:39
+This is XeTeX, Version 3.1415926-2.5-0.9999.3 (TeX Live 2013) (format=xelatex 2013.12.14)  28 JUN 2014 23:36
 entering extended mode
  restricted \write18 enabled.
  file:line:error style messages enabled.
@@ -1657,14 +1657,21 @@ Package Fancyhdr Warning: \headheight is too small (12.0pt):
  We now make it that large for the rest of the document.
  This may cause the page layout to be inconsistent, however.
 
-[12]) (./sections/method.tex
+[12]
 
 Package Fancyhdr Warning: \headheight is too small (12.0pt): 
  Make it at least 16.0pt.
  We now make it that large for the rest of the document.
  This may cause the page layout to be inconsistent, however.
 
-[13]
+[13]) (./sections/method.tex
+
+Package Fancyhdr Warning: \headheight is too small (12.0pt): 
+ Make it at least 16.0pt.
+ We now make it that large for the rest of the document.
+ This may cause the page layout to be inconsistent, however.
+
+[14]
 Chapter 4.
 File: figures/1196px-CRISP-DM_Process_Diagram.png Graphic file (type QTm)
 <use  "figures/1196px-CRISP-DM_Process_Diagram.png" >
@@ -1674,16 +1681,9 @@ Package Fancyhdr Warning: \headheight is too small (12.0pt):
  We now make it that large for the rest of the document.
  This may cause the page layout to be inconsistent, however.
 
-[14
+[15
 
 ]
-
-Package Fancyhdr Warning: \headheight is too small (12.0pt): 
- Make it at least 16.0pt.
- We now make it that large for the rest of the document.
- This may cause the page layout to be inconsistent, however.
-
-[15]
 
 Package Fancyhdr Warning: \headheight is too small (12.0pt): 
  Make it at least 16.0pt.
@@ -1705,6 +1705,13 @@ Package Fancyhdr Warning: \headheight is too small (12.0pt):
  This may cause the page layout to be inconsistent, however.
 
 [18]
+
+Package Fancyhdr Warning: \headheight is too small (12.0pt): 
+ Make it at least 16.0pt.
+ We now make it that large for the rest of the document.
+ This may cause the page layout to be inconsistent, however.
+
+[19]
 File: figures/anns-network.png Graphic file (type QTm)
  <use  "figures/anns-network.png" >
 
@@ -1713,7 +1720,7 @@ Package Fancyhdr Warning: \headheight is too small (12.0pt):
  We now make it that large for the rest of the document.
  This may cause the page layout to be inconsistent, however.
 
-[19]
+[20]
 File: figures/gp-struct.pdf Graphic file (type QTm)
  <use  "figures/gp-struct.pdf" >
 
@@ -1722,14 +1729,14 @@ Package Fancyhdr Warning: \headheight is too small (12.0pt):
  We now make it that large for the rest of the document.
  This may cause the page layout to be inconsistent, however.
 
-[20]
+[21]
 
 Package Fancyhdr Warning: \headheight is too small (12.0pt): 
  Make it at least 16.0pt.
  We now make it that large for the rest of the document.
  This may cause the page layout to be inconsistent, however.
 
-[21]
+[22]
 File: figures/wgp-sample.pdf Graphic file (type QTm)
  <use  "figures/wgp-sample.pdf" >
 
@@ -1738,18 +1745,11 @@ Package Fancyhdr Warning: \headheight is too small (12.0pt):
  We now make it that large for the rest of the document.
  This may cause the page layout to be inconsistent, however.
 
-[22]
+[23]
 File: figures/gp-unit.pdf Graphic file (type QTm)
  <use  "figures/gp-unit.pdf" >
 File: figures/wgp-unit.pdf Graphic file (type QTm)
  <use  "figures/wgp-unit.pdf" >
-
-Package Fancyhdr Warning: \headheight is too small (12.0pt): 
- Make it at least 16.0pt.
- We now make it that large for the rest of the document.
- This may cause the page layout to be inconsistent, however.
-
-[23]
 
 Package Fancyhdr Warning: \headheight is too small (12.0pt): 
  Make it at least 16.0pt.
@@ -1764,6 +1764,13 @@ Package Fancyhdr Warning: \headheight is too small (12.0pt):
  This may cause the page layout to be inconsistent, however.
 
 [25]
+
+Package Fancyhdr Warning: \headheight is too small (12.0pt): 
+ Make it at least 16.0pt.
+ We now make it that large for the rest of the document.
+ This may cause the page layout to be inconsistent, however.
+
+[26]
 Missing character: There is no （ in font Times New Roman/OT:script=latn;languag
 e=DFLT;mapping=tex-text;!
 
@@ -1773,14 +1780,14 @@ Package Fancyhdr Warning: \headheight is too small (12.0pt):
  We now make it that large for the rest of the document.
  This may cause the page layout to be inconsistent, however.
 
-[26]) (./sections/aseicmic-ability.tex
+[27]) (./sections/aseicmic-ability.tex
 
 Package Fancyhdr Warning: \headheight is too small (12.0pt): 
  Make it at least 16.0pt.
  We now make it that large for the rest of the document.
  This may cause the page layout to be inconsistent, however.
 
-[27]
+[28]
 Chapter 5.
 
 Package Fancyhdr Warning: \headheight is too small (12.0pt): 
@@ -1788,7 +1795,7 @@ Package Fancyhdr Warning: \headheight is too small (12.0pt):
  We now make it that large for the rest of the document.
  This may cause the page layout to be inconsistent, however.
 
-[28
+[29
 
 ]
 
@@ -1797,7 +1804,7 @@ Package Fancyhdr Warning: \headheight is too small (12.0pt):
  We now make it that large for the rest of the document.
  This may cause the page layout to be inconsistent, however.
 
-[29]
+[30]
 File: figures/spss-cluster.png Graphic file (type QTm)
  <use  "figures/spss-cluster.png" >
 
@@ -1806,16 +1813,9 @@ Package Fancyhdr Warning: \headheight is too small (12.0pt):
  We now make it that large for the rest of the document.
  This may cause the page layout to be inconsistent, however.
 
-[30]
+[31]
 File: figures/spss-mining.png Graphic file (type QTm)
  <use  "figures/spss-mining.png" >
-
-Package Fancyhdr Warning: \headheight is too small (12.0pt): 
- Make it at least 16.0pt.
- We now make it that large for the rest of the document.
- This may cause the page layout to be inconsistent, however.
-
-[31]
 
 Package Fancyhdr Warning: \headheight is too small (12.0pt): 
  Make it at least 16.0pt.
@@ -1837,10 +1837,6 @@ Package Fancyhdr Warning: \headheight is too small (12.0pt):
  This may cause the page layout to be inconsistent, however.
 
 [34]
-Overfull \hbox (7.3571pt too wide) in paragraph at lines 140--153
- [] 
- []
-
 
 Package Fancyhdr Warning: \headheight is too small (12.0pt): 
  Make it at least 16.0pt.
@@ -1848,6 +1844,10 @@ Package Fancyhdr Warning: \headheight is too small (12.0pt):
  This may cause the page layout to be inconsistent, however.
 
 [35]
+Overfull \hbox (7.3571pt too wide) in paragraph at lines 140--153
+ [] 
+ []
+
 
 Package Fancyhdr Warning: \headheight is too small (12.0pt): 
  Make it at least 16.0pt.
@@ -1883,6 +1883,13 @@ Package Fancyhdr Warning: \headheight is too small (12.0pt):
  This may cause the page layout to be inconsistent, however.
 
 [40]
+
+Package Fancyhdr Warning: \headheight is too small (12.0pt): 
+ Make it at least 16.0pt.
+ We now make it that large for the rest of the document.
+ This may cause the page layout to be inconsistent, however.
+
+[41]
 File: figures/4-layer-gp.png Graphic file (type QTm)
  <use  "figures/4-layer-gp.png" >
 
@@ -1891,7 +1898,7 @@ Package Fancyhdr Warning: \headheight is too small (12.0pt):
  We now make it that large for the rest of the document.
  This may cause the page layout to be inconsistent, however.
 
-[41]
+[42]
 File: figures/4-layer-wgp.png Graphic file (type QTm)
  <use  "figures/4-layer-wgp.png" >
 File: figures/wgp.pdf Graphic file (type QTm)
@@ -1902,14 +1909,14 @@ Package Fancyhdr Warning: \headheight is too small (12.0pt):
  We now make it that large for the rest of the document.
  This may cause the page layout to be inconsistent, however.
 
-[42]
+[43]
 
 Package Fancyhdr Warning: \headheight is too small (12.0pt): 
  Make it at least 16.0pt.
  We now make it that large for the rest of the document.
  This may cause the page layout to be inconsistent, however.
 
-[43]
+[44]
 File: figures/4-layer-wgp.png Graphic file (type QTm)
  <use  "figures/4-layer-wgp.png" >
 
@@ -1918,7 +1925,7 @@ Package Fancyhdr Warning: \headheight is too small (12.0pt):
  We now make it that large for the rest of the document.
  This may cause the page layout to be inconsistent, however.
 
-[44]
+[45]
 File: figures/ce.pdf Graphic file (type QTm)
  <use  "figures/ce.pdf" >
 File: figures/ce+T.pdf Graphic file (type QTm)
@@ -1929,21 +1936,14 @@ Package Fancyhdr Warning: \headheight is too small (12.0pt):
  We now make it that large for the rest of the document.
  This may cause the page layout to be inconsistent, however.
 
-[45]
+[46]
 
 Package Fancyhdr Warning: \headheight is too small (12.0pt): 
  Make it at least 16.0pt.
  We now make it that large for the rest of the document.
  This may cause the page layout to be inconsistent, however.
 
-[46]) (./sections/crack-component.tex
-
-Package Fancyhdr Warning: \headheight is too small (12.0pt): 
- Make it at least 16.0pt.
- We now make it that large for the rest of the document.
- This may cause the page layout to be inconsistent, however.
-
-[47]
+[47]) (./sections/crack-component.tex
 
 Package Fancyhdr Warning: \headheight is too small (12.0pt): 
  Make it at least 16.0pt.
@@ -1951,6 +1951,13 @@ Package Fancyhdr Warning: \headheight is too small (12.0pt):
  This may cause the page layout to be inconsistent, however.
 
 [48]
+
+Package Fancyhdr Warning: \headheight is too small (12.0pt): 
+ Make it at least 16.0pt.
+ We now make it that large for the rest of the document.
+ This may cause the page layout to be inconsistent, however.
+
+[49]
 Chapter 6.
 
 Package Fancyhdr Warning: \headheight is too small (12.0pt): 
@@ -1958,16 +1965,9 @@ Package Fancyhdr Warning: \headheight is too small (12.0pt):
  We now make it that large for the rest of the document.
  This may cause the page layout to be inconsistent, however.
 
-[49
+[50
 
 ]
-
-Package Fancyhdr Warning: \headheight is too small (12.0pt): 
- Make it at least 16.0pt.
- We now make it that large for the rest of the document.
- This may cause the page layout to be inconsistent, however.
-
-[50]
 
 Package Fancyhdr Warning: \headheight is too small (12.0pt): 
  Make it at least 16.0pt.
@@ -1981,14 +1981,14 @@ Package Fancyhdr Warning: \headheight is too small (12.0pt):
  We now make it that large for the rest of the document.
  This may cause the page layout to be inconsistent, however.
 
-[52]) (./sections/retrofit-cost.tex
+[52]
 
 Package Fancyhdr Warning: \headheight is too small (12.0pt): 
  Make it at least 16.0pt.
  We now make it that large for the rest of the document.
  This may cause the page layout to be inconsistent, however.
 
-[53]
+[53]) (./sections/retrofit-cost.tex
 
 Package Fancyhdr Warning: \headheight is too small (12.0pt): 
  Make it at least 16.0pt.
@@ -1996,6 +1996,13 @@ Package Fancyhdr Warning: \headheight is too small (12.0pt):
  This may cause the page layout to be inconsistent, however.
 
 [54]
+
+Package Fancyhdr Warning: \headheight is too small (12.0pt): 
+ Make it at least 16.0pt.
+ We now make it that large for the rest of the document.
+ This may cause the page layout to be inconsistent, however.
+
+[55]
 Chapter 7.
 
 LaTeX Warning: Command \nobreakspace invalid in math mode on input line 7.
@@ -2015,7 +2022,7 @@ Package Fancyhdr Warning: \headheight is too small (12.0pt):
  We now make it that large for the rest of the document.
  This may cause the page layout to be inconsistent, however.
 
-[55
+[56
 
 ]
 
@@ -2030,13 +2037,6 @@ LaTeX Warning: Command \nobreakspace invalid in math mode on input line 19.
 
 LaTeX Warning: Command \nobreakspace invalid in math mode on input line 20.
 
-
-Package Fancyhdr Warning: \headheight is too small (12.0pt): 
- Make it at least 16.0pt.
- We now make it that large for the rest of the document.
- This may cause the page layout to be inconsistent, however.
-
-[56]
 
 Package Fancyhdr Warning: \headheight is too small (12.0pt): 
  Make it at least 16.0pt.
@@ -2078,14 +2078,21 @@ Package Fancyhdr Warning: \headheight is too small (12.0pt):
  We now make it that large for the rest of the document.
  This may cause the page layout to be inconsistent, however.
 
-[62]) (./sections/conclusion.tex
+[62]
 
 Package Fancyhdr Warning: \headheight is too small (12.0pt): 
  Make it at least 16.0pt.
  We now make it that large for the rest of the document.
  This may cause the page layout to be inconsistent, however.
 
-[63]
+[63]) (./sections/conclusion.tex
+
+Package Fancyhdr Warning: \headheight is too small (12.0pt): 
+ Make it at least 16.0pt.
+ We now make it that large for the rest of the document.
+ This may cause the page layout to be inconsistent, however.
+
+[64]
 Chapter 8.
 ) (./backpages/ntust_backpages.tex
 
@@ -2094,7 +2101,7 @@ Package Fancyhdr Warning: \headheight is too small (12.0pt):
  We now make it that large for the rest of the document.
  This may cause the page layout to be inconsistent, however.
 
-[64
+[65
 
 ] (./my_ntust_thesis.bbl
 Underfull \hbox (badness 10000) detected at line 1
@@ -2107,7 +2114,7 @@ Package Fancyhdr Warning: \headheight is too small (12.0pt):
  We now make it that large for the rest of the document.
  This may cause the page layout to be inconsistent, however.
 
-[65
+[66
 
 
 ]
@@ -2117,21 +2124,21 @@ Package Fancyhdr Warning: \headheight is too small (12.0pt):
  We now make it that large for the rest of the document.
  This may cause the page layout to be inconsistent, however.
 
-[66]) (./backpages/my_appendix.tex
+[67]) (./backpages/my_appendix.tex
 
 Package Fancyhdr Warning: \headheight is too small (12.0pt): 
  Make it at least 16.0pt.
  We now make it that large for the rest of the document.
  This may cause the page layout to be inconsistent, however.
 
-[67]
+[68]
 
 Package Fancyhdr Warning: \headheight is too small (12.0pt): 
  Make it at least 16.0pt.
  We now make it that large for the rest of the document.
  This may cause the page layout to be inconsistent, however.
 
-[68
+[69
 
 ]
 File: appendix/20120516-Preliminary-Typical.pdf Graphic file (type QTm)
@@ -2147,14 +2154,14 @@ File: appendix/20120516-Preliminary-Typical.pdf Graphic file (type QTm)
 <use  "appendix/20120516-Preliminary-Typical.pdf"  page1>
 File: appendix/20120516-Preliminary-Typical.pdf Graphic file (type QTm)
 
-<use  "appendix/20120516-Preliminary-Typical.pdf"  page1> [69]
+<use  "appendix/20120516-Preliminary-Typical.pdf"  page1> [70]
 
 Package Fancyhdr Warning: \headheight is too small (12.0pt): 
  Make it at least 16.0pt.
  We now make it that large for the rest of the document.
  This may cause the page layout to be inconsistent, however.
 
-[70
+[71
 
 ]
 File: appendix/detailed-evaluation.pdf Graphic file (type QTm)
@@ -2170,7 +2177,7 @@ File: appendix/detailed-evaluation.pdf Graphic file (type QTm)
 <use  "appendix/detailed-evaluation.pdf"  page1>
 File: appendix/detailed-evaluation.pdf Graphic file (type QTm)
 
-<use  "appendix/detailed-evaluation.pdf"  page1> [71]
+<use  "appendix/detailed-evaluation.pdf"  page1> [72]
 File: appendix/detailed-evaluation.pdf Graphic file (type QTm)
 
 <use  "appendix/detailed-evaluation.pdf"  page2>
@@ -2179,7 +2186,7 @@ File: appendix/detailed-evaluation.pdf Graphic file (type QTm)
 <use  "appendix/detailed-evaluation.pdf"  page2>
 File: appendix/detailed-evaluation.pdf Graphic file (type QTm)
 
-<use  "appendix/detailed-evaluation.pdf"  page2> [72]
+<use  "appendix/detailed-evaluation.pdf"  page2> [73]
 File: appendix/detailed-evaluation.pdf Graphic file (type QTm)
 
 <use  "appendix/detailed-evaluation.pdf"  page3>
@@ -2188,7 +2195,7 @@ File: appendix/detailed-evaluation.pdf Graphic file (type QTm)
 <use  "appendix/detailed-evaluation.pdf"  page3>
 File: appendix/detailed-evaluation.pdf Graphic file (type QTm)
 
-<use  "appendix/detailed-evaluation.pdf"  page3> [73]
+<use  "appendix/detailed-evaluation.pdf"  page3> [74]
 File: appendix/detailed-evaluation.pdf Graphic file (type QTm)
 
 <use  "appendix/detailed-evaluation.pdf"  page4>
@@ -2197,7 +2204,7 @@ File: appendix/detailed-evaluation.pdf Graphic file (type QTm)
 <use  "appendix/detailed-evaluation.pdf"  page4>
 File: appendix/detailed-evaluation.pdf Graphic file (type QTm)
 
-<use  "appendix/detailed-evaluation.pdf"  page4> [74]
+<use  "appendix/detailed-evaluation.pdf"  page4> [75]
 File: appendix/detailed-evaluation.pdf Graphic file (type QTm)
 
 <use  "appendix/detailed-evaluation.pdf"  page5>
@@ -2206,14 +2213,14 @@ File: appendix/detailed-evaluation.pdf Graphic file (type QTm)
 <use  "appendix/detailed-evaluation.pdf"  page5>
 File: appendix/detailed-evaluation.pdf Graphic file (type QTm)
 
-<use  "appendix/detailed-evaluation.pdf"  page5> [75]
+<use  "appendix/detailed-evaluation.pdf"  page5> [76]
 
 Package Fancyhdr Warning: \headheight is too small (12.0pt): 
  Make it at least 16.0pt.
  We now make it that large for the rest of the document.
  This may cause the page layout to be inconsistent, however.
 
-[76
+[77
 
 ]
 File: appendix/retrofit.pdf Graphic file (type QTm)
@@ -2228,7 +2235,7 @@ File: appendix/retrofit.pdf Graphic file (type QTm)
 <use  "appendix/retrofit.pdf"  page1>
 File: appendix/retrofit.pdf Graphic file (type QTm)
  <use  "appendix/retrofit.pdf"  page1>
-[77]
+[78]
 File: appendix/retrofit.pdf Graphic file (type QTm)
  <use  "appendix/retrofit.pdf"  page2>
 File: appendix/retrofit.pdf Graphic file (type QTm)
@@ -2236,7 +2243,7 @@ File: appendix/retrofit.pdf Graphic file (type QTm)
 <use  "appendix/retrofit.pdf"  page2>
 File: appendix/retrofit.pdf Graphic file (type QTm)
  <use  "appendix/retrofit.pdf"  page2>
-[78]
+[79]
 File: appendix/retrofit.pdf Graphic file (type QTm)
  <use  "appendix/retrofit.pdf"  page3>
 File: appendix/retrofit.pdf Graphic file (type QTm)
@@ -2244,7 +2251,7 @@ File: appendix/retrofit.pdf Graphic file (type QTm)
 <use  "appendix/retrofit.pdf"  page3>
 File: appendix/retrofit.pdf Graphic file (type QTm)
  <use  "appendix/retrofit.pdf"  page3>
-[79]
+[80]
 File: appendix/retrofit.pdf Graphic file (type QTm)
  <use  "appendix/retrofit.pdf"  page4>
 File: appendix/retrofit.pdf Graphic file (type QTm)
@@ -2252,7 +2259,7 @@ File: appendix/retrofit.pdf Graphic file (type QTm)
 <use  "appendix/retrofit.pdf"  page4>
 File: appendix/retrofit.pdf Graphic file (type QTm)
  <use  "appendix/retrofit.pdf"  page4>
-[80]
+[81]
 File: appendix/retrofit.pdf Graphic file (type QTm)
  <use  "appendix/retrofit.pdf"  page5>
 File: appendix/retrofit.pdf Graphic file (type QTm)
@@ -2260,7 +2267,7 @@ File: appendix/retrofit.pdf Graphic file (type QTm)
 <use  "appendix/retrofit.pdf"  page5>
 File: appendix/retrofit.pdf Graphic file (type QTm)
  <use  "appendix/retrofit.pdf"  page5>
-[81]
+[82]
 File: appendix/retrofit.pdf Graphic file (type QTm)
  <use  "appendix/retrofit.pdf"  page6>
 File: appendix/retrofit.pdf Graphic file (type QTm)
@@ -2268,7 +2275,7 @@ File: appendix/retrofit.pdf Graphic file (type QTm)
 <use  "appendix/retrofit.pdf"  page6>
 File: appendix/retrofit.pdf Graphic file (type QTm)
  <use  "appendix/retrofit.pdf"  page6>
-[82]
+[83]
 File: appendix/retrofit.pdf Graphic file (type QTm)
  <use  "appendix/retrofit.pdf"  page7>
 File: appendix/retrofit.pdf Graphic file (type QTm)
@@ -2276,7 +2283,7 @@ File: appendix/retrofit.pdf Graphic file (type QTm)
 <use  "appendix/retrofit.pdf"  page7>
 File: appendix/retrofit.pdf Graphic file (type QTm)
  <use  "appendix/retrofit.pdf"  page7>
-[83]
+[84]
 File: appendix/retrofit.pdf Graphic file (type QTm)
  <use  "appendix/retrofit.pdf"  page8>
 File: appendix/retrofit.pdf Graphic file (type QTm)
@@ -2284,7 +2291,7 @@ File: appendix/retrofit.pdf Graphic file (type QTm)
 <use  "appendix/retrofit.pdf"  page8>
 File: appendix/retrofit.pdf Graphic file (type QTm)
  <use  "appendix/retrofit.pdf"  page8>
-[84]
+[85]
 File: appendix/retrofit.pdf Graphic file (type QTm)
  <use  "appendix/retrofit.pdf"  page9>
 File: appendix/retrofit.pdf Graphic file (type QTm)
@@ -2292,7 +2299,7 @@ File: appendix/retrofit.pdf Graphic file (type QTm)
 <use  "appendix/retrofit.pdf"  page9>
 File: appendix/retrofit.pdf Graphic file (type QTm)
  <use  "appendix/retrofit.pdf"  page9>
-[85]
+[86]
 File: appendix/retrofit.pdf Graphic file (type QTm)
  <use  "appendix/retrofit.pdf"  page10>
 File: appendix/retrofit.pdf Graphic file (type QTm)
@@ -2300,7 +2307,7 @@ File: appendix/retrofit.pdf Graphic file (type QTm)
 <use  "appendix/retrofit.pdf"  page10>
 File: appendix/retrofit.pdf Graphic file (type QTm)
  <use  "appendix/retrofit.pdf"  page10>
-[86]
+[87]
 File: appendix/retrofit.pdf Graphic file (type QTm)
  <use  "appendix/retrofit.pdf"  page11>
 File: appendix/retrofit.pdf Graphic file (type QTm)
@@ -2308,7 +2315,7 @@ File: appendix/retrofit.pdf Graphic file (type QTm)
 <use  "appendix/retrofit.pdf"  page11>
 File: appendix/retrofit.pdf Graphic file (type QTm)
  <use  "appendix/retrofit.pdf"  page11>
-[87]
+[88]
 File: appendix/retrofit.pdf Graphic file (type QTm)
  <use  "appendix/retrofit.pdf"  page12>
 File: appendix/retrofit.pdf Graphic file (type QTm)
@@ -2316,7 +2323,7 @@ File: appendix/retrofit.pdf Graphic file (type QTm)
 <use  "appendix/retrofit.pdf"  page12>
 File: appendix/retrofit.pdf Graphic file (type QTm)
  <use  "appendix/retrofit.pdf"  page12>
-[88]
+[89]
 File: appendix/retrofit.pdf Graphic file (type QTm)
  <use  "appendix/retrofit.pdf"  page13>
 File: appendix/retrofit.pdf Graphic file (type QTm)
@@ -2324,7 +2331,7 @@ File: appendix/retrofit.pdf Graphic file (type QTm)
 <use  "appendix/retrofit.pdf"  page13>
 File: appendix/retrofit.pdf Graphic file (type QTm)
  <use  "appendix/retrofit.pdf"  page13>
-[89]) [90
+[90]) [91
 
 ])
 Package atveryend Info: Empty hook `BeforeClearDocument' on input line 98.
@@ -2347,4 +2354,4 @@ Here is how much of TeX's memory you used:
  1144 hyphenation exceptions out of 8191
  46i,19n,48p,2437b,514s stack positions out of 5000i,500n,10000p,200000b,80000s
 
-Output written on my_ntust_thesis.pdf (99 pages).
+Output written on my_ntust_thesis.pdf (100 pages).

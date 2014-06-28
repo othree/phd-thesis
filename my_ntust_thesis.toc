@@ -15,64 +15,64 @@
 \contentsline {subsection}{\numberline {3.2.1}初步評估}{10}{subsection.3.2.1}
 \contentsline {subsection}{\numberline {3.2.2}詳細評估}{10}{subsection.3.2.2}
 \contentsline {subsection}{\numberline {3.2.3}補強設計}{13}{subsection.3.2.3}
-\contentsline {subsection}{\numberline {3.2.4}補強工程}{13}{subsection.3.2.4}
-\contentsline {chapter}{\numberline {4}資料探勘}{14}{chapter.4}
-\contentsline {section}{\numberline {4.1}資料前處理方法}{17}{section.4.1}
-\contentsline {subsubsection}{主成分分析}{17}{section*.16}
-\contentsline {section}{\numberline {4.2}資料探勘方法}{17}{section.4.2}
-\contentsline {subsection}{\numberline {4.2.1}迴歸方法}{18}{subsection.4.2.1}
-\contentsline {subsubsection}{Generalized Linear Model}{18}{section*.17}
-\contentsline {subsubsection}{Support Vector Machine}{18}{section*.18}
-\contentsline {subsubsection}{類神經網路}{19}{section*.19}
-\contentsline {subsubsection}{基因規劃}{19}{section*.21}
-\contentsline {subsubsection}{加權基因規劃}{20}{section*.23}
-\contentsline {subsection}{\numberline {4.2.2}分群方法}{24}{subsection.4.2.2}
-\contentsline {subsubsection}{兩步分群}{24}{section*.26}
-\contentsline {subsubsection}{K-means}{25}{section*.27}
-\contentsline {section}{\numberline {4.3}探勘結果驗證方法與指標}{25}{section.4.3}
-\contentsline {subsection}{\numberline {4.3.1}驗證方法}{25}{subsection.4.3.1}
-\contentsline {subsubsection}{10 fold cross validation}{25}{section*.28}
-\contentsline {subsection}{\numberline {4.3.2}結果指標}{25}{subsection.4.3.2}
-\contentsline {subsubsection}{決定係數}{25}{section*.29}
-\contentsline {subsubsection}{平均絕對百分比誤差}{26}{section*.30}
-\contentsline {subsubsection}{均方根誤差}{26}{section*.31}
-\contentsline {subsubsection}{命中率}{27}{section*.32}
-\contentsline {chapter}{\numberline {5}校舍資訊與耐震能力之關係模型}{28}{chapter.5}
-\contentsline {section}{\numberline {5.1}Is 值與校舍設計之關係模型}{29}{section.5.1}
-\contentsline {subsection}{\numberline {5.1.1}資料前處理}{29}{subsection.5.1.1}
-\contentsline {subsubsection}{K-means}{30}{section*.34}
-\contentsline {subsubsection}{Two-Step}{31}{section*.35}
-\contentsline {subsection}{\numberline {5.1.2}資料探勘}{31}{subsection.5.1.2}
-\contentsline {subsubsection}{Generalized linear model}{32}{section*.37}
-\contentsline {subsubsection}{Simple regression}{32}{section*.38}
-\contentsline {subsubsection}{Artificial neural networks}{33}{section*.39}
-\contentsline {subsection}{\numberline {5.1.3}驗證}{33}{subsection.5.1.3}
-\contentsline {subsection}{\numberline {5.1.4}結果}{34}{subsection.5.1.4}
-\contentsline {section}{\numberline {5.2}CDR 值與校舍設計之關係模型}{36}{section.5.2}
-\contentsline {subsection}{\numberline {5.2.1}資料前處理}{36}{subsection.5.2.1}
-\contentsline {subsection}{\numberline {5.2.2}資料探勘}{40}{subsection.5.2.2}
-\contentsline {subsubsection}{Genetic Programming}{40}{section*.42}
-\contentsline {subsubsection}{Weighted Genetic Programming}{42}{section*.44}
-\contentsline {subsubsection}{Capacity Index Formulation Tuning}{44}{section*.47}
-\contentsline {subsection}{\numberline {5.2.3}結果}{45}{subsection.5.2.3}
-\contentsline {section}{\numberline {5.3}D\_isR 值與校舍設計之關係模型}{47}{section.5.3}
-\contentsline {subsection}{\numberline {5.3.1}資料前處理}{48}{subsection.5.3.1}
-\contentsline {subsection}{\numberline {5.3.2}資料探勘}{48}{subsection.5.3.2}
-\contentsline {subsection}{\numberline {5.3.3}結果}{48}{subsection.5.3.3}
-\contentsline {chapter}{\numberline {6}校舍資訊與破壞構件之關係模型}{49}{chapter.6}
-\contentsline {section}{\numberline {6.1}資料前處理}{49}{section.6.1}
-\contentsline {section}{\numberline {6.2}資料探勘}{53}{section.6.2}
-\contentsline {section}{\numberline {6.3}結果}{53}{section.6.3}
-\contentsline {chapter}{\numberline {7}校舍資訊與補強經費之關係模型}{55}{chapter.7}
-\contentsline {section}{\numberline {7.1}資料前處理}{56}{section.7.1}
-\contentsline {section}{\numberline {7.2}資料探勘}{62}{section.7.2}
-\contentsline {section}{\numberline {7.3}結果}{63}{section.7.3}
-\contentsline {chapter}{\numberline {8}結論與討論}{64}{chapter.8}
-\contentsline {section}{\numberline {8.1}結論}{64}{section.8.1}
-\contentsline {section}{\numberline {8.2}未來展望}{64}{section.8.2}
-\contentsline {chapter}{參考文獻}{65}{section*.53}
-\contentsline {chapter}{附錄一：典型校舍初步評估表}{68}{chapter*.55}
-\contentsline {chapter}{附錄二：典型校舍詳細評估表}{70}{chapter*.56}
-\contentsline {chapter}{附錄三：典型校舍補強設計表}{76}{chapter*.57}
-\contentsline {chapter}{授權書}{90}{section*.58}
+\contentsline {subsection}{\numberline {3.2.4}補強工程}{14}{subsection.3.2.4}
+\contentsline {chapter}{\numberline {4}資料探勘}{15}{chapter.4}
+\contentsline {section}{\numberline {4.1}資料前處理方法}{18}{section.4.1}
+\contentsline {subsubsection}{主成分分析}{18}{section*.16}
+\contentsline {section}{\numberline {4.2}資料探勘方法}{18}{section.4.2}
+\contentsline {subsection}{\numberline {4.2.1}迴歸方法}{19}{subsection.4.2.1}
+\contentsline {subsubsection}{Generalized Linear Model}{19}{section*.17}
+\contentsline {subsubsection}{Support Vector Machine}{19}{section*.18}
+\contentsline {subsubsection}{類神經網路}{20}{section*.19}
+\contentsline {subsubsection}{基因規劃}{20}{section*.21}
+\contentsline {subsubsection}{加權基因規劃}{21}{section*.23}
+\contentsline {subsection}{\numberline {4.2.2}分群方法}{25}{subsection.4.2.2}
+\contentsline {subsubsection}{兩步分群}{25}{section*.26}
+\contentsline {subsubsection}{K-means}{26}{section*.27}
+\contentsline {section}{\numberline {4.3}探勘結果驗證方法與指標}{26}{section.4.3}
+\contentsline {subsection}{\numberline {4.3.1}驗證方法}{26}{subsection.4.3.1}
+\contentsline {subsubsection}{10 fold cross validation}{26}{section*.28}
+\contentsline {subsection}{\numberline {4.3.2}結果指標}{26}{subsection.4.3.2}
+\contentsline {subsubsection}{決定係數}{26}{section*.29}
+\contentsline {subsubsection}{平均絕對百分比誤差}{27}{section*.30}
+\contentsline {subsubsection}{均方根誤差}{27}{section*.31}
+\contentsline {subsubsection}{命中率}{28}{section*.32}
+\contentsline {chapter}{\numberline {5}校舍資訊與耐震能力之關係模型}{29}{chapter.5}
+\contentsline {section}{\numberline {5.1}Is 值與校舍設計之關係模型}{30}{section.5.1}
+\contentsline {subsection}{\numberline {5.1.1}資料前處理}{30}{subsection.5.1.1}
+\contentsline {subsubsection}{K-means}{31}{section*.34}
+\contentsline {subsubsection}{Two-Step}{32}{section*.35}
+\contentsline {subsection}{\numberline {5.1.2}資料探勘}{32}{subsection.5.1.2}
+\contentsline {subsubsection}{Generalized linear model}{33}{section*.37}
+\contentsline {subsubsection}{Simple regression}{33}{section*.38}
+\contentsline {subsubsection}{Artificial neural networks}{34}{section*.39}
+\contentsline {subsection}{\numberline {5.1.3}驗證}{34}{subsection.5.1.3}
+\contentsline {subsection}{\numberline {5.1.4}結果}{35}{subsection.5.1.4}
+\contentsline {section}{\numberline {5.2}CDR 值與校舍設計之關係模型}{37}{section.5.2}
+\contentsline {subsection}{\numberline {5.2.1}資料前處理}{37}{subsection.5.2.1}
+\contentsline {subsection}{\numberline {5.2.2}資料探勘}{41}{subsection.5.2.2}
+\contentsline {subsubsection}{Genetic Programming}{41}{section*.42}
+\contentsline {subsubsection}{Weighted Genetic Programming}{43}{section*.44}
+\contentsline {subsubsection}{Capacity Index Formulation Tuning}{45}{section*.47}
+\contentsline {subsection}{\numberline {5.2.3}結果}{46}{subsection.5.2.3}
+\contentsline {section}{\numberline {5.3}D\_isR 值與校舍設計之關係模型}{48}{section.5.3}
+\contentsline {subsection}{\numberline {5.3.1}資料前處理}{49}{subsection.5.3.1}
+\contentsline {subsection}{\numberline {5.3.2}資料探勘}{49}{subsection.5.3.2}
+\contentsline {subsection}{\numberline {5.3.3}結果}{49}{subsection.5.3.3}
+\contentsline {chapter}{\numberline {6}校舍資訊與破壞構件之關係模型}{50}{chapter.6}
+\contentsline {section}{\numberline {6.1}資料前處理}{50}{section.6.1}
+\contentsline {section}{\numberline {6.2}資料探勘}{54}{section.6.2}
+\contentsline {section}{\numberline {6.3}結果}{54}{section.6.3}
+\contentsline {chapter}{\numberline {7}校舍資訊與補強經費之關係模型}{56}{chapter.7}
+\contentsline {section}{\numberline {7.1}資料前處理}{57}{section.7.1}
+\contentsline {section}{\numberline {7.2}資料探勘}{63}{section.7.2}
+\contentsline {section}{\numberline {7.3}結果}{64}{section.7.3}
+\contentsline {chapter}{\numberline {8}結論與討論}{65}{chapter.8}
+\contentsline {section}{\numberline {8.1}結論}{65}{section.8.1}
+\contentsline {section}{\numberline {8.2}未來展望}{65}{section.8.2}
+\contentsline {chapter}{參考文獻}{66}{section*.53}
+\contentsline {chapter}{附錄一：典型校舍初步評估表}{69}{chapter*.55}
+\contentsline {chapter}{附錄二：典型校舍詳細評估表}{71}{chapter*.56}
+\contentsline {chapter}{附錄三：典型校舍補強設計表}{77}{chapter*.57}
+\contentsline {chapter}{授權書}{91}{section*.58}
 \contentsfinish 
