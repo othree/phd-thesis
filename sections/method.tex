@@ -3,7 +3,7 @@
 \renewcommand{\theequation}{\arabic{chapter}-\arabic{equation}}
 \chapter{資料探勘}
 
-過往在各種不同商業、工業、學術等領域都隨著產業逐步的數位化，有各種資料庫甚至資料倉儲系統的建置與資料收集，例如零售業的交易紀錄，各種學術實驗的結果記錄等等，而隨著時間推移，這些資料庫和倉儲系統收集的資料數量都成長的非常龐大，資料間的關係和複雜度也越來越複雜，這些資料除了當初建置的目的和資料的統計分析外，研究人員還開始思考更進一步的資料應用，希望能把資料中以往隱藏不可見的知識找出來，因此資料探勘（Data Mining）此一研究領域就因應而生。資料探勘的方法包括統計、線上分析處理（OLAP、on-line analytical processing）、情報檢索（information retrieval)、機器學習（machine learning)、模式識別（pattern recognition）等。
+過往在各種不同商業、工業、學術等領域都隨著產業逐步的數位化，有各種資料庫甚至資料倉儲系統的建置與資料收集，例如零售業的交易紀錄，各種學術實驗的結果記錄等等，而隨著時間推移，這些資料庫和倉儲系統收集的資料數量都成長的非常龐大，資料間的關係和複雜度也越來越複雜，這些資料除了當初建置的目的和資料的統計分析外，研究人員還開始思考更進一步的資料應用，希望能把資料中以往隱藏不可見的知識找出來，因此資料探勘（data mining）此一研究領域就因應而生。應用在資料探勘研究的演算法非常多種，包括統計、線上分析處理（OLAP、on-line analytical processing）、情報檢索（information retrieval)、機器學習（machine learning)、模式識別（pattern recognition）等，只要能夠用來在大量資料中尋找有資訊的方法，都可以作為資料探勘的演算法。
 
 資料探勘的流程也有多種規範，其中最廣為被使用的是~CRISP-DM\cite{shearer2000crisp}（Cross Industry Standard Process for Data Mining），是由~SPSS~以及~NCR~兩大廠商在~1990年開始發展的，它的流程架構如圖~\ref{fig:CRISP-DM}~所示，將一個完整的資料探勘流程分為六個步驟，分別為：
 
@@ -43,13 +43,13 @@
 
 \section{資料探勘方法}
 
-資料探勘的方法分為分類、分群、迴歸尋找關聯~\cite{fayyad1996data}，其中迴歸是最常使用到的一種，本研究的主要目標皆可以歸納為迴歸類的問題，因此使用到的迴歸演算法最多，接著才是作為輔助用的分類和分群演算法。
+資料探勘的方法分為分類、分群、迴歸尋找關聯~\cite{fayyad1996data}~，其中迴歸是最常使用到的一種，本研究的主要目標皆可以歸納為迴歸類的問題，因此使用到的迴歸演算法最多，接著才是作為輔助用的分類和分群演算法。
 
 資料探勘所建立的模型可以簡單的定義為：
 
 \begin{equation} y = f(x) \label{eq:ModelEqu}\end{equation} 
 
-$f(.)$~就是透過資料探勘分析學習而得到的模型函數，~$x$~代表輸入參數，輸入參數是為各種已知的屬性資料，例如可以簡單透過量測得到的校舍尺寸資訊，~$y$~則是代表輸出參數，也就是希望透過這個模型所得到的，比較難取得的屬性資料，例如需要經過詳細評估才能的到的校舍~CDR~值。
+$f(.)$~就是透過資料探勘分析學習而得到的模型函數，~$x$~代表輸入參數，輸入參數是為各種已知的屬性資料，例如可以簡單透過量測得到的校舍尺寸資訊，~$y$~則是代表輸出參數，也就是希望透過這個模型所得到的，比較難取得的屬性資料，例如需要經過詳細評估才能的到的校舍~$CDR$~值。
 
 \subsection{迴歸方法}
 
@@ -82,9 +82,9 @@ SVM最早是BOSER~\cite{boser1992}等人，在~1992~年的~COLT（Computational 
 
 \subsubsection{基因規劃}
 
-基因規劃（Genetic Programming, GP）是基於基因演算法（Genetic Algorithm, GA）發展而來，而~GA~是~1975~年由~John Holland\cite{holland1975adaptation}~所提出的演化求解方法，其是基於生物演化的過程為基礎，假設問題的目標可以轉換為二元的基因序列，再透過模擬生物交配、突變的進化過程，求得最佳化問題的解，和傳統的演化求解方法相比，基因演算法可以比較容易的找到全域最佳解，且其可以快速的找到足夠好的解，即使問題的複雜度很高。Genetic Algorithm 的應用領域相當廣泛，在營建領域也有不少的應用，Huang...et. al.\cite{minshui2009study}~就使用GA預測梁模型受力後會產生破壞的位置極其嚴重性，Šešok和Belevicius\cite{vsevsok2008global}~則使用GA建立一個~truss topology~最佳化的建議系統。
+基因規劃（Genetic Programming, GP）是基於基因演算法（Genetic Algorithm, GA）發展而來，而~GA~是~1975~年由~John Holland\cite{holland1975adaptation}~所提出的演化求解方法，其是基於生物演化的過程為基礎，假設問題的目標可以轉換為二元的基因序列，再透過模擬生物交配、突變的進化過程，求得最佳化問題的解，和傳統的演化求解方法相比，基因演算法可以比較容易的找到全域最佳解，且其可以快速的找到足夠好的解，即使問題的複雜度很高。基因演算法的應用領域相當廣泛，在營建領域也有不少的應用，Huang...et. al.\cite{minshui2009study}~就使用GA預測梁模型受力後會產生破壞的位置極其嚴重性，Šešok和Belevicius\cite{vsevsok2008global}~則使用基因演算法建立一個~truss topology~最佳化的建議系統。
 
-基因規劃則是~1992~年由~Koza\cite{koza1992genetic}~所發表的方法，它是基於發展許久的基因演算法而來，將基因演算法所要演進發展的基因序列換為樹狀結構的分析樹（parse tree），並藉由與基因演算法相同概念的交配、突變和篩選等機制來達成解析樹的演化，並達成最佳化目標，如果要求得一數學關係方程式，則可以使用運算樹（operation tree）作為欲演進的解析樹結構。運算樹是一個二元樹結構，如圖~\ref{fig:GP-struct}~，其底層的末端點是方程樹的輸入變數或是其它常數、數值等，其餘的分支節點都是運算子（operator），藉由置換各個節點的輸入數值和運算子，就可以組成各種可能的數學方程式。此一方法的特色是其輸出即為輸入和輸出的關係方程式，且其方程式之形式不受限於基因演算法之特性。在營建領域使用~GP~加上運算樹進行最佳化的應用少有人做，Yeh and Lien\cite{yeh2009knowledge}~使用GP方法來預測混凝土強度。Tsai\cite{tsai2011using}~則使用修改過的~Weighted Genetic Programming~方法建立出~squat wall strengths~的方程式，並且還利用一些修剪公式的方法來調整得到的公式，讓公式可以更精簡，但是還保留有一定程度的經度。
+基因規劃則是~1992~年由~Koza\cite{koza1992genetic}~所發表的方法，它是基於發展許久的基因演算法而來，將基因演算法所要演進發展的基因序列換為樹狀結構的分析樹（parse tree），並藉由與基因演算法相同概念的交配、突變和篩選等機制來達成解析樹的演化，並達成最佳化目標，如果要求得一數學關係方程式，則可以使用運算樹（operation tree）作為欲演進的解析樹結構。運算樹是一個二元樹結構，如圖~\ref{fig:GP-struct}~，其底層的末端點是方程樹的輸入變數或是其它常數、數值等，其餘的分支節點都是運算子（operator），藉由置換各個節點的輸入數值和運算子，就可以組成各種可能的數學方程式。此一方法的特色是其輸出即為輸入和輸出的關係方程式，且其方程式之形式不受限於基因演算法之特性。在營建領域使用~GP~加上運算樹進行最佳化的應用少有人做，Yeh and Lien\cite{yeh2009knowledge}~使用GP方法來預測混凝土強度。Tsai\cite{tsai2011using}~則使用修改過的~Weighted Genetic Programming~方法建立出~squat wall strengths~的方程式，並且還利用一些修剪公式的方法來調整得到的公式，讓公式可以更精簡，但是還保留有一定程度的可靠度。
 
 \begin{figure}[hbtp]
   \begin{center}
@@ -94,11 +94,11 @@ SVM最早是BOSER~\cite{boser1992}等人，在~1992~年的~COLT（Computational 
   \end{center}
 \end{figure}
 
-藉由這樣的運算樹設計，再透過~GA~最佳化輸入參數的選擇、不同運算節點的運算子，~GP~便可以根據資料建立出一個屬性與所求目標的關係方程式。
+基因規劃藉由這樣的運算樹設計，再透過基因演算法最佳化輸入參數的選擇、不同運算節點的運算子，便可以根據資料建立出一個屬性與所求目標的關係方程式。
 
 \subsubsection{加權基因規劃}
 
-加權基因規劃（Weighted Genetic Programming, WGP）是由~Tsai\cite{tsai2011predicting}~所提出，基於~GP~ 方法發展而來，不同之處在於其運算樹的每個節點前都加上一個權重~$w$~，最佳化的過程除了對方程式結構和參數的選擇最佳化外，還要同時最佳化所有的權重，因此其輸出的關係公式可能性遠大於~GP~方法，故可以處理更為複雜的問題。~WGP~的運算樹結構如圖~\ref{fig:WGP-sample}，每個運算樹都可以組成一個數學方程式，如圖~\ref{fig:WGP-sample}~之運算樹即可組成方程式如下：
+加權基因規劃（Weighted Genetic Programming, WGP）是由~Tsai\cite{tsai2011predicting}~所提出，基於~GP~ 方法發展而來，不同之處在於其運算樹的每個節點前都加上一個權重~$w$~，最佳化的過程除了對方程式結構和參數的選擇最佳化外，還要同時最佳化所有的權重，因此其輸出的關係公式可能性遠大於~GP~方法，故可以處理更為複雜的問題。~WGP~的運算樹結構如圖~\ref{fig:WGP-sample}~，每個運算樹都可以組成一個數學方程式，如圖~\ref{fig:WGP-sample}~之運算樹即可組成方程式如下：
 
 \begin{equation} w_1(w_3(\dfrac{w_7P_2}{w_8P_6}) - w_4sin(w_9c))+w_2 \times cos(w_{12}c \times w_{11}P_1) \label{eq:WGP-sample}\end{equation} 
 
@@ -114,7 +114,7 @@ SVM最早是BOSER~\cite{boser1992}等人，在~1992~年的~COLT（Computational 
 
 運算樹可以分為兩種層級，運算層全部都是運算子節點，輸入層則是輸入參數的選擇，運算層每多一層，需要最佳化的節點和權重都會以等比例成長，運算層的層數也影響到最佳化結果的方程式複雜度，而輸入層則全部都是輸入節點，每層之間的每個連結都有一個權重參數，這些權重即為~WGP~方法最大的特色，這些權重可以讓運算樹組成的方程式有無限多種，也可以用以表示不同參數的重要性，因此雖然加入權重會讓最佳化更費時間，但仍然值得加上權重。
 
-圖~\ref{fig:wgp-unit}~是一個構成~WGP~運算樹的基本單元，和圖~~\ref{fig:gp-unit}~所示的~GP~運算樹的基本單元類似，包含一個父層節點和兩個子層節點，父層的節點是運算節點~$F$，透過權重參數連接到兩個子層節點，子層節點可能是其它的基本單元或是輸入節點，而整個基本單元的輸出~$y$~為：
+圖~\ref{fig:wgp-unit}~是一個構成~WGP~運算樹的基本單元，和圖~\ref{fig:gp-unit}~所示的~GP~運算樹的基本單元類似，包含一個父層節點和兩個子層節點，父層的節點是運算節點~$F$，透過權重參數連接到兩個子層節點，子層節點可能是其它的基本單元或是輸入節點，而整個基本單元的輸出~$y$~為：
 
 \begin{figure}
   \begin{center}
@@ -161,7 +161,7 @@ SVM最早是BOSER~\cite{boser1992}等人，在~1992~年的~COLT（Computational 
 
 modify required
 
-由於各種學術、商業研究所處理的問題資料量越來越大，分群演算法所需要的運算時間也急遽的成長，為了讓分群演算在處理大量的資料時也能有良好的效能表現，而發展出兩步分群（Two-Step Clustering），其是由~Zhang，Ramakrishnan~與~Livny\cite{zhang1996birch}~所提出，此一方法分為兩個主要步驟：第一步是先把資料依據其與相鄰資料的相適度來排序並分成數個小群集，接著第二步再使用階層式分群方法，將這些群集慢慢組合或拆分直到達成停止條件。兩步分群的演算費時和資料量呈線性關係，因此資料量成長時也不會讓運算時間成長到無法應用的程度。
+由於各種學術、商業研究所處理的問題資料量越來越大，分群演算法所需要的運算時間也急遽的成長，為了讓分群演算在處理大量的資料時也能有良好的效能表現，而發展出兩步分群（Two-Step Clustering），其是由~Zhang~、~Ramakrishnan~與~Livny\cite{zhang1996birch}~所提出，此一方法分為兩個主要步驟：第一步是先把資料依據其與相鄰資料的相適度來排序並分成數個小群集，接著第二步再使用階層式分群方法，將這些群集慢慢組合或拆分直到達成停止條件。兩步分群的演算費時和資料量呈線性關係，因此資料量成長時也不會讓運算時間成長到無法應用的程度。
 
 % Based on of the massive volume of basic data for school buildings in the database, this study chooses two-step clustering method. The basic concept was first proposed by Zhang, Ramakrishnan and Livny~\cite{zhang1996birch} for handling large amounts of data. This method has two major steps. The first step sequences data and pre-clusters sequences into small subclusters based on the similarity of adjacent data, thereby reducing the amount of data. The second step divides several small subclusters into the desired number of clusters using a hierarchical clustering method. The hierarchical clustering method then combines close subclusters slowly until the stop condition is met. The computing speed of this method is influenced slightly by the volume of data.
 
@@ -180,13 +180,14 @@ K-means~是由~MacQueen\cite{macqueen67}~所提出，也是最常被使用的分
 
 % As proposed by MacQueen~\cite{macqueen67}, K-means is one of the most common clustering methods and has a wide application scope. Notably, it is a machine learning method; its principal steps are as follows.
 
-\section{探勘結果驗證方法與指標}
+%\section{探勘結果驗證方法與指標}
+\section{探勘結果指標}
 
 
 
-\subsection{驗證方法}
+%\subsection{驗證方法}
 
-\subsubsection{10 fold cross validation}
+%\subsubsection{10 fold cross validation}
 
 
 \subsection{結果指標}
@@ -223,8 +224,5 @@ K-means~是由~MacQueen\cite{macqueen67}~所提出，也是最常被使用的分
 
 \begin{equation} \text{Hit Rate} = \dfrac{ \sum{I\{(1 - \alpha)y_i \le \hat{y_i} \le（1 + \alpha)y_i \}} }{N} \label{eq:hitrate}\end{equation} 
 
-其中~$I\{L\} \in \{0, 1\}$~，如果~$L$~為真，則~$I\{L\}$~為~1~，反之則為~0~，~$y$~是透過資料所建立的關係模型所求得的輸出屬性預測值，~$\hat{y}$~則是輸出屬性的實際值，而~$\alpha$~為命中率的容許誤差，且~$0 \le \alpha \le 1$~，如果~$\alpha = 0.1$~則表示誤差~$10\%$~內都算是有預測模型有預測命中。Hit Rate 越高代表關係模型的結果越好。
-
-
-
+其中~$I\{L\} \in \{0, 1\}$~，如果~$L$~為真，則~$I\{L\}$~為~1~，反之則為~0~，~$y$~是透過資料所建立的關係模型所求得的輸出屬性預測值，~$\hat{y}$~則是輸出屬性的實際值，而~$\alpha$~為命中率的容許誤差，且~$0 \le \alpha \le 1$~，如果~$\alpha = 0.1$~則表示誤差~$10\%$~內都算是有預測模型有預測命中，命中率越高代表關係模型的結果越好，是一個非常直觀的模型品質指標。
 

@@ -4,19 +4,19 @@
 
 在校舍耐震資料庫中，不同階段的調查資料有不同的校舍耐震能力指標，這些指標都是以數值形式來量化校舍建築物的耐震能力，有了此一數值後，可以快速找出有安全疑慮的校舍，根據耐震能力排序，甚至推算會需要多少預算來補強多少棟校舍等等，都可以使用此數值作為依據來達成，可以說是非常重要的校舍特性，然而要取得此一數值非常耗時耗力，如果有其他快速便宜的方法可以取得此一數值，那便可以大幅度的減少校舍耐震能力補強作業的所需要的時間與經費，因此本研究的第一個資料探勘目標，便是找出預測耐震能力索引的預測模型，得到此一預測模型後，便可以根據校舍的設計參數與現況作為輸入參數，快速的得到該校舍的耐震能力索引參考值。
 
-初步評估階段資料的耐震能力指標是~$I_s$~（seismic index）值，此一數值為專業人士於現場良策、調查後，使用國家地震中心的專家根據過往的實驗數據統計分析後，所設計出的一個評估表計算而得到的，為一初步的評估值，較詳細評估所計算的耐震能力指標可靠度來的低，但仍是校舍補強計畫初期的篩選工作中非常重要的數值。詳細評估和補強設計階段的耐震能力指標則是~$CDR$~值，~$CDR$~值是由專業人士根據校舍的設計與實際狀況建製結構模型，並進行非線性的推垮分析所得到的，此數值與建築物之設計參數為高度非線性的關係，也是最接近校舍建築物實際耐震能力的量化指標。
+初步評估階段資料的耐震能力指標是~$Is$~（seismic index）值，此一數值為專業人士於現場量測、調查後，使用國家地震中心的專家根據過往的實驗數據統計分析後，所設計出的一個評估表計算而得到的，為一初步的評估值，較詳細評估所計算的耐震能力指標可靠度來的低，但仍是校舍補強計畫初期的篩選工作中非常重要的數值。詳細評估和補強設計階段的耐震能力指標則是~$CDR$~值，~$CDR$~值是由專業人士根據校舍的設計與實際狀況建製結構模型，並進行非線性的推垮分析所得到的，此數值與建築物之設計參數為高度非線性的關係，也是最接近校舍建築物實際耐震能力的量化指標。
 
-而除了數值量化的耐震能力指標外，本研究還將「校舍是否需要補強」（$D\_isR$）這個二元指標作為耐震能力來作為校舍耐震資料庫中的第三個耐震能力指標，$I_s$、$CDR$、$D\_isR$ 這三個耐震能力指標的預測模型，即為本研究所取得的第一個校舍耐震資料庫隱含知識，以下便針對不同指標的預測模型的資料探勘流程與結果詳細介紹。
+而除了數值量化的耐震能力指標外，本研究還將「校舍是否需要補強」（$D\_isR$）這個二元指標作為耐震能力來作為校舍耐震資料庫中的第三個耐震能力指標，~$Is$、$CDR$、$D\_isR$~這三個耐震能力指標的預測模型，即為本研究所取得的第一個校舍耐震資料庫隱含知識，以下便針對不同指標的預測模型的資料探勘流程與結果詳細介紹。
 
 \section{Is 值與校舍設計之關係模型}
 
-校舍耐震資料庫中的初步評估資料表的耐震能力索引是為~$I_s$~值，初步評估是校舍耐震能力補強作業中，很重要的篩選過程，因為建築物的詳細評估所需要的金額極高，評估需要的時間也很長久，因此需要一個速度、價錢和可靠度都可以接受的評估方法，用比較短的時間找出耐震能力有疑慮的校舍，盡早處理。而地震中心所設計的初步評估表即為一個速度、價錢和可靠度都可以接受的評估方法，只要根據建築物的設計參數，像是樓層數、長度、深度、柱子尺寸以及校舍現況等，就可以快速的得到一個極具參考價值的耐震能力指標，而其計算的原理也與詳細評估的耐震能力指標索引~$CDR$~值一樣，為耐震容量與耐震需求的比。找出~$I_s$~值與校舍設計參數之間的關係模型，可以進一步分析初步評估表中各種數據的重要性，並將結果回饋到此一初步評估表，將初步評估表調整的更為精簡，負責評估的人員也可以更快速的完成此意評估表格。
+校舍耐震資料庫中的初步評估資料表的耐震能力索引是為~$Is$~值，初步評估是校舍耐震能力補強作業中，很重要的篩選過程，因為建築物的詳細評估所需要的金額極高，評估需要的時間也很長久，因此需要一個速度、價錢和可靠度都可以接受的評估方法，用比較短的時間找出耐震能力有疑慮的校舍，盡早處理。而地震中心所設計的初步評估表即為一個速度、價錢和可靠度都可以接受的評估方法，只要根據建築物的設計參數，像是樓層數、長度、深度、柱子尺寸以及校舍現況等，就可以快速的得到一個極具參考價值的耐震能力指標，而其計算的原理也與詳細評估的耐震能力指標索引~$CDR$~值一樣，為耐震容量與耐震需求的比。找出~$Is$~值與校舍設計參數之間的關係模型，可以進一步分析初步評估表中各種數據的重要性，並將結果回饋到此一初步評估表，將初步評估表調整的更為精簡，負責評估的人員也可以更快速的完成此意評估表格。
 
 % The proposed prediction model, based on data-mining technology, has six steps – business understanding, data understanding, data preparation, modeling, evaluation, and deployment – as recommended in the cross industry standard process for data mining (CRISP-DM) proposed by Chapman et al. (2000) (Fig. 9). The objective of this work is to construct a prediction model for the aseismic ability indices of school buildings and collect complete data. Hence, the major tasks are data preparation, modeling, and evaluation. Fig. 10 shows the procedural plan based on needs and the methods chosen. 
 
 \subsection{資料前處理}
 
-首先，從國震中心的校舍耐震資料庫中，將各棟校舍的~$I_s$~值與其校舍的相關資料挑出並整合在一起，第一步是過濾掉明顯不合理的錯誤資料，這些資料通常是人為的錯誤造成的，而過濾的方法則是使用國陣中心建議的過濾條件：
+首先，從國震中心的校舍耐震資料庫中，將各棟校舍的~$Is$~值與其校舍的相關資料挑出並整合在一起，第一步是過濾掉明顯不合理的錯誤資料，這些資料通常是人為的錯誤造成的，而過濾的方法則是使用國陣中心建議的過濾條件：
 
 \begin{itemize}
 \item 校舍總長或總深度超過兩百公尺
@@ -25,7 +25,7 @@
 \item 柱間垮距超過八公尺或小於兩公尺
 \end{itemize}
 
-大約有八百筆資料符合這組基本的過濾條件，而在初步的過濾之後，前處理的第二個步驟則是減少資料屬性的維度，主成分分析（Principal component analysis）是很常使用的資料前處理方法，這個分析方法可以找出所有資料屬性中，重要度較高的屬性，它是把原始的多個資料屬性，透過向量轉換的方式，線性組合出主要的資料屬性。
+大約有八百筆資料符合這組基本的過濾條件，而在初步的過濾之後，前處理的第二個步驟則是減少資料屬性的維度，主成分分析（principal component analysis）是很常使用的資料前處理方法，這個分析方法可以找出所有資料屬性中，重要度較高的屬性，它是把原始的多個資料屬性，透過向量轉換的方式，線性組合出主要的資料屬性。
 
 % Roughly 800 bits of valid data are obtained. After filtering using these conditions. Principal component analysis (PCA) is then used to reduce the dimensionality of data attributes. Notably, PCA, a very common data preparation method, can identify very important attributes among various attributes. The goal is to convert the original variables through vector transition into mutually independent variables of a linear combination. The ideal situation is that principal components obtained from linear combination retain most of the information of original variables.
 
@@ -71,7 +71,7 @@ Two-Step~分群有兩個優點，一是複雜度不高，運算時間與資料�
 
 \subsection{資料探勘}
 
-完成資料前處理，將校舍的群集分好之後，才開始建立~$I_s$~值與校舍設計參數的關係模型，本分析使用了廣義線性模型、線性回歸和類神經網路三種分析方法，每種方法都有三種分析資料群，分別為先經過~K-means~分群的資料、先經過~Two-step~分群的資料及沒有先經過分群的資料。圖~\ref{fig:spss-mining}~為使用~SPSS Clemitine~分析時的節點設計圖。以下分別對三種分析方法的參數設定作說明。
+完成資料前處理，將校舍的群集分好之後，才開始建立~$Is$~值與校舍設計參數的關係模型，本分析使用了廣義線性模型、線性回歸和類神經網路三種分析方法，每種方法都有三種分析資料群，分別為先經過~K-means~分群的資料、先經過~Two-step~分群的資料及沒有先經過分群的資料。圖~\ref{fig:spss-mining}~為使用~SPSS Clemitine~分析時的節點設計圖。以下分別對三種分析方法的參數設定作說明。
 
 \begin{figure}[hbtp]
   \begin{center}
@@ -85,26 +85,26 @@ Two-Step~分群有兩個優點，一是複雜度不高，運算時間與資料�
 
 \subsubsection{Generalized linear model}
 
-廣義線性模型是假設在輸入參數和預測目邊之間有一個可以用連結函數表達的關係，這個連結函數可能是指數函數、對數函數、Logistic 函數等，經由一些測試資料的測試，我們選擇使用對數函數作為連結函數，並且根據實際的資料分布選擇了常態分布作為輸入參數的分布函數，而關係模型的分布也選擇常態分布，因其表現教其他分布形式較好。
+廣義線性模型是假設在輸入參數和預測目邊之間有一個可以用連結函數表達的關係，這個連結函數可能是指數函數、對數函數、Logistic~函數等，經由一些測試資料的測試，我們選擇使用對數函數作為連結函數，並且根據實際的資料分布選擇了常態分布作為輸入參數的分布函數，而關係模型的分布也選擇常態分布，因其表現教其他分布形式較好。
 
 % The GLM assumes a relationship between input variables and a predictor; this relationship can be built by a link function such as identity function, log function, logit function, or power function. After available link functions testing on some data, the prediction model performs best when using log function as the link function; hence, this work chose the log function. The distribution function of the predictor is based on the actual distribution of data. This work chose the normal distribution, which is close to the real data distribution. The prediction model constructed using the normal distribution performed better than those with other distribution types.
 
 \subsubsection{Simple regression}
 
-線性回歸是選擇使用最小平方根法來建立校舍建築物的設計參數與其耐震能力 $Is$ 之間的關係，這也是最常使用的回歸方法之一。
+線性回歸是選擇使用最小平方根法來建立校舍建築物的設計參數與其耐震能力~$Is$~之間的關係，這也是最常使用的回歸方法之一。
 
 % Simple regression in this work uses the least square method by adopting the building design parameters as independent variables $X$ and the aseismic ability of buildings as dependant variables $Y$. The linear equation between regressed design parameters and aseismic indices serve as the model for predicting aseismic ability $Y$ based on building design parameters $X$.
 
 \subsubsection{Artificial neural networks}
 
-類神經網路需要決定的參數包括隱藏層的數量、每層的神經元數量、學習率、停止條件等，除了直接設定神經網路的參數，還有一些方法可以使用，例如 dynamic、multiple 或是 prune method 可以用來調整並找出最佳的神經網路大小和結構，dynamic method 是從一個小型的神經網路開始（兩個隱藏層、每層兩個神經元），慢慢成長，並且比較成長前後的神經網路效能與結果，Multiple method 則是同時產生各種不同的神經網路，並且一起訓練到達停止條件，然後在從中挑選出表現最好的一個，而 Prune Method 則是從一個大的類神經網路開始，慢慢的把重要度低的神經元節點拿掉。本分析最後挑選的是 Exhaustive Prune Method，是 Prune Method 的一種修改形式，對於節點的篩選要求較高，是所有方法中最花時間的，但是通常也可以找到最好的結果。其他的類神經網路設定參數為：初始的神經網路為兩層隱藏層，其中一層有 30 個神經元、一層有 20 個神經元，停止條件為 250 個訓練循環，在這個設定下，Exhaustive Prune Method 是表現最好的方法。
+類神經網路需要決定的參數包括隱藏層的數量、每層的神經元數量、學習率、停止條件等，除了直接設定神經網路的參數，還有一些方法可以使用，例如 dynamic、multiple 或是~prune method~可以用來調整並找出最佳的神經網路大小和結構，dynamic method 是從一個小型的神經網路開始（兩個隱藏層、每層兩個神經元），慢慢成長，並且比較成長前後的神經網路效能與結果，~multiple method~ 則是同時產生各種不同的神經網路，並且一起訓練到達停止條件，然後在從中挑選出表現最好的一個，而~prune method~則是從一個大的類神經網路開始，慢慢的把重要度低的神經元節點拿掉。本分析最後挑選的是~exhaustive prune method~，是~prune method~的一種修改形式，對於節點的篩選要求較高，是所有方法中最花時間的，但是通常也可以找到最好的結果。其他的類神經網路設定參數為：初始的神經網路為兩層隱藏層，其中一層有 30 個神經元、一層有 20 個神經元，停止條件為 250 個訓練循環，在這個設定下，~exhaustive prune method~是表現最好的方法。
 
 % Generally, ANNs must decide on such parameters as number of hidden layers, number of neurons in each layer, learning rate, and stop condition. Aside from directly setting these parameters, methods such as dynamic, multiple, and Prune methods are available for adjusting and finding the optimal size and structure of the neural network. The dynamic method starts with a small neural network (two hidden layers with two neurons for each layer), expands network size gradually, and decides on the further expansion based on model performance before and after expansion. The multiple methods constructs multiple neural networks simultaneously, trains all neural networks to reach the ``stop condition,'' and then selects the group with the best performance. In contrast with the dynamic method, which slowly builds a large neural network from a small one, the Prune method first builds a large network and then removes neurons with low importance based on training. This work chooses the exhaustive Prune method, a special application of the Prune method. The initial neural network has two hidden layers, one with 30 neurons and the other with 20 neurons. The stop condition is set to 250 training cycles. Under this limit, the prediction model built by the exhaustive Prune method performs best.
 
 
 \subsection{驗證}
 
-驗證有兩個主要的目的，一是確保資料探勘找到的關係模型的可靠度，而不會找到只適用於該組訓練資料集的關係模型，第二個目的是可以用來作為比較不同分析方法的指標數據，本分析使用的驗證方式是十群交叉驗證，這個方法將所有的資料等分成十份，每次挑選九組出來作為訓練資料集，留下一組作為驗證資料集，如此可以得到十組模型以及其可靠度的指標，求此十組指標平均值即可得到代表此關係模型的可靠度代表值，而本分析所選擇的指標有三個，線性關係、絕對平均誤差（Mean Absolute Prediction Error, MAPE）以及 hit rate。
+驗證有兩個主要的目的，一是確保資料探勘找到的關係模型的可靠度，而不會找到只適用於該組訓練資料集的關係模型，第二個目的是可以用來作為比較不同分析方法的指標數據，本分析使用的驗證方式是十群交叉驗證，這個方法將所有的資料等分成十份，每次挑選九組出來作為訓練資料集，留下一組作為驗證資料集，如此可以得到十組模型以及其可靠度的指標，求此十組指標平均值即可得到代表此關係模型的可靠度代表值，而本分析所選擇的指標有三個，線性關係、絕對平均誤差（Mean Absolute Prediction Error, MAPE）以及命中率。
 
 % Validation work has two purposes. The first is to ensure model reliability instead of to generate only good performance during data training. The second is to serve as a benchmark for comparing the performance of different prediction models. This work uses 10-fold cross validation to assess and compare the performance of prediction models. This method divides a fixed amount of data into 10 groups, conducts 10 rounds of model building and validation, chooses a different group of data for testing, trains the model with remaining nine groups of data, and uses test group data to validate model accuracy. After validation for 10 times, the accuracy of the 10 models is obtained and their average is taken as the accuracy of this algorithm. This study uses linear correlation, mean absolute prediction error (MAPE), and hit rate as the indices for comparing the prediction model performance.
 
@@ -122,14 +122,13 @@ Two-Step~分群有兩個優點，一是複雜度不高，運算時間與資料�
 
 \begin{equation} MAPE = \dfrac{\sum{\dfrac{y_i - \hat{y_i}}{y_i}}}{N} \label{eq:MAPE}\end{equation} 
 
-其中 $N$ 是資料總數，MAPE 的是用來表示關係模型誤差之數值，由於關係模型不可能完全沒有誤差，即使有非常高的線性關係也是會有誤差，因此會使用 MAPE 作為判斷其誤差程度的參考。 hit rate 的定義是：
+其中 $N$ 是資料總數，MAPE 的是用來表示關係模型誤差之數值，由於關係模型不可能完全沒有誤差，即使有非常高的線性關係也是會有誤差，因此會使用 MAPE 作為判斷其誤差程度的參考。
+% where N is the number of samples. The MAPE is used to judge the  degree of error of prediction models as the prediction result always has errors, although the prediction mode has an adequately high R2. The hit rate is derived as hit rate
 
-% where N is the number of samples. The MAPE is used to judge the  degree of error of prediction models as the prediction result always has errors, although the prediction mode has an adequately high R2. The hit rate is derived as 
-hit rate
+%\begin{equation} hit\ rate = \dfrac{ \sum{I\{(1 - \alpha)y_i \le \hat{y_i} \le (1 + \alpha)y_i \}} }{N} \label{eq:hitrate}\end{equation} 
 
-\begin{equation} hit\ rate = \dfrac{ \sum{I\{(1 - \alpha)y_i \le \hat{y_i} \le (1 + \alpha)y_i \}} }{N} \label{eq:hitrate}\end{equation} 
-
-其中~$0 \le \alpha \le 1$~，且~$I\{L\} = 1$~。hit rate~是用來判斷關係模型的正確率的。在本分析中，我們設定了兩個~$\alpha$~值作為~hit rate~指標用，分別是~0.1~和~0.2~，表~\ref{tab:is_result}~列出了這九個關係模型使用這三個指標配合十群交叉驗證所得到的數值，表現最好的關係模型是先使用~K-means~分群再使用~GLM~所建立的，第二好的則是先使用~Two-step~分群再使用~GLM~所建立的，圖~13~是先使用~K-means~分群再使用~GLM~所建立模型的實際~$Is$~值與使用模型得到的~$\hat{Is}$~值的比較圖，資料點的回歸取現的斜率非常接近~1~，可以看得出來兩者之間的相關度非常高。如果單看模型的線性關係表現，類神經網路的表現比~GLM~ 和線性回歸都要來的好，這也可以驗證校舍的耐震能力與其設計參數之機善一個非線性的關係，而雖然~GLM~整體的排名較~ANN~來的好，但是~hit rate~卻是~ANN~表現的比較好，但是看到~MAPE~又會發現~ANN~的~MAPE~較大，因此我們建議在~$Is$~值的關係模型的挑選，可以依據應用的需求來決定，如果需要較高準確率的時候，建議使用~ANN~，如果是需要降低整體的誤差，則建議使用~GLM~。如果先使用分群方法將校舍資料根據設計參數分出不同群集後，再對不同群集分別探勘其耐震能力與設計參數的關係模型，結果會比沒有先分群要來的好一些，探討其原因，是因為典型校舍已經是校舍建築物的一個子集合，而此子集合的特性已經非常接近，因此再進行分群也不會有顯著的改善。
+%其中~$0 \le \alpha \le 1$~，且~$I\{L\} = 1$~。hit rate~是用來判斷關係模型的正確率的。
+在本分析中，我們設定了兩個~$\alpha$~值作為計算命中率（hit rate）指標用，分別是~0.1~和~0.2~，表~\ref{tab:is_result}~列出了這九個關係模型使用這三個指標配合十群交叉驗證所得到的數值，表現最好的關係模型是先使用~K-means~分群再使用~GLM~所建立的，第二好的則是先使用~Two-step~分群再使用~GLM~所建立的，圖~13~是先使用~K-means~分群再使用~GLM~所建立模型的實際~$Is$~值與使用模型得到的~$\hat{Is}$~值的比較圖，資料點的回歸取現的斜率非常接近~1~，可以看得出來兩者之間的相關度非常高。如果單看模型的線性關係表現，類神經網路的表現比~GLM~ 和線性回歸都要來的好，這也可以驗證校舍的耐震能力與其設計參數之機善一個非線性的關係，而雖然~GLM~整體的排名較~ANN~來的好，但是~hit rate~卻是~ANN~表現的比較好，但是看到~MAPE~又會發現~ANN~的~MAPE~較大，因此我們建議在~$Is$~值的關係模型的挑選，可以依據應用的需求來決定，如果需要較高準確率的時候，建議使用~ANN~，如果是需要降低整體的誤差，則建議使用~GLM~。如果先使用分群方法將校舍資料根據設計參數分出不同群集後，再對不同群集分別探勘其耐震能力與設計參數的關係模型，結果會比沒有先分群要來的好一些，探討其原因，是因為典型校舍已經是校舍建築物的一個子集合，而此子集合的特性已經非常接近，因此再進行分群也不會有顯著的改善。
 
 
 \begin{table}[hbtp]
