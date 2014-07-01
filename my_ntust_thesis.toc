@@ -22,18 +22,18 @@
 \contentsline {section}{\numberline {4.2}資料探勘方法}{18}{section.4.2}
 \contentsline {subsection}{\numberline {4.2.1}迴歸方法}{19}{subsection.4.2.1}
 \contentsline {subsubsection}{Generalized Linear Model}{19}{section*.17}
-\contentsline {subsubsection}{Support Vector Machine}{19}{section*.18}
+\contentsline {subsubsection}{支撐向量機}{20}{section*.18}
 \contentsline {subsubsection}{類神經網路}{20}{section*.19}
 \contentsline {subsubsection}{基因規劃}{20}{section*.21}
-\contentsline {subsubsection}{加權基因規劃}{21}{section*.23}
-\contentsline {subsection}{\numberline {4.2.2}分群方法}{25}{subsection.4.2.2}
-\contentsline {subsubsection}{兩步分群}{25}{section*.26}
+\contentsline {subsubsection}{加權基因規劃}{23}{section*.23}
+\contentsline {subsection}{\numberline {4.2.2}分群方法}{26}{subsection.4.2.2}
+\contentsline {subsubsection}{兩步分群}{26}{section*.26}
 \contentsline {subsubsection}{K-means}{26}{section*.27}
-\contentsline {section}{\numberline {4.3}探勘結果指標}{26}{section.4.3}
-\contentsline {subsection}{\numberline {4.3.1}結果指標}{26}{subsection.4.3.1}
-\contentsline {subsubsection}{決定係數}{26}{section*.28}
+\contentsline {section}{\numberline {4.3}探勘結果指標}{27}{section.4.3}
+\contentsline {subsection}{\numberline {4.3.1}結果指標}{27}{subsection.4.3.1}
+\contentsline {subsubsection}{決定係數}{27}{section*.28}
 \contentsline {subsubsection}{平均絕對百分比誤差}{27}{section*.29}
-\contentsline {subsubsection}{均方根誤差}{27}{section*.30}
+\contentsline {subsubsection}{均方根誤差}{28}{section*.30}
 \contentsline {subsubsection}{命中率}{28}{section*.31}
 \contentsline {chapter}{\numberline {5}校舍資訊與耐震能力之關係模型}{29}{chapter.5}
 \contentsline {section}{\numberline {5.1}Is 值與校舍設計之關係模型}{30}{section.5.1}

@@ -33,23 +33,30 @@
 
 \section{資料前處理方法}
 
-資料前處理方法常見的目的有：找出重要性較高的屬性、凸顯資料特性、剔除特異資料點等；本研究主要的資料過濾方法為資料的合理性分析，因此使用的前處理方法較少，只有主成分分析法。
+資料前處理方法常見的目的有：找出重要性較高的屬性、凸顯資料特性、剔除特異資料點等；本研究主要的資料過濾方法為資料的合理性分析，其是根據資料特性，根據經驗與專家意見等參考依據，建立出資料合理性的判斷方法。而除了合理性分析外，尚有較為簡單的數種方法，包括：
+
+\begin{itemize}
+\item 輸入屬性篩選
+\item 子資料集挑選
+\end{itemize}
+
+剩餘有較複雜的數學理論背景的前處理方法，只有主成分分析法。
 
 \subsubsection{主成分分析}
 
-主成分分析（Principal Component Analysis）是常見的前處理方法，它可以用來減少資料的維度，其原理是透過向量轉換，將原始的資料轉換成不同維度的屬性資料，且能保持最大量的，輸入屬性對於輸出屬性的貢獻。
+主成分分析（Principal Component Analysis，PCA）是常見的前處理方法，它可以用來減少資料的維度，其數學原理是將資料向量投影到不同的座標系統，將原始的資料轉換成不同座標系的的向量資料，且能保持最大程度的，輸入屬性對於輸出屬性的貢獻。
 
 % PCA, a very common data preparation method, can identify very important attributes among various attributes. The goal is to convert the original variables through vector transition into mutually independent variables of a linear combination. The ideal situation is that principal components obtained from linear combination retain most of the information of original variables.
 
 \section{資料探勘方法}
 
-資料探勘的方法分為分類、分群、迴歸尋找關聯~\cite{fayyad1996data}~，其中迴歸是最常使用到的一種，本研究的主要目標皆可以歸納為迴歸類的問題，因此使用到的迴歸演算法最多，接著才是作為輔助用的分類和分群演算法。
+資料探勘的方法分為分類、分群、迴歸以及尋找關聯~\cite{fayyad1996data}~，其中迴歸是最常使用到的一種，本研究的主要目標皆可以歸納為迴歸類的問題，因此使用到的迴歸演算法最多，接著才是作為輔助用的分類和分群演算法。
 
-資料探勘所建立的模型可以簡單的定義為：
+迴歸、分類、分群三種資料探勘所建立的模型可以簡單的定義為：
 
 \begin{equation} y = f(x) \label{eq:ModelEqu}\end{equation} 
 
-$f(.)$~就是透過資料探勘分析學習而得到的模型函數，~$x$~代表輸入參數，輸入參數是為各種已知的屬性資料，例如可以簡單透過量測得到的校舍尺寸資訊，~$y$~則是代表輸出參數，也就是希望透過這個模型所得到的，比較難取得的屬性資料，例如需要經過詳細評估才能的到的校舍~$CDR$~值。
+$f(.)$~就是透過資料探勘分析學習而得到的模型函數，~$x$~代表輸入參數，輸入參數是各種已知的屬性資料，例如可以簡單透過量測得到的校舍尺寸資訊，~$y$~則是代表輸出參數，也就是希望透過這個模型所得到的，比較難取得的屬性資料，例如需要經過詳細評估才能的到的校舍~$CDR$~值。
 
 \subsection{迴歸方法}
 
@@ -62,9 +69,9 @@ $f(.)$~就是透過資料探勘分析學習而得到的模型函數，~$x$~代�
 
 $g(.)$是為所選的鏈結函數，~$O$~是偏移（offset）變數，~$F$~則是~$y$~的分佈模型，其是用牛頓法（Newton-Raphson Method）不斷的調整~$\beta$~使的~$x\beta + O$~逼近~$g(E(y))$~，最後最接近的方程式即為~$x$~與~$y$~兩者的關系式。比起迴歸分析，此方法還需要了解~$y$~值分佈狀況，選擇出最適合的分佈函數，並假設~$x$~與~$y$~間的鏈結函數形式，雖然越多的參數選擇代表了更多的模型不確定性，但廣義線性模型卻能夠提供比迴歸分析更廣的應用範圍，也可能得到更接近真實的關係模型。
 
-\subsubsection{Support Vector Machine}
+\subsubsection{支撐向量機}
 
-SVM最早是BOSER~\cite{boser1992}等人，在~1992~年的~COLT（Computational Learning Theory）所提出，~SVM~是一個基於統計學習理論的分類方法，用來處理二元分割的問題，其原理是將原本無法線性分割的問題轉換到一個不同維度的空間（kernel）後，假設該空間存在一超平面（hyperplane），可以正確的將資料分開，並將尋找此一超平面的問題轉換為一最佳化問題，求解後即可得到二元分割邊界的方程式。而後~Harris Drucker, et. al.,\cite{drucker1997support} 將此二元分割問題轉換為迴歸分析問題，故~SVM~也可以處理迴歸問題。
+支撐向量機（Support Vector Machine，SVM）最早是BOSER~\cite{boser1992}等人，在~1992~年的~COLT（Computational Learning Theory）所提出，~SVM~是一個基於統計學習理論的分類方法，用來處理二元分割的問題，其原理是將原本無法線性分割的問題轉換到一個不同維度的空間（kernel）後，假設該空間存在一超平面（hyperplane），可以正確的將資料分開，並將尋找此一超平面的問題轉換為一最佳化問題，求解後即可得到二元分割邊界的方程式。而後~Harris Drucker, et. al.,\cite{drucker1997support} 將此二元分割問題轉換為迴歸分析問題，故~SVM~也可以處理迴歸問題。
 
 \subsubsection{類神經網路}
 
@@ -77,8 +84,6 @@ SVM最早是BOSER~\cite{boser1992}等人，在~1992~年的~COLT（Computational 
     \label{fig:ANN-network}
   \end{center}
 \end{figure}
-
-
 
 \subsubsection{基因規劃}
 

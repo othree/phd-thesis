@@ -6,7 +6,7 @@
 
 初步評估階段資料的耐震能力指標是~$Is$~（seismic index）值，此一數值為專業人士於現場量測、調查後，使用國家地震中心的專家根據過往的實驗數據統計分析後，所設計出的一個評估表計算而得到的，為一初步的評估值，較詳細評估所計算的耐震能力指標可靠度來的低，但仍是校舍補強計畫初期的篩選工作中非常重要的數值。詳細評估和補強設計階段的耐震能力指標則是~$CDR$~值，~$CDR$~值是由專業人士根據校舍的設計與實際狀況建製結構模型，並進行非線性的推垮分析所得到的，此數值與建築物之設計參數為高度非線性的關係，也是最接近校舍建築物實際耐震能力的量化指標。
 
-而除了數值量化的耐震能力指標外，本研究還將「校舍是否需要補強」（$D\_isR$）這個二元指標作為耐震能力來作為校舍耐震資料庫中的第三個耐震能力指標，~$Is$、$CDR$、$D\_isR$~這三個耐震能力指標的預測模型，即為本研究所取得的第一個校舍耐震資料庫隱含知識，以下便針對不同指標的預測模型的資料探勘流程與結果詳細介紹。
+而除了數值量化的耐震能力指標外，本研究還將「校舍是否需要補強」（$D\_isR$）這個二元指標作為耐震能力來作為校舍耐震資料庫中的第三個耐震能力指標，~$Is$、$CDR$、$D\_isR$~這三個耐震能力指標的預測模型，即為本研究所取得的第一個校舍耐震資料庫隱含知識，也是本研究所取得最直接相關於校舍設計參數與耐震能力之知識，以下便針對不同指標的預測模型的資料探勘流程與結果詳細介紹。
 
 \section{Is 值與校舍設計之關係模型}
 
@@ -201,7 +201,7 @@ Two-Step~分群有兩個優點，一是複雜度不高，運算時間與資料�
 由於並不是所有的校舍都有進行過詳細評估，因此第二個步驟就是要挑選出同時有基本設計資料以及詳細評估的 $CDR$ 值的資料，接著，由於校舍資料庫中的原始資料，每棟校舍都有上百個資料屬性，因此接著要對屬性進行篩選與合併，與國震中心之專家討論過後，挑選過濾掉大部分的屬性，但是仍然有約三十多個屬性，因此為了能夠繼續減少資料屬性，本分析接著還繼續對這些資料的屬性進行分類，根據其屬性分布挑選出一組典型校舍子集來分析，這個挑選出來的子集其特性為：
 
 % In the second stage, choosing school buildings with both basic design parameters and minimum destruction ground acceleration is necessary because not all school buildings have detailed information.￼According to the raw data in the seismic￼assessment database for school buildings, each data set contains hundreds of properties. Based on our judgment with expert which are non-structural and low importance, and synthesize some properties with similarity. There are still more than 30 properties left after this reduction process. This study further classifies school building records into subsets based on similarities in property values, and chooses one subset with major population as the data set for further studying. After the classification of school buildings, we try to do further reduction and finally determine a set of key properties which is optimal to represent the seismic characteristics of individual school buildings. The choice is based on data distribution, and a subset that correctly represents I-shaped school buildings. The features of this subset adopted in this study are listed below:
-￼
+
 \begin{itemize}
 \item 沒有走廊柱
 \item 只有一種教室柱
@@ -224,12 +224,12 @@ Two-Step~分群有兩個優點，一是複雜度不高，運算時間與資料�
 \item 是否有走廊
 \item 二樓樓地板面積
 \item 總樓地板面積
-\item $S_{DS}$
-\item $S_{D1}$
+\item $S^D_S$
+\item $S^D_1$
 \end{itemize}
 \end{multicols}
 
-並編為 $P_1$ 到 $P_{12}$，其中~$S_{DS}$~是校舍的設計地表加速度，~$S_{D1}$~則是一秒週期的設計譜加速度，都是分析校舍耐震能力時非常重要的參數，另外也根據專家的建議，使用現有的資料組合出兩個新的屬性，分別是校舍的教室數量（$P_{13}$）和校舍建築物的垮距（$P_{14}$），以下介紹各輸入屬性：
+並編為 $P_1$ 到 $P_{12}$，其中~$S^D_S$~是校舍的震區設計水平譜加速度係數，~$S^D_1$~則是一秒週期的設計譜加速度，都是分析校舍耐震能力時非常重要的參數，另外也根據專家的建議，使用現有的資料組合出兩個新的屬性，分別是校舍的教室數量（$P_{13}$）和校舍建築物的垮距（$P_{14}$），以下介紹各輸入屬性：
 
 \begin{description}
   \item[樓層數]
@@ -248,9 +248,10 @@ Two-Step~分群有兩個優點，一是複雜度不高，運算時間與資料�
   總樓地板面積直接反映了結構物所需乘載的重量規模，是非常重要的參數，因此納入輸入屬性。
   \item[教室柱數量、教室柱斷面積]
   教室柱數量以及其斷面積可以代表校舍結構物中，乘載重量的能力，在評估結構物的耐震能力時也是非常重要的資訊，因此將此二屬性納入本分析的輸入屬性中。
-  \item[設計地表加速度]
-  設計地表加速度表示該地區的建築物結構所需要能承受的地震力，是判斷結構物耐震能力是否足夠時的重要依據，因此將其納入輸入屬性中。
-  \item[一秒週期的設計譜加速度]
+  \item[震區設計水平譜加速度係數，$S^D_S$]
+  代表工址所屬震區在堅實地盤下,設計地震作用時短週期結構之~5\%~阻尼譜加速度與重力加速度~$g$~之比值。是判斷結構物耐震能力是否足夠時的重要依據，因此將其納入輸入屬性中。
+  \item[一秒週期的設計譜加速度，$S^D_1$]
+  代表工址所屬震區在堅實地盤下,設計地震作用與一秒週期結構之~5\%~阻尼譜加速度與重力加速度~$g$~之比值。
   \item[教室數量、垮距]
   校舍的教室數量以及垮距兩個屬性是在調查時並沒有調查的資料，不過可以由其他的屬性資料中推算得到，而在跟國震中心的專家討論過後，認為可以將此兩個屬性也加入此分析的輸入屬性，因其都可以代表校舍結構物的結構資訊，教室數量代表著典型校舍的隔間情形，也包含了隔間牆的分布，而垮距則可以代表校舍結構物中柱子的平均乘載量。
 \end{description}
