@@ -83,21 +83,21 @@ Two-Step~分群有兩個優點，一是複雜度不高，運算時間與資料�
 
 % The prediction model is built only after clustering is completed. This work uses a GLM, simple regression, and ANNs to build the prediction model based on three groups of data – not clustered in advance, clustered by K-means, and clustered by the two-step method in advance. In total, nine prediction models are generated. Fig. 12 shows the node configuration within SPSS Clementine. Below are the parameters chosen for the three methods. 
 
-\subsubsection{Generalized linear model}
+\subsubsection{廣義線性模型}
 
-廣義線性模型是假設在輸入參數和預測目邊之間有一個可以用連結函數表達的關係，這個連結函數可能是指數函數、對數函數、Logistic~函數等，經由一些測試資料的測試，我們選擇使用對數函數作為連結函數，並且根據實際的資料分布選擇了常態分布作為輸入參數的分布函數，而關係模型的分布也選擇常態分布，因其表現教其他分布形式較好。
+廣義線性模型（GLM）是假設在輸入參數和預測目邊之間有一個可以用連結函數表達的關係，這個連結函數可能是指數函數、對數函數、Logistic~函數等，經由一些測試資料的測試，我們選擇使用對數函數作為連結函數，並且根據實際的資料分佈選擇了常態分布作為輸入參數的分佈函數，而關係模型的分布也選擇常態分佈，因其表現較其他分布形式較好。
 
 % The GLM assumes a relationship between input variables and a predictor; this relationship can be built by a link function such as identity function, log function, logit function, or power function. After available link functions testing on some data, the prediction model performs best when using log function as the link function; hence, this work chose the log function. The distribution function of the predictor is based on the actual distribution of data. This work chose the normal distribution, which is close to the real data distribution. The prediction model constructed using the normal distribution performed better than those with other distribution types.
 
-\subsubsection{Simple regression}
+\subsubsection{Simple Regression}
 
 線性回歸是選擇使用最小平方根法來建立校舍建築物的設計參數與其耐震能力~$Is$~之間的關係，這也是最常使用的回歸方法之一。
 
 % Simple regression in this work uses the least square method by adopting the building design parameters as independent variables $X$ and the aseismic ability of buildings as dependant variables $Y$. The linear equation between regressed design parameters and aseismic indices serve as the model for predicting aseismic ability $Y$ based on building design parameters $X$.
 
-\subsubsection{Artificial neural networks}
+\subsubsection{Artificial Neural Networks}
 
-類神經網路需要決定的參數包括隱藏層的數量、每層的神經元數量、學習率、停止條件等，除了直接設定神經網路的參數，還有一些方法可以使用，例如 dynamic、multiple 或是~prune method~可以用來調整並找出最佳的神經網路大小和結構，dynamic method 是從一個小型的神經網路開始（兩個隱藏層、每層兩個神經元），慢慢成長，並且比較成長前後的神經網路效能與結果，~multiple method~ 則是同時產生各種不同的神經網路，並且一起訓練到達停止條件，然後在從中挑選出表現最好的一個，而~prune method~則是從一個大的類神經網路開始，慢慢的把重要度低的神經元節點拿掉。本分析最後挑選的是~exhaustive prune method~，是~prune method~的一種修改形式，對於節點的篩選要求較高，是所有方法中最花時間的，但是通常也可以找到最好的結果。其他的類神經網路設定參數為：初始的神經網路為兩層隱藏層，其中一層有 30 個神經元、一層有 20 個神經元，停止條件為 250 個訓練循環，在這個設定下，~exhaustive prune method~是表現最好的方法。
+類神經網路需要決定的參數包括隱藏層的數量、每層的神經元數量、學習率、停止條件等，除了直接設定神經網路的參數，還有一些方法可以使用，例如 dynamic、multiple 或是~prune method~可以用來調整並找出最佳的神經網路大小和結構，dynamic method 是從一個小型的神經網路開始（兩個隱藏層、每層兩個神經元），慢慢成長，並且比較成長前後的神經網路效能與結果，~multiple method~ 則是同時產生各種不同的神經網路，並且一起訓練到達停止條件，然後在從中挑選出表現最好的一個，而~prune method~則是從一個大的類神經網路開始，慢慢的把重要度低的神經元節點拿掉。本分析最後挑選的是~exhaustive prune method~，是~prune method~的一種修改形式，對於節點的篩選要求較高，是所有方法中最花時間的，但是通常也可以找到最好的結果。其他的類神經網路設定參數為：初始的神經網路為兩層隱藏層，其中一層有~30~個神經元、一層有~20~個神經元，停止條件為~250~個訓練循環，在這個設定下，~exhaustive prune method~是表現最好的方法。
 
 % Generally, ANNs must decide on such parameters as number of hidden layers, number of neurons in each layer, learning rate, and stop condition. Aside from directly setting these parameters, methods such as dynamic, multiple, and Prune methods are available for adjusting and finding the optimal size and structure of the neural network. The dynamic method starts with a small neural network (two hidden layers with two neurons for each layer), expands network size gradually, and decides on the further expansion based on model performance before and after expansion. The multiple methods constructs multiple neural networks simultaneously, trains all neural networks to reach the ``stop condition,'' and then selects the group with the best performance. In contrast with the dynamic method, which slowly builds a large neural network from a small one, the Prune method first builds a large network and then removes neurons with low importance based on training. This work chooses the exhaustive Prune method, a special application of the Prune method. The initial neural network has two hidden layers, one with 30 neurons and the other with 20 neurons. The stop condition is set to 250 training cycles. Under this limit, the prediction model built by the exhaustive Prune method performs best.
 
@@ -110,19 +110,21 @@ Two-Step~分群有兩個優點，一是複雜度不高，運算時間與資料�
 
 \subsection{結果}
 
-此資料探勘分析會產生九個校舍耐震能力與校舍建築設計資訊間的關係模型，包括直接使用GLM、線性回歸和類神經網路的三組，混合使用 K-means 或是 Two-Step 分群的六組，要比較其優劣我們使用了~$R^2$ 、 MAPE 和 hit rate 三個指標，並配合十群交叉驗證，其中線性關係 $R^2$ 之公式為：
+此資料探勘分析會產生九個校舍耐震能力與校舍建築設計資訊間的關係模型，包括直接使用~GLM~、線性回歸和類神經網路的三組，混合使用~K-means~或是~Two-Step~分群的六組，要比較其優劣我們使用了~$R^2$~、~MAPE~和~hit rate~三個指標，其中線性關係越高表示兩者之間越接近，也代表著關係模型的正確性，而~MAPE~ 的是用來表示關係模型誤差之數值，由於關係模型不可能完全沒有誤差，即使有非常高的線性關係也是會有誤差，因此會使用~MAPE~作為判斷其誤差程度的參考。
+
+%並配合十群交叉驗證，其中線性關係 $R^2$ 之公式為：
 
 % This work constructed nine prediction models; three are directly generated by the GLM, simple regression, and ANNs. The mixed model of K-means and two-step clustering generated three prediction models. Hence, nine models were obtained and 10-fold cross validation is used to compare the performance of the three reference indices – R2, MAPE, and hit rate. Notably, R2, the linear correlation is
 
-\begin{equation} R = \dfrac{\sum{(\hat{y_i} - \tilde{y})^2}}{\sum{(y_i - \tilde{y})^2}} \label{eq:RSQ}\end{equation} 
+%\begin{equation} R = \dfrac{\sum{(\hat{y_i} - \tilde{y})^2}}{\sum{(y_i - \tilde{y})^2}} \label{eq:RSQ}\end{equation} 
 
-其中 $y_i$ 是校舍的實際耐震能力指標 $Is$ 值， $\hat{y_i}$ 則是透過此關係模型的到的推估耐震能力指標值，$\tilde{y}$ 則是所有資料的 $Is$ 值之平均，透過此一公式即可得到實際的 $Is$ 值與透過關係模型得到的推估值之間的線性關係，線性關係越高表示兩者之間越接近，也代表著關係模型的正確性。MAPE 的公式為：
+%其中 $y_i$ 是校舍的實際耐震能力指標 $Is$ 值， $\hat{y_i}$ 則是透過此關係模型的到的推估耐震能力指標值，$\tilde{y}$ 則是所有資料的 $Is$ 值之平均，透過此一公式即可得到實際的 $Is$ 值與透過關係模型得到的推估值之間的線性關係，線性關係越高表示兩者之間越接近，也代表著關係模型的正確性。MAPE 的公式為：
 
 % where yi is the aseismic CDR of school buildings obtained using nonlinear analysis of the database, yi is the CDR obtained from the prediction model, and y~ is the average aseismic CDR of school 651 buildings obtained using nonlinear analysis. The correlation between aseismic CDR of school buildings obtained via the prediction model and nonlinear analysis can be determined based on linear correlation. A high CDR indicates a strong correlation and many opportunities to make correct predictions. The MAPE is derived as
 
-\begin{equation} MAPE = \dfrac{\sum{\dfrac{y_i - \hat{y_i}}{y_i}}}{N} \label{eq:MAPE}\end{equation} 
+%\begin{equation} MAPE = \dfrac{\sum{\dfrac{y_i - \hat{y_i}}{y_i}}}{N} \label{eq:MAPE}\end{equation} 
 
-其中 $N$ 是資料總數，MAPE 的是用來表示關係模型誤差之數值，由於關係模型不可能完全沒有誤差，即使有非常高的線性關係也是會有誤差，因此會使用 MAPE 作為判斷其誤差程度的參考。
+%其中 $N$ 是資料總數，MAPE 的是用來表示關係模型誤差之數值，由於關係模型不可能完全沒有誤差，即使有非常高的線性關係也是會有誤差，因此會使用 MAPE 作為判斷其誤差程度的參考。
 % where N is the number of samples. The MAPE is used to judge the  degree of error of prediction models as the prediction result always has errors, although the prediction mode has an adequately high R2. The hit rate is derived as hit rate
 
 %\begin{equation} hit\ rate = \dfrac{ \sum{I\{(1 - \alpha)y_i \le \hat{y_i} \le (1 + \alpha)y_i \}} }{N} \label{eq:hitrate}\end{equation} 
@@ -154,7 +156,7 @@ Two-Step~分群有兩個優點，一是複雜度不高，運算時間與資料�
 
 % When 0<a<1 and I{L} = 1, hit rate is utilized to determine the percentage of data predicted correctly by the prediction model, that is, prediction model accuracy. In this work, the hit rate is ranked by setting a equal to 0.1 and 0.2, which are utilized as two assessment indices that average and rank the performance of accuracy. Table 1 lists the assessment indices of the nine prediction models. The prediction model that performs best is that built using the GLM with K-means clustering. The second best prediction model is that built via the GLM with two-step clustering. Fig. 13 compares the actual CDR and CDR obtained using the K-means and GLM prediction models. The slope of the regression curve equation approaches 1, indicating a strong correlation between school building design data and aseismic ability of building. However, the scattered distribution of actual data points corresponds to a high R2 and high MAPE. After a thorough comparison of the nonlinear analysis by ANNs, the GLM, and linear analysis by simple regression, the ANNs perform better than the GLM and linear analysis by simple regression all aspects, confirming that the design parameters of school buildings have a nonlinear relationship with aseismic ability, which conforms to the fact that the aseismic CDR in this work is obtained using nonlinear analysis. Although the GLM ranks high in comprehensive assessment, its hitate is worse than that of ANNs; ANNs also have a higher MAPE. Hence, it is possible to determine which prediction method is suitable based on actual needs when predicting the aseismic ability of school buildings. We recommend using ANNs for accurate prediction of the aseismic abilities of school buildings; however, the drawback in using ANNs is that the prediction model generated is a black box. We recommend using the GLM to minimize total error. When building prediction models by clustering first and then comparing the performance of the three assessment methods, the prediction model built with clustered data performs slightly better than those built directly, indicating that traditional school buildings are already a subcluster of various architectural patterns. One feature of subclusters is their weak correlation with the aseismic ability of school buildings. Hence, information added to the cluster will not markedly improve prediction model quality.
 
-由於校舍補強預算和時間有限，因此其執行的優先順序就會依照評估得到的耐震能力作為參考排序，因此本分析還用此實際的應用作為另一個評量關係模型優劣的指標，此指標將所有的校舍依照其~$Is$~值排序後，照順序等分成~10~群，另外在用關係模型得到的~$\hat{Is}$~排序，一樣照順序等分為 10 群，接著比較每筆校舍所分配到的群集，如果實際所屬的群集編號和關係模型得到的群集編號一樣，則誤差（error）為~0，如果差了一號，則誤差為~1，差了兩號則誤差為~2，表~\ref{tab:is_seq_result}~即為九組關係模型的排序誤差結果。可以發現表現最好的一組仍然為先使用~K-means~分群再用~GLM~ 探勘所得到的關係模型，其誤差小於 1 的資料比例為 70.8\%，誤差小於~2~的資料比例則有~88.9\%~。
+由於校舍補強預算和時間有限，因此其執行的優先順序就會依照評估得到的耐震能力作為參考排序，因此本分析還用此實際的應用作為另一個評量關係模型優劣的指標，此指標將所有的校舍依照其~$Is$~值排序後，照順序等分成~10~群，另外在用關係模型得到的~$\hat{Is}$~排序，一樣照順序等分為 10 群，接著比較每筆校舍所分配到的群集，如果實際所屬的群集編號和關係模型得到的群集編號一樣，則誤差（error）為~0，如果差了一號，則誤差為~1，差了兩號則誤差為~2，表~\ref{tab:is_seq_result}~即為九組關係模型的排序誤差結果。可以發現表現最好的一組仍然為先使用~K-means~分群再用~GLM~ 探勘所得到的關係模型，其誤差小於~1~的資料比例為~70.8\%，誤差小於~2~的資料比例則有~88.9\%~。
 
 % The budgets and priorities for reinforcing school buildings are based on the aseismic abilities of school buildings. This work analyzed the sequencing result of aseismic ability of school buildings by sequencing school buildings based on CDR values, dividing them into 10 equal zones, and comparing the zone number of actual and predicted values. Table 2 shows the zoning result. When Error = 0, the predicted and actual values have the same zone number; when Error = 1, predicted and actual values are in adjacent zones; when Error = 2, predicted and actual values are separated by one zone. The prediction model built by the GLM with K-means clustering performs best. The zoning error of this prediction model <1 is 70.8\%, and the zoning error <2 is 88.9\%, indicating that the prediction model already has sufficient accuracy when sequencing is used.
 
@@ -181,7 +183,7 @@ Two-Step~分群有兩個優點，一是複雜度不高，運算時間與資料�
 
 \section{CDR 值與校舍設計之關係模型}
 
-校舍耐震資料庫中，詳細評估表的耐震能力索引~$CDR$~值是用來評估校舍是否需要補強、甚至是拆除的最重要依據，此數值的取得非常耗時耗力，且與校舍結構材料、設計與現況等參數之間為高度非線性的關係，如果能夠取的此一關係模型，對於校舍耐震能力補強計畫的進行，可以有很大的幫助。
+校舍耐震資料庫中，詳細評估表的耐震能力索引~$CDR$~值是用來評估校舍是否需要補強、甚至是拆除的最重要依據，此數值需要由專業人士進行完整且詳細的評估，此數值的取得非常耗時耗力，且評估需要之經費也不便宜，，是一個與校舍結構材料、設計與現況等參數之間為高度非線性的關係的數值，如果能夠取的此一關係模型，對於校舍耐震能力補強計畫來說，絕對可以有很大的幫助。
 
 \subsection{資料前處理}
 
@@ -198,14 +200,14 @@ Two-Step~分群有兩個優點，一是複雜度不高，運算時間與資料�
 \end{itemize}
 
 
-由於並不是所有的校舍都有進行過詳細評估，因此第二個步驟就是要挑選出同時有基本設計資料以及詳細評估的 $CDR$ 值的資料，接著，由於校舍資料庫中的原始資料，每棟校舍都有上百個資料屬性，因此接著要對屬性進行篩選與合併，與國震中心之專家討論過後，挑選過濾掉大部分的屬性，但是仍然有約三十多個屬性，因此為了能夠繼續減少資料屬性，本分析接著還繼續對這些資料的屬性進行分類，根據其屬性分布挑選出一組典型校舍子集來分析，這個挑選出來的子集其特性為：
+由於並不是所有的校舍都有進行過詳細評估，因此第二個步驟就是要挑選出同時有基本設計資料以及詳細評估的~$CDR$~值的資料，接著，由於校舍資料庫中的原始資料，每棟校舍都有上百個資料屬性，因此接著要對屬性進行篩選與合併，與國震中心之專家討論過後，挑選過濾掉大部分的屬性，但是仍然有約三十多個屬性，因此為了能夠繼續減少資料屬性，本分析接著還繼續對這些資料的屬性進行分類，根據其屬性分布挑選出一組典型校舍子集來分析，這個挑選出來的子集其特性為：
 
 % In the second stage, choosing school buildings with both basic design parameters and minimum destruction ground acceleration is necessary because not all school buildings have detailed information.￼According to the raw data in the seismic￼assessment database for school buildings, each data set contains hundreds of properties. Based on our judgment with expert which are non-structural and low importance, and synthesize some properties with similarity. There are still more than 30 properties left after this reduction process. This study further classifies school building records into subsets based on similarities in property values, and chooses one subset with major population as the data set for further studying. After the classification of school buildings, we try to do further reduction and finally determine a set of key properties which is optimal to represent the seismic characteristics of individual school buildings. The choice is based on data distribution, and a subset that correctly represents I-shaped school buildings. The features of this subset adopted in this study are listed below:
 
 \begin{itemize}
 \item 沒有走廊柱
 \item 只有一種教室柱
-\item 校舍沒有 RC 牆
+\item 校舍沒有~RC~牆
 \item 沒有四面圍束磚牆
 \item 沒有三面圍束磚牆
 \end{itemize}
@@ -290,7 +292,7 @@ RMSE~是本分析案例中最主要用來判斷模型品質的索引，定義如
 ``÷'' 代表 $f = x_1 / x_2$; \\ \indent
 ``pow'' 代表次方函數 $f = {x_1} ^ {x_2}$
 
-結果使用~GP~方法所建立的關係模型其表現並不好，~RMSE~只能達到~0.056~，而根據圖~\ref{fig:4LGP}~可以發現，其實使用~GP~方法並沒有正確的建立~$AC$~和校舍設計參數間的關係模型，因為他只使用了三個輸入參數，而且其方程式也非常的線性，可以推斷出此一個關係模型的複雜度很高，而~GP~方法並不能正確的找出這個關係。
+結果使用~GP~方法所建立的關係模型其表現並不好，~RMSE~只能達到~0.056~，而根據圖~\ref{fig:4LGP}~可以發現，其實使用~GP~方法並沒有正確的建立~$AC$~和校舍設計參數間的關係模型，因為他只使用了三個輸入參數，而且其方程式也非常的線性，可以推斷此一個關係模型的複雜度很高，而~GP~方法並不能正確的找出這個關係。
 
 \begin{figure}[hbtp]
   \begin{center}
@@ -300,7 +302,7 @@ RMSE~是本分析案例中最主要用來判斷模型品質的索引，定義如
   \end{center}
 \end{figure}
 
-The performance of this model is not ideal because the RMSE can only reach 0.056. Based on Figure 9, the relationship model generated did not correctly build the relationship between the design parameters of school buildings, and ground acceleration of the minimum destruction. As only three input parameters were used, it resulted in the minimum equation as the linear equation. This can be attributed to the fact that this seismic ability model for school buildings has high complexity, and the application of GP pattern alone cannot obtain the relationship between them. The WGP pattern was then used to build the relationship equation between the design parameters of school buildings, and ground acceleration of the minimum destruction because it could be used for relationships that are more complex than with the GP pattern.
+%The performance of this model is not ideal because the RMSE can only reach 0.056. Based on Figure 9, the relationship model generated did not correctly build the relationship between the design parameters of school buildings, and ground acceleration of the minimum destruction. As only three input parameters were used, it resulted in the minimum equation as the linear equation. This can be attributed to the fact that this seismic ability model for school buildings has high complexity, and the application of GP pattern alone cannot obtain the relationship between them. The WGP pattern was then used to build the relationship equation between the design parameters of school buildings, and ground acceleration of the minimum destruction because it could be used for relationships that are more complex than with the GP pattern.
 
 \begin{equation} AC = \dfrac{P_3}{P_{11}} + P_3 P_{12} - P_3 {P_{12}}^3  \label{eq:GP_AC}\end{equation}
 
@@ -351,7 +353,7 @@ $I$~是確保~$C_E$~值能趨於保守用的係數，在~NCREE~的設計中，�
 
 \begin{equation} AC = C_E + T  \label{eq:AC}\end{equation}
 
-基於之前的結果，本分析只使用~WGP~來分析，基因演算的參數也和之前一樣，~4~或~5~層的運算樹，~200~初始基因，~5000~個演化週期，交配率為~0.8~，突變率為~0.1~，訓練出~30~組模型後，從中挑選出最好的模型，結果~$T$~的模型為一個~4~層的運算樹，如圖~\ref{fig:4LWGPTuning}。
+基於之前的結果，本分析只使用~WGP~來分析，基因演算的參數也和之前一樣，~4~或~5~層的運算樹，~200~個初始基因，~5000~個演化週期，交配率為~0.8~，突變率為~0.1~，訓練出~30~組模型後，從中挑選出最好的模型，結果~$T$~的模型為一個~4~層的運算樹，如圖~\ref{fig:4LWGPTuning}。
 
 \begin{figure}[hbtp]
   \begin{center}
@@ -368,7 +370,7 @@ $I$~是確保~$C_E$~值能趨於保守用的係數，在~NCREE~的設計中，�
 
 \subsection{結果}
 
-表二顯示了~NCREE~初步評估~$Is$~值轉換成詳細評估~$AC$~的等價數值~$C_E$~與校舍實際進行詳細評估所得到的最小破壞地表加速度~$AC$~相比的~RMSE~，為值~0.067~，距離目標的~0.04~還有一段距離，圖~\ref{fig:wgp-tuning}~是~$C_E$~與~$AC$~的比較圖，可以發現其趨勢相近，加上修正因子~$T$~之後，~RMSE~降低為~0.045~，圖~13~顯示了~$C_E + T$~和~$AC$~的比較，可以發現其趨勢更為接近，因此可以確定修正因子確實可以將初步評估的結果停整的更好。
+表二顯示了~NCREE~初步評估~$Is$~值轉換成詳細評估~$AC$~的等價數值~$C_E$~與校舍實際進行詳細評估所得到的最小破壞地表加速度~$AC$~相比的~RMSE~，為值~0.067~，距離目標的~0.04~還有一段距離，圖~\ref{fig:wgp-tuning}~是~$C_E$~與~$AC$~的比較圖，可以發現其趨勢相近，加上修正因子~$T$~之後，~RMSE~降低為~0.045~，圖~13~顯示了~$C_E + T$~和~$AC$~的比較，可以發現其趨勢更為接近，因此可以確定修正因子確實可以將初步評估的結果調整的更好。
 
 \begin{figure}
   \begin{center}
@@ -410,7 +412,7 @@ WGP~最大的特色就是其產生的模型結果是使用數學方程式的形�
 
 \section{D\_isR 值與校舍設計之關係模型}
 
-「校舍是否需要補強」此一指標其數值之基礎即為詳細評估的耐震能力指標 $CDR$ 值，$CDR$ 值超過 1 表示其耐震能力尚符合安全規範，反之，則是有安全疑慮，需要進一步補強或是拆除。而 $D\_isR$ 則是標記各校設耐震能力是否足夠的二元指標，也是教育部的校舍耐震能力補強計畫中，前期篩選工作的最主要目標。找到這個指標與校舍設計、現況等參數的關係模型，與 $Is$ 值和 $CDR$ 值關係模型一樣，此一關係模型對於校舍耐震能力補強計畫中，初期的篩選工作可以有很大的助益，也可以輔助決策者編定預算、快速的根據狀況決定不同計畫年度補強的規模等。
+「校舍是否需要補強」此一指標其數值之基礎即為詳細評估的耐震能力指標~$CDR$~值，$CDR$~值超過~1~表示其耐震能力尚符合安全規範，反之，則是有安全疑慮，需要進一步補強或是拆除。而~$D\_isR$~則是標記各校設耐震能力是否足夠的二元指標，也是教育部的校舍耐震能力補強計畫中，前期篩選工作的最主要目標。找到這個指標與校舍設計、現況等參數的關係模型，與~$Is$~值和~$CDR$~值關係模型一樣，此一關係模型對於校舍耐震能力補強計畫中，初期的篩選工作可以有很大的助益，也可以輔助決策者編定預算、快速的根據狀況決定不同計畫年度補強的規模等。
 
 \subsection{資料前處理}
 \subsection{資料探勘}
