@@ -1,4 +1,4 @@
-This is XeTeX, Version 3.1415926-2.5-0.9999.3 (TeX Live 2013) (format=xelatex 2013.12.14)  7 JUL 2014 22:07
+This is XeTeX, Version 3.1415926-2.5-0.9999.3 (TeX Live 2013) (format=xelatex 2013.12.14)  8 JUL 2014 18:01
 entering extended mode
  restricted \write18 enabled.
  file:line:error style messages enabled.
@@ -1695,13 +1695,6 @@ Package Fancyhdr Warning: \headheight is too small (12.0pt):
  This may cause the page layout to be inconsistent, however.
 
 [18]
-Overfull \hbox (5.98402pt too wide) in paragraph at lines 74--75
-[]\EU1/標楷體(0)/m/n/12 支 撐 向 量 機  |（\EU1/TimesNewRoman(0)/m/n/12 Support Vector M
-achine\EU1/標楷體(0)/m/n/12 ，| \EU1/TimesNewRoman(0)/m/n/12 SVM\EU1/標楷體(0)/m/n/12 
-）|  最 早 是 \EU1/TimesNewRoman(0)/m/n/12 BOSER [[]7[]] \EU1/標楷體(0)/m/n/12 等 人，|  
-在 \EU1/TimesNewRoman(0)/m/n/12 1992 \EU1/標楷體(0)/m/n/12 年
- []
-
 
 Package Fancyhdr Warning: \headheight is too small (12.0pt): 
  Make it at least 16.0pt.
@@ -1736,11 +1729,6 @@ Package Fancyhdr Warning: \headheight is too small (12.0pt):
 [22]
 File: figures/wgp-sample.pdf Graphic file (type QTm)
  <use  "figures/wgp-sample.pdf" >
-File: figures/gp-unit.pdf Graphic file (type QTm)
- <use  "figures/gp-unit.pdf" >
-File: figures/wgp-unit.pdf Graphic file (type QTm)
-
-<use  "figures/wgp-unit.pdf" >
 
 Package Fancyhdr Warning: \headheight is too small (12.0pt): 
  Make it at least 16.0pt.
@@ -1748,6 +1736,10 @@ Package Fancyhdr Warning: \headheight is too small (12.0pt):
  This may cause the page layout to be inconsistent, however.
 
 [23]
+File: figures/gp-unit.pdf Graphic file (type QTm)
+ <use  "figures/gp-unit.pdf" >
+File: figures/wgp-unit.pdf Graphic file (type QTm)
+ <use  "figures/wgp-unit.pdf" >
 
 Package Fancyhdr Warning: \headheight is too small (12.0pt): 
  Make it at least 16.0pt.
@@ -1755,6 +1747,13 @@ Package Fancyhdr Warning: \headheight is too small (12.0pt):
  This may cause the page layout to be inconsistent, however.
 
 [24]
+Overfull \hbox (5.98402pt too wide) in paragraph at lines 164--165
+[]\EU1/標楷體(0)/m/n/12 支 撐 向 量 機  |（\EU1/TimesNewRoman(0)/m/n/12 Support Vector M
+achine\EU1/標楷體(0)/m/n/12 ，| \EU1/TimesNewRoman(0)/m/n/12 SVM\EU1/標楷體(0)/m/n/12 
+）|  最 早 是 \EU1/TimesNewRoman(0)/m/n/12 BOSER [[]7[]] \EU1/標楷體(0)/m/n/12 等 人，|  
+在 \EU1/TimesNewRoman(0)/m/n/12 1992 \EU1/標楷體(0)/m/n/12 年
+ []
+
 
 Package Fancyhdr Warning: \headheight is too small (12.0pt): 
  Make it at least 16.0pt.
@@ -1979,14 +1978,14 @@ Package Fancyhdr Warning: \headheight is too small (12.0pt):
  We now make it that large for the rest of the document.
  This may cause the page layout to be inconsistent, however.
 
-[52]) (./sections/retrofit-cost.tex
+[52]
 
 Package Fancyhdr Warning: \headheight is too small (12.0pt): 
  Make it at least 16.0pt.
  We now make it that large for the rest of the document.
  This may cause the page layout to be inconsistent, however.
 
-[53]
+[53]) (./sections/retrofit-cost.tex
 
 Package Fancyhdr Warning: \headheight is too small (12.0pt): 
  Make it at least 16.0pt.
@@ -2339,7 +2338,7 @@ Package atveryend Info: Empty hook `AtVeryVeryEnd' on input line 99.
 Here is how much of TeX's memory you used:
  28495 strings out of 493938
  548852 string characters out of 6148856
- 596631 words of memory out of 5000000
+ 596698 words of memory out of 5000000
  31362 multiletter control sequences out of 15000+600000
  13323 words of font info for 89 fonts, out of 8000000 for 9000
  1144 hyphenation exceptions out of 8191

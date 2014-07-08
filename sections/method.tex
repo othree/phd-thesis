@@ -69,9 +69,6 @@ $f(.)$~就是透過資料探勘分析學習而得到的模型函數，~$x$~代�
 
 $g(.)$是為所選的鏈結函數，~$O$~是偏移（offset）變數，~$F$~則是~$y$~的分佈模型，其是用牛頓法（Newton-Raphson Method）不斷的調整~$\beta$~使的~$x\beta + O$~逼近~$g(E(y))$~，最後最接近的方程式即為~$x$~與~$y$~兩者的關系式。比起迴歸分析，此方法還需要了解~$y$~值分佈狀況，選擇出最適合的分佈函數，並假設~$x$~與~$y$~間的鏈結函數形式，雖然越多的參數選擇代表了更多的模型不確定性，但廣義線性模型卻能夠提供比迴歸分析更廣的應用範圍，也可能得到更接近真實的關係模型。
 
-\subsubsection{支撐向量機}
-
-支撐向量機（Support Vector Machine，SVM）最早是BOSER~\cite{boser1992}等人，在~1992~年的~COLT（Computational Learning Theory）所提出，~SVM~是一個基於統計學習理論的分類方法，用來處理二元分割的問題，其原理是將原本無法線性分割的問題轉換到一個不同維度的空間（kernel）後，假設該空間存在一超平面（hyperplane），可以正確的將資料分開，並將尋找此一超平面的問題轉換為一最佳化問題，求解後即可得到二元分割邊界的方程式。而後~Harris Drucker, et. al.,\cite{drucker1997support} 將此二元分割問題轉換為迴歸分析問題，故~SVM~也可以處理迴歸問題。
 
 \subsubsection{類神經網路}
 
@@ -160,6 +157,12 @@ $g(.)$是為所選的鏈結函數，~$O$~是偏移（offset）變數，~$F$~則�
 
 其中運算層節點的函數選擇有~$2^{NL} - 1$~個、參數層的參數選擇有~$2^{NL}$~個、以及的權重~$w$~有~$2^{NL + 1} - 2$~個。藉由這樣的運算樹設計，再透過~GA~最佳化輸入參數的選擇、不同運算節點的運算子和各個節點不同的權重，~WGP~方法便可以根據資料建立出一個屬性與所求目標的關係方程式。
 
+\subsection{分類方法}
+
+\subsubsection{支撐向量機}
+
+支撐向量機（Support Vector Machine，SVM）最早是BOSER~\cite{boser1992}等人，在~1992~年的~COLT（Computational Learning Theory）所提出，~SVM~是一個基於統計學習理論的分類方法，用來處理二元分割的問題，其原理是將原本無法線性分割的問題轉換到一個不同維度的空間（kernel）後，假設該空間存在一超平面（hyperplane），可以正確的將資料分開，並將尋找此一超平面的問題轉換為一最佳化問題，求解後即可得到二元分割邊界的方程式。而後~Harris Drucker, et. al.,\cite{drucker1997support} 將此二元分割問題轉換為迴歸分析問題，故~SVM~也可以處理迴歸問題。
+
 \subsection{分群方法}
 
 \subsubsection{兩步分群}
@@ -196,7 +199,7 @@ K-means~是由~MacQueen\cite{macqueen67}~所提出，也是最常被使用的分
 
 \subsubsection{決定係數}
 
-決定係數（Coefficient of determination）又稱為~$R^2$~，其公式為：
+決定係數（coefficient of determination）又稱為~$R^2$~，其公式為：
 
 \begin{equation} R^2 = 1 - \dfrac{SS_{res}}{SS_{tot}} = \dfrac{SS_{reg}}{SS_{tot}} = \dfrac{\sum{(\hat{y_i} - \tilde{y})^2}}{\sum{(y_i - \tilde{y})^2}} \label{eq:RSQ}\end{equation} 
 
