@@ -25,5 +25,9 @@
 \contentsline {subfigure}{\numberline {(b)}{\ignorespaces {$C_E+T$}}}{46}{figure.caption.48}
 \addvspace {10\p@ }
 \addvspace {10\p@ }
+\contentsline {figure}{\numberline {7.1}{\ignorespaces 補強經費模型探勘流程\relax }}{63}{figure.caption.51}
+\contentsline {figure}{\numberline {7.2}{\ignorespaces 補強經費實際值 vs CHAID 模型預估值\relax }}{64}{figure.caption.54}
+\contentsline {figure}{\numberline {7.3}{\ignorespaces 補強經費實際值 vs ANN 模型預估值\relax }}{64}{figure.caption.55}
 \addvspace {10\p@ }
+\contentsline {figure}{\numberline {8.1}{\ignorespaces 知識挖掘規劃\relax }}{65}{figure.caption.56}
 \contentsfinish 

@@ -3,7 +3,7 @@
 \contentsline {chapter}{誌謝}{III}{chapter*.4}
 \contentsline {chapter}{目錄}{IV}{section*.5}
 \contentsline {chapter}{圖目錄}{VII}{section*.7}
-\contentsline {chapter}{表目錄}{VIII}{section*.9}
+\contentsline {chapter}{表目錄}{IX}{section*.9}
 \contentsline {chapter}{\numberline {1}緒論}{1}{chapter.1}
 \contentsline {section}{\numberline {1.1}動機與目的}{1}{section.1.1}
 \contentsline {section}{\numberline {1.2}研究方法}{3}{section.1.2}
@@ -65,13 +65,13 @@
 \contentsline {chapter}{\numberline {7}校舍資訊與補強經費之關係模型}{55}{chapter.7}
 \contentsline {section}{\numberline {7.1}資料前處理}{56}{section.7.1}
 \contentsline {section}{\numberline {7.2}資料探勘}{62}{section.7.2}
-\contentsline {section}{\numberline {7.3}結果}{63}{section.7.3}
-\contentsline {chapter}{\numberline {8}結論與討論}{64}{chapter.8}
-\contentsline {section}{\numberline {8.1}結論}{64}{section.8.1}
-\contentsline {section}{\numberline {8.2}未來展望}{64}{section.8.2}
-\contentsline {chapter}{參考文獻}{65}{section*.52}
-\contentsline {chapter}{附錄一：典型校舍初步評估表}{68}{chapter*.54}
-\contentsline {chapter}{附錄二：典型校舍詳細評估表}{70}{chapter*.55}
-\contentsline {chapter}{附錄三：典型校舍補強設計表}{76}{chapter*.56}
-\contentsline {chapter}{授權書}{90}{section*.57}
+\contentsline {section}{\numberline {7.3}結果}{62}{section.7.3}
+\contentsline {chapter}{\numberline {8}結論與討論}{65}{chapter.8}
+\contentsline {section}{\numberline {8.1}結論}{65}{section.8.1}
+\contentsline {section}{\numberline {8.2}未來展望}{65}{section.8.2}
+\contentsline {chapter}{參考文獻}{66}{section*.57}
+\contentsline {chapter}{附錄一：典型校舍初步評估表}{69}{chapter*.59}
+\contentsline {chapter}{附錄二：典型校舍詳細評估表}{71}{chapter*.60}
+\contentsline {chapter}{附錄三：典型校舍補強設計表}{77}{chapter*.61}
+\contentsline {chapter}{授權書}{91}{section*.62}
 \contentsfinish 

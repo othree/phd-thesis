@@ -209,7 +209,7 @@ K-means~是由~MacQueen\cite{macqueen67}~所提出，也是最常被使用的分
 
 平均絕對百分比誤差（Mean Absolute Percetage Error, MAPE）~的公式如下：
 
-\begin{equation} \text{MAPE} = \dfrac{\sum{\abs{y_i - \hat{y_i}}}}{N} \times 100\% \label{eq:MAPE}\end{equation}
+\begin{equation} \text{MAPE} = \dfrac{\sum{\dfrac{\abs{y_i - \hat{y_i}}}{\hat{y_i}}}}{N} \times 100\% \label{eq:MAPE}\end{equation}
 
 其中~$N$~是資料的總數，~$y_i$~是使用探勘得到的關係模型所求得的輸出屬性預測值，~$\hat{y_i}$~則是該屬性的實際值，此一指標代表了模型產出結果的平均誤差，可以呈現模型的準確度，數值越低代表模型品質越好。
 
