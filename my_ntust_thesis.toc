@@ -69,9 +69,9 @@
 \contentsline {chapter}{\numberline {8}結論與討論}{65}{chapter.8}
 \contentsline {section}{\numberline {8.1}結論}{65}{section.8.1}
 \contentsline {section}{\numberline {8.2}未來展望}{65}{section.8.2}
-\contentsline {chapter}{參考文獻}{66}{section*.57}
-\contentsline {chapter}{附錄一：典型校舍初步評估表}{69}{chapter*.59}
-\contentsline {chapter}{附錄二：典型校舍詳細評估表}{71}{chapter*.60}
-\contentsline {chapter}{附錄三：典型校舍補強設計表}{77}{chapter*.61}
-\contentsline {chapter}{授權書}{91}{section*.62}
+\contentsline {chapter}{參考文獻}{67}{section*.58}
+\contentsline {chapter}{附錄一：典型校舍初步評估表}{70}{chapter*.60}
+\contentsline {chapter}{附錄二：典型校舍詳細評估表}{72}{chapter*.61}
+\contentsline {chapter}{附錄三：典型校舍補強設計表}{78}{chapter*.62}
+\contentsline {chapter}{授權書}{92}{section*.63}
 \contentsfinish 

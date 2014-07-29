@@ -81,7 +81,16 @@
 \section{資料探勘}
 
 由於校舍之構件種類眾多，破壞構件的種類組合也變的複雜許多，以本資料庫中有紀錄到的五種構件來說，每棟校舍的構件是否有破壞的組合就有~32~種，因此本研究把原本輸出結構複雜之模型分為數個較單純的模型來探勘，每種構件單獨探勘尋找出其是否會破壞與校舍基礎設計參數間之關係模型，而構件是否破壞這個屬性為布林值（Boolean），輸出目標為布林值之模型，其知識的型態可以歸類到資料探勘中的分類形式，而支撐向量機在分類探勘上之表現良好，運算速度也很快，因此本分析採用此探勘方法，依據前處理完之~897~筆資料並挑選屬性集內之欄位，將整體資料分為訓練集與測試集，比例為訓練集~70\%~、測試集~30\%~，以此做為探勘此關係模型之方法，評斷模型優劣的指標則為關係模型之正確率，重複分析並調整參數到穩定，其中，除柱破壞模型之~kernel~為~RBF(radial basis function)~外，其餘構件之破壞關係模型所選擇之~kernel~均為~polynomial，兩者均為~SVM~常使用的~kernel type~，RBF~之特色是它代表了不同筆資料間之相似程度，而~polynomial
-~則是除了各個輸入屬性的特性之外，還同時包含了不同屬性組合時之特性。SVM~之參數挑選為~$\epsilon$~為~$0.1$~、誤差之懲罰值~$C$~為~$10$，使用~RBF kernel~時之~$\gamma$~為~$0.1$、收斂條件則為~$0.001$，在此設定下所產出之模型結果如表~\ref{tab:comp_result}。
+~則是除了各個輸入屬性的特性之外，還同時包含了不同屬性組合時之特性。SVM~之參數挑選為~$\epsilon$~為~$0.1$~、誤差之懲罰值~$C$~為~$10$，使用~RBF kernel~時之~$\gamma$~為~$0.1$、收斂條件則為~$0.001$，SPSS Clemitine~之節點架構如圖~\ref{fig:crack-flow}~所示，在此設定下所產出之模型結果如表~\ref{tab:comp_result}。
+
+\begin{figure}[hbtp]
+  \begin{center}
+    \includegraphics[width=1.0\textwidth]{figures/crack-flow.png}
+    \caption{構件破壞模型探勘流程} 
+    \label{fig:crack-flow}
+  \end{center}
+\end{figure}
+
 
 \setlength{\tabcolsep}{2em}
 \begin{table}[hbtp]
