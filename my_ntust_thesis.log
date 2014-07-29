@@ -1,4 +1,4 @@
-This is XeTeX, Version 3.1415926-2.5-0.9999.3 (TeX Live 2013) (format=xelatex 2013.12.14)  24 JUL 2014 17:42
+This is XeTeX, Version 3.1415926-2.5-0.9999.3 (TeX Live 2013) (format=xelatex 2013.12.14)  29 JUL 2014 15:54
 entering extended mode
  restricted \write18 enabled.
  file:line:error style messages enabled.
@@ -1227,9 +1227,6 @@ File: watermark/ntust_watermark.eps Graphic file (type eps)
 
 LaTeX Warning: Label `eq:RMSE' multiply defined.
 
-
-LaTeX Warning: Label `tab:cost_result' multiply defined.
-
 )
 \openout1 = `my_ntust_thesis.aux'.
 
@@ -2074,10 +2071,6 @@ Package Fancyhdr Warning: \headheight is too small (12.0pt):
 File: figures/cob-flow.png Graphic file (type QTm)
  <use  "figures/cob-flow.png" >
 
-LaTeX Warning: Reference `tab:cost_result_2' on page 62 undefined on input line
- 139.
-
-
 Package Fancyhdr Warning: \headheight is too small (12.0pt): 
  Make it at least 16.0pt.
  We now make it that large for the rest of the document.
@@ -2352,9 +2345,6 @@ Package atveryend Info: Empty hook `AtVeryEndDocument' on input line 99.
 Package atveryend Info: Empty hook `AtEndAfterFileList' on input line 99.
 
 
-LaTeX Warning: There were undefined references.
-
-
 LaTeX Warning: There were multiply-defined labels.
 
 Package atveryend Info: Empty hook `AtVeryVeryEnd' on input line 99.
@@ -2362,7 +2352,7 @@ Package atveryend Info: Empty hook `AtVeryVeryEnd' on input line 99.
 Here is how much of TeX's memory you used:
  28508 strings out of 493938
  549079 string characters out of 6148856
- 596920 words of memory out of 5000000
+ 596987 words of memory out of 5000000
  31371 multiletter control sequences out of 15000+600000
  13323 words of font info for 89 fonts, out of 8000000 for 9000
  1144 hyphenation exceptions out of 8191

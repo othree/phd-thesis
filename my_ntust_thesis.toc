@@ -61,7 +61,7 @@
 \contentsline {chapter}{\numberline {6}校舍資訊與破壞構件之關係模型}{49}{chapter.6}
 \contentsline {section}{\numberline {6.1}資料前處理}{49}{section.6.1}
 \contentsline {section}{\numberline {6.2}資料探勘}{53}{section.6.2}
-\contentsline {section}{\numberline {6.3}結果}{53}{section.6.3}
+\contentsline {section}{\numberline {6.3}結果}{54}{section.6.3}
 \contentsline {chapter}{\numberline {7}校舍資訊與補強經費之關係模型}{55}{chapter.7}
 \contentsline {section}{\numberline {7.1}資料前處理}{56}{section.7.1}
 \contentsline {section}{\numberline {7.2}資料探勘}{62}{section.7.2}
