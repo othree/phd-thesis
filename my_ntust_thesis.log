@@ -1,4 +1,4 @@
-This is XeTeX, Version 3.1415926-2.5-0.9999.3 (TeX Live 2013) (format=xelatex 2013.12.14)  31 JUL 2014 17:20
+This is XeTeX, Version 3.1415926-2.5-0.9999.3 (TeX Live 2013) (format=xelatex 2013.12.14)  5 AUG 2014 18:27
 entering extended mode
  restricted \write18 enabled.
  file:line:error style messages enabled.
@@ -2099,8 +2099,6 @@ Package Fancyhdr Warning: \headheight is too small (12.0pt):
 
 [64]
 Chapter 8.
-File: figures/big-picture.pdf Graphic file (type QTm)
-<use  "figures/big-picture.pdf" >
 
 Package Fancyhdr Warning: \headheight is too small (12.0pt): 
  Make it at least 16.0pt.
@@ -2109,7 +2107,9 @@ Package Fancyhdr Warning: \headheight is too small (12.0pt):
 
 [65
 
-]) (./backpages/ntust_backpages.tex
+]
+File: figures/big-picture.pdf Graphic file (type QTm)
+ <use  "figures/big-picture.pdf" >) (./backpages/ntust_backpages.tex
 
 Package Fancyhdr Warning: \headheight is too small (12.0pt): 
  Make it at least 16.0pt.
