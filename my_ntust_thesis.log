@@ -1,4 +1,4 @@
-This is XeTeX, Version 3.1415926-2.5-0.9999.3 (TeX Live 2013) (format=xelatex 2013.12.14)  12 AUG 2014 17:51
+This is XeTeX, Version 3.1415926-2.5-0.9999.3 (TeX Live 2013) (format=xelatex 2013.12.14)  12 AUG 2014 18:05
 entering extended mode
  restricted \write18 enabled.
  file:line:error style messages enabled.
@@ -1839,13 +1839,6 @@ Package Fancyhdr Warning: \headheight is too small (12.0pt):
  This may cause the page layout to be inconsistent, however.
 
 [32]
-Missing character: There is no 銹 in font BiauKai/OT!
-Missing character: There is no 銹 in font BiauKai/OT!
-Missing character: There is no 銹 in font BiauKai/OT!
-Missing character: There is no 銹 in font BiauKai/OT!
-Missing character: There is no 銹 in font BiauKai/OT!
-Missing character: There is no 銹 in font BiauKai/OT!
-
 
 Package Fancyhdr Warning: \headheight is too small (12.0pt): 
  Make it at least 16.0pt.
@@ -1906,7 +1899,7 @@ Package Fancyhdr Warning: \headheight is too small (12.0pt):
  This may cause the page layout to be inconsistent, however.
 
 [40]
-Overfull \hbox (7.3571pt too wide) in paragraph at lines 255--268
+Overfull \hbox (7.3571pt too wide) in paragraph at lines 257--270
  [] 
  []
 
