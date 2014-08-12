@@ -28,17 +28,6 @@ J.~A. Nelder and R.~W.~M. Wedderburn, ``{Generalized Linear Models},'' {\em
   Journal of the Royal Statistical Society. Series A (General)}, vol.~135,
   no.~3, pp.~370--384, 1972.
 
-\bibitem{boser1992}
-B.~E. Boser, I.~M. Guyon, and V.~N. Vapnik, ``A training algorithm for optimal
-  margin classifiers,'' in {\em Proceedings of the 5th Annual Workshop on
-  Computational Learning Theory (COLT'92)} (D.~Haussler, ed.), (Pittsburgh, PA,
-  USA), pp.~144--152, ACM Press, jul 1992.
-
-\bibitem{drucker1997support}
-H.~Drucker, C.~J. Burges, L.~Kaufman, A.~Smola, and V.~Vapnik, ``Support vector
-  regression machines,'' {\em Advances in neural information processing
-  systems}, vol.~9, pp.~155--161, 1997.
-
 \bibitem{mcculloch1943logical}
 W.~S. McCulloch and W.~Pitts, ``A logical calculus of the ideas immanent in
   nervous activity,'' {\em The Bulletin of Mathematical Biophysics}, vol.~5,
@@ -81,6 +70,17 @@ H.-C. Tsai and Y.-H. Lin, ``Predicting high-strength concrete parameters using
   weighted genetic programming,'' {\em Engineering with Computers}, vol.~27,
   no.~4, pp.~347--355, 2011.
 
+\bibitem{boser1992}
+B.~E. Boser, I.~M. Guyon, and V.~N. Vapnik, ``A training algorithm for optimal
+  margin classifiers,'' in {\em Proceedings of the 5th Annual Workshop on
+  Computational Learning Theory (COLT'92)} (D.~Haussler, ed.), (Pittsburgh, PA,
+  USA), pp.~144--152, ACM Press, jul 1992.
+
+\bibitem{drucker1997support}
+H.~Drucker, C.~J. Burges, L.~Kaufman, A.~Smola, and V.~Vapnik, ``Support vector
+  regression machines,'' {\em Advances in neural information processing
+  systems}, vol.~9, pp.~155--161, 1997.
+
 \bibitem{zhang1996birch}
 T.~Zhang, R.~Ramakrishnan, and M.~Livny, ``Birch: an efficient data clustering
   method for very large databases,'' in {\em ACM SIGMOD Record}, vol.~25,
@@ -90,6 +90,10 @@ T.~Zhang, R.~Ramakrishnan, and M.~Livny, ``Birch: an efficient data clustering
 J.~MacQueen, ``Some methods for classification and analysis of multivariate
   observations,'' in {\em Proceedings of the Fifth Berkeley Symposium on
   Mathematical Statistics and Probability}, vol.~1, pp.~281--297, 1967.
+
+\bibitem{內政部營建署編輯委員會2005建築物耐震設計規範及解說}
+內政部營建署編輯委員會, {\em 建築物耐震設計規範及解說}.
+\newblock 營建雜誌社, 2005.
 
 \bibitem{su2008master}
 蘇耕立, ``灣中小學校舍結構耐震能力初步評估方法之探討,''
