@@ -1,4 +1,4 @@
-This is XeTeX, Version 3.1415926-2.5-0.9999.3 (TeX Live 2013) (format=xelatex 2013.12.14)  13 AUG 2014 17:09
+This is XeTeX, Version 3.1415926-2.5-0.9999.3 (TeX Live 2013) (format=xelatex 2013.12.14)  13 AUG 2014 22:02
 entering extended mode
  restricted \write18 enabled.
  file:line:error style messages enabled.
@@ -1467,6 +1467,10 @@ LaTeX Font Info:    Try loading font information for U+rsfs on input line 1.
 (/usr/local/texlive/2013/texmf-dist/tex/latex/jknapltx/ursfs.fd
 File: ursfs.fd 1998/03/24 rsfs font definition file (jk)
 )
+Overfull \hbox (1.15817pt too wide) detected at line 5
+ []\EU1/TimesNewRoman(0)/m/n/12 VII
+ []
+
 
 Package Fancyhdr Warning: \headheight is too small (12.0pt): 
  Make it at least 16.0pt.
@@ -1483,7 +1487,12 @@ Package Fancyhdr Warning: \headheight is too small (12.0pt):
  We now make it that large for the rest of the document.
  This may cause the page layout to be inconsistent, however.
 
-[5])
+[5]
+Overfull \hbox (2.49997pt too wide) detected at line 76
+ []\EU1/TimesNewRoman(0)/m/n/12 100
+ []
+
+)
 \tf@toc=\write4
 \openout4 = `my_ntust_thesis.toc'.
 
@@ -2103,10 +2112,10 @@ Package Fancyhdr Warning: \headheight is too small (12.0pt):
  This may cause the page layout to be inconsistent, however.
 
 [67]
-File: figures/cob-chaid-vs.png Graphic file (type QTm)
- <use  "figures/cob-chaid-vs.png" >
-File: figures/cob-ann-vs.png Graphic file (type QTm)
- <use  "figures/cob-ann-vs.png" >)
+File: figures/cob-chaid.pdf Graphic file (type QTm)
+ <use  "figures/cob-chaid.pdf" >
+File: figures/cob-ann.pdf Graphic file (type QTm)
+ <use  "figures/cob-ann.pdf" >)
 (./sections/conclusion.tex
 
 Package Fancyhdr Warning: \headheight is too small (12.0pt): 
@@ -2400,8 +2409,8 @@ Package atveryend Info: Empty hook `AtVeryVeryEnd' on input line 102.
  ) 
 Here is how much of TeX's memory you used:
  28524 strings out of 493938
- 549353 string characters out of 6148856
- 597287 words of memory out of 5000000
+ 549341 string characters out of 6148856
+ 597288 words of memory out of 5000000
  31384 multiletter control sequences out of 15000+600000
  13331 words of font info for 90 fonts, out of 8000000 for 9000
  1144 hyphenation exceptions out of 8191
