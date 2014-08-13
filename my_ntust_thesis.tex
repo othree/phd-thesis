@@ -41,6 +41,9 @@
 
 \input{common_env}  %基本的環境設定  無需改變  
 
+\newcommand{\specialcell}[2][c]{%
+  \begin{tabular}[#1]{@{}c@{}}#2\end{tabular}}
+
 \begin{document}
 
 	\input{chinese_trans} %在此檔案處定義文章中的中文名詞

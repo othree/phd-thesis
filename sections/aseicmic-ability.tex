@@ -43,51 +43,68 @@ need modify
 探勘模型之屬性挑選分為輸入變數與輸出變數，本模型之輸出變數為校舍是否補強之欄位，輸入變數則是我們用來預測輸出變數之所用變數，以下為本預測模型屬 性集內之屬性介紹與選擇說明。
 
 \begin{description}
-\item [一般工址或近斷層區域之工址設計水平譜加速度係數]
-\cite{內政部營建署編輯委員會2005建築物耐震設計規範及解說} 即~$S_{aD}$ 一般工址或近斷層區域之工址設計水平譜
-加速度係數，隨建築物基本振動週期 T 與工址短
-週期與一秒週期之設計水平譜加速度係數𝑆𝐷 與𝑆𝐷 𝑆1
-而改變，如表 4.5，𝑆𝐷與𝑆𝐷之值可由校舍所在位 𝑆1
-置依規範查出。此係數是因校舍位址而改變，並 且其𝑆𝐷 與𝑆𝐷 為根據所在震區而訂定，藉由此係數
-𝑆1
-可間接知道該校舍可能靠近哪些震區，本研究採 用此一屬性，設想為可能某些地區的校舍可能其 接受補強之機率較高，因此嘗試將此屬性納入屬 性集。
-\item [樓層數]
-觀校舍資料庫之校舍樓層數，普遍落在 2 樓與 3 樓之間，並以 2 樓為最多數。再者校舍之樓層數 會影響到地震時之受力反應，與校舍之耐震能力 有某種程度上的關連，因此本研究將之納入本探 勘模型之屬性集。
-\item [二樓樓地板長]
-台灣中小學校舍中之典型校舍其建築形式較為固 定且普遍存有耐震能力較弱之現象，因此本研究 推測在這些典型校舍中應該存有某些特定尺寸之校舍其耐震能力較差，因此本研究將此屬性納入 屬性集做為本探勘模型之輸入屬性。
-\item [二樓樓地板深]
-台灣中小學校舍中之典型校舍普遍存有耐震能力 較弱之現象，本研究推測在這些典型校舍中應該 存有某些特定尺寸之校舍其耐震能力較差，因此 本研究將此屬性納入屬性集做為本探勘模型之輸 入屬性。
-\item [一樓樓地板面積]
-校舍之樓地板面積亦屬於建築形式之一環，因此 可視為該校舍之特有形式，本研究假設在典型校 舍中存有特定樓地板面積大小有其普遍對應之耐 震能力或某些尺寸之樓地板面積可能存有接受補 強較高的機率。
-\item [教室柱總斷面積]
-台灣中小學校舍其建築形式較為固定，教室柱之 多寡或其尺寸亦可視為建築形式中之一環，因此 本研究推測在這些校舍中，教室柱應該存有某些 特定總斷面積大小之校舍其耐震能力較差，因此 本研究將此屬性納入屬性集做為本探勘模型之輸 入屬性。
-\item [柱等效長度]
+  \item [一般工址或近斷層區域之工址設計水平譜加速度係數]
+  \cite{內政部營建署編輯委員會2005建築物耐震設計規範及解說} 即~$S_{aD}$~，隨建築物基本振動週期~$T$~與工址短週期與一秒週期之設計水平譜加速度係數~$S^D_S$~與~$S^D_1$~而改變，如表~\ref{tab:sad}，~$S^D_S$~與~$S^D_1$~之值可由校舍所在位置依規範查出。此係數是因校舍位址而改變，並且其~$S^D_S$~與~$S^D_1$~為根據所在震區而訂定，藉由此係數可間接知道該校舍可能靠近哪些震區，本分析採用此一屬性，設想為可能某些地區的校舍可能其接受補強之機率較高，因此嘗試將此屬性納入屬性集。
+
+{\renewcommand{\arraystretch}{1.5}
+\begin{table}[hbtp]
+  \begin{center}
+    \caption{一般工址或近斷層區域之工址設計水平譜加速度係數}
+    \label{tab:sad}
+    \begin{tabular}{c c c c}
+      \hline
+       較短週期 & 短週期 & 中週期 & 長週期 \\
+      \hline
+       $T \leq 0.2 T^D_0$ &  $0.2 T^D_0 < T \leq T^D_0$ & $T^D_0 < T \leq 2.5 T^D_0$  & $2.5 T^D_0 < T$  \\
+       $ S_{aD} = S^D_S(0.4 + 3 \dfrac{T}{T^D_0}) $ & $ S_{aD} = S^D_S $ & $ S_{aD} = \dfrac{S^D_1}{T} $ & $ S_{aD} = 0.4 S^D_S $ \\
+      \hline
+      \end{tabular}
+  \end{center}
+\end{table}
+}
+
+
+  \item [樓層數]
+  觀校舍資料庫之校舍樓層數，普遍落在~2~樓與~3~樓之間，並以~2~樓為最多數。再者校舍之樓層數會影響到地震時之受力反應，與校舍之耐震能力有某種程度上的關連，因此本分析將之納入本探勘模型之屬性集。
+  \item [二樓樓地板長]
+  台灣中小學校舍中之典型校舍其建築形式較為固定且普遍存有耐震能力較弱之現象，因此本分析推測在這些典型校舍中應該存有某些特定尺寸之校舍其耐震能力較差，因此本分析將此屬性納入屬性集做為本探勘模型之輸入屬性。
+  \item [二樓樓地板深]
+  台灣中小學校舍中之典型校舍普遍存有耐震能力較弱之現象，本分析推測在這些典型校舍中應該存有某些特定尺寸之校舍其耐震能力較差，因此本分析將此屬性納入屬性集做為本探勘模型之輸入屬性。
+  \item [一樓樓地板面積]
+  校舍之樓地板面積亦屬於建築形式之一環，因此可視為該校舍之特有形式，本分析假設在典型校舍中存有特定樓地板面積大小有其普遍對應之耐震能力或某些尺寸之樓地板面積可能存有接受補強較高的機率。
+  \item [教室柱總斷面積]
+  台灣中小學校舍其建築形式較為固定，教室柱之多寡或其尺寸亦可視為建築形式中之一環，因此本分析推測在這些校舍中，教室柱應該存有某些特定總斷面積大小之校舍其耐震能力較差，因此本分析將此屬性納入屬性集做為本探勘模型之輸入屬性。
+  \item [柱等效長度]
   柱之等效強度~$T_{AC}$~其計算公式為：
 
-  \begin{equation}T_{AC} = (4+1.8NF) \times ClaAc+(2.4+1.08NF) \times CorAc+2.6 \times InsAc\end{equation} 
+  \begin{equation}T_{AC} = (4+1.8NF) ClaAc+(2.4+1.08NF) CorAc+2.6 InsAc \end{equation} 
 
   其中~$NF$~為樓層數，~$ClaAc$~為一樓教室柱總斷面積，~$CorAc$~為一樓走廊外柱總斷面積，~$InsAc$~為一樓隔間柱總斷面積，其公式為根據三種類結構柱之單位斷面積極限剪力牆度計算公式~\cite{su2008master}~之加總，本分析將此屬性加入探勘模型之最初原因為該公式內有教室柱、走廊外柱與隔間柱於一樓的總斷面積，而此一數值和，並且因補強施工其所補強之面積愈大其所花錢就愈多。本分析經建立多組模型與各種屬性集之測試均發現該屬性對模型之預測結果有一定影響。
 \item [平面及立面對稱性]
-\cite{ncree03049} ~(國震中心，NCREE-03-049)初步評估表中參考 建築耐震設計規範之規定，若結構及其側向力抵 抗系統的平面幾何形狀具有凹角，超過凹角部分 於兩水平方向之結構尺寸同時大於沿該方向結構 總長之 15\%以上者，表示該結構具有凹角性，則 耐震能力折減為 0.95 倍;若該結構具有凹角，但 超過凹角部分於任一方向之結構尺寸不足沿該方 向結構總長之 15\%，且無其他平面及立面不規則 之情況，則耐震能力不予折減;若該結構不具任 何凹角，且無其他平面及立面不規則之情況，則 耐震能力增加為 1.05 倍。根據上述可知該屬性為 影響校舍耐震能力之屬性之一，校舍是否補強其 最相關的為評估完之耐震能力，因此本研究將該 欄位加入屬性集。
+\cite{ncree03049} ~初步評估表中參考建築耐震設計規範之規定，若結構及其側向力抵抗系統的平面幾何形狀具有凹角，超過凹角部分 於兩水平方向之結構尺寸同時大於沿該方向結構總長之~15\%~以上者，表示該結構具有凹角性，則耐震能力折減為~0.95~倍；若該結構具有凹角，但超過凹角部分於任一方向之結構尺寸不足沿該方向結構總長之~15\%~，且無其他平面及立面不規則之情況，則耐震能力不予折減;若該結構不具任 何凹角，且無其他平面及立面不規則之情況，則耐震能力增加為~1.05~倍。根據上述可知該屬性為影響校舍耐震能力之屬性之一，校舍是否補強其最相關的為評估完之耐震能力，因此本分析將該欄位加入屬性集。
 \item [軟弱層顯著性]
-\cite{ncree03049} ~ (國震中心，NCREE-03-049)若結構物之一樓因 為使用性等考量，而使得二樓以上 RC 牆或磚牆於 一樓中斷，致使一樓之極限層剪力強度與勁度降 低，將造成地震力作用時變形集中，以致於韌性 用盡，建築物就發生軟弱層破壞。故本表格依據 牆體中斷的程度折減其對應之耐震能力，若 2/3 以上牆體中斷，則耐震能力折減為 0.8 倍;若 1/3 至 2/3 之牆體中斷，則耐震能力折減為 0.9 倍;若 1/3 以下之牆體中斷，則不折減其耐震能力。依此敘 述得知軟弱層顯著性會影響結構物之耐震能力， 結構物之耐震能力愈低，其接受補強的機率就愈 高，因此本研究將此屬性納入本屬性集。
+\cite{ncree03049} ~ 若結構物之一樓因 為使用性等考量，而使得二樓以上~RC~牆或磚牆於一樓中斷，致使一樓之極限層剪力強度與勁度降低，將造成地震力作用時變形集中，以致於韌性用盡，建築物就發生軟弱層破壞。故本表格依據牆體中斷的程度折減其對應之耐震能力，若~2/3~以上牆體中斷，則耐震能力折減為 0.8 倍；若~1/3~至~2/3~之牆體中斷，則耐震能力折減為~0.9~倍；若~1/3~以下之牆體中斷，則不折減其耐震能力。依此敘述得知軟弱層顯著性會影響結構物之耐震能力，結構物之耐震能力愈低，其接受補強的機率就愈高，因此本分析將此屬性納入本屬性集。
 \item [裂縫鏽蝕滲水等程度]
-\cite{ncree03049} ~ (國震中心，NCREE-03-049)鋼筋混凝土構材若 具有裂縫，代表混凝土品質不良或強度不足;保 護層不足等因素使得鋼筋鏽蝕膨脹，鋼筋鏽蝕將 會降低構材之強度，鋼筋鏽蝕膨脹亦會導致混凝土剝落，並加速鋼筋鏽蝕的程度，這些因素都會影響結構物的耐震安全，故以結構物整體之裂縫 鏽蝕滲水等程度作為調整項目。若稍有裂縫鏽蝕滲水等情形，則耐震能力折減為 0.95;若裂縫鏽蝕滲水等情形較為嚴重，則耐震能力折減為 0.9; 若無，則不折減其耐震能力。根據上述可知該屬性為影響校舍耐震能力之屬性之一，校舍是否補強其最相關的為評估完之耐震能力，因此本研究將該欄位加入屬性集。
+\cite{ncree03049} ~ 鋼筋混凝土構材若 具有裂縫，代表混凝土品質不良或強度不足;保 護層不足等因素使得鋼筋鏽蝕膨脹，鋼筋鏽蝕將會降低構材之強度，鋼筋鏽蝕膨脹亦會導致混凝土剝落，並加速鋼筋鏽蝕的程度，這些因素都會影響結構物的耐震安全，故以結構物整體之裂縫鏽蝕滲水等程度作為調整項目。若稍有裂縫鏽蝕滲水等情形，則耐震能力折減為~0.95；若裂縫鏽蝕滲水等情形較為嚴重，則耐震能力折減為~0.9；若無，則不折減其耐震能力。根據上述可知該屬性為影響校舍耐震能力之屬性之一，校舍是否補強其最相關的為評估完之耐震能力，因此本分析將該欄位加入屬性集。
 \item [變形程度]
-\cite{ncree03049} ~(國震中心,NCREE-03-049)結構體基礎若有明 顯的差異沉陷,將會造成部分構材承受額外的載 重,甚至造成嚴重變形,使其耐震能力降低。故 若結構體有明顯的變形程度,則耐震能力折減為0.9 倍;若無，則不折減其耐震能力。依上之敘述 可知該屬性為初步評估表中結果之影響因子，可 影響評估最後結果之耐震能力，耐震能力愈低其 接受補強機率就愈高，因此將之加入本屬性集。
+\cite{ncree03049} ~結構體基礎若有明顯的差異沉陷,將會造成部分構材承受額外的載重,甚至造成嚴重變形,使其耐震能力降低。故若結構體有明顯的變形程度，則耐震能力折減為0.9 倍；若無，則不折減其耐震能力。依上之敘述可知該屬性為初步評估表中結果之影響因子，可影響評估最後結果之耐震能力，耐震能力愈低其接受補強機率就愈高，因此將之加入本屬性集。
 \item [短柱嚴重性]
-\cite{ncree03049}~一般老舊校舍之柱箍筋間距多為 20cm 至 30cm 左右，其剪力強度不高，且老舊校舍於設計時假 設為純梁柱系統，並沒有考慮教室窗台及樓梯廁 所等牆壁開氣窗所造成之短柱效應，然而這種短 柱效應將會使得剪力容量不足之柱於地震時發生 非預期之剪力破壞，導致結構韌性不足，若該校 舍有過多之柱受到短柱效應之影響，將易造成校 舍瞬間倒塌。故若校舍因窗台或氣窗造成短柱現 象之柱根數達到全部柱根數之 50\%以上，則耐震 能力折減為 0.9 倍，若不足 50\%則不予折減其耐震 能力。值得注意的是，短柱嚴重性具有方向性， 故評估時只需考慮評估方向之短柱比率是否超過 一半即可，另一方向開窗等因素造成之短柱效應 不需考慮。短柱效應其影響校舍之耐震能力相較 於其他影響因子相對於較大，校舍評估出來之耐 震能力幾乎是校舍是否需補強之主要因素，因此 該欄位更應該加入本探勘模型之屬性集。
-\item [耐震性能 $E$ 值]
-耐震性能 E 值為初步評估中之初步計算耐震性 能 ， 其 計 算 公 式 為 「 0.354*NF*(TAc+TAw)/((-1+6*NF)*(0.4*SaD)*Af)」，從其公式可得知，初 步評估法中，亦將 NF 樓層數、TAc 柱等效強度與 SaD 列入計算式中，Af 為總樓地板面積、Taw 為牆 總斷面積。本模型之預測目標為校舍是否需補 強，因此將該屬性列入本屬性集。
-\item [耐震指標 $Is$]
-耐震指標 Is 為初步評估最後之評估值，~\cite{ncree03049} ~以 80 分作為耐震能力堪慮之標準，若校舍調查所得之 耐震指標 Is 值低於 80 分，表示其耐震能力頗為不 足，確有耐震疑慮，若有相當於 475 年回歸週期 之地震發生時，將有嚴重損壞或倒塌之疑慮，應 最優先進行耐震能力之補強設計與施工;耐震指 標 Is 值介於 80 分及 100 分，表示校舍耐震性之安 全係數尚不符合耐震設計規範對於此等重要性建 築物之耐震需求，仍有耐震性能不足之疑慮，若 有相當於 475 年回歸週期之地震發生時，將有可 能發生嚴重結構上之破壞，其耐震能力之提升(補 強工程)列為次優先對象;耐震指標 Is 值高於 100 分，表示其尚無耐震疑慮，若有相當於 475 年回 歸週期之地震發生時，應不至於發生嚴重結構上 之破壞。雖然根據上述耐震指標 Is 低於 100 分就 須接受耐震補強，但根據觀察校舍資料內資料， 初步評估結果 90 至 100 分進行詳細評估後，絕大 部分都不須進行補強，80 分以下 70 分以上也有一 些進行詳細評估後也是裁定不需補強，因此雖然耐震指標 Is 不是最後決定補強之最後依據，但也 具有一定之影響性。本研究最後決定將此屬性加 入本屬性集。
+\cite{ncree03049}~一般老舊校舍之柱箍筋間距多為~20cm~至~30cm~左右，其剪力強度不高，且老舊校舍於設計時假設為純梁柱系統，並沒有考慮教室窗台及樓梯廁所等牆壁開氣窗所造成之短柱效應，然而這種短柱效應將會使得剪力容量不足之柱於地震時發生非預期之剪力破壞，導致結構韌性不足，若該校舍有過多之柱受到短柱效應之影響，將易造成校舍瞬間倒塌。故若校舍因窗台或氣窗造成短柱現象之柱根數達到全部柱根數之~50\%~以上，則耐震 能力折減為~0.9~倍，若不足~50\%~則不予折減其耐震能力。值得注意的是，短柱嚴重性具有方向性，故評估時只需考慮評估方向之短柱比率是否超過一半即可，另一方向開窗等因素造成之短柱效應不需考慮。短柱效應其影響校舍之耐震能力相較於其他影響因子相對於較大，校舍評估出來之耐震能力幾乎是校舍是否需補強之主要因素，因此該欄位更應該加入本探勘模型之屬性集。
+\item [耐震性能]
+耐震性能~$E$~值為初步評估中之初步計算耐震性能，其計算公式為：
+
+  \begin{equation}E = \dfrac{ 0.354 NF \times (T_{AC} \times T_{AW}) }{(-1 + 6 NF) \times (0.4 S_{aD}) \times Af} \end{equation} 
+
+從其公式可得知，初步評估法中，亦將~$NF$~樓層數、$T_{AC}$~柱等效強度與~$S_{aD}$~列入計算式中，$Af$~為總樓地板面積、$T_{AW}$~為牆總斷面積。本模型之預測目標為校舍是否需補強，因此將該屬性列入本屬性集。
+\item [耐震指標]
+耐震指標~$Is$~為初步評估最後之評估值~\cite{ncree03049} ~，以~80~作為耐震能力堪慮之標準，若校舍調查所得之耐震指標~$Is$~值低於~80~分，表示其耐震能力頗為不足，確有耐震疑慮，若有相當於~475~年回歸週期之地震發生時，將有嚴重損壞或倒塌之疑慮，應最優先進行耐震能力之補強設計與施工；耐震指標~$Is$~值介於~80~分及~100~分，表示校舍耐震性之安全係數尚不符合耐震設計規範對於此等重要性建築物之耐震需求，仍有耐震性能不足之疑慮，若有相當於~475~年回歸週期之地震發生時，將有可能發生嚴重結構上之破壞，其耐震能力之提升(補 強工程)列為次優先對象;耐震指標~$Is$~值高於~100~分，表示其尚無耐震疑慮，若有相當於~475~年回歸週期之地震發生時，應不至於發生嚴重結構上之破壞。雖然根據上述耐震指標~$Is$~低於~100~分就須接受耐震補強，但根據觀察校舍資料內資料，初步評估結果~90~至~100~分進行詳細評估後，絕大部分都不須進行補強，80~分以下~70~分以上也有一些進行詳細評估後也是裁定不需補強，因此雖然耐震指標~$Is$~不是最後決定補強之最後依據，但也具有一定之影響性。本分析最後決定將此屬性加入本屬性集。
 \end{description}
 
 \subsection{資料探勘}
 
 探勘模型於建立屬性集後，接著即是依挑選之屬性設定最適合該探勘方法之資料格式及資料類型。
 
-本研究原先採用支援向量機與~CHAID~進行資料探勘之建模，選擇此 二種探勘方法，主因為本研究之預測目標，是否需補強其資料類型為「名義」，名義之資料類型其一般採用之探勘方法為支援向量機與~CHAID~，~CHAID~經初步測試本研究之預測目標，其效果不錯，但支援向量機其結果不如預期的好，因此本研究後來轉向使用類神經網路與 CHAID 探勘方法，使用前處理完之 2153 筆資料並挑選屬性集內之欄位，將整體資料分為訓練區~70\%~與測試區~30\%~，做為探勘模型之訓練方法。最後再挑一組結果較好之模型保留並以另外挑選之獨立 50 筆校舍資料進行結果測試。本模型之訓練結果如表~\ref{tab:d_is_r_result}。
+本分析原先採用支援向量機與~CHAID~進行資料探勘之建模，選擇此二種探勘方法，主因為本分析之預測目標，是否需補強其資料類型為「名義」，名義之資料類型其一般採用之探勘方法為支援向量機與~CHAID~，~CHAID~經初步測試本分析之預測目標，其效果不錯，但支援向量機其結果不如預期的好，因此本分析後來轉向使用類神經網路與~CHAID~探勘方法，使用前處理完之~2153~筆資料並挑選屬性集內之欄位，將整體資料分為訓練區~70\%~與測試區~30\%~，做為探勘模型之訓練方法。最後再挑一組結果較好之模型保留並以另外挑選之獨立~50~筆校舍資料進行結果測試。本模型之訓練結果如表~\ref{tab:d_is_r_result}。
 
 
 \begin{table}[hbtp]
@@ -248,7 +265,7 @@ Two-Step~分群有兩個優點，一是複雜度不高，運算時間與資料�
 %其中~$0 \le \alpha \le 1$~，且~$I\{L\} = 1$~。hit rate~是用來判斷關係模型的正確率的。
 在本分析中，我們設定了兩個~$\alpha$~值作為計算命中率（hit rate）指標用，分別是~0.1~和~0.2~，表~\ref{tab:is_result}~列出了這九個關係模型使用這三個指標配合十群交叉驗證所得到的數值，表現最好的關係模型是先使用~K-means~分群再使用~GLM~所建立的，第二好的則是先使用~Two-step~分群再使用~GLM~所建立的，圖~13~是先使用~K-means~分群再使用~GLM~所建立模型的實際~$Is$~值與使用模型得到的~$\hat{Is}$~值的比較圖，資料點的回歸取現的斜率非常接近~1~，可以看得出來兩者之間的相關度非常高。如果單看模型的線性關係表現，類神經網路的表現比~GLM~ 和線性回歸都要來的好，這也可以驗證校舍的耐震能力與其設計參數之機善一個非線性的關係，而雖然~GLM~整體的排名較~ANN~來的好，但是~hit rate~卻是~ANN~表現的比較好，但是看到~MAPE~又會發現~ANN~的~MAPE~較大，因此我們建議在~$Is$~值的關係模型的挑選，可以依據應用的需求來決定，如果需要較高準確率的時候，建議使用~ANN~，如果是需要降低整體的誤差，則建議使用~GLM~。如果先使用分群方法將校舍資料根據設計參數分出不同群集後，再對不同群集分別探勘其耐震能力與設計參數的關係模型，結果會比沒有先分群要來的好一些，探討其原因，是因為典型校舍已經是校舍建築物的一個子集合，而此子集合的特性已經非常接近，因此再進行分群也不會有顯著的改善。
 
-
+{\renewcommand{\arraystretch}{1.5}
 \begin{table}[hbtp]
   \begin{center}
     \caption{Cross-validation result of the prediction model}
@@ -256,8 +273,7 @@ Two-Step~分群有兩個優點，一是複雜度不高，運算時間與資料�
     \scriptsize
     \begin{tabular}{l c c c c c c c c c}
       \hline
-       & K-means & Two-step & ANNs & K-means    & Two-step   & Regression & K-means & Two-Step & GLM \\
-       &   ANNs  &   ANNs   &      & Regression & Regression &            &   GLM   &   GLM    & \\ 
+       & \specialcell{K-means \\ ANNs} & \specialcell{Two-step \\ ANNs} & ANNs & \specialcell{K-means \\ Regression} & \specialcell{Two-step \\ Regression} & Regression & \specialcell{K-means \\ GLM} & \specialcell{Two-Step \\ GLM} & GLM \\
       \hline
    	   R              & 80.21\% & 81.78\% & 80.76\% & 72.16\% & 72.16\% & 72.15\% & 87.41\% & 87.11\% & 87.05\% \\
        MAPE           & 28.69\% & 26.64\% & 26.51\% & 46.06\% & 46.05\% & 46.05\% & 24.68\% & 24.70\% & 24.71\% \\
@@ -269,6 +285,7 @@ Two-Step~分群有兩個優點，一是複雜度不高，運算時間與資料�
       \end{tabular}
   \end{center}
 \end{table}
+}
 
 % When 0<a<1 and I{L} = 1, hit rate is utilized to determine the percentage of data predicted correctly by the prediction model, that is, prediction model accuracy. In this work, the hit rate is ranked by setting a equal to 0.1 and 0.2, which are utilized as two assessment indices that average and rank the performance of accuracy. Table 1 lists the assessment indices of the nine prediction models. The prediction model that performs best is that built using the GLM with K-means clustering. The second best prediction model is that built via the GLM with two-step clustering. Fig. 13 compares the actual CDR and CDR obtained using the K-means and GLM prediction models. The slope of the regression curve equation approaches 1, indicating a strong correlation between school building design data and aseismic ability of building. However, the scattered distribution of actual data points corresponds to a high R2 and high MAPE. After a thorough comparison of the nonlinear analysis by ANNs, the GLM, and linear analysis by simple regression, the ANNs perform better than the GLM and linear analysis by simple regression all aspects, confirming that the design parameters of school buildings have a nonlinear relationship with aseismic ability, which conforms to the fact that the aseismic CDR in this work is obtained using nonlinear analysis. Although the GLM ranks high in comprehensive assessment, its hitate is worse than that of ANNs; ANNs also have a higher MAPE. Hence, it is possible to determine which prediction method is suitable based on actual needs when predicting the aseismic ability of school buildings. We recommend using ANNs for accurate prediction of the aseismic abilities of school buildings; however, the drawback in using ANNs is that the prediction model generated is a black box. We recommend using the GLM to minimize total error. When building prediction models by clustering first and then comparing the performance of the three assessment methods, the prediction model built with clustered data performs slightly better than those built directly, indicating that traditional school buildings are already a subcluster of various architectural patterns. One feature of subclusters is their weak correlation with the aseismic ability of school buildings. Hence, information added to the cluster will not markedly improve prediction model quality.
 
@@ -276,6 +293,8 @@ Two-Step~分群有兩個優點，一是複雜度不高，運算時間與資料�
 
 % The budgets and priorities for reinforcing school buildings are based on the aseismic abilities of school buildings. This work analyzed the sequencing result of aseismic ability of school buildings by sequencing school buildings based on CDR values, dividing them into 10 equal zones, and comparing the zone number of actual and predicted values. Table 2 shows the zoning result. When Error = 0, the predicted and actual values have the same zone number; when Error = 1, predicted and actual values are in adjacent zones; when Error = 2, predicted and actual values are separated by one zone. The prediction model built by the GLM with K-means clustering performs best. The zoning error of this prediction model <1 is 70.8\%, and the zoning error <2 is 88.9\%, indicating that the prediction model already has sufficient accuracy when sequencing is used.
 
+
+{\renewcommand{\arraystretch}{1.5}
 \begin{table}[hbtp]
   \begin{center}
     \caption{Sequencing analysis of prediction of aseismic ability}
@@ -283,8 +302,7 @@ Two-Step~分群有兩個優點，一是複雜度不高，運算時間與資料�
     \scriptsize
     \begin{tabular}{l c c c c c c c c c}
       \hline
-       Error & K-means & Two-step & ANNs & K-means    & Two-step   & Regression & K-means & Two-Step & GLM \\
-             &   ANNs  &   ANNs   &      & Regression & Regression &            &   GLM   &   GLM    & \\ 
+       Error & \specialcell{K-means \\ ANNs} & \specialcell{Two-step \\ ANNs} & ANNs & \specialcell{K-means \\ Regression} & \specialcell{Two-step \\ Regression} & Regression & \specialcell{K-means \\ GLM}  & \specialcell{Two-Step \\ GLM} & GLM \\
       \hline
 	   0  & 32.8\% & 35.0\% & 33.9\% & 33.4\% & 34.1\% & 33.3\% & 35.6\% & 34.9\% & 35.0\% \\
 	   1  & 36.0\% & 35.2\% & 36.5\% & 35.4\% & 34.2\% & 35.5\% & 35.2\% & 35.9\% & 35.7\% \\
@@ -296,7 +314,7 @@ Two-Step~分群有兩個優點，一是複雜度不高，運算時間與資料�
       \end{tabular}
   \end{center}
 \end{table}
-
+}
 
 
 
