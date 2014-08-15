@@ -1,4 +1,4 @@
-This is XeTeX, Version 3.1415926-2.5-0.9999.3 (TeX Live 2013) (format=xelatex 2013.12.14)  13 AUG 2014 22:02
+This is XeTeX, Version 3.1415926-2.5-0.9999.3 (TeX Live 2013) (format=xelatex 2013.12.14)  15 AUG 2014 18:56
 entering extended mode
  restricted \write18 enabled.
  file:line:error style messages enabled.
@@ -1487,12 +1487,7 @@ Package Fancyhdr Warning: \headheight is too small (12.0pt):
  We now make it that large for the rest of the document.
  This may cause the page layout to be inconsistent, however.
 
-[5]
-Overfull \hbox (2.49997pt too wide) detected at line 76
- []\EU1/TimesNewRoman(0)/m/n/12 100
- []
-
-)
+[5])
 \tf@toc=\write4
 \openout4 = `my_ntust_thesis.toc'.
 
@@ -1873,7 +1868,7 @@ Package Fancyhdr Warning: \headheight is too small (12.0pt):
  This may cause the page layout to be inconsistent, however.
 
 [40]
-Overfull \hbox (7.3571pt too wide) in paragraph at lines 274--286
+Overfull \hbox (7.3571pt too wide) in paragraph at lines 273--285
  [] 
  []
 
