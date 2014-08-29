@@ -19,7 +19,16 @@
 
 \subsection{資料前處理}
 
-本模型採用校舍資料庫中已存在之初步評估與詳細評估資料做為資料探勘輸入參數，並以典型校舍、鋼筋混凝土建築、單邊走廊且廊外無柱、無地下室、初步評估與詳細評估均顯示為已送出之資料做為此模型資料選擇之條件篩選，模型資料經篩選過後，探勘模型中最重要的步驟就是屬性欄位的挑選，本模型挑選之屬性集如下：
+本模型採用校舍資料庫中已存在之初步評估與詳細評估資料做為資料探勘輸入參數，前處理的第一個步驟為過濾不合理的資料，通常是人為疏失輸入的不合理資料，使用的過濾條件為國震中心建議的過濾條件：
+
+\begin{itemize}
+\item 校舍總長或總深度超過兩百公尺
+\item 有任意牆厚度超過五十公分
+\item 有任意柱的長或寬超過一百公分
+\item 柱間垮距超過八公尺或小於兩公尺
+\end{itemize}
+
+接著以典型校舍、鋼筋混凝土建築、單邊走廊且廊外無柱、無地下室、初步評估與詳細評估均顯示為已送出之資料做為此模型資料選擇之條件篩選，模型資料經篩選過後，探勘模型中的最後一個步驟就是屬性欄位的挑選，本模型挑選之屬性集如下：
 
 
 \begin{multicols}{2}
@@ -99,20 +108,27 @@
 耐震指標~$Is$~為初步評估最後之評估值~\cite{ncree03049} ~，以~80~作為耐震能力堪慮之標準，若校舍調查所得之耐震指標~$Is$~值低於~80~分，表示其耐震能力頗為不足，確有耐震疑慮，若有相當於~475~年週期發生一次之最大地震時，將有嚴重損壞或倒塌之疑慮，應最優先進行耐震能力之補強設計與施工；耐震指標~$Is$~值介於~80~分及~100~分，表示校舍耐震性之安全係數尚不符合耐震設計規範對於此等重要性建築物之耐震需求，仍有耐震性能不足之疑慮，若有相當於~475~年週期發生一次的最大地震時，將有可能發生嚴重結構上之破壞，其耐震能力之提升列為次優先對象；耐震指標~$Is$~值高於~100~分，表示其尚無耐震疑慮，若有相當於~475~年週期發生一次之最大地震時，應不至於發生嚴重結構上之破壞。雖然根據上述耐震指標~$Is$~低於~100~分就須接受耐震能力補強，但根據觀察校舍資料內資料，初步評估結果~90~至~100~分進行詳細評估後，絕大部分都不須進行補強，80~分以下~70~分以上也有一些進行詳細評估後也是裁定不需補強，因此雖然耐震指標~$Is$~不是最後決定補強之最後依據，但也具有一定之影響性。
 \end{description}
 
+資料前處理完成後，得到了一組~14~個屬性，共有~2203~筆資料，其中有~785~棟校舍是在後續的詳細評估中，被技師判斷為需要補強的校舍，約佔三分之一。
+
 \subsection{資料探勘與結果}
 
 探勘模型於建立屬性集後，接著即是依挑選之屬性設定最適合該探勘方法之資料格式及資料類型。
 
-本分析原先採用支撐向量機與~CHAID~決策樹進行資料探勘之建模，選擇此二種探勘方法，主因為本分析之預測目標，是否需補強其資料類型為一個二元屬性，只有需要補強和不需要補強兩種值，這種屬性的模型屬於分類類型的資料探勘知識，而支撐向量機和決策樹正好是非常適合這種類型知識的探勘方法，
+本分析原先採用支撐向量機與~CHAID~決策樹進行資料探勘之建模，選擇此二種探勘方法，主因為本分析之預測目標，是否需補強其資料類型為一個二元屬性，只有需要補強和不需要補強兩種值，這種屬性的模型屬於分類類型的資料探勘知識，而支撐向量機和決策樹正好是非常適合這種類型知識的探勘方法，CHAID~經初步測試本分析之預測目標，其效果不錯，但支撐向量機其結果不如預期的好，因此本分析後來轉而用類神經網路，使用前處理完之~2203~筆資料並挑選屬性集內之欄位，將整體資料分為訓練區~70\%~與測試區~30\%~，做為探勘模型之訓練方法，使用~SPSS Clemitine~建立模型，其節點之設計如圖~\ref{fig:spss-d_isr}~所示。類神經網路模型的參數設定為使用~Multilayer Preceptron（MLP）形式之神經網路，隱藏層之設計為讓演算法尋找最佳的神經網路，其會從兩層隱藏層，各有兩個神經原節點開始慢慢拓展神經網路的大小，直到找到最適合此一問題的神經網路，停止條件則為訓練~15~分鐘後停止；CHAID~決策樹的訓練設定則為：最大決策樹深度為五層，停止條件為決策節點之資料筆數為總數之~1\%。兩種不同方法所訓練得到之模型的命中率（hit rate）結果如表~\ref{tab:d_is_r_result}。
 
-\textcolor{red}{模型參數}
+\begin{figure}[hbtp]
+  \begin{center}
+    \includegraphics[width=1.0\textwidth]{figures/d_isr_flow.png}
+    \caption{SPSS Clementine 探勘「校舍是否需要補強」之流程設計} 
+    \label{fig:spss-d_isr}
+  \end{center}
+\end{figure}
 
-CHAID~經初步測試本分析之預測目標，其效果不錯，但支撐向量機其結果不如預期的好，因此本分析後來轉而用類神經網路，使用前處理完之~2153~筆資料並挑選屬性集內之欄位，將整體資料分為訓練區~70\%~與測試區~30\%~，做為探勘模型之訓練方法。最後再挑一組結果較好之模型保留並以另外挑選之獨立~50~筆校舍資料進行結果測試，兩個模型之正確率結果如表~\ref{tab:d_is_r_result}。
 
 {\renewcommand{\arraystretch}{1.5}
 \begin{table}[hbtp]
   \begin{center}
-    \caption{Result of the D\_isR}
+    \caption{「校舍是否需要補強」模型結果}
     \label{tab:d_is_r_result}
     \large
     \begin{tabular}{l c c c c}
@@ -120,14 +136,14 @@ CHAID~經初步測試本分析之預測目標，其效果不錯，但支撐向�
        & \multicolumn{2}{c}{ANNs} & \multicolumn{2}{c}{CHAID} \\
        & Training & Testing & Training & Testing \\
       \hline
-     正確率 & 93.03\% & 91.41\% & 91.14\% & 88.59\% \\
+     命中率 & 93.03\% & 91.41\% & 91.14\% & 88.59\% \\
       \hline
       \end{tabular}
   \end{center}
 \end{table}
 }
 
-結果得到的兩個模型其表現都非常好，都有超過~90\%~的正確率，顯示此一模型能夠非常正確的透過校舍的一些現狀資訊和基本設計參數來判斷出校舍的耐震能力是否足夠，判斷是否需要補強。
+結果得到的兩個模型其表現都非常好，都有超過~90\%~的命中率，顯示此一模型能夠非常正確的透過校舍的一些現狀資訊和基本設計參數來判斷出校舍的耐震能力是否足夠，判斷是否需要補強。
 
 
 
@@ -152,16 +168,7 @@ CHAID~經初步測試本分析之預測目標，其效果不錯，但支撐向�
 
 \subsection{資料前處理}
 
-首先，從國震中心的校舍耐震資料庫中，將各棟校舍的~$Is$~值與其校舍的相關資料挑出並整合在一起，第一步是過濾掉明顯不合理的錯誤資料，這些資料通常是人為的錯誤造成的，而過濾的方法則是使用國陣中心建議的過濾條件：
-
-\begin{itemize}
-\item 校舍總長或總深度超過兩百公尺
-\item 有任意牆厚度超過五十公分
-\item 有任意柱的長或寬超過一百公分
-\item 柱間垮距超過八公尺或小於兩公尺
-\end{itemize}
-
-大約有八百筆資料符合這組基本的過濾條件，而在初步的過濾之後，前處理的第二個步驟則是減少資料屬性的維度，主成分分析（principal component analysis）是很常使用的資料前處理方法，這個分析方法可以找出所有資料屬性中，重要度較高的屬性，它是把原始的多個資料屬性，透過向量轉換的方式，線性組合出主要的資料屬性。
+首先，從國震中心的校舍耐震資料庫中，將各棟校舍的~$Is$~值與其校舍的相關資料挑出並整合在一起，第一步是過濾掉明顯不合理的錯誤資料，過濾的方法則是使用國震中心建議的過濾條件，大約有八百筆資料符合這組基本的過濾條件，而在初步的過濾之後，前處理的第二個步驟則是減少資料屬性的維度，主成分分析（principal component analysis）是很常使用的資料前處理方法，這個分析方法可以找出所有資料屬性中，重要度較高的屬性，它是把原始的多個資料屬性，透過向量轉換的方式，線性組合出主要的資料屬性。
 
 % Roughly 800 bits of valid data are obtained. After filtering using these conditions. Principal component analysis (PCA) is then used to reduce the dimensionality of data attributes. Notably, PCA, a very common data preparation method, can identify very important attributes among various attributes. The goal is to convert the original variables through vector transition into mutually independent variables of a linear combination. The ideal situation is that principal components obtained from linear combination retain most of the information of original variables.
 
@@ -182,7 +189,7 @@ CHAID~經初步測試本分析之預測目標，其效果不錯，但支撐向�
 \begin{figure}[hbtp]
   \begin{center}
     \includegraphics[width=0.7\textwidth]{figures/spss-cluster.png}
-    \caption{Node configuration in clustering by SPSS clementine} 
+    \caption{SPSS Clementine 建立校舍群集之流程設計} 
     \label{fig:spss-cluster}
   \end{center}
 \end{figure}
@@ -191,7 +198,7 @@ CHAID~經初步測試本分析之預測目標，其效果不錯，但支撐向�
 
 \subsubsection{K-means}
 
-此一分群方法最重要的設定參數是初始的群集數~$k$~，雖然有許多研究都在研究如何找出最佳的~$k$~值，但是目前仍沒有一個方法可以宣稱它找到~$k$~值是最佳的，唯有對該領域的專業了解以及詳細的測試才能得到最佳的 $k$ 值，在本分析案例中，~K-means~分群的停止條件是設定為~20~次迭代，如果~$k$~太大，那會造成分群結果無法在~20~次迭代內收斂，如果~$k$~小於~6~，則分群的結果就可以在~20~次迭代內完整的收斂，每筆資料都會故底定在所屬的群集內，不在變動，最後挑選的~$k$~值是~5~，而根據此意參數的分群結果可以找出三個主要的校舍群集，分別的比例是~28\%~、~56\%~和~16\%~。
+此一分群方法最重要的設定參數是初始的群集數~$k$~，雖然有許多研究都在研究如何找出最佳的~$k$~值，但是目前仍沒有一個方法可以宣稱它找到~$k$~值是最佳的，唯有對該領域的專業了解以及詳細的測試才能得到最佳的 $k$ 值，在本分析案例中，~K-means~分群的停止條件是設定為~20~次迭代，如果~$k$~太大，那會造成分群結果無法在~20~次迭代內收斂，如果~$k$~小於~6~，則分群的結果就可以在~20~次迭代內完整的收斂，每筆資料都會故底定在所屬的群集內，不再變動，最後挑選的~$k$~值是~5~，而根據此意參數的分群結果可以找出三個主要的校舍群集，分別的比例是~28\%~、~56\%~和~16\%~。
 
 % The most important parameter with this clustering method is the initial group, k. Although many researchers have developed methods for choosing the initial K value, no method can confirm that it has found the best K value. The best K can be found only based on researcher understanding and problem testing. In this study, K-means clustering is set to stop after 20 iterations. If the K value is too large and cannot be completely converged after 20 operations, some data points will continue to change the clusters to which they belong. When the K value is reduced to <6, Clustering models can be completely converged after 20 iterations, become stable, and no longer change cluster label of all data bit. The K value chosen is 5, and three major clusters are obtained. The remaining two clusters have few data and are considered outliers. The distribution of three major clusters are 28\%, 56\%, and 16\%.
 
@@ -212,7 +219,7 @@ Two-Step~分群有兩個優點，一是時間複雜度低，運算時間與資�
 \begin{figure}[hbtp]
   \begin{center}
     \includegraphics[width=1.0\textwidth]{figures/spss-mining.png}
-    \caption{Node configuration built by SPSS prediction model} 
+    \caption{SPSS Clemitine 建立 $Is$ 關係模型之流程設計} 
     \label{fig:spss-mining}
   \end{center}
 \end{figure}
@@ -271,7 +278,7 @@ Two-Step~分群有兩個優點，一是時間複雜度低，運算時間與資�
 {\renewcommand{\arraystretch}{1.5}
 \begin{table}[hbtp]
   \begin{center}
-    \caption{Cross-validation result of the prediction model}
+    \caption{$Is$ 關係模型之交叉驗證結果}
     \label{tab:is_result}
     \scriptsize
     \begin{tabular}{l c c c c c c c c c}
@@ -300,7 +307,7 @@ Two-Step~分群有兩個優點，一是時間複雜度低，運算時間與資�
 {\renewcommand{\arraystretch}{1.5}
 \begin{table}[hbtp]
   \begin{center}
-    \caption{Sequencing analysis of prediction of aseismic ability}
+    \caption{$Is$ 關係模型之序列式分析結果}
     \label{tab:is_seq_result}
     \scriptsize
     \begin{tabular}{l c c c c c c c c c}
@@ -451,7 +458,7 @@ RMSE~是本分析案例中最主要用來判斷模型品質的索引，定義如
 \begin{figure}[hbtp]
   \begin{center}
     \includegraphics[width=1.0\textwidth]{figures/4-layer-gp.png}
-    \caption{Four Layer GP Structure for Aseismic Programming} 
+    \caption{四層 GP 運算樹形式之 $CDR$ 關係模型} 
     \label{fig:4LGP}
   \end{center}
 \end{figure}
@@ -467,7 +474,7 @@ WGP~是本分析第二個使用的方法，和~GP~一樣選擇了五層的運算
 \begin{figure}[hbtp]
   \begin{center}
     \includegraphics[width=1.0\textwidth]{figures/4-layer-wgp.png}
-    \caption{Four Layer WGP Structure for Aseismic Programming} 
+    \caption{四層 WGP 運算樹形式之 $CDR$ 關係模型} 
     \label{fig:4LWGP}
   \end{center}
 \end{figure}
@@ -482,7 +489,7 @@ WGP~是本分析第二個使用的方法，和~GP~一樣選擇了五層的運算
 \begin{figure}[hbtp]
   \begin{center}
     \includegraphics[width=0.75\textwidth]{figures/wgp.pdf}
-    \caption{WGP Programming Result} 
+    \caption{WGP 建立之 $CDR$ 關係模型預測值 vs 實際值} 
     \label{fig:WGP}
   \end{center}
 \end{figure}
@@ -512,7 +519,7 @@ $I$~是確保~$C_E$~值能趨於保守用的係數，在~NCREE~的設計中，�
 \begin{figure}[hbtp]
   \begin{center}
     \includegraphics[width=1.0\textwidth]{figures/4-layer-wgp.png}
-    \caption{Four Layer WGP Structure for Tuning Aseismic Ability Index} 
+    \caption{四層 WGP 運算樹形式之 $T$ 值關係模型}
     \label{fig:4LWGPTuning}
   \end{center}
 \end{figure}
@@ -537,7 +544,7 @@ $I$~是確保~$C_E$~值能趨於保守用的係數，在~NCREE~的設計中，�
       \includegraphics[width=0.65\textwidth]{figures/ce+T.pdf}
       \label{fig:cet}
     }
-    \caption{WGP Tuning Result}
+    \caption{WGP 建立之 $T$ 值關係模型預測值 vs 實際值}
     \label{fig:wgp-tuning}
   \end{center}
 \end{figure}
