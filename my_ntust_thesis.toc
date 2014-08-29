@@ -71,5 +71,6 @@
 \contentsline {chapter}{附錄一：典型校舍初步評估表}{80}{chapter*.64}
 \contentsline {chapter}{附錄二：典型校舍詳細評估表}{82}{chapter*.65}
 \contentsline {chapter}{附錄三：典型校舍補強設計表}{88}{chapter*.66}
-\contentsline {chapter}{授權書}{102}{section*.67}
+\contentsline {chapter}{附錄四：竣工資料上傳表}{102}{chapter*.67}
+\contentsline {chapter}{授權書}{105}{section*.68}
 \contentsfinish 
