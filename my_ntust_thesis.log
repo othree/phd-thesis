@@ -1,4 +1,4 @@
-This is XeTeX, Version 3.1415926-2.5-0.9999.3 (TeX Live 2013) (format=xelatex 2013.12.14)  30 AUG 2014 17:42
+This is XeTeX, Version 3.1415926-2.5-0.9999.3 (TeX Live 2013) (format=xelatex 2013.12.14)  1 SEP 2014 12:05
 entering extended mode
  restricted \write18 enabled.
  file:line:error style messages enabled.
@@ -2426,29 +2426,26 @@ Package Fancyhdr Warning: \headheight is too small (12.0pt):
 [102
 
 ]
-File: appendix/20100722-COB.pdf Graphic file (type QTm)
- <use  "appendix/20100722-COB.pdf"  page1>
-File: appendix/20100722-COB.pdf Graphic file (type QTm)
+File: appendix/cob.pdf Graphic file (type QTm)
+ <use  "appendix/cob.pdf"  page1>
+File: appendix/cob.pdf Graphic file (type QTm)
+ <use  "appendix/cob.pdf"  page1>
+File: appendix/cob.pdf Graphic file (type QTm)
 
-<use  "appendix/20100722-COB.pdf"  page1>
-File: appendix/20100722-COB.pdf Graphic file (type QTm)
+<use  "appendix/cob.pdf"  page1>
+File: appendix/cob.pdf Graphic file (type QTm)
+ <use  "appendix/cob.pdf"  page1>
+File: appendix/cob.pdf Graphic file (type QTm)
 
-<use  "appendix/20100722-COB.pdf"  page1>
-File: appendix/20100722-COB.pdf Graphic file (type QTm)
+<use  "appendix/cob.pdf"  page1> [103]
+File: appendix/cob.pdf Graphic file (type QTm)
+ <use  "appendix/cob.pdf"  page2>
+File: appendix/cob.pdf Graphic file (type QTm)
 
-<use  "appendix/20100722-COB.pdf"  page1>
-File: appendix/20100722-COB.pdf Graphic file (type QTm)
-
-<use  "appendix/20100722-COB.pdf"  page1> [103]
-File: appendix/20100722-COB.pdf Graphic file (type QTm)
-
-<use  "appendix/20100722-COB.pdf"  page2>
-File: appendix/20100722-COB.pdf Graphic file (type QTm)
-
-<use  "appendix/20100722-COB.pdf"  page2>
-File: appendix/20100722-COB.pdf Graphic file (type QTm)
-
-<use  "appendix/20100722-COB.pdf"  page2> [104]) [105
+<use  "appendix/cob.pdf"  page2>
+File: appendix/cob.pdf Graphic file (type QTm)
+ <use  "appendix/cob.pdf"  page2> [104])
+[105
 
 ])
 Package atveryend Info: Empty hook `BeforeClearDocument' on input line 104.
@@ -2457,13 +2454,14 @@ Package atveryend Info: Empty hook `AfterLastShipout' on input line 104.
 Package atveryend Info: Empty hook `AtVeryEndDocument' on input line 104.
 Package atveryend Info: Empty hook `AtEndAfterFileList' on input line 104.
 
+
 LaTeX Warning: There were multiply-defined labels.
 
 Package atveryend Info: Empty hook `AtVeryVeryEnd' on input line 104.
  ) 
 Here is how much of TeX's memory you used:
  28143 strings out of 493938
- 545379 string characters out of 6148856
+ 545352 string characters out of 6148856
  587742 words of memory out of 5000000
  31002 multiletter control sequences out of 15000+600000
  13331 words of font info for 90 fonts, out of 8000000 for 9000
