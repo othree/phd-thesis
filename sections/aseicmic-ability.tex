@@ -463,7 +463,7 @@ RMSE~是本分析案例中最主要用來判斷模型品質的索引，定義如
 
 \subsubsection{Weighted Genetic Programming}
 
-WGP~是本分析第二個使用的方法，和~GP~一樣選擇了五層的運算樹，其他的基因演算的參數也都和~GP~分析中使用的一樣，~200~組基因演化~5000~代，交配率是~0.8~，突變率是~0.1~，而唯一不一樣的參數則是權重~$w$~的範圍，設定為~+10~到~-10~間，在此設定下分析~30~次，從中挑出表現最好的一組關係模型，其~RMSE~直在表二中，圖~\ref{fig:4LWGP}~是此關係模型的運算樹結構，其符號定義與~GP~方法運算樹使用的一樣，唯一不同的是黑色實心點，代表的是~$f = w_1x_1$~，此關係模型的方程式如下：
+WGP~是本分析第二個使用的方法，和~GP~一樣選擇了五層的運算樹，其他的基因演算的參數也都和~GP~分析中使用的一樣，~200~組基因演化~5000~代，交配率是~0.8~，突變率是~0.1~，而唯一不一樣的參數則是權重~$w$~的範圍，設定為~+10~到~-10~間，在此設定下分析~30~次，從中挑出表現最好的一組關係模型，其~RMSE~值在表~\ref{tab:gp-result}~中，圖~\ref{fig:4LWGP}~是此關係模型的運算樹結構，其符號定義與~GP~方法運算樹使用的一樣，唯一不同的是黑色實心點，代表的是~$f = w_1x_1$~，此關係模型的方程式如下：
 
 \begin{figure}[hbtp]
   \begin{center}
@@ -478,7 +478,7 @@ WGP~是本分析第二個使用的方法，和~GP~一樣選擇了五層的運算
 
 \begin{equation} AC = {({165 P_{10}}^{8.86 P_6} {P_4}^{4.86} + \dfrac{22.5 P_8 + 39.5 P_{10}}{P_{10}} )}^{-98.6 P_4{P_8}^{-1.3} - 133 P_{10} - 0.05 {P_7}^{1.38 P_{10}} }  \label{eq:WGP_AC}\end{equation}
 
-表二列出了~WGP~方法所建立的校舍設計參數與其最所破壞地表加速度~$AC$~間關係模型的~RMSE~值，其值為~0.039~，比使用類神經網路所建立的關係模型表現還要好，圖~\ref{fig:WGP}~是此模型的推估值與實際直的比較圖，可以看得出來比使用~GP~所建立的模型要來的好。
+表~\ref{tab:gp-result}~列出了~WGP~方法所建立的校舍設計參數與其最小破壞地表加速度~$AC$~間關係模型的~RMSE~值，其值為~0.039~，比使用類神經網路所建立的關係模型表現還要好，圖~\ref{fig:WGP}~是此模型的推估值與實際直的比較圖，可以看得出來比使用~GP~所建立的模型要來的好。
 
 \begin{figure}[hbtp]
   \begin{center}
@@ -490,9 +490,7 @@ WGP~是本分析第二個使用的方法，和~GP~一樣選擇了五層的運算
 
 % Table 2 shows the RMSE of the optimum relationship equations generated from the two patterns. The RMSE reached 0.039, which is better than the performance of the model built by the artificial neural networks in the contrast group. Figure 12 displays the comparison between the estimated, and the actual values of the model. By comparing the results, the model constructed by the WGP pattern is superior to the model constructed by the GP pattern.
 
-\textcolor{red}{缺表三}
-
-本研究還分析了此關係模型所使用到的輸入參數，表三列出了此關係模型所有使用到的輸入參數，~$S_{DS}$~和~$S_{D1}$~並沒有被使用到，因其兩者都是和耐震需求相關的參數，而本分析的主要目標是校舍的地震承受能力，也就是耐震能力相關的部份，而此結果也正可以符合預期，而其餘所有的參數都有被使用到，也可以代表前處理所選擇到的參數都有其重要性。
+本研究還分析了此關係模型所使用到的輸入參數，表~\ref{tab:gp-attributes}~列出了此關係模型所有使用到的輸入參數，~$S_{DS}$~和~$S_{D1}$~並沒有被使用到，因其兩者都是和耐震需求相關的參數，而本分析的主要目標是校舍的地震承受能力，也就是耐震能力相關的部份，而此結果也正可以符合預期，而其餘所有的參數都有被使用到，也可以代表前處理所選擇到的參數都有其重要性。
 
 % The parameters entered are analyzed based on the equation obtained from WGP, and Table 3 shows the input parameters obtained from the optimum relationship equations. SDS and SD1 were not used, as both are relevant to the demand of the CDR. For this study, the target is to estimate the Capacity (Aseismic Ability Index), which is irrelevant to Demand. Hence, this result conforms to the expectations. As all of the remaining input parameters were used, this indicates that the parameters chosen at the data processing stage are important.
 
