@@ -14,8 +14,7 @@
 \contentsline {section}{\numberline {3.2}收集範圍}{8}{section.3.2}
 \contentsline {subsection}{\numberline {3.2.1}初步評估}{10}{subsection.3.2.1}
 \contentsline {subsection}{\numberline {3.2.2}詳細評估}{13}{subsection.3.2.2}
-\contentsline {subsection}{\numberline {3.2.3}補強設計}{15}{subsection.3.2.3}
-\contentsline {subsection}{\numberline {3.2.4}補強工程}{16}{subsection.3.2.4}
+\contentsline {subsection}{\numberline {3.2.3}補強設計與竣工資料}{15}{subsection.3.2.3}
 \contentsline {chapter}{\numberline {4}資料探勘}{17}{chapter.4}
 \contentsline {section}{\numberline {4.1}資料前處理方法}{20}{section.4.1}
 \contentsline {subsubsection}{主成分分析}{20}{section*.16}
