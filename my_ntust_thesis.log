@@ -1,4 +1,4 @@
-This is XeTeX, Version 3.1415926-2.5-0.9999.3 (TeX Live 2013) (format=xelatex 2013.12.14)  3 SEP 2014 16:48
+This is XeTeX, Version 3.1415926-2.5-0.9999.3 (TeX Live 2013) (format=xelatex 2013.12.14)  6 SEP 2014 12:00
 entering extended mode
  restricted \write18 enabled.
  file:line:error style messages enabled.
@@ -1611,8 +1611,6 @@ Package Fancyhdr Warning: \headheight is too small (12.0pt):
 [7
 
 ]
-File: figures/survey-flow.pdf Graphic file (type QTm)
- <use  "figures/survey-flow.pdf" >
 
 Package Fancyhdr Warning: \headheight is too small (12.0pt): 
  Make it at least 16.0pt.
@@ -1620,6 +1618,8 @@ Package Fancyhdr Warning: \headheight is too small (12.0pt):
  This may cause the page layout to be inconsistent, however.
 
 [8]
+File: figures/survey-flow.pdf Graphic file (type QTm)
+ <use  "figures/survey-flow.pdf" >
 
 Package Fancyhdr Warning: \headheight is too small (12.0pt): 
  Make it at least 16.0pt.
@@ -2462,7 +2462,7 @@ Package atveryend Info: Empty hook `AtVeryVeryEnd' on input line 104.
 Here is how much of TeX's memory you used:
  28143 strings out of 493938
  545352 string characters out of 6148856
- 587682 words of memory out of 5000000
+ 587689 words of memory out of 5000000
  31002 multiletter control sequences out of 15000+600000
  13331 words of font info for 90 fonts, out of 8000000 for 9000
  1144 hyphenation exceptions out of 8191
