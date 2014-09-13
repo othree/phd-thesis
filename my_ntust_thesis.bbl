@@ -14,6 +14,59 @@ B.~S. S.~C. (US) and A.~T. Council, {\em NEHRP guidelines for the seismic
 U.~Fayyad, G.~Piatetsky-Shapiro, and P.~Smyth, ``From data mining to knowledge
   discovery in databases,'' {\em AI magazine}, vol.~17, no.~3, p.~37, 1996.
 
+\bibitem{chang2003master}
+張鉅輝, ``混凝土橋梁耐震能力評估與資料庫系統之建立,''
+  Master's thesis, 中華大學土木工程學系, 2003.
+
+\bibitem{chou2002master}
+周武坤, ``Gps/gis
+  科技應用於高雄都會區地下管線工程管理資料庫系統之建立與應用,''
+  Master's thesis, 屏東科技大學土木工程系, 2002.
+
+\bibitem{hou2000master}
+侯峻棕, ``Gps/gis
+  應用於南橫公路〔甲仙至埡口段〕邊坡地工環境災害資料庫系統之建立研究,''
+  Master's thesis, 屏東科技大學土木工程系, 2000.
+
+\bibitem{su2000master}
+蘇振綱,
+  ``地理資訊系統計畫評估方法之研究─以環境地質資料庫為例,''
+  Master's thesis, 國立台灣大學建築與城鄉研究所, 1993.
+
+\bibitem{law1990management}
+K.~H. Law, T.~Barsalou, and G.~Wiederhold, ``Management of complex structural
+  engineering objects in a relational framework,'' {\em Engineering with
+  computers}, vol.~6, no.~2, pp.~81--92, 1990.
+
+\bibitem{kim2000study}
+C.-K. Kim, S.-E. Lee, and S.-M. Hong, ``A new integrated database model for the
+  design and construction information of building structures,'' in {\em
+  International Conference on Information Technology in Construction},
+  pp.~315--324, 2000.
+
+\bibitem{somo2006modeling}
+S.~Somo and H.~Hong, ``Modeling error analysis of shear predicting models for
+  rc beams,'' {\em Structural safety}, vol.~28, no.~3, pp.~217--230, 2006.
+
+\bibitem{chou2004master}
+趙宜峰, ``網路式之橋樑耐震評估系統,'' Master's thesis,
+  台灣科技大學營建工程系碩士, 2004.
+
+\bibitem{chang2004master}
+張瑜晏,
+  ``以結構容量震譜為基礎之建築物耐震能力詳細評估輔助系統之建置與應用,''
+  Master's thesis, 臺灣大學土木工程學系, 2002.
+
+\bibitem{deng2005phd}
+鄧彬斌, {\em
+  案例式自我學習推理機制及耐震初步評估之應用}.
+\newblock PhD thesis, 台灣大學土木工程學系, 2005.
+
+\bibitem{ncree03049}
+許丁友, 鍾立來, 廖文義, 邱建國, 簡文郁, and 周德光,
+  ``國民中小學典型校舍耐震能力初步評估法,'' Tech. Rep.
+  NCREE-03-049, 國家地震工程研究中心, dec 2003.
+
 \bibitem{applied1996seismic}
 Applied{\ }Technology{\ }Council{\ }(ATC), {\em Seismic evaluation and retrofit
   of concrete buildings}, vol.~1.
@@ -81,15 +134,15 @@ H.~Drucker, C.~J. Burges, L.~Kaufman, A.~Smola, and V.~Vapnik, ``Support vector
   regression machines,'' {\em Advances in neural information processing
   systems}, vol.~9, pp.~155--161, 1997.
 
-\bibitem{zhang1996birch}
-T.~Zhang, R.~Ramakrishnan, and M.~Livny, ``Birch: an efficient data clustering
-  method for very large databases,'' in {\em ACM SIGMOD Record}, vol.~25,
-  pp.~103--114, ACM, 1996.
-
 \bibitem{macqueen67}
 J.~MacQueen, ``Some methods for classification and analysis of multivariate
   observations,'' in {\em Proceedings of the Fifth Berkeley Symposium on
   Mathematical Statistics and Probability}, vol.~1, pp.~281--297, 1967.
+
+\bibitem{zhang1996birch}
+T.~Zhang, R.~Ramakrishnan, and M.~Livny, ``Birch: an efficient data clustering
+  method for very large databases,'' in {\em ACM SIGMOD Record}, vol.~25,
+  pp.~103--114, ACM, 1996.
 
 \bibitem{內政部營建署編輯委員會2005建築物耐震設計規範及解說}
 內政部營建署編輯委員會, {\em 建築物耐震設計規範及解說}.
@@ -98,11 +151,6 @@ J.~MacQueen, ``Some methods for classification and analysis of multivariate
 \bibitem{su2008master}
 蘇耕立, ``灣中小學校舍結構耐震能力初步評估方法之探討,''
   Master's thesis, 國立台灣大學土木系, jul 2008.
-
-\bibitem{ncree03049}
-許丁友, 鍾立來, 廖文義, 邱建國, 簡文郁, and 周德光,
-  ``國民中小學典型校舍耐震能力初步評估法,'' Tech. Rep.
-  NCREE-03-049, 國家地震工程研究中心, dec 2003.
 
 \bibitem{ncree08035}
 黃世建, 葉勇凱, 鍾立來, 簡文郁, 陳鴻銘, 趙宜峰, 周德光,
