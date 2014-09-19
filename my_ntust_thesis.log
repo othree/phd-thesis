@@ -1,4 +1,4 @@
-This is XeTeX, Version 3.1415926-2.5-0.9999.3 (TeX Live 2013) (format=xelatex 2013.12.14)  19 SEP 2014 15:56
+This is XeTeX, Version 3.1415926-2.5-0.9999.3 (TeX Live 2013) (format=xelatex 2013.12.14)  19 SEP 2014 17:53
 entering extended mode
  restricted \write18 enabled.
  file:line:error style messages enabled.
@@ -1548,9 +1548,9 @@ Missing character: There is no 神 in font BiauKai/OT!
 Missing character: There is no 路 in font BiauKai/OT!
 Missing character: There is no 若 in font BiauKai/OT!
 
-[24] [25]
+[24]
 File: figures/anns-network.png Graphic file (type QTm)
- <use  "figures/anns-network.png" > [26]
+ <use  "figures/anns-network.png" > [25] [26]
 File: figures/gp-struct.pdf Graphic file (type QTm)
 
 <use  "figures/gp-struct.pdf" > [27] [28]
