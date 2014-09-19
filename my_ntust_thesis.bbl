@@ -86,6 +86,15 @@ W.~S. McCulloch and W.~Pitts, ``A logical calculus of the ideas immanent in
   nervous activity,'' {\em The Bulletin of Mathematical Biophysics}, vol.~5,
   no.~4, pp.~115--133, 1943.
 
+\bibitem{werbos1974beyond}
+P.~Werbos, {\em Beyond regression: New tools for prediction and analysis in the
+  behavioral sciences}.
+\newblock PhD thesis, Harvard University, 1974.
+
+\bibitem{rummelhart1986learning}
+D.~Rummelhart, ``Learning representations by back-propagating errors,'' {\em
+  Nature}, vol.~323, no.~9, pp.~533--536, 1986.
+
 \bibitem{holland1975adaptation}
 J.~H. Holland, {\em Adaptation in natural and artificial systems: An
   introductory analysis with applications to biology, control, and artificial

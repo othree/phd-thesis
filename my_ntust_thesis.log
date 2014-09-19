@@ -1,4 +1,4 @@
-This is XeTeX, Version 3.1415926-2.5-0.9999.3 (TeX Live 2013) (format=xelatex 2013.12.14)  13 SEP 2014 21:51
+This is XeTeX, Version 3.1415926-2.5-0.9999.3 (TeX Live 2013) (format=xelatex 2013.12.14)  19 SEP 2014 15:56
 entering extended mode
  restricted \write18 enabled.
  file:line:error style messages enabled.
@@ -1454,13 +1454,13 @@ Overfull \hbox (1.15817pt too wide) detected at line 5
 
 
 ] [5]
-Overfull \hbox (2.49997pt too wide) detected at line 72
- []\EU1/TimesNewRoman(0)/m/n/12 105
+Overfull \hbox (2.49997pt too wide) detected at line 73
+ []\EU1/TimesNewRoman(0)/m/n/12 108
  []
 
 
-Overfull \hbox (2.49997pt too wide) detected at line 73
- []\EU1/TimesNewRoman(0)/m/n/12 108
+Overfull \hbox (1.60934pt too wide) detected at line 74
+ []\EU1/TimesNewRoman(0)/m/n/12 111
  []
 
 )
@@ -1522,69 +1522,89 @@ File: figures/capacity-curve.png Graphic file (type QTm)
 File: figures/performance-point.png Graphic file (type QTm)
 
 <use  "figures/performance-point.png" > [16] [17]) (./sections/method.tex
-[18]
+[18] [19]
 Chapter 4.
 File: figures/1196px-CRISP-DM_Process_Diagram.png Graphic file (type QTm)
-<use  "figures/1196px-CRISP-DM_Process_Diagram.png" > [19
+<use  "figures/1196px-CRISP-DM_Process_Diagram.png" > [20
 
-] [20] [21] [22]
-[23]
+] [21] [22] [23]
+Missing character: There is no 類 in font BiauKai/OT!
+Missing character: There is no 神 in font BiauKai/OT!
+Missing character: There is no 路 in font BiauKai/OT!
+Missing character: There is no 路 in font BiauKai/OT!
+Missing character: There is no 理 in font BiauKai/OT!
+Missing character: There is no 論 in font BiauKai/OT!
+Missing character: There is no 念 in font BiauKai/OT!
+Missing character: There is no 論 in font BiauKai/OT!
+Missing character: There is no 理 in font BiauKai/OT!
+Missing character: There is no 利 in font BiauKai/OT!
+Missing character: There is no 度 in font BiauKai/OT!
+Missing character: There is no 降 in font BiauKai/OT!
+Missing character: There is no 路 in font BiauKai/OT!
+Missing character: There is no 論 in font BiauKai/OT!
+Missing character: There is no 精 in font BiauKai/OT!
+Missing character: There is no 類 in font BiauKai/OT!
+Missing character: There is no 神 in font BiauKai/OT!
+Missing character: There is no 路 in font BiauKai/OT!
+Missing character: There is no 若 in font BiauKai/OT!
+
+[24] [25]
 File: figures/anns-network.png Graphic file (type QTm)
- <use  "figures/anns-network.png" > [24]
+ <use  "figures/anns-network.png" > [26]
 File: figures/gp-struct.pdf Graphic file (type QTm)
- <use  "figures/gp-struct.pdf" >
-[25] [26]
+
+<use  "figures/gp-struct.pdf" > [27] [28]
 File: figures/wgp-sample.pdf Graphic file (type QTm)
- <use  "figures/wgp-sample.pdf" > [27]
+ <use  "figures/wgp-sample.pdf" >
+[29]
 File: figures/gp-unit.pdf Graphic file (type QTm)
  <use  "figures/gp-unit.pdf" >
 File: figures/wgp-unit.pdf Graphic file (type QTm)
-
-<use  "figures/wgp-unit.pdf" > [28] [29] [30] [31]
+ <use  "figures/wgp-unit.pdf" > [30] [31]
+[32] [33]
 Missing character: There is no （ in font Times New Roman/OT:script=latn;languag
 e=DFLT;mapping=tex-text;!
-)
-(./sections/aseicmic-ability.tex [32]
+ [34]) (./sections/aseicmic-ability.tex [35]
 Chapter 5.
-[33
+[36
 
-] [34] [35] [36] [37]
+] [37] [38] [39] [40]
 File: figures/d_isr_flow.png Graphic file (type QTm)
- <use  "figures/d_isr_flow.png" > [38] [39]
+ <use  "figures/d_isr_flow.png" > [41] [42]
 File: figures/spss-cluster.png Graphic file (type QTm)
 
-<use  "figures/spss-cluster.png" > [40]
+<use  "figures/spss-cluster.png" > [43]
 File: figures/spss-mining.png Graphic file (type QTm)
  <use  "figures/spss-mining.png" >
-[41] [42] [43]
+[44] [45] [46]
 Overfull \hbox (7.3571pt too wide) in paragraph at lines 278--290
  [] 
  []
 
-[44] [45] [46] [47] [48] [49]
+[47] [48] [49] [50] [51] [52]
 File: figures/4-layer-gp.png Graphic file (type QTm)
- <use  "figures/4-layer-gp.png" > [50]
+ <use  "figures/4-layer-gp.png" > [53]
 File: figures/4-layer-wgp.png Graphic file (type QTm)
 
 <use  "figures/4-layer-wgp.png" >
 File: figures/wgp.pdf Graphic file (type QTm)
- <use  "figures/wgp.pdf" > [51] [52]
+ <use  "figures/wgp.pdf" > [54] [55]
 File: figures/4-layer-wgp.png Graphic file (type QTm)
 
-<use  "figures/4-layer-wgp.png" > [53]
+<use  "figures/4-layer-wgp.png" > [56]
 File: figures/ce.pdf Graphic file (type QTm)
  <use  "figures/ce.pdf" >
 File: figures/ce+T.pdf Graphic file (type QTm)
 
-<use  "figures/ce+T.pdf" > [54] [55] [56]) (./sections/crack-component.tex
-[57]
+<use  "figures/ce+T.pdf" > [57] [58] [59]) (./sections/crack-component.tex
+[60]
 Chapter 6.
-[58
+[61
 
-] [59] [60] [61]
+] [62] [63] [64]
 File: figures/crack-flow.png Graphic file (type QTm)
  <use  "figures/crack-flow.png" >)
-(./sections/retrofit-cost.tex [62] [63]
+(./sections/retrofit-cost.tex [65] [66]
 Chapter 7.
 
 LaTeX Warning: Command \nobreakspace invalid in math mode on input line 7.
@@ -1598,7 +1618,7 @@ LaTeX Warning: Command \nobreakspace invalid in math mode on input line 7.
 
 LaTeX Warning: Command \nobreakspace invalid in math mode on input line 7.
 
-[64
+[67
 
 ]
 
@@ -1613,51 +1633,51 @@ LaTeX Warning: Command \nobreakspace invalid in math mode on input line 20.
 
 LaTeX Warning: Command \nobreakspace invalid in math mode on input line 21.
 
-[65] [66] [67] [68] [69] [70]
+[68] [69] [70] [71] [72] [73]
 File: figures/cob-flow.png Graphic file (type QTm)
- <use  "figures/cob-flow.png" > [71]
+ <use  "figures/cob-flow.png" > [74]
 File: figures/cob-chaid.pdf Graphic file (type QTm)
 
 <use  "figures/cob-chaid.pdf" >
 File: figures/cob-ann.pdf Graphic file (type QTm)
  <use  "figures/cob-ann.pdf" >)
-(./sections/conclusion.tex [72] [73] [74]
+(./sections/conclusion.tex [75] [76] [77]
 Chapter 8.
 File: figures/survey-flow-con.pdf Graphic file (type QTm)
-<use  "figures/survey-flow-con.pdf" > [75
+<use  "figures/survey-flow-con.pdf" > [78
 
-] [76]
+] [79]
 File: figures/big-picture.pdf Graphic file (type QTm)
 
-<use  "figures/big-picture.pdf" > [77]) (./backpages/ntust_backpages.tex
-[78] (./my_ntust_thesis.bbl
+<use  "figures/big-picture.pdf" > [80]) (./backpages/ntust_backpages.tex
+[81] (./my_ntust_thesis.bbl
 Underfull \hbox (badness 10000) detected at line 1
 \EU1/標楷體(0)/bx/n/20.74 參 考 文 獻
  []
 
-[79
+[82
 
 
-] [80] [81]) (./backpages/my_appendix.tex [82] [83
-
-]
-File: appendix/20120516-Preliminary-Typical.pdf Graphic file (type QTm)
-
-<use  "appendix/20120516-Preliminary-Typical.pdf"  page1>
-File: appendix/20120516-Preliminary-Typical.pdf Graphic file (type QTm)
-
-<use  "appendix/20120516-Preliminary-Typical.pdf"  page1>
-File: appendix/20120516-Preliminary-Typical.pdf Graphic file (type QTm)
-
-<use  "appendix/20120516-Preliminary-Typical.pdf"  page1>
-File: appendix/20120516-Preliminary-Typical.pdf Graphic file (type QTm)
-
-<use  "appendix/20120516-Preliminary-Typical.pdf"  page1>
-File: appendix/20120516-Preliminary-Typical.pdf Graphic file (type QTm)
-
-<use  "appendix/20120516-Preliminary-Typical.pdf"  page1> [84] [85
+] [83] [84]) (./backpages/my_appendix.tex [85] [86
 
 ]
+File: appendix/20120516-Preliminary-Typical.pdf Graphic file (type QTm)
+
+<use  "appendix/20120516-Preliminary-Typical.pdf"  page1>
+File: appendix/20120516-Preliminary-Typical.pdf Graphic file (type QTm)
+
+<use  "appendix/20120516-Preliminary-Typical.pdf"  page1>
+File: appendix/20120516-Preliminary-Typical.pdf Graphic file (type QTm)
+
+<use  "appendix/20120516-Preliminary-Typical.pdf"  page1>
+File: appendix/20120516-Preliminary-Typical.pdf Graphic file (type QTm)
+
+<use  "appendix/20120516-Preliminary-Typical.pdf"  page1>
+File: appendix/20120516-Preliminary-Typical.pdf Graphic file (type QTm)
+
+<use  "appendix/20120516-Preliminary-Typical.pdf"  page1> [87] [88
+
+]
 File: appendix/detailed-evaluation.pdf Graphic file (type QTm)
 
 <use  "appendix/detailed-evaluation.pdf"  page1>
@@ -1672,7 +1692,7 @@ File: appendix/detailed-evaluation.pdf Graphic file (type QTm)
 <use  "appendix/detailed-evaluation.pdf"  page1>
 File: appendix/detailed-evaluation.pdf Graphic file (type QTm)
 
-<use  "appendix/detailed-evaluation.pdf"  page1> [86]
+<use  "appendix/detailed-evaluation.pdf"  page1> [89]
 File: appendix/detailed-evaluation.pdf Graphic file (type QTm)
 
 <use  "appendix/detailed-evaluation.pdf"  page2>
@@ -1681,7 +1701,7 @@ File: appendix/detailed-evaluation.pdf Graphic file (type QTm)
 <use  "appendix/detailed-evaluation.pdf"  page2>
 File: appendix/detailed-evaluation.pdf Graphic file (type QTm)
 
-<use  "appendix/detailed-evaluation.pdf"  page2> [87]
+<use  "appendix/detailed-evaluation.pdf"  page2> [90]
 File: appendix/detailed-evaluation.pdf Graphic file (type QTm)
 
 <use  "appendix/detailed-evaluation.pdf"  page3>
@@ -1690,7 +1710,7 @@ File: appendix/detailed-evaluation.pdf Graphic file (type QTm)
 <use  "appendix/detailed-evaluation.pdf"  page3>
 File: appendix/detailed-evaluation.pdf Graphic file (type QTm)
 
-<use  "appendix/detailed-evaluation.pdf"  page3> [88]
+<use  "appendix/detailed-evaluation.pdf"  page3> [91]
 File: appendix/detailed-evaluation.pdf Graphic file (type QTm)
 
 <use  "appendix/detailed-evaluation.pdf"  page4>
@@ -1699,7 +1719,7 @@ File: appendix/detailed-evaluation.pdf Graphic file (type QTm)
 <use  "appendix/detailed-evaluation.pdf"  page4>
 File: appendix/detailed-evaluation.pdf Graphic file (type QTm)
 
-<use  "appendix/detailed-evaluation.pdf"  page4> [89]
+<use  "appendix/detailed-evaluation.pdf"  page4> [92]
 File: appendix/detailed-evaluation.pdf Graphic file (type QTm)
 
 <use  "appendix/detailed-evaluation.pdf"  page5>
@@ -1708,7 +1728,7 @@ File: appendix/detailed-evaluation.pdf Graphic file (type QTm)
 <use  "appendix/detailed-evaluation.pdf"  page5>
 File: appendix/detailed-evaluation.pdf Graphic file (type QTm)
 
-<use  "appendix/detailed-evaluation.pdf"  page5> [90] [91
+<use  "appendix/detailed-evaluation.pdf"  page5> [93] [94
 
 ]
 File: appendix/retrofit.pdf Graphic file (type QTm)
@@ -1723,7 +1743,7 @@ File: appendix/retrofit.pdf Graphic file (type QTm)
  <use  "appendix/retrofit.pdf"  page1>
 File: appendix/retrofit.pdf Graphic file (type QTm)
 
-<use  "appendix/retrofit.pdf"  page1> [92]
+<use  "appendix/retrofit.pdf"  page1> [95]
 File: appendix/retrofit.pdf Graphic file (type QTm)
 
 <use  "appendix/retrofit.pdf"  page2>
@@ -1731,7 +1751,7 @@ File: appendix/retrofit.pdf Graphic file (type QTm)
  <use  "appendix/retrofit.pdf"  page2>
 File: appendix/retrofit.pdf Graphic file (type QTm)
 
-<use  "appendix/retrofit.pdf"  page2> [93]
+<use  "appendix/retrofit.pdf"  page2> [96]
 File: appendix/retrofit.pdf Graphic file (type QTm)
 
 <use  "appendix/retrofit.pdf"  page3>
@@ -1739,7 +1759,7 @@ File: appendix/retrofit.pdf Graphic file (type QTm)
  <use  "appendix/retrofit.pdf"  page3>
 File: appendix/retrofit.pdf Graphic file (type QTm)
 
-<use  "appendix/retrofit.pdf"  page3> [94]
+<use  "appendix/retrofit.pdf"  page3> [97]
 File: appendix/retrofit.pdf Graphic file (type QTm)
 
 <use  "appendix/retrofit.pdf"  page4>
@@ -1747,7 +1767,7 @@ File: appendix/retrofit.pdf Graphic file (type QTm)
  <use  "appendix/retrofit.pdf"  page4>
 File: appendix/retrofit.pdf Graphic file (type QTm)
 
-<use  "appendix/retrofit.pdf"  page4> [95]
+<use  "appendix/retrofit.pdf"  page4> [98]
 File: appendix/retrofit.pdf Graphic file (type QTm)
 
 <use  "appendix/retrofit.pdf"  page5>
@@ -1755,7 +1775,7 @@ File: appendix/retrofit.pdf Graphic file (type QTm)
  <use  "appendix/retrofit.pdf"  page5>
 File: appendix/retrofit.pdf Graphic file (type QTm)
 
-<use  "appendix/retrofit.pdf"  page5> [96]
+<use  "appendix/retrofit.pdf"  page5> [99]
 File: appendix/retrofit.pdf Graphic file (type QTm)
 
 <use  "appendix/retrofit.pdf"  page6>
@@ -1763,7 +1783,7 @@ File: appendix/retrofit.pdf Graphic file (type QTm)
  <use  "appendix/retrofit.pdf"  page6>
 File: appendix/retrofit.pdf Graphic file (type QTm)
 
-<use  "appendix/retrofit.pdf"  page6> [97]
+<use  "appendix/retrofit.pdf"  page6> [100]
 File: appendix/retrofit.pdf Graphic file (type QTm)
 
 <use  "appendix/retrofit.pdf"  page7>
@@ -1771,7 +1791,7 @@ File: appendix/retrofit.pdf Graphic file (type QTm)
  <use  "appendix/retrofit.pdf"  page7>
 File: appendix/retrofit.pdf Graphic file (type QTm)
 
-<use  "appendix/retrofit.pdf"  page7> [98]
+<use  "appendix/retrofit.pdf"  page7> [101]
 File: appendix/retrofit.pdf Graphic file (type QTm)
 
 <use  "appendix/retrofit.pdf"  page8>
@@ -1779,7 +1799,7 @@ File: appendix/retrofit.pdf Graphic file (type QTm)
  <use  "appendix/retrofit.pdf"  page8>
 File: appendix/retrofit.pdf Graphic file (type QTm)
 
-<use  "appendix/retrofit.pdf"  page8> [99]
+<use  "appendix/retrofit.pdf"  page8> [102]
 File: appendix/retrofit.pdf Graphic file (type QTm)
 
 <use  "appendix/retrofit.pdf"  page9>
@@ -1787,7 +1807,7 @@ File: appendix/retrofit.pdf Graphic file (type QTm)
  <use  "appendix/retrofit.pdf"  page9>
 File: appendix/retrofit.pdf Graphic file (type QTm)
 
-<use  "appendix/retrofit.pdf"  page9> [100]
+<use  "appendix/retrofit.pdf"  page9> [103]
 File: appendix/retrofit.pdf Graphic file (type QTm)
 
 <use  "appendix/retrofit.pdf"  page10>
@@ -1795,7 +1815,7 @@ File: appendix/retrofit.pdf Graphic file (type QTm)
  <use  "appendix/retrofit.pdf"  page10>
 File: appendix/retrofit.pdf Graphic file (type QTm)
 
-<use  "appendix/retrofit.pdf"  page10> [101]
+<use  "appendix/retrofit.pdf"  page10> [104]
 File: appendix/retrofit.pdf Graphic file (type QTm)
 
 <use  "appendix/retrofit.pdf"  page11>
@@ -1803,7 +1823,7 @@ File: appendix/retrofit.pdf Graphic file (type QTm)
  <use  "appendix/retrofit.pdf"  page11>
 File: appendix/retrofit.pdf Graphic file (type QTm)
 
-<use  "appendix/retrofit.pdf"  page11> [102]
+<use  "appendix/retrofit.pdf"  page11> [105]
 File: appendix/retrofit.pdf Graphic file (type QTm)
 
 <use  "appendix/retrofit.pdf"  page12>
@@ -1811,7 +1831,7 @@ File: appendix/retrofit.pdf Graphic file (type QTm)
  <use  "appendix/retrofit.pdf"  page12>
 File: appendix/retrofit.pdf Graphic file (type QTm)
 
-<use  "appendix/retrofit.pdf"  page12> [103]
+<use  "appendix/retrofit.pdf"  page12> [106]
 File: appendix/retrofit.pdf Graphic file (type QTm)
 
 <use  "appendix/retrofit.pdf"  page13>
@@ -1819,7 +1839,7 @@ File: appendix/retrofit.pdf Graphic file (type QTm)
  <use  "appendix/retrofit.pdf"  page13>
 File: appendix/retrofit.pdf Graphic file (type QTm)
 
-<use  "appendix/retrofit.pdf"  page13> [104] [105
+<use  "appendix/retrofit.pdf"  page13> [107] [108
 
 ]
 File: appendix/cob.pdf Graphic file (type QTm)
@@ -1834,15 +1854,15 @@ File: appendix/cob.pdf Graphic file (type QTm)
  <use  "appendix/cob.pdf"  page1>
 File: appendix/cob.pdf Graphic file (type QTm)
 
-<use  "appendix/cob.pdf"  page1> [106]
+<use  "appendix/cob.pdf"  page1> [109]
 File: appendix/cob.pdf Graphic file (type QTm)
  <use  "appendix/cob.pdf"  page2>
 File: appendix/cob.pdf Graphic file (type QTm)
 
 <use  "appendix/cob.pdf"  page2>
 File: appendix/cob.pdf Graphic file (type QTm)
- <use  "appendix/cob.pdf"  page2> [107])
-[108
+ <use  "appendix/cob.pdf"  page2> [110])
+[111
 
 ])
 Package atveryend Info: Empty hook `BeforeClearDocument' on input line 104.
@@ -1857,12 +1877,12 @@ LaTeX Warning: There were multiply-defined labels.
 Package atveryend Info: Empty hook `AtVeryVeryEnd' on input line 104.
  ) 
 Here is how much of TeX's memory you used:
- 28188 strings out of 493938
- 546934 string characters out of 6148856
- 587903 words of memory out of 5000000
- 31045 multiletter control sequences out of 15000+600000
+ 28192 strings out of 493938
+ 546995 string characters out of 6148856
+ 588124 words of memory out of 5000000
+ 31049 multiletter control sequences out of 15000+600000
  13347 words of font info for 92 fonts, out of 8000000 for 9000
  1144 hyphenation exceptions out of 8191
  46i,19n,48p,2437b,531s stack positions out of 5000i,500n,10000p,200000b,80000s
 
-Output written on my_ntust_thesis.pdf (118 pages).
+Output written on my_ntust_thesis.pdf (121 pages).
