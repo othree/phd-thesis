@@ -1,4 +1,4 @@
-This is XeTeX, Version 3.1415926-2.5-0.9999.3 (TeX Live 2013) (format=xelatex 2013.12.14)  19 SEP 2014 17:53
+This is XeTeX, Version 3.1415926-2.5-0.9999.3 (TeX Live 2013) (format=xelatex 2013.12.14)  21 SEP 2014 15:19
 entering extended mode
  restricted \write18 enabled.
  file:line:error style messages enabled.
@@ -1500,29 +1500,24 @@ Missing character: There is no 數 in font BiauKai/OT!
 Chapter 2.
 [6
 
-]
-Missing character: There is no 參 in font BiauKai/OT!
-Missing character: There is no 數 in font BiauKai/OT!
-Missing character: There is no 識 in font BiauKai/OT!
-Missing character: There is no 行 in font BiauKai/OT!
-Missing character: There is no 參 in font BiauKai/OT!
-Missing character: There is no 數 in font BiauKai/OT!
- [7]) (./sections/database.tex [8]
+]) (./sections/database.tex [7]
 Chapter 3.
 File: figures/trad-school-building.pdf Graphic file (type QTm)
-<use  "figures/trad-school-building.pdf" > [9
+<use  "figures/trad-school-building.pdf" > [8
 
-] [10]
+] [9]
 File: figures/survey-flow.pdf Graphic file (type QTm)
 
-<use  "figures/survey-flow.pdf" > [11] [12] [13] [14]
+<use  "figures/survey-flow.pdf" > [10] [11] [12] [13]
 File: figures/capacity-curve.png Graphic file (type QTm)
 
-<use  "figures/capacity-curve.png" > [15]
+<use  "figures/capacity-curve.png" > [14]
 File: figures/performance-point.png Graphic file (type QTm)
 
-<use  "figures/performance-point.png" > [16] [17]) (./sections/method.tex
-[18] [19]
+<use  "figures/performance-point.png" > [15] [16] [17]
+File: figures/school-er.pdf Graphic file (type QTm)
+
+<use  "figures/school-er.pdf" > [18]) (./sections/method.tex [19]
 Chapter 4.
 File: figures/1196px-CRISP-DM_Process_Diagram.png Graphic file (type QTm)
 <use  "figures/1196px-CRISP-DM_Process_Diagram.png" > [20
@@ -1877,10 +1872,10 @@ LaTeX Warning: There were multiply-defined labels.
 Package atveryend Info: Empty hook `AtVeryVeryEnd' on input line 104.
  ) 
 Here is how much of TeX's memory you used:
- 28192 strings out of 493938
- 546995 string characters out of 6148856
- 588124 words of memory out of 5000000
- 31049 multiletter control sequences out of 15000+600000
+ 28196 strings out of 493938
+ 547061 string characters out of 6148856
+ 589210 words of memory out of 5000000
+ 31052 multiletter control sequences out of 15000+600000
  13347 words of font info for 92 fonts, out of 8000000 for 9000
  1144 hyphenation exceptions out of 8191
  46i,19n,48p,2437b,531s stack positions out of 5000i,500n,10000p,200000b,80000s
