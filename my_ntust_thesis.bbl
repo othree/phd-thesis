@@ -48,6 +48,33 @@ C.-K. Kim, S.-E. Lee, and S.-M. Hong, ``A new integrated database model for the
 S.~Somo and H.~Hong, ``Modeling error analysis of shear predicting models for
   rc beams,'' {\em Structural safety}, vol.~28, no.~3, pp.~217--230, 2006.
 
+\bibitem{Cuenca20131089}
+E.~Cuenca, P.~Serna, and G.~Plizzari, ``Shear database for reinforced and
+  prestressed beams made with fiber reinforced concrete,'' pp.~1089--1100,
+  2013.
+
+\bibitem{hodkova2011envimat}
+J.~Hodkov{\'a}, A.~Lup{\'\i}{\v{s}}ek, {\v{S}}.~Man{\v{c}}{\'\i}k, L.~Vochoc,
+  and T.~{\v{Z}}d’{\'a}ra, ``Envimat. cz--online database of environmental
+  profiles of building materials and structures,'' in {\em Environmental
+  Software Systems. Frameworks of eEnvironment}, pp.~272--279, Springer, 2011.
+
+\bibitem{lourencco2013simplified}
+P.~B. Louren{\c{c}}o, D.~V. Oliveira, J.~C. Leite, J.~Ingham, C.~Modena, and
+  F.~da~Porto, ``Simplified indexes for the seismic assessment of masonry
+  buildings: International database and validation,'' {\em Engineering Failure
+  Analysis}, vol.~34, pp.~585--605, 2013.
+
+\bibitem{duthinh2006nonlinear}
+D.~Duthinh and W.~P. Fritz, ``Nonlinear database-assisted design leads to”
+  greener” steel buildings,'' in {\em Structures Congress 2006: Structural
+  Engineering and Public Safety}, pp.~1--17, ASCE, 2006.
+
+\bibitem{asce2002minimum}
+American{\ }Society{\ }of{\ }Civil{\ }Engineers{\ }(ASCE), {\em Minimum design
+  loads for buildings and other structures.}
+\newblock ASCE 7-02, 2002.
+
 \bibitem{chou2004master}
 趙宜峰, ``網路式之橋樑耐震評估系統,'' Master's thesis,
   台灣科技大學營建工程系碩士, 2004.
