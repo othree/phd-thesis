@@ -19,12 +19,12 @@ U.~Fayyad, G.~Piatetsky-Shapiro, and P.~Smyth, ``From data mining to knowledge
   Master's thesis, 中華大學土木工程學系, 2003.
 
 \bibitem{chou2002master}
-周武坤, ``Gps/gis
+周武坤, ``{GPS/GIS}
   科技應用於高雄都會區地下管線工程管理資料庫系統之建立與應用,''
   Master's thesis, 屏東科技大學土木工程系, 2002.
 
 \bibitem{hou2000master}
-侯峻棕, ``Gps/gis
+侯峻棕, ``{GPS/GIS}
   應用於南橫公路〔甲仙至埡口段〕邊坡地工環境災害資料庫系統之建立研究,''
   Master's thesis, 屏東科技大學土木工程系, 2000.
 
@@ -75,24 +75,51 @@ American{\ }Society{\ }of{\ }Civil{\ }Engineers{\ }(ASCE), {\em Minimum design
   loads for buildings and other structures.}
 \newblock ASCE 7-02, 2002.
 
-\bibitem{chou2004master}
-趙宜峰, ``網路式之橋樑耐震評估系統,'' Master's thesis,
-  台灣科技大學營建工程系碩士, 2004.
+\bibitem{golafshani2014artificial}
+E.~M. Golafshani, A.~Rahai, and M.~H. Sebt, ``Artificial neural network and
+  genetic programming for predicting the bond strength of gfrp bars in
+  concrete,'' {\em Materials and Structures}, pp.~1--22, 2014.
 
-\bibitem{chang2004master}
-張瑜晏,
-  ``以結構容量震譜為基礎之建築物耐震能力詳細評估輔助系統之建置與應用,''
-  Master's thesis, 臺灣大學土木工程學系, 2002.
+\bibitem{aci2006guide}
+A.~. Committee {\em et~al.}, ``Guide for the design and construction of
+  concrete reinforced with frp bars (aci 440.1 r-06),'' {\em American Concrete
+  Institute, Detroit, Michigan}, 2006.
 
-\bibitem{deng2005phd}
-鄧彬斌, {\em
-  案例式自我學習推理機制及耐震初步評估之應用}.
-\newblock PhD thesis, 台灣大學土木工程學系, 2005.
+\bibitem{arslan2010evaluation}
+M.~H. Arslan, ``An evaluation of effective design parameters on earthquake
+  performance of rc buildings using neural networks,'' {\em Engineering
+  Structures}, vol.~32, no.~7, pp.~1888--1898, 2010.
+
+\bibitem{azadi2013assessment}
+M.~Azadi, S.~Pourakbar, and A.~Kashfi, ``Assessment of optimum settlement of
+  structure adjacent urban tunnel by using neural network methods,'' {\em
+  Tunnelling and underground space technology}, vol.~37, pp.~1--9, 2013.
+
+\bibitem{elshafey2013predicting}
+A.~A. Elshafey, N.~Dawood, H.~Marzouk, and M.~Haddara, ``Predicting of crack
+  spacing for concrete by using neural networks,'' {\em Engineering Failure
+  Analysis}, vol.~31, pp.~344--359, 2013.
 
 \bibitem{chang2007master}
 張玉瑛,
   ``以支援向量機預測台灣地區營造工程物價指數之研究,''
   Master's thesis, 朝陽科技大學營建工程所, 2007.
+
+\bibitem{chen2010developing}
+J.-H. Chen and J.-Z. Lin, ``Developing an svm based risk hedging prediction
+  model for construction material suppliers,'' {\em Automation in
+  Construction}, vol.~19, no.~6, pp.~702--708, 2010.
+
+\bibitem{tuhus2010genetic}
+D.~Tuhus-Dubrow and M.~Krarti, ``Genetic-algorithm based approach to optimize
+  building envelope design for residential buildings,'' {\em Building and
+  Environment}, vol.~45, no.~7, pp.~1574--1581, 2010.
+
+\bibitem{kaveh2010performance}
+A.~Kaveh, B.~Farahmand~Azar, A.~Hadidi, F.~Rezazadeh~Sorochi, and
+  S.~Talatahari, ``Performance-based seismic design of steel frames using ant
+  colony optimization,'' {\em Journal of Constructional Steel Research},
+  vol.~66, no.~4, pp.~566--574, 2010.
 
 \bibitem{ncree03049}
 許丁友, 鍾立來, 廖文義, 邱建國, 簡文郁, and 周德光,

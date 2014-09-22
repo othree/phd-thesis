@@ -1,4 +1,4 @@
-This is XeTeX, Version 3.1415926-2.5-0.9999.3 (TeX Live 2013) (format=xelatex 2013.12.14)  21 SEP 2014 23:41
+This is XeTeX, Version 3.1415926-2.5-0.9999.3 (TeX Live 2013) (format=xelatex 2013.12.14)  22 SEP 2014 18:44
 entering extended mode
  restricted \write18 enabled.
  file:line:error style messages enabled.
@@ -1454,13 +1454,13 @@ Overfull \hbox (1.15817pt too wide) detected at line 5
 
 
 ] [5]
-Overfull \hbox (2.05466pt too wide) detected at line 73
- []\EU1/TimesNewRoman(0)/m/n/12 110
+Overfull \hbox (1.60934pt too wide) detected at line 73
+ []\EU1/TimesNewRoman(0)/m/n/12 111
  []
 
 
 Overfull \hbox (2.05466pt too wide) detected at line 74
- []\EU1/TimesNewRoman(0)/m/n/12 113
+ []\EU1/TimesNewRoman(0)/m/n/12 114
  []
 
 )
@@ -1872,10 +1872,10 @@ LaTeX Warning: There were multiply-defined labels.
 Package atveryend Info: Empty hook `AtVeryVeryEnd' on input line 104.
  ) 
 Here is how much of TeX's memory you used:
- 28206 strings out of 493938
- 547367 string characters out of 6148856
- 589416 words of memory out of 5000000
- 31062 multiletter control sequences out of 15000+600000
+ 28214 strings out of 493938
+ 547534 string characters out of 6148856
+ 589751 words of memory out of 5000000
+ 31070 multiletter control sequences out of 15000+600000
  13347 words of font info for 92 fonts, out of 8000000 for 9000
  1144 hyphenation exceptions out of 8191
  46i,19n,48p,2437b,531s stack positions out of 5000i,500n,10000p,200000b,80000s
