@@ -4,45 +4,45 @@ The top-level auxiliary file: my_ntust_thesis.aux
 The style file: ieeetr.bst
 Database file #1: my_bib.bib
 Warning--empty booktitle in Cuenca20131089
-You've used 47 entries,
+You've used 53 entries,
             1876 wiz_defined-function locations,
-            746 strings with 12055 characters,
-and the built_in function-call counts, 12239 in all, are:
-= -- 1242
-> -- 446
+            781 strings with 13460 characters,
+and the built_in function-call counts, 13979 in all, are:
+= -- 1417
+> -- 521
 < -- 4
-+ -- 170
-- -- 123
-* -- 851
-:= -- 1749
-add.period$ -- 55
-call.type$ -- 47
-change.case$ -- 39
++ -- 197
+- -- 144
+* -- 988
+:= -- 1999
+add.period$ -- 61
+call.type$ -- 53
+change.case$ -- 45
 chr.to.int$ -- 0
-cite$ -- 48
-duplicate$ -- 631
-empty$ -- 1160
-format.name$ -- 123
-if$ -- 2987
+cite$ -- 54
+duplicate$ -- 716
+empty$ -- 1312
+format.name$ -- 144
+if$ -- 3407
 int.to.chr$ -- 0
-int.to.str$ -- 47
-missing$ -- 43
-newline$ -- 152
-num.names$ -- 49
-pop$ -- 139
+int.to.str$ -- 53
+missing$ -- 49
+newline$ -- 170
+num.names$ -- 55
+pop$ -- 148
 preamble$ -- 1
 purify$ -- 0
 quote$ -- 0
-skip$ -- 420
+skip$ -- 481
 stack$ -- 0
-substring$ -- 814
-swap$ -- 252
+substring$ -- 938
+swap$ -- 290
 text.length$ -- 4
 text.prefix$ -- 0
 top$ -- 0
 type$ -- 0
 warning$ -- 1
-while$ -- 123
-width$ -- 49
-write$ -- 470
+while$ -- 140
+width$ -- 55
+write$ -- 532
 (There was 1 warning)

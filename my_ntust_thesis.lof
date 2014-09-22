@@ -1,30 +1,30 @@
 \addvspace {10\p@ }
 \addvspace {10\p@ }
 \addvspace {10\p@ }
-\contentsline {figure}{\numberline {3.1}{\ignorespaces 典型校舍\relax }}{10}{figure.caption.11}
-\contentsline {figure}{\numberline {3.2}{\ignorespaces 評估流程\relax }}{12}{figure.caption.12}
-\contentsline {figure}{\numberline {3.3}{\ignorespaces 結構物容量震譜計算流程圖\relax }}{16}{figure.caption.13}
-\contentsline {figure}{\numberline {3.4}{\ignorespaces 結構物性能點計算流程圖\relax }}{17}{figure.caption.14}
-\contentsline {figure}{\numberline {3.5}{\ignorespaces 校舍耐震資料庫實體關係圖\relax }}{19}{figure.caption.15}
+\contentsline {figure}{\numberline {3.1}{\ignorespaces 典型校舍\relax }}{11}{figure.caption.11}
+\contentsline {figure}{\numberline {3.2}{\ignorespaces 評估流程\relax }}{13}{figure.caption.12}
+\contentsline {figure}{\numberline {3.3}{\ignorespaces 結構物容量震譜計算流程圖\relax }}{17}{figure.caption.13}
+\contentsline {figure}{\numberline {3.4}{\ignorespaces 結構物性能點計算流程圖\relax }}{18}{figure.caption.14}
+\contentsline {figure}{\numberline {3.5}{\ignorespaces 校舍耐震資料庫實體關係圖\relax }}{20}{figure.caption.15}
 \addvspace {10\p@ }
-\contentsline {figure}{\numberline {4.1}{\ignorespaces CRISP-DM 流程圖 (c)Kenneth Jensen, CC BY-SA 3.0\relax }}{22}{figure.caption.16}
-\contentsline {figure}{\numberline {4.2}{\ignorespaces 類神經網路結構圖\nobreakspace {}\cite {larose2005discovering}\relax }}{27}{figure.caption.20}
-\contentsline {figure}{\numberline {4.3}{\ignorespaces GP 運算樹結構示意圖\relax }}{29}{figure.caption.22}
-\contentsline {figure}{\numberline {4.4}{\ignorespaces WGP 運算樹結構示意圖\relax }}{30}{figure.caption.24}
-\contentsline {figure}{\numberline {4.5}{\ignorespaces GP 系統之單位元素\relax }}{31}{figure.caption.25}
-\contentsline {subfigure}{\numberline {(a)}{\ignorespaces {GP}}}{31}{figure.caption.25}
-\contentsline {subfigure}{\numberline {(b)}{\ignorespaces {WGP}}}{31}{figure.caption.25}
+\contentsline {figure}{\numberline {4.1}{\ignorespaces CRISP-DM 流程圖 (c)Kenneth Jensen, CC BY-SA 3.0\relax }}{23}{figure.caption.16}
+\contentsline {figure}{\numberline {4.2}{\ignorespaces 類神經網路結構圖\nobreakspace {}\cite {larose2005discovering}\relax }}{28}{figure.caption.20}
+\contentsline {figure}{\numberline {4.3}{\ignorespaces GP 運算樹結構示意圖\relax }}{30}{figure.caption.22}
+\contentsline {figure}{\numberline {4.4}{\ignorespaces WGP 運算樹結構示意圖\relax }}{31}{figure.caption.24}
+\contentsline {figure}{\numberline {4.5}{\ignorespaces GP 系統之單位元素\relax }}{32}{figure.caption.25}
+\contentsline {subfigure}{\numberline {(a)}{\ignorespaces {GP}}}{32}{figure.caption.25}
+\contentsline {subfigure}{\numberline {(b)}{\ignorespaces {WGP}}}{32}{figure.caption.25}
 \addvspace {10\p@ }
-\contentsline {figure}{\numberline {5.1}{\ignorespaces SPSS Clementine 探勘「校舍是否需要補強」之流程設計\relax }}{42}{figure.caption.34}
-\contentsline {figure}{\numberline {5.2}{\ignorespaces SPSS Clementine 建立校舍群集之流程設計\relax }}{44}{figure.caption.36}
-\contentsline {figure}{\numberline {5.3}{\ignorespaces SPSS Clemitine 建立 $Is$ 關係模型之流程設計\relax }}{46}{figure.caption.39}
-\contentsline {figure}{\numberline {5.4}{\ignorespaces 四層 GP 運算樹形式之 $CDR$ 關係模型\relax }}{55}{figure.caption.46}
+\contentsline {figure}{\numberline {5.1}{\ignorespaces SPSS Clementine 探勘「校舍是否需要補強」之流程設計\relax }}{43}{figure.caption.34}
+\contentsline {figure}{\numberline {5.2}{\ignorespaces SPSS Clementine 建立校舍群集之流程設計\relax }}{45}{figure.caption.36}
+\contentsline {figure}{\numberline {5.3}{\ignorespaces SPSS Clemitine 建立 $Is$ 關係模型之流程設計\relax }}{47}{figure.caption.39}
+\contentsline {figure}{\numberline {5.4}{\ignorespaces 四層 GP 運算樹形式之 $CDR$ 關係模型\relax }}{56}{figure.caption.46}
 \contentsline {figure}{\numberline {5.5}{\ignorespaces 四層 WGP 運算樹形式之 $CDR$ 關係模型\relax }}{56}{figure.caption.48}
-\contentsline {figure}{\numberline {5.6}{\ignorespaces WGP 建立之 $CDR$ 關係模型預測值 vs 實際值\relax }}{56}{figure.caption.49}
-\contentsline {figure}{\numberline {5.7}{\ignorespaces 四層 WGP 運算樹形式之 $T$ 值關係模型\relax }}{58}{figure.caption.51}
-\contentsline {figure}{\numberline {5.8}{\ignorespaces WGP 建立之 $T$ 值關係模型預測值 vs 實際值\relax }}{59}{figure.caption.53}
-\contentsline {subfigure}{\numberline {(a)}{\ignorespaces {$C_E$}}}{59}{figure.caption.53}
-\contentsline {subfigure}{\numberline {(b)}{\ignorespaces {$C_E+T$}}}{59}{figure.caption.53}
+\contentsline {figure}{\numberline {5.6}{\ignorespaces WGP 建立之 $CDR$ 關係模型預測值 vs 實際值\relax }}{57}{figure.caption.49}
+\contentsline {figure}{\numberline {5.7}{\ignorespaces 四層 WGP 運算樹形式之 $T$ 值關係模型\relax }}{59}{figure.caption.51}
+\contentsline {figure}{\numberline {5.8}{\ignorespaces WGP 建立之 $T$ 值關係模型預測值 vs 實際值\relax }}{60}{figure.caption.53}
+\contentsline {subfigure}{\numberline {(a)}{\ignorespaces {$C_E$}}}{60}{figure.caption.53}
+\contentsline {subfigure}{\numberline {(b)}{\ignorespaces {$C_E+T$}}}{60}{figure.caption.53}
 \addvspace {10\p@ }
 \contentsline {figure}{\numberline {6.1}{\ignorespaces 構件破壞模型探勘流程\relax }}{67}{figure.caption.55}
 \addvspace {10\p@ }
