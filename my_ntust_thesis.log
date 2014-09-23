@@ -1,4 +1,4 @@
-This is XeTeX, Version 3.1415926-2.5-0.9999.3 (TeX Live 2013) (format=xelatex 2013.12.14)  23 SEP 2014 18:12
+This is XeTeX, Version 3.1415926-2.5-0.9999.3 (TeX Live 2013) (format=xelatex 2013.12.14)  23 SEP 2014 23:22
 entering extended mode
  restricted \write18 enabled.
  file:line:error style messages enabled.
@@ -1379,11 +1379,6 @@ Overfull \hbox (28.45273pt too wide) in paragraph at lines 67--84
  []
 
 
-Underfull \hbox (badness 10000) detected at line 88
-\EU1/標楷體(0)/bx/n/24.88 博 士 學 位 論 文
- []
-
-
 Underfull \hbox (badness 10000) detected at line 106
 \EU1/標楷體(0)/m/n/17.28 研 究 生：| 
  []
@@ -1873,11 +1868,11 @@ LaTeX Warning: There were multiply-defined labels.
 Package atveryend Info: Empty hook `AtVeryVeryEnd' on input line 104.
  ) 
 Here is how much of TeX's memory you used:
- 28217 strings out of 493938
- 547610 string characters out of 6148856
- 588896 words of memory out of 5000000
- 31073 multiletter control sequences out of 15000+600000
- 13347 words of font info for 92 fonts, out of 8000000 for 9000
+ 28212 strings out of 493938
+ 547448 string characters out of 6148856
+ 589896 words of memory out of 5000000
+ 31070 multiletter control sequences out of 15000+600000
+ 13331 words of font info for 90 fonts, out of 8000000 for 9000
  1144 hyphenation exceptions out of 8191
  46i,19n,48p,2437b,531s stack positions out of 5000i,500n,10000p,200000b,80000s
 
