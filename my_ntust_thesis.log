@@ -1,4 +1,4 @@
-This is XeTeX, Version 3.1415926-2.5-0.9999.3 (TeX Live 2013) (format=xelatex 2013.12.14)  22 SEP 2014 23:32
+This is XeTeX, Version 3.1415926-2.5-0.9999.3 (TeX Live 2013) (format=xelatex 2013.12.14)  23 SEP 2014 17:40
 entering extended mode
  restricted \write18 enabled.
  file:line:error style messages enabled.
@@ -1379,22 +1379,22 @@ Overfull \hbox (28.45273pt too wide) in paragraph at lines 67--84
  []
 
 
-Overfull \hbox (8.738pt too wide) detected at line 88
-\EU1/標楷體(0)/bx/n/24.88 博 士 學 位 論 文  |（初 稿）| 
+Underfull \hbox (badness 10000) detected at line 88
+\EU1/標楷體(0)/bx/n/24.88 博 士 學 位 論 文
  []
 
 
-Underfull \hbox (badness 10000) detected at line 104
+Underfull \hbox (badness 10000) detected at line 106
 \EU1/標楷體(0)/m/n/17.28 研 究 生：| 
  []
 
 
-Underfull \hbox (badness 10000) detected at line 109
+Underfull \hbox (badness 10000) detected at line 111
 \EU1/標楷體(0)/m/n/17.28 學 號：| 
  []
 
 
-Underfull \hbox (badness 6316) detected at line 139
+Underfull \hbox (badness 6316) detected at line 141
 \EU1/標楷體(0)/m/n/17.28 中 華 民 國 一 零 二 年 七 月 七 日
  []
 
@@ -1405,12 +1405,12 @@ File: se-ascii-print.def 2011/12/02 v1.10 stringenc: Printable ASCII characters
 [1
 
 ]
-Underfull \hbox (badness 10000) detected at line 323
+Underfull \hbox (badness 10000) detected at line 325
 \EU1/標楷體(0)/m/n/12 學 生：| 
  []
 
 
-Underfull \hbox (badness 10000) detected at line 326
+Underfull \hbox (badness 10000) detected at line 328
 \EU1/標楷體(0)/m/n/12 指 導 教 授：| 
  []
 
@@ -1419,14 +1419,14 @@ Underfull \hbox (badness 10000) detected at line 326
 ] (./frontpages/my_eabstract.tex) [2
 
 ]
-Underfull \hbox (badness 10000) detected at line 456
+Underfull \hbox (badness 10000) detected at line 458
 \EU1/標楷體(0)/bx/n/20.74 誌 謝
  []
 
 (./frontpages/my_ackn.tex) [3
 
 ]
-Underfull \hbox (badness 10000) detected at line 476
+Underfull \hbox (badness 10000) detected at line 478
 \EU1/標楷體(0)/bx/n/20.74 目 錄
  []
 
@@ -1468,7 +1468,7 @@ Overfull \hbox (2.05466pt too wide) detected at line 74
 \openout4 = `my_ntust_thesis.toc'.
 
  [6]
-Underfull \hbox (badness 10000) detected at line 494
+Underfull \hbox (badness 10000) detected at line 496
 \EU1/標楷體(0)/bx/n/20.74 圖 目 錄
  []
 
@@ -1480,7 +1480,7 @@ Underfull \hbox (badness 10000) detected at line 494
 \openout5 = `my_ntust_thesis.lof'.
 
  [8]
-Underfull \hbox (badness 10000) detected at line 509
+Underfull \hbox (badness 10000) detected at line 511
 \EU1/標楷體(0)/bx/n/20.74 表 目 錄
  []
 
@@ -1875,7 +1875,7 @@ Package atveryend Info: Empty hook `AtVeryVeryEnd' on input line 104.
 Here is how much of TeX's memory you used:
  28217 strings out of 493938
  547610 string characters out of 6148856
- 589896 words of memory out of 5000000
+ 588896 words of memory out of 5000000
  31073 multiletter control sequences out of 15000+600000
  13347 words of font info for 92 fonts, out of 8000000 for 9000
  1144 hyphenation exceptions out of 8191
