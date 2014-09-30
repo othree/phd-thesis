@@ -132,18 +132,6 @@ C.-S. Chen, M.-Y. Cheng, and Y.-W. Wu, ``Seismic assessment of school buildings
   in taiwan using the evolutionary support vector machine inference system,''
   {\em Expert Systems with Applications}, vol.~39, no.~4, pp.~4102--4110, 2012.
 
-\bibitem{jafarzadeh2013application}
-R.~Jafarzadeh, J.~Ingham, S.~Wilkinson, V.~Gonz{\'a}lez, and A.~Aghakouchak,
-  ``Application of artificial neural network methodology for predicting seismic
-  retrofit construction costs,'' {\em Journal of Construction Engineering and
-  Management}, vol.~140, no.~2, 2013.
-
-\bibitem{jafarzadeh2013predicting}
-R.~Jafarzadeh, S.~Wilkinson, V.~Gonz{\'a}lez, J.~Ingham, and G.~G. Amiri,
-  ``Predicting seismic retrofit construction cost for buildings with framed
-  structures using multilinear regression analysis,'' {\em Journal of
-  Construction Engineering and Management}, vol.~140, no.~3, 2013.
-
 \bibitem{de2014energy}
 L.~de~Santoli, F.~Fraticelli, F.~Fornari, and C.~Calice, ``Energy performance
   assessment and a retrofit strategies in public school buildings in rome,''
@@ -153,6 +141,27 @@ L.~de~Santoli, F.~Fraticelli, F.~Fornari, and C.~Calice, ``Energy performance
 S.~SATO and K.~MINANI, ``Damage analysis of existing public school buildings in
   hiroshima prefecture due to 2001 geiyo earthquake,'' {\em The Memoirs of the
   Faculty of Engineering,Fukuyama University.}, vol.~28, pp.~81--91, dec 2004.
+
+\bibitem{jafarzadeh2014seismic}
+R.~Jafarzadeh, J.~M. Ingham, and S.~Wilkinson, ``A seismic retrofit cost
+  database for buildings having a framed structure,'' {\em Earthquake Spectra},
+  2014.
+
+\bibitem{jafarzadeh2012seismic}
+R.~Jafarzadeh, {\em Seismic retrofit cost modelling of existing structures}.
+\newblock PhD thesis, The University of Auckland, 2012.
+
+\bibitem{jafarzadeh2013predicting}
+R.~Jafarzadeh, S.~Wilkinson, V.~Gonz{\'a}lez, J.~Ingham, and G.~G. Amiri,
+  ``Predicting seismic retrofit construction cost for buildings with framed
+  structures using multilinear regression analysis,'' {\em Journal of
+  Construction Engineering and Management}, vol.~140, no.~3, 2013.
+
+\bibitem{jafarzadeh2013application}
+R.~Jafarzadeh, J.~Ingham, S.~Wilkinson, V.~Gonz{\'a}lez, and A.~Aghakouchak,
+  ``Application of artificial neural network methodology for predicting seismic
+  retrofit construction costs,'' {\em Journal of Construction Engineering and
+  Management}, vol.~140, no.~2, 2013.
 
 \bibitem{ncree03049}
 許丁友, 鍾立來, 廖文義, 邱建國, 簡文郁, and 周德光,
