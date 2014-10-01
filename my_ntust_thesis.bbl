@@ -88,8 +88,8 @@ E.~M. Golafshani, A.~Rahai, and M.~H. Sebt, ``Artificial neural network and
   concrete,'' {\em Materials and Structures}, pp.~1--22, 2014.
 
 \bibitem{aci2006guide}
-A.~. Committee {\em et~al.}, ``Guide for the design and construction of
-  concrete reinforced with frp bars (aci 440.1 r-06),'' {\em American Concrete
+ACI{\ }Committee{\ }440, ``Guide for the design and construction of concrete
+  reinforced with frp bars (aci 440.1 r-06),'' {\em American Concrete
   Institute, Detroit, Michigan}, 2006.
 
 \bibitem{arslan2010evaluation}
@@ -162,7 +162,7 @@ L.~de~Santoli, F.~Fraticelli, F.~Fornari, and C.~Calice, ``Energy performance
 \bibitem{SATOShinji:2004-12}
 S.~SATO and K.~MINANI, ``Damage analysis of existing public school buildings in
   hiroshima prefecture due to 2001 geiyo earthquake,'' {\em The Memoirs of the
-  Faculty of Engineering,Fukuyama University.}, vol.~28, pp.~81--91, dec 2004.
+  Faculty of Engineering,Fukuyama University.}, vol.~28, pp.~81--91, Dec 2004.
 
 \bibitem{jafarzadeh2014seismic}
 R.~Jafarzadeh, J.~M. Ingham, and S.~Wilkinson, ``A seismic retrofit cost
@@ -188,7 +188,7 @@ R.~Jafarzadeh, J.~Ingham, S.~Wilkinson, V.~Gonz{\'a}lez, and A.~Aghakouchak,
 \bibitem{ncree03049}
 許丁友, 鍾立來, 廖文義, 邱建國, 簡文郁, and 周德光,
   ``國民中小學典型校舍耐震能力初步評估法,'' Tech. Rep.
-  NCREE-03-049, 國家地震工程研究中心, dec 2003.
+  NCREE-03-049, 國家地震工程研究中心, Dec 2003.
 
 \bibitem{applied1996seismic}
 Applied{\ }Technology{\ }Council{\ }(ATC), {\em Seismic evaluation and retrofit
@@ -203,6 +203,11 @@ Federal{\ }Emergency{\ }Management{\ }Agency{\ }(FEMA), {\em Improvement of
 \bibitem{shearer2000crisp}
 C.~Shearer, ``The crisp-dm model: the new blueprint for data mining,'' {\em
   Journal of data warehousing}, vol.~5, no.~4, pp.~13--22, 2000.
+
+\bibitem{crispdmdiagram}
+K.~Jensen, ``{CRISP-DM\ Process\ Diagram},'' Apr 2012.
+\newblock
+  \url{http://commons.wikimedia.org/wiki/File:CRISP-DM_Process_Diagram.png}.
 
 \bibitem{citeulike:5485398}
 J.~A. Nelder and R.~W.~M. Wedderburn, ``{Generalized Linear Models},'' {\em
@@ -264,7 +269,7 @@ H.-C. Tsai and Y.-H. Lin, ``Predicting high-strength concrete parameters using
 B.~E. Boser, I.~M. Guyon, and V.~N. Vapnik, ``A training algorithm for optimal
   margin classifiers,'' in {\em Proceedings of the 5th Annual Workshop on
   Computational Learning Theory (COLT'92)} (D.~Haussler, ed.), (Pittsburgh, PA,
-  USA), pp.~144--152, ACM Press, jul 1992.
+  USA), pp.~144--152, ACM Press, Jul 1992.
 
 \bibitem{drucker1997support}
 H.~Drucker, C.~J. Burges, L.~Kaufman, A.~Smola, and V.~Vapnik, ``Support vector
@@ -286,29 +291,35 @@ T.~Zhang, R.~Ramakrishnan, and M.~Livny, ``Birch: an efficient data clustering
 \newblock 營建雜誌社, 2005.
 
 \bibitem{su2008master}
-蘇耕立, ``灣中小學校舍結構耐震能力初步評估方法之探討,''
-  Master's thesis, 國立台灣大學土木系, jul 2008.
+蘇耕立,
+  ``台灣中小學校舍結構耐震能力初步評估方法之探討,''
+  Master's thesis, 國立台灣大學土木系, Jul 2008.
 
 \bibitem{ncree2013moe}
 國家地震工程研究中心,
   ``高中職及國中小校舍結構耐震能力補強設計作業規範,''
-  2013.
+  Oct 2013.
+
+\bibitem{ncree2010moe}
+國家地震工程研究中心,
+  ``國中小校舍「補強工程」之經費支用範圍及參考單價計價方式(修正版)【方案c】,''
+  Jun 2010.
 
 \bibitem{ncree08035}
 黃世建, 葉勇凱, 鍾立來, 簡文郁, 陳鴻銘, 趙宜峰, 周德光,
   沈文成, and 高偉格,
   ``全國中小學校舍結構耐震評估與補強資料庫建置（一）,''
-  Tech. Rep. NCREE-08-035, 國家地震工程研究中心, dec 2008.
+  Tech. Rep. NCREE-08-035, 國家地震工程研究中心, Dec 2008.
 
 \bibitem{ncree09015}
 葉勇凱, 蕭輔沛, 沈文成, 楊耀昇, and 黃世建,
   ``鋼筋混凝土建築物耐震能力詳細評估分析方法（推垮分析）,''
-  Tech. Rep. NCREE-09-015, 國家地震工程研究中心, jun 2009.
+  Tech. Rep. NCREE-09-015, 國家地震工程研究中心, Jun 2009.
 
 \bibitem{ncree09026}
 葉勇凱, 趙宜峰, 陳鴻銘, 高偉格, 沈文成, 翁樸文, 鍾立來,
   簡文郁, and 黃世建,
   ``全國中小學校舍結構耐震評估與補強資料庫建置（二）,''
-  Tech. Rep. NCREE-09-026, 國家地震工程研究中心, dec 2009.
+  Tech. Rep. NCREE-09-026, 國家地震工程研究中心, Dec 2009.
 
 \end{thebibliography}

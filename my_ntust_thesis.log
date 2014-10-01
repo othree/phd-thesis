@@ -1,4 +1,4 @@
-This is XeTeX, Version 3.1415926-2.5-0.9999.3 (TeX Live 2013) (format=xelatex 2013.12.14)  1 OCT 2014 18:31
+This is XeTeX, Version 3.1415926-2.5-0.9999.3 (TeX Live 2013) (format=xelatex 2013.12.14)  1 OCT 2014 23:37
 entering extended mode
  restricted \write18 enabled.
  file:line:error style messages enabled.
@@ -1562,7 +1562,7 @@ File: figures/wgp-unit.pdf Graphic file (type QTm)
 Overfull \hbox (7.78804pt too wide) in paragraph at lines 182--183
 []\EU1/標楷體(0)/m/n/12 支 持 向 量 機  |（\EU1/TimesNewRoman(0)/m/n/12 Support Vector M
 achine, SVM\EU1/標楷體(0)/m/n/12 ）|  最 早 是 \EU1/TimesNewRoman(0)/m/n/12 BOSER [[]5
-2[]] \EU1/標楷體(0)/m/n/12 等 人，|  在 \EU1/TimesNewRoman(0)/m/n/12 1992 \EU1/標楷體(0)/
+3[]] \EU1/標楷體(0)/m/n/12 等 人，|  在 \EU1/TimesNewRoman(0)/m/n/12 1992 \EU1/標楷體(0)/
 m/n/12 年
  []
 
@@ -1671,7 +1671,25 @@ Underfull \hbox (badness 4543) in paragraph at lines 111--114
 h of concretes containing
  []
 
-[88] [89] [90] [91]) (./backpages/my_appendix.tex [92] [93
+[88] [89]
+*************************************************
+* xeCJK warning: "CJKfamily-Unknown"
+* 
+* Unknown CJK family `\CJKttdefault' is being ignored.
+* 
+* Try to use `\setCJKmonofont[...]{...}' to define it.
+*************************************************
+LaTeX Font Info:    Try loading font information for EU1+lmtt on input line 210
+.
+(/usr/local/texlive/2013/texmf-dist/tex/latex/euenc/eu1lmtt.fd
+File: eu1lmtt.fd 2009/10/30 v1.6 Font defs for Latin Modern
+)
+Underfull \hbox (badness 2512) in paragraph at lines 208--211
+[]\EU1/TimesNewRoman(0)/m/n/12 K. Jensen, “CRISP-DM Process Diagram,” Apr 2012.
+  []$[][][][] [] [] [] [][][][][][][] []
+ []
+
+[90] [91]) (./backpages/my_appendix.tex [92] [93
 
 ]
 File: appendix/20120516-Preliminary-Typical.pdf Graphic file (type QTm)
@@ -1890,11 +1908,11 @@ LaTeX Warning: There were multiply-defined labels.
 Package atveryend Info: Empty hook `AtVeryVeryEnd' on input line 104.
  ) 
 Here is how much of TeX's memory you used:
- 28232 strings out of 493938
- 547941 string characters out of 6148856
- 589453 words of memory out of 5000000
- 31088 multiletter control sequences out of 15000+600000
- 13331 words of font info for 90 fonts, out of 8000000 for 9000
+ 28284 strings out of 493938
+ 549252 string characters out of 6148856
+ 584526 words of memory out of 5000000
+ 31135 multiletter control sequences out of 15000+600000
+ 13339 words of font info for 91 fonts, out of 8000000 for 9000
  1144 hyphenation exceptions out of 8191
  46i,19n,48p,2437b,531s stack positions out of 5000i,500n,10000p,200000b,80000s
 
