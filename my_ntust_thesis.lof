@@ -14,24 +14,25 @@
 \contentsline {figure}{\numberline {4.5}{\ignorespaces GP 系統之單位元素\relax }}{33}{figure.caption.25}
 \contentsline {subfigure}{\numberline {(a)}{\ignorespaces {GP}}}{33}{figure.caption.25}
 \contentsline {subfigure}{\numberline {(b)}{\ignorespaces {WGP}}}{33}{figure.caption.25}
+\contentsline {figure}{\numberline {4.6}{\ignorespaces SVM 示意圖\cite {verplancke2008support}\relax }}{35}{figure.caption.27}
 \addvspace {10\p@ }
-\contentsline {figure}{\numberline {5.1}{\ignorespaces SPSS Clementine 探勘「校舍是否需要補強」之流程設計\relax }}{44}{figure.caption.34}
-\contentsline {figure}{\numberline {5.2}{\ignorespaces SPSS Clementine 建立校舍群集之流程設計\relax }}{46}{figure.caption.36}
-\contentsline {figure}{\numberline {5.3}{\ignorespaces SPSS Clemitine 建立 $Is$ 關係模型之流程設計\relax }}{48}{figure.caption.39}
-\contentsline {figure}{\numberline {5.4}{\ignorespaces 四層 GP 運算樹形式之 $CDR$ 關係模型\relax }}{57}{figure.caption.46}
-\contentsline {figure}{\numberline {5.5}{\ignorespaces 四層 WGP 運算樹形式之 $CDR$ 關係模型\relax }}{57}{figure.caption.48}
-\contentsline {figure}{\numberline {5.6}{\ignorespaces WGP 建立之 $CDR$ 關係模型預測值 vs 實際值\relax }}{58}{figure.caption.49}
-\contentsline {figure}{\numberline {5.7}{\ignorespaces 四層 WGP 運算樹形式之 $T$ 值關係模型\relax }}{60}{figure.caption.51}
-\contentsline {figure}{\numberline {5.8}{\ignorespaces WGP 建立之 $T$ 值關係模型預測值 vs 實際值\relax }}{61}{figure.caption.53}
-\contentsline {subfigure}{\numberline {(a)}{\ignorespaces {$C_E$}}}{61}{figure.caption.53}
-\contentsline {subfigure}{\numberline {(b)}{\ignorespaces {$C_E+T$}}}{61}{figure.caption.53}
+\contentsline {figure}{\numberline {5.1}{\ignorespaces SPSS Clementine 探勘「校舍是否需要補強」之流程設計\relax }}{45}{figure.caption.35}
+\contentsline {figure}{\numberline {5.2}{\ignorespaces SPSS Clementine 建立校舍群集之流程設計\relax }}{47}{figure.caption.37}
+\contentsline {figure}{\numberline {5.3}{\ignorespaces SPSS Clemitine 建立 $Is$ 關係模型之流程設計\relax }}{49}{figure.caption.40}
+\contentsline {figure}{\numberline {5.4}{\ignorespaces 四層 GP 運算樹形式之 $CDR$ 關係模型\relax }}{58}{figure.caption.47}
+\contentsline {figure}{\numberline {5.5}{\ignorespaces 四層 WGP 運算樹形式之 $CDR$ 關係模型\relax }}{58}{figure.caption.49}
+\contentsline {figure}{\numberline {5.6}{\ignorespaces WGP 建立之 $CDR$ 關係模型預測值 vs 實際值\relax }}{59}{figure.caption.50}
+\contentsline {figure}{\numberline {5.7}{\ignorespaces 四層 WGP 運算樹形式之 $T$ 值關係模型\relax }}{61}{figure.caption.52}
+\contentsline {figure}{\numberline {5.8}{\ignorespaces WGP 建立之 $T$ 值關係模型預測值 vs 實際值\relax }}{62}{figure.caption.54}
+\contentsline {subfigure}{\numberline {(a)}{\ignorespaces {$C_E$}}}{62}{figure.caption.54}
+\contentsline {subfigure}{\numberline {(b)}{\ignorespaces {$C_E+T$}}}{62}{figure.caption.54}
 \addvspace {10\p@ }
-\contentsline {figure}{\numberline {6.1}{\ignorespaces 構件破壞模型探勘流程\relax }}{68}{figure.caption.55}
+\contentsline {figure}{\numberline {6.1}{\ignorespaces 構件破壞模型探勘流程\relax }}{69}{figure.caption.56}
 \addvspace {10\p@ }
-\contentsline {figure}{\numberline {7.1}{\ignorespaces 補強經費模型探勘流程\relax }}{77}{figure.caption.58}
-\contentsline {figure}{\numberline {7.2}{\ignorespaces 補強經費實際值 vs CHAID 模型預估值\relax }}{78}{figure.caption.61}
-\contentsline {figure}{\numberline {7.3}{\ignorespaces 補強經費實際值 vs ANN 模型預估值\relax }}{79}{figure.caption.62}
+\contentsline {figure}{\numberline {7.1}{\ignorespaces 補強經費模型探勘流程\relax }}{78}{figure.caption.59}
+\contentsline {figure}{\numberline {7.2}{\ignorespaces 補強經費實際值 vs CHAID 模型預估值\relax }}{79}{figure.caption.62}
+\contentsline {figure}{\numberline {7.3}{\ignorespaces 補強經費實際值 vs ANN 模型預估值\relax }}{80}{figure.caption.63}
 \addvspace {10\p@ }
-\contentsline {figure}{\numberline {8.1}{\ignorespaces 評估流程與資料探勘模型\relax }}{81}{figure.caption.63}
-\contentsline {figure}{\numberline {8.2}{\ignorespaces 知識挖掘規劃\relax }}{83}{figure.caption.64}
+\contentsline {figure}{\numberline {8.1}{\ignorespaces 評估流程與資料探勘模型\relax }}{82}{figure.caption.64}
+\contentsline {figure}{\numberline {8.2}{\ignorespaces 知識挖掘規劃\relax }}{84}{figure.caption.65}
 \contentsfinish 

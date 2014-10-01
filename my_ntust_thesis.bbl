@@ -100,6 +100,21 @@ A.~A. Elshafey, N.~Dawood, H.~Marzouk, and M.~Haddara, ``Predicting of crack
   spacing for concrete by using neural networks,'' {\em Engineering Failure
   Analysis}, vol.~31, pp.~344--359, 2013.
 
+\bibitem{saridemir2009prediction}
+M.~Sar{\i}demir, ``Prediction of compressive strength of concretes containing
+  metakaolin and silica fume by artificial neural networks,'' {\em Advances in
+  Engineering Software}, vol.~40, no.~5, pp.~350--355, 2009.
+
+\bibitem{topccu2008prediction}
+{\.I}.~B. Top{\c{c}}u and M.~Sar{\i}demir, ``Prediction of rubberized concrete
+  properties using artificial neural network and fuzzy logic,'' {\em
+  Construction and Building Materials}, vol.~22, no.~4, pp.~532--540, 2008.
+
+\bibitem{ince2004prediction}
+R.~Ince, ``Prediction of fracture parameters of concrete by artificial neural
+  networks,'' {\em Engineering Fracture Mechanics}, vol.~71, no.~15,
+  pp.~2143--2159, 2004.
+
 \bibitem{chang2007master}
 張玉瑛,
   ``以支援向量機預測台灣地區營造工程物價指數之研究,''
@@ -170,8 +185,13 @@ R.~Jafarzadeh, J.~Ingham, S.~Wilkinson, V.~Gonz{\'a}lez, and A.~Aghakouchak,
 
 \bibitem{applied1996seismic}
 Applied{\ }Technology{\ }Council{\ }(ATC), {\em Seismic evaluation and retrofit
-  of concrete buildings}, vol.~1.
+  of concrete buildings}.
 \newblock Report No. SSC 96-01: ATC-40, 1996.
+
+\bibitem{fema440}
+Federal{\ }Emergency{\ }Management{\ }Agency{\ }(FEMA), {\em Improvement of
+  Nonlinear Static Seismic Analysis Procedures}.
+\newblock FEMA-440, 2005.
 
 \bibitem{shearer2000crisp}
 C.~Shearer, ``The crisp-dm model: the new blueprint for data mining,'' {\em
@@ -243,6 +263,13 @@ B.~E. Boser, I.~M. Guyon, and V.~N. Vapnik, ``A training algorithm for optimal
 H.~Drucker, C.~J. Burges, L.~Kaufman, A.~Smola, and V.~Vapnik, ``Support vector
   regression machines,'' {\em Advances in neural information processing
   systems}, vol.~9, pp.~155--161, 1997.
+
+\bibitem{verplancke2008support}
+T.~Verplancke, S.~Van~Looy, D.~Benoit, S.~Vansteelandt, P.~Depuydt,
+  F.~De~Turck, and J.~Decruyenaere, ``Support vector machine versus logistic
+  regression modeling for prediction of hospital mortality in critically ill
+  patients with haematological malignancies,'' {\em BMC Medical Informatics and
+  Decision Making}, vol.~8, no.~1, p.~56, 2008.
 
 \bibitem{macqueen67}
 J.~MacQueen, ``Some methods for classification and analysis of multivariate
