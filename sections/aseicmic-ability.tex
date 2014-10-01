@@ -17,7 +17,7 @@
 
 \subsection{資料前處理}
 
-本模型採用校舍資料庫中已存在之初步評估與詳細評估資料做為資料探勘輸入參數，前處理的第一個步驟為過濾不合理的資料，通常是人為疏失輸入的不合理資料，使用的過濾條件為國震中心建議的過濾條件：
+人工輸入的資料很容易發生單位錯誤或是格式不正確的資料，而資料的品質對於資料探勘的結果優劣影響很大，因此需要在資料前處理時把這些問題都處理過，資料前處理的最主要目標是讓處理過的資料能夠很確實的反映出分析問題所要尋找的資料特性，使用的方法包括資料過濾、屬性過濾、新屬性的生成等，本模型採用校舍資料庫中已存在之初步評估與詳細評估資料做為資料探勘輸入參數，前處理的第一個步驟為過濾不合理的資料，通常是人為疏失輸入的不合理資料，使用的過濾條件為國震中心建議的過濾條件：
 
 \begin{itemize}
 \item 校舍總長或總深度超過兩百公尺
@@ -26,7 +26,7 @@
 \item 柱間垮距超過八公尺或小於兩公尺
 \end{itemize}
 
-接著以典型校舍、鋼筋混凝土建築、單邊走廊且廊外無柱、無地下室、初步評估與詳細評估均顯示為已送出之資料做為此模型資料選擇之條件篩選，模型資料經篩選過後，探勘模型中的最後一個步驟就是屬性欄位的挑選，本模型挑選之屬性集如下：
+第二個步驟則是資料集的挑選，挑選的過程可以減少資料複雜度，排除資料庫中的少數資料，並且減少屬性數量，挑選的條件為：典型校舍、鋼筋混凝土建築、單邊走廊且廊外無柱、無地下室、初步評估與詳細評估均顯示為已送出之資料；模型資料經篩選過後，探勘模型中的最後一個步驟就是屬性欄位的挑選，本模型挑選之屬性集如下：
 
 
 \begin{multicols}{2}
@@ -52,7 +52,7 @@
 
 \begin{description}
   \item [一般工址或近斷層區域之工址設計水平譜加速度係數]
-  \cite{內政部營建署編輯委員會2005建築物耐震設計規範及解說} 即~$S_{aD}$~，隨建築物基本振動週期~$T$~與工址短週期與一秒週期之設計水平譜加速度係數~$S_{DS}$~與~$S_{D1}$~而改變，如表~\ref{tab:sad}，~$S_{DS}$~與~$S_{D1}$~之值可由校舍所在位置依規範查出。此係數是因校舍位址而改變，並且其~$S_{DS}$~與~$S_{D1}$~為根據所在震區而訂定，藉由此係數可間接知道該校舍可能靠近哪些震區，本分析採用此一屬性，設想為可能某些地區的校舍可能其接受補強之機率較高，因此嘗試將此屬性納入屬性集。
+  \cite{內政部營建署編輯委員會2005建築物耐震設計規範及解說} 即~$S_{aD}$~，隨建築物基本振動週期~$T$~與工址短週期與一秒週期之設計水平譜加速度係數~$S_{DS}$~與~$S_{D1}$~而改變，如表~\ref{tab:sad}，~$S_{DS}$~與~$S_{D1}$~之值可由校舍所在位置依規範查出。此係數是因校舍位址而改變，並且其~$S_{DS}$~與~$S_{D1}$~為根據所在震區而訂定，藉由此係數可間接知道該校舍可能靠近哪些震區，本分析採用此一屬性，此一屬性同時代表著地震潛勢之資訊，設想為可能某些地區的校舍可能其接受補強之機率較高，因此將此屬性納入屬性集。
 
 {\renewcommand{\arraystretch}{1.5}
 \begin{table}[hbtp]
@@ -108,7 +108,7 @@
 
 探勘模型於建立屬性集後，接著即是依挑選之屬性設定最適合該探勘方法之資料格式及資料類型。
 
-本分析原先採用支撐向量機與~CHAID~決策樹進行資料探勘之建模，選擇此二種探勘方法，主因為本分析之預測目標，是否需補強其資料類型為一個二元屬性，只有需要補強和不需要補強兩種值，這種屬性的模型屬於分類類型的資料探勘知識，而支撐向量機和決策樹正好是非常適合這種類型知識的探勘方法，CHAID~經初步測試本分析之預測目標，其效果不錯，但支撐向量機其結果不如預期的好，因此本分析後來轉而用類神經網路，使用前處理完之~2203~筆資料並挑選屬性集內之欄位，將整體資料分為訓練區~70\%~與測試區~30\%~，做為探勘模型之訓練方法，使用~SPSS Clemitine~建立模型，其節點之設計如圖~\ref{fig:spss-d_isr}~所示。類神經網路模型的參數設定為使用~Multilayer Preceptron（MLP）形式之神經網路，隱藏層之設計為讓演算法尋找最佳的神經網路，其會從兩層隱藏層，各有兩個神經原節點開始慢慢拓展神經網路的大小，直到找到最適合此一問題的神經網路，停止條件則為訓練~15~分鐘後停止；CHAID~決策樹的訓練設定則為：最大決策樹深度為五層，停止條件為決策節點之資料筆數為總數之~1\%。兩種不同方法所訓練得到之模型的命中率（hit rate）結果如表~\ref{tab:d_is_r_result}。
+本分析原先採用支撐向量機與~CHAID~決策樹進行資料探勘之建模，選擇此二種探勘方法，主因為本分析之預測目標，是否需補強其資料類型為一個二元屬性，只有需要補強和不需要補強兩種值，這種屬性的模型屬於分類類型的資料探勘知識，而支撐向量機和決策樹正好是非常適合這種類型知識的探勘方法，CHAID~經初步測試本分析之預測目標，其效果不錯，但支撐向量機其結果不如預期的好，因此本分析改為使用類神經網路，使用前處理完之~2203~筆資料並挑選屬性集內之欄位，將整體資料分為訓練區~70\%~與測試區~30\%~，做為探勘模型之訓練方法，使用~SPSS Clemitine~建立模型，其節點之設計如圖~\ref{fig:spss-d_isr}~所示。類神經網路模型的參數設定為使用~Multilayer Preceptron（MLP）形式之神經網路，隱藏層之設計為讓演算法尋找最佳的神經網路，其會從兩層隱藏層，各有兩個神經原節點開始慢慢拓展神經網路的大小，直到找到最適合此一問題的神經網路，停止條件則為訓練~15~分鐘後停止；CHAID~決策樹的訓練設定則為：最大決策樹深度為五層，停止條件為決策節點之資料筆數為總數之~1\%。兩種不同方法所訓練得到之模型的命中率結果如表~\ref{tab:d_is_r_result}。
 
 \begin{figure}[hbtp]
   \begin{center}
@@ -137,7 +137,7 @@
 \end{table}
 }
 
-結果得到的兩個模型其表現都非常好，都有超過~90\%~的命中率，顯示此一模型能夠非常正確的透過校舍的一些現狀資訊和基本設計參數來判斷出校舍的耐震能力是否足夠，判斷是否需要補強。
+結果得到的兩個模型其表現都非常好，均有超過~90\%~的命中率，顯示此一模型能夠非常正確的透過校舍的一些現狀資訊和基本設計參數來判斷出校舍的耐震能力是否足夠，判斷是否需要補強。
 
 
 
@@ -156,7 +156,7 @@
 
 \section{耐震指標與校舍設計之關係模型}
 
-校舍耐震資料庫中的初步評估資料表的耐震索引（$Is$）是初步評估中用來表示校舍結構物耐震能力用的屬性，初步評估是校舍耐震能力補強作業中，很重要的篩選過程，因為建築物的詳細評估所需要的金額極高，評估需要的時間也很長久，因此需要一個速度、價錢和可靠度都可以接受的評估方法，用比較短的時間找出耐震能力有疑慮的校舍，盡早處理。而地震中心所設計的初步評估表即為一個速度、價錢和可靠度都可以接受的評估方法，只要根據建築物的設計參數，像是樓層數、長度、深度、柱子尺寸以及校舍現況等，就可以快速的得到一個極具參考價值的耐震能力指標，而其計算的原理也與詳細評估的耐震需求比一樣，為耐震容量與耐震需求的比。找出~$Is$~值與校舍設計參數之間的關係模型，可以進一步分析初步評估表中各種數據的重要性，並將結果回饋到此一初步評估表，將初步評估表調整的更為精簡，負責評估的人員也可以更快速的完成此意評估表格。
+校舍耐震資料庫中的初步評估資料表的耐震索引（$Is$）是初步評估中用來表示校舍結構物耐震能力用的屬性，初步評估是校舍耐震能力補強作業中，很重要的篩選過程，因為建築物的詳細評估所需要的金額極高，評估需要的時間也很長久，因此需要一個速度、價錢和可靠度都可以接受的評估方法，用比較短的時間找出耐震能力有疑慮的校舍，盡早處理。而地震中心所設計的初步評估表即為一個速度、價錢和可靠度都可以接受的評估方法，只要根據建築物的設計參數，像是樓層數、長度、深度、柱子尺寸以及校舍現況等，就可以快速的得到一個極具參考價值的耐震能力指標，而其計算的原理也與詳細評估的耐震需求比一樣，為耐震容量與耐震需求的比。找出~$Is$~值與校舍設計參數之間的關係模型，可以進一步分析初步評估表中各種數據的重要性，並將結果回饋到此一初步評估表，將初步評估表調整的更為有效，負責評估的人員也可以更快速的完成此一評估表格。
 
 % The proposed prediction model, based on data-mining technology, has six steps – business understanding, data understanding, data preparation, modeling, evaluation, and deployment – as recommended in the cross industry standard process for data mining (CRISP-DM) proposed by Chapman et al. (2000) (Fig. 9). The objective of this work is to construct a prediction model for the aseismic ability indices of school buildings and collect complete data. Hence, the major tasks are data preparation, modeling, and evaluation. Fig. 10 shows the procedural plan based on needs and the methods chosen. 
 
@@ -178,7 +178,7 @@
 
 % Clustering analysis of school buildings is based on the design patterns of school buildings; the goal is to find several design patterns. Hence, the attributes for analysis are the geometric information of school buildings, such as dimensions and quantity of walls and columns, and width and height of school buildings. Other attributes, such as year of construction and locale, may not be incorporated into PCA analysis. After continuous testing and adjustment, five major attributes are obtained and the importance of constitutional fields is considered as the basis for naming. The five attributes are as follows: corridor column information; classroom column design information; wall design information; data for number of walls; and, data for number of classroom columns.
 
-在前面的處理完成後，還使用分群分析將校舍分群，以幫助後續的~$Is$~值關係模型的建立，分群的目標是將校舍依照不同的設計模式特性區分開來，將相近設計的校舍放在同一群集，分群的依據是主成分分析法所找出的五種主要校舍設計相關屬性，圖~\ref{fig:spss-cluster}~是使用~SPSS Clemitine~進行此一分群分析時的節點設計圖，分別使用的~K-means~和~Two-Step~兩種分群演算法，其參數設定如下：
+在前面的處理完成後，還使用分群分析將校舍分群，以幫助後續的~$Is$~值關係模型的建立，分群的目標是將校舍依照不同的設計模式特性區分開來，將相近設計的校舍放在同一群集，分群的依據是主成分分析法所找出的五種主要校舍設計相關屬性，圖~\ref{fig:spss-cluster}~是使用~SPSS Clemitine~進行此一分群分析時的節點設計圖，分別使用的~K-means~和~Two-Step~兩種分群演算法。
 
 \begin{figure}[hbtp]
   \begin{center}
@@ -192,7 +192,7 @@
 
 \subsubsection{K-means}
 
-此一分群方法最重要的設定參數是初始的群集數~$k$~，雖然有許多研究都在研究如何找出最佳的~$k$~值，但是目前仍沒有一個方法可以宣稱它找到~$k$~值是最佳的，唯有對該領域的專業了解以及詳細的測試才能得到最佳的 $k$ 值，在本分析案例中，~K-means~分群的停止條件是設定為~20~次迭代，如果~$k$~太大，那會造成分群結果無法在~20~次迭代內收斂，如果~$k$~小於~6~，則分群的結果就可以在~20~次迭代內完整的收斂，每筆資料都會故底定在所屬的群集內，不再變動，最後挑選的~$k$~值是~5~，而根據此意參數的分群結果可以找出三個主要的校舍群集，分別的比例是~28\%~、~56\%~和~16\%~。
+此一分群方法最重要的設定參數是初始的群集數~$k$~，雖然有許多研究都在探討如何找出最佳的~$k$~值，但是目前仍沒有一個方法可以宣稱它找到~$k$~值是最佳的，唯有對該領域的專業了解以及詳細的測試才能得到最佳的 $k$ 值，在本分析案例中，~K-means~分群的停止條件是設定為~20~次迭代，如果~$k$~太大，那會造成分群結果無法在~20~次迭代內收斂，如果~$k$~小於~6~，則分群的結果就可以在~20~次迭代內完整的收斂，每筆資料都會故底定在所屬的群集內，不再變動，最後挑選的~$k$~值是~5~，而根據此一參數的分群結果可以找出三個主要的校舍群集，分別的比例是~28\%~、~56\%~和~16\%~。
 
 % The most important parameter with this clustering method is the initial group, k. Although many researchers have developed methods for choosing the initial K value, no method can confirm that it has found the best K value. The best K can be found only based on researcher understanding and problem testing. In this study, K-means clustering is set to stop after 20 iterations. If the K value is too large and cannot be completely converged after 20 operations, some data points will continue to change the clusters to which they belong. When the K value is reduced to <6, Clustering models can be completely converged after 20 iterations, become stable, and no longer change cluster label of all data bit. The K value chosen is 5, and three major clusters are obtained. The remaining two clusters have few data and are considered outliers. The distribution of three major clusters are 28\%, 56\%, and 16\%.
 
@@ -222,7 +222,7 @@ Two-Step~分群有兩個優點，一是時間複雜度低，運算時間與資�
 
 \subsubsection{廣義線性模型}
 
-廣義線性模型（GLM）是假設在輸入參數和預測目邊之間有一個可以用連結函數表達的關係，這個連結函數可能是指數函數、對數函數、Logistic~函數等，經由一些測試資料的測試，我們選擇使用對數函數作為連結函數，並且根據實際的資料分佈選擇了常態分布作為輸入參數的分佈函數，而關係模型的分布也選擇常態分佈，因其表現較其他分布形式較好。
+廣義線性模型（GLM）是假設在輸入參數和預測目標之間有一個可以用連結函數表達的關係，這個連結函數可能是指數函數、對數函數、Logistic~函數等，經由一些測試資料的測試，選擇使用對數函數作為連結函數，並且根據實際的資料分佈選擇了常態分布作為輸入參數的分佈函數，而關係模型的分布也選擇常態分佈，因其表現較其他分布形式較好。
 
 % The GLM assumes a relationship between input variables and a predictor; this relationship can be built by a link function such as identity function, log function, logit function, or power function. After available link functions testing on some data, the prediction model performs best when using log function as the link function; hence, this work chose the log function. The distribution function of the predictor is based on the actual distribution of data. This work chose the normal distribution, which is close to the real data distribution. The prediction model constructed using the normal distribution performed better than those with other distribution types.
 
@@ -239,13 +239,13 @@ Two-Step~分群有兩個優點，一是時間複雜度低，運算時間與資�
 % Generally, ANNs must decide on such parameters as number of hidden layers, number of neurons in each layer, learning rate, and stop condition. Aside from directly setting these parameters, methods such as dynamic, multiple, and Prune methods are available for adjusting and finding the optimal size and structure of the neural network. The dynamic method starts with a small neural network (two hidden layers with two neurons for each layer), expands network size gradually, and decides on the further expansion based on model performance before and after expansion. The multiple methods constructs multiple neural networks simultaneously, trains all neural networks to reach the ``stop condition,'' and then selects the group with the best performance. In contrast with the dynamic method, which slowly builds a large neural network from a small one, the Prune method first builds a large network and then removes neurons with low importance based on training. This work chooses the exhaustive Prune method, a special application of the Prune method. The initial neural network has two hidden layers, one with 30 neurons and the other with 20 neurons. The stop condition is set to 250 training cycles. Under this limit, the prediction model built by the exhaustive Prune method performs best.
 
 
-\subsection{驗證}
+%\subsection{驗證}
 
-驗證有兩個主要的目的，一是確保資料探勘找到的關係模型的可靠度，而不會找到只適用於該組訓練資料集的關係模型，第二個目的是可以用來作為比較不同分析方法的指標數據，本分析使用的驗證方式是十群交叉驗證，這個方法將所有的資料等分成十份，每次挑選九組出來作為訓練資料集，留下一組作為驗證資料集，如此可以得到十組模型以及其可靠度的指標，求此十組指標平均值即可得到代表此關係模型的可靠度代表值，而本分析所選擇的指標有三個，線性關係、絕對平均誤差（Mean Absolute Prediction Error, MAPE）以及命中率。
+%驗證有兩個主要的目的，一是確保資料探勘找到的關係模型的可靠度，而不會找到只適用於該組訓練資料集的關係模型，第二個目的是可以用來作為比較不同分析方法的指標數據，本分析使用的驗證方式是十群交叉驗證，這個方法將所有的資料等分成十份，每次挑選九組出來作為訓練資料集，留下一組作為驗證資料集，如此可以得到十組模型以及其可靠度的指標，求此十組指標平均值即可得到代表此關係模型的可靠度代表值，而本分析所選擇的指標有三個，線性關係、絕對平均誤差（Mean Absolute Prediction Error, MAPE）以及命中率。
 
 % Validation work has two purposes. The first is to ensure model reliability instead of to generate only good performance during data training. The second is to serve as a benchmark for comparing the performance of different prediction models. This work uses 10-fold cross validation to assess and compare the performance of prediction models. This method divides a fixed amount of data into 10 groups, conducts 10 rounds of model building and validation, chooses a different group of data for testing, trains the model with remaining nine groups of data, and uses test group data to validate model accuracy. After validation for 10 times, the accuracy of the 10 models is obtained and their average is taken as the accuracy of this algorithm. This study uses linear correlation, mean absolute prediction error (MAPE), and hit rate as the indices for comparing the prediction model performance.
 
-\subsection{結果}
+\subsection{結果與驗證}
 
 此資料探勘分析會產生九個校舍耐震能力與校舍建築設計資訊間的關係模型，包括直接使用~GLM~、線性回歸和類神經網路的三組，混合使用~K-means~或是~Two-Step~分群的六組，要比較其優劣我們使用了線性關係~$R^2$~和~MAPE~兩個指標，其中線性關係越高表示兩者之間越接近，也代表著關係模型的正確性，而~MAPE~ 的是用來表示關係模型誤差之數值，由於關係模型不可能完全沒有誤差，即使有非常高的線性關係也是會有誤差，因此會使用~MAPE~作為判斷其誤差程度的參考。
 
@@ -269,7 +269,7 @@ Two-Step~分群有兩個優點，一是時間複雜度低，運算時間與資�
 %其中~$0 \le \alpha \le 1$~，且~$I\{L\} = 1$~。hit rate~是用來判斷關係模型的正確率的。
 %在本分析中，我們設定了兩個~$\alpha$~值作為計算命中率（hit rate）指標用，分別是~0.1~和~0.2~，
 
-表~\ref{tab:is_result}~列出了這九個關係模型使用這三個指標配合十群交叉驗證所得到的數值，表現最好的關係模型是先使用~K-means~分群再使用~GLM~所建立的，第二好的則是先使用~Two-step~分群再使用~GLM~所建立的，圖~13~是先使用~K-means~分群再使用~GLM~所建立模型的實際~$Is$~值與使用模型得到的~$\hat{Is}$~值的比較圖，資料點的回歸取現的斜率非常接近~1~，可以看得出來兩者之間的相關度非常高。如果單看模型的線性關係表現，類神經網路的表現比~GLM~ 和線性回歸都要來的好，這也可以驗證校舍的耐震能力與其設計參數之機善一個非線性的關係，因此建議在~$Is$~值的關係模型的挑選，可以依據應用的需求來決定，如果需要較高準確率的時候，建議使用~ANN~，如果是需要降低整體的誤差，則建議使用~GLM~。如果先使用分群方法將校舍資料根據設計參數分出不同群集後，再對不同群集分別探勘其耐震能力與設計參數的關係模型，結果會比沒有先分群要來的好一些，探討其原因，是因為典型校舍已經是校舍建築物的一個子集合，而此子集合的特性已經非常接近，因此再進行分群也不會有顯著的改善。
+表~\ref{tab:is_result}~列出了這九個關係模型使用這三個指標配合十群交叉驗證所得到的數值，表現最好的關係模型是先使用~K-means~分群再使用~GLM~所建立的，第二好的則是先使用~Two-step~分群再使用~GLM~所建立的，圖~13~是先使用~K-means~分群再使用~GLM~所建立模型的實際~$Is$~值與使用模型得到的~$\hat{Is}$~值的比較圖，資料點回歸線的斜率非常接近~1~，可以看得出來兩者之間的相關度非常高。如果單看模型的線性關係表現，類神經網路的表現比~GLM~ 和線性回歸都要來的好，這也可以驗證校舍的耐震能力與其設計參數之間是一個非線性的關係，因此建議在~$Is$~值的關係模型的挑選，可以依據應用的需求來決定，如果需要較高準確率的時候，建議使用~ANN~，如果是需要降低整體的誤差，則建議使用~GLM~。如果先使用分群方法將校舍資料根據設計參數分出不同群集後，再對不同群集分別探勘其耐震能力與設計參數的關係模型，結果會比沒有先分群要來的好一些，探討其原因，是因為典型校舍已經是校舍建築物的一個子集合，而此子集合的特性已經非常接近，因此再進行分群也不會有顯著的改善。
 
 {\renewcommand{\arraystretch}{1.5}
 \begin{table}[hbtp]
@@ -284,8 +284,8 @@ Two-Step~分群有兩個優點，一是時間複雜度低，運算時間與資�
 %       R              & 80.21\% & 81.78\% & 80.76\% & 72.16\% & 72.16\% & 72.15\% & 87.41\% & 87.11\% & 87.05\% \\
        $R^2$          & 0.64 & 0.67 & 0.65 & 72.16\% & 0.52 & 0.52 & 0.76 & 0.76 & 0.76 \\
        MAPE           & 28.69\% & 26.64\% & 26.51\% & 46.06\% & 46.05\% & 46.05\% & 24.68\% & 24.70\% & 24.71\% \\
-%       hit\_rate(0.2) & 53.12\% & 54.29\% & 54.31\% & 40.16\% & 40.17\% & 40.21\% & 48.82\% & 48.64\% & 48.52\% \\
-%       hit\_rate(0.1) & 27.71\% & 28.72\% & 28.75\% & 21.13\% & 20.98\% & 21.09\% & 25.05\% & 25.16\% & 25.16\% \\
+       hit\_rate(0.2) & 53.12\% & 54.29\% & 54.31\% & 40.16\% & 40.17\% & 40.21\% & 48.82\% & 48.64\% & 48.52\% \\
+       hit\_rate(0.1) & 27.71\% & 28.72\% & 28.75\% & 21.13\% & 20.98\% & 21.09\% & 25.05\% & 25.16\% & 25.16\% \\
       \hline
        Rank & 6 & 4 & 3 & 9 & 7 & 8 & 1 & 2 & 4 \\
       \hline
@@ -341,11 +341,11 @@ Two-Step~分群有兩個優點，一是時間複雜度低，運算時間與資�
 
 \section{耐震需求比與校舍設計之關係模型}
 
-校舍耐震資料庫中，詳細評估表的耐震能力索引即為耐震需求比（$CDR$），其是用來評估校舍是否需要補強、甚至是拆除的最重要依據，此數值需要由專業人士進行完整且詳細的評估，此數值的取得非常耗時耗力，且評估需要之經費也不便宜，，是一個與校舍結構材料、設計與現況等參數之間為高度非線性的關係的數值，如果能夠取的此一關係模型，對於校舍耐震能力補強計畫來說，絕對可以有很大的幫助。
+校舍耐震資料庫中，詳細評估表的耐震能力索引即為耐震需求比（$CDR$），其是用來評估校舍是否需要補強、甚至是拆除的最重要依據，此數值需要由專業人士進行完整且詳細的評估，此數值的取得非常耗時耗力，且評估需要之經費也不便宜，是一個與校舍結構材料、設計與現況等參數之間為高度非線性的關係的數值，如果能夠取得此一關係模型，對於校舍耐震能力補強計畫來說，絕對可以有很大的幫助。
 
 \subsection{資料前處理}
 
-人工輸入的資料很容易發生單位錯誤或是格式不正確的資料，而資料的品質對於資料探勘的結果優劣影響很大，因此需要在資料前處理時把這些問題都處理過，資料前處理的最主要目標是讓處理過的資料能夠很確實的反映出分析問題所要尋找的資料特性，使用的方法包括資料過濾、屬性過濾、新屬性的生成等，首先，本分析中第一個前處理工作就是資料過濾，要把有問題的資料，不合理的資料都過濾掉，過濾的條件則是依照國震中心所建議的典型校舍特性的過濾條件：
+本分析中第一個前處理工作就是資料過濾，要把有問題的資料，不合理的資料都過濾掉，過濾的條件則是依照國震中心所建議的典型校舍特性的過濾條件：
 
 % Manually inputting data may result in incorrect units or formats because controlling data quality in the real world is difficult. Hence, it is necessary to pre-process data before building the relational model. Quality, as an important part of soft computing and data analysis, has considerable influence on subsequent analytic results or even on the reliability of the generated model. Apart from the actual data, the researcher also refers to expert advice from NCREE for data pre-processing. The main target of data pre-processing is to ensure the accuracy and adjustment of the data in a format that clearly reflects the target of analysis. Pre-processing includes data screening, property screening, and new property synthesis. Data screening is divided into two stages. The first stage is the rationality screening of the data. Pre-existing mistakes are unavoidable because the data in the School Building Database were entered manually; the obligation is to identify such mistakes. Most of the school buildings were I-type shaped buildings; a very common design. . With regard to the properties of these school buildings, the NCREE (2005) suggests the following screening conditions:
 
@@ -389,7 +389,7 @@ Two-Step~分群有兩個優點，一是時間複雜度低，運算時間與資�
 \end{itemize}
 \end{multicols}
 
-並編為 $P_1$ 到 $P_{12}$，其中~$S_{DS}$~是校舍的震區設計水平譜加速度係數，~$S_{D1}$~則是一秒週期的設計譜加速度，都是分析校舍耐震能力時非常重要的參數，另外也根據專家的建議，使用現有的資料組合出兩個新的屬性，分別是校舍的教室數量（$P_{13}$）和校舍建築物的垮距（$P_{14}$），以下介紹各輸入屬性：
+並依照順序編為 $P_1$ 到 $P_{12}$，其中~$S_{DS}$~是校舍的震區設計水平譜加速度係數，~$S_{D1}$~則是一秒週期的設計譜加速度，都是分析校舍耐震能力時非常重要的參數，另外也根據專家的建議，使用現有的資料組合出兩個新的屬性，分別是校舍的教室數量（$P_{13}$）和校舍建築物的垮距（$P_{14}$），以下介紹各輸入屬性：
 
 \begin{description}
   \item[樓層數]
@@ -418,7 +418,7 @@ Two-Step~分群有兩個優點，一是時間複雜度低，運算時間與資�
 
 % After finalizing the data for the first and second stages, 107 datasets conform to the above condition. Twelve properties are then chosen for the screened data with reference to expert advice, displayed as P1 to P12 in Table 1. In addition to the screening based on existing properties, this study synthesizes two new properties, P13 and P14. They represent the number of classrooms and number of spans for a single classroom, respectively, based on expert advice and existing data. In P11, SDS stands for design spectral response accelerations at short-periods, and in P12, SD1 stands for design spectral response accelerations at 1 sec. These two parameters represent the magnitude of the seismic force at the building’s location, and are very important parameters for analyzing the aseismic ability of buildings by non-linear analysis.
 
-前處理的最後一個步驟是資料的正規化，因為不同屬性的物理意義不一樣，其數值的數量級差異也很大，如果有一個重要參數其數量級很小，那就會增加探勘的難度，因此為了減少數量級差異造成的影響力落差，要先把參數經過正規化處理，正規化的方法很多，可以把屬性的數值調整至~0~到~1~的區間，也可以用標準差和平均值來作調整，其最重要的目標是要保留原始數值的分布，本分析則是對~$P_2$、$P_3$、$P_7$、$P_9$~和~$P_{10}$~除以~1000，讓這些屬性的數值和其他屬性的數值比較接近。
+前處理的最後一個步驟是資料的正規化，因為不同屬性的物理意義不一樣，其數值的數量級差異也很大，如果有一個重要參數其數量級很小，那就會增加探勘的難度，因此為了減少數量級差異造成的影響力落差，要先把參數經過正規化處理，正規化的方法很多，可以把屬性的數值調整至~0~到~1~的區間，也可以用標準差和平均值來作調整，其最重要的目標是要保留原始數值的分布，本分析則是對鋼筋強度、混凝土強度、二樓樓地板面積、總樓地板面積和教室柱斷面積除以~1000，讓這些屬性的數量級和其他屬性的數值比較接近。
 
 % The last step of data preprocessing is normalization. The purpose of normalization is to balance the impacts of the parameters in different scales. If an input parameter has small values of mean and standard deviation, but is of high importance and if the result is also sensitive to this parameter, then it is necessary to use data normalization to prevent its influence from being overshadowed by other larger scale parameters. Normalization methods include converting the data into the range of 0 to 1, using the maximum and minimum values, and converting data to the standard deviation of its mean. The normalization principle adopted in this paper is to retain the original values as far as possible, so only a few parameters with large values, such as P2, P3, P7, P9 and P10, are divided by 1000 to make their scale comparable to other parameters.
 
@@ -440,17 +440,17 @@ RMSE~是本分析案例中最主要用來判斷模型品質的索引，定義如
 
 \begin{equation} RMSE = \sqrt{\dfrac{\sum{(y_i - \hat{y_i})^2}}{N}} \label{eq:RMSE}\end{equation}
 
-其中~$N$~是資料的總數，~$y$~是使用探勘得到的關係方程式所求得的建築物耐震能力~$AC$~值，~$\hat{y}$~則是詳細評估的非線性分析所得到的建築物~$AC$~值，建築物的破壞地表加速度分布在~0.04~至~0.5~之間，國震中心專家則建議~RMSE~值需要低於~0.04~，此模型才夠有能力用來鑑別校舍的耐震能力優劣與否，表二中的控制組則是使用~SPSS Clemitine~的類神經網路所建立的模型，類神經網路的設定為使用~Exhaustive Prune method~來發展神經網路，初始神經網路為兩層隱藏層，分別有~30~個和~20~個神經元，訓練~250~個週期，結果的~RMSE~是~0.041~，非常接近目標的~0.04~，本分析使用了~WGP~來建立校舍的~$AC$~值與其設計參數間的關係模型，結果的模型其品質和使用類神經網路所建立的模型非常接近，然而類神經網路所建立的模型其複雜度太高，且其機制為一黑盒子，而~WGP~方法產生的模型就只是一個代表方程式的運算樹，可以非常快速的將結果拿到各種不同環境或平台中應用，
+其中~$N$~是資料的總數，~$y$~是使用探勘得到的關係方程式所求得的建築物耐震能力~$AC$~值，~$\hat{y}$~則是詳細評估的非線性分析所得到的建築物~$AC$~值，建築物的破壞地表加速度分布在~0.04~至~0.5~之間，國震中心專家則建議~RMSE~值需要低於~0.04~，此模型才夠有能力用來鑑別校舍的耐震能力優劣與否，表二中的控制組則是使用~SPSS Clemitine~的類神經網路所建立的模型，類神經網路的設定為使用~Exhaustive Prune method~來發展神經網路，初始神經網路為兩層隱藏層，分別有~30~個和~20~個神經元，訓練~250~個週期，結果的~RMSE~是~0.041~，非常接近目標的~0.04~，本分析使用了~GP~來建立校舍的~$AC$~值與其設計參數間的關係模型，結果的模型其品質和使用類神經網路所建立的模型非常接近，然而類神經網路所建立的模型其複雜度太高，且其機制為一黑盒子，而~GP~方法產生的模型就只是一個代表方程式的運算樹，可以非常快速的將結果拿到各種不同環境或平台中應用。
 
 % where n is the number of datasets, $y$ is the estimated value obtained from the equation, and $\hat{y}$ is the actual unit-less deviation index value (the smaller the better). The ground acceleration of the minimum destruction obtained from the nonlinear analysis was distributed between 0.04 and 0.5, and therefore, the relationship model has a sufficient recognition rate. Experts from NCREE recommend that the RMSE must be below 0.04. The control group is the relationship model obtained from the artificial neural network. In applying the relationship model constructed by SPSS Clementine and choosing the Exhaustive Prune method to adjust the number of tiers and nodes, the initial neural network has two hidden tiers with 30 and 20 neurons, respectively. The neurons have been trained for 250 iterations, and those with a low degree of importance are removed during the training period based on the situation. The resulting RMSE is 0.041, which is close to the target of 0.04. In this paper we use WGP to create an aseismic ability prediction model for real school buildings. The quality of our model is similar to models built using Artificial Neural Networks. However, Artificial Neural Network based models are complicated; their mechanism is in a black box. The WGP model, on the other hand, is just an equation of the building’s design parameters and its aseismic ability. Thus, it can easily be ported to other platforms and programming languages for use in many applications. The optimum model obtained from the GP pattern is represented by the relationship equation below. Function nodes in a tree topology, displayed in Figure 8, uses several symbols and text to represent the F of that node.
 
-``+'' 代表 $f = x_1 + x_2$; \\ \indent
-``-'' 代表 $f = x_1 - x_2$; \\ \indent
-``×'' 代表 $f = x_1 \times x_2$; \\ \indent
-``÷'' 代表 $f = x_1 / x_2$; \\ \indent
-``pow'' 代表次方函數 $f = {x_1} ^ {x_2}$
+%``+'' 代表 $f = x_1 + x_2$; \\ \indent
+%``-'' 代表 $f = x_1 - x_2$; \\ \indent
+%``×'' 代表 $f = x_1 \times x_2$; \\ \indent
+%``÷'' 代表 $f = x_1 / x_2$; \\ \indent
+%``pow'' 代表次方函數 $f = {x_1} ^ {x_2}$
 
-結果使用~GP~方法所建立的關係模型其表現並不好，~RMSE~只能達到~0.056~，而根據圖~\ref{fig:4LGP}~可以發現，其實使用~GP~方法並沒有正確的建立~$AC$~和校舍設計參數間的關係模型，因為他只使用了三個輸入參數，而且其方程式也非常的線性，可以推斷此一個關係模型的複雜度很高，而~GP~方法並不能正確的找出這個關係。
+然而使用~GP~方法所建立的關係模型其表現並不好，~RMSE~只能達到~0.056~，而根據圖~\ref{fig:4LGP}~可以發現，其實使用~GP~方法並沒有正確的建立~$AC$~和校舍設計參數間的關係模型，主因為其只使用了三個輸入參數，而且其方程式複雜度也不高，可以推斷此一個關係模型的複雜度很高，而~GP~方法並不能正確的找出這個關係。
 
 \begin{figure}[hbtp]
   \begin{center}

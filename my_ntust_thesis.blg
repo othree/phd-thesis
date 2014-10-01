@@ -3,37 +3,39 @@ Capacity: max_strings=35307, hash_size=35307, hash_prime=30011
 The top-level auxiliary file: my_ntust_thesis.aux
 The style file: ieeetr.bst
 Database file #1: my_bib.bib
+Warning--entry type for "ncree2013moe" isn't style-file defined
+--line 4 of file my_bib.bib
 Warning--empty booktitle in Cuenca20131089
-You've used 60 entries,
+You've used 61 entries,
             1876 wiz_defined-function locations,
-            819 strings with 14863 characters,
-and the built_in function-call counts, 15682 in all, are:
-= -- 1595
-> -- 579
+            821 strings with 14944 characters,
+and the built_in function-call counts, 15803 in all, are:
+= -- 1605
+> -- 583
 < -- 4
-+ -- 220
-- -- 160
-* -- 1101
-:= -- 2243
-add.period$ -- 70
-call.type$ -- 60
-change.case$ -- 50
++ -- 222
+- -- 161
+* -- 1105
+:= -- 2260
+add.period$ -- 71
+call.type$ -- 61
+change.case$ -- 51
 chr.to.int$ -- 0
-cite$ -- 61
-duplicate$ -- 808
-empty$ -- 1473
-format.name$ -- 160
-if$ -- 3824
+cite$ -- 62
+duplicate$ -- 812
+empty$ -- 1491
+format.name$ -- 161
+if$ -- 3855
 int.to.chr$ -- 0
-int.to.str$ -- 60
+int.to.str$ -- 61
 missing$ -- 56
-newline$ -- 193
-num.names$ -- 62
-pop$ -- 166
+newline$ -- 196
+num.names$ -- 63
+pop$ -- 173
 preamble$ -- 1
 purify$ -- 0
 quote$ -- 0
-skip$ -- 537
+skip$ -- 541
 stack$ -- 0
 substring$ -- 1046
 swap$ -- 327
@@ -42,7 +44,7 @@ text.prefix$ -- 0
 top$ -- 0
 type$ -- 0
 warning$ -- 1
-while$ -- 157
-width$ -- 62
-write$ -- 602
-(There was 1 warning)
+while$ -- 158
+width$ -- 63
+write$ -- 609
+(There were 2 warnings)

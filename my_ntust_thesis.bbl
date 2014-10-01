@@ -5,6 +5,13 @@ D.~T. Larose, {\em Discovering knowledge in data: an introduction to data
   mining}.
 \newblock John Wiley \& Sons, 2005.
 
+\bibitem{verplancke2008support}
+T.~Verplancke, S.~Van~Looy, D.~Benoit, S.~Vansteelandt, P.~Depuydt,
+  F.~De~Turck, and J.~Decruyenaere, ``Support vector machine versus logistic
+  regression modeling for prediction of hospital mortality in critically ill
+  patients with haematological malignancies,'' {\em BMC Medical Informatics and
+  Decision Making}, vol.~8, no.~1, p.~56, 2008.
+
 \bibitem{building1997nehrp}
 B.~S. S.~C. (US) and A.~T. Council, {\em NEHRP guidelines for the seismic
   rehabilitation of buildings}, vol.~1.
@@ -264,13 +271,6 @@ H.~Drucker, C.~J. Burges, L.~Kaufman, A.~Smola, and V.~Vapnik, ``Support vector
   regression machines,'' {\em Advances in neural information processing
   systems}, vol.~9, pp.~155--161, 1997.
 
-\bibitem{verplancke2008support}
-T.~Verplancke, S.~Van~Looy, D.~Benoit, S.~Vansteelandt, P.~Depuydt,
-  F.~De~Turck, and J.~Decruyenaere, ``Support vector machine versus logistic
-  regression modeling for prediction of hospital mortality in critically ill
-  patients with haematological malignancies,'' {\em BMC Medical Informatics and
-  Decision Making}, vol.~8, no.~1, p.~56, 2008.
-
 \bibitem{macqueen67}
 J.~MacQueen, ``Some methods for classification and analysis of multivariate
   observations,'' in {\em Proceedings of the Fifth Berkeley Symposium on
@@ -288,6 +288,11 @@ T.~Zhang, R.~Ramakrishnan, and M.~Livny, ``Birch: an efficient data clustering
 \bibitem{su2008master}
 蘇耕立, ``灣中小學校舍結構耐震能力初步評估方法之探討,''
   Master's thesis, 國立台灣大學土木系, jul 2008.
+
+\bibitem{ncree2013moe}
+國家地震工程研究中心,
+  ``高中職及國中小校舍結構耐震能力補強設計作業規範,''
+  2013.
 
 \bibitem{ncree08035}
 黃世建, 葉勇凱, 鍾立來, 簡文郁, 陳鴻銘, 趙宜峰, 周德光,
