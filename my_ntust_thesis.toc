@@ -64,7 +64,7 @@
 \contentsline {chapter}{\numberline {7}校舍資訊與補強經費之關係模型}{71}{chapter.7}
 \contentsline {section}{\numberline {7.1}資料前處理}{73}{section.7.1}
 \contentsline {section}{\numberline {7.2}資料探勘}{78}{section.7.2}
-\contentsline {section}{\numberline {7.3}結果}{79}{section.7.3}
+\contentsline {section}{\numberline {7.3}結果}{78}{section.7.3}
 \contentsline {chapter}{\numberline {8}結論與未來展望}{82}{chapter.8}
 \contentsline {section}{\numberline {8.1}結論}{82}{section.8.1}
 \contentsline {section}{\numberline {8.2}未來展望}{84}{section.8.2}
