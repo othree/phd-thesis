@@ -1,17 +1,5 @@
 \begin{thebibliography}{10}
 
-\bibitem{larose2005discovering}
-D.~T. Larose, {\em Discovering knowledge in data: an introduction to data
-  mining}.
-\newblock John Wiley \& Sons, 2005.
-
-\bibitem{verplancke2008support}
-T.~Verplancke, S.~Van~Looy, D.~Benoit, S.~Vansteelandt, P.~Depuydt,
-  F.~De~Turck, and J.~Decruyenaere, ``Support vector machine versus logistic
-  regression modeling for prediction of hospital mortality in critically ill
-  patients with haematological malignancies,'' {\em BMC Medical Informatics and
-  Decision Making}, vol.~8, no.~1, p.~56, 2008.
-
 \bibitem{building1997nehrp}
 B.~S. S.~C. (US) and A.~T. Council, {\em NEHRP guidelines for the seismic
   rehabilitation of buildings}, vol.~1.
@@ -57,8 +45,9 @@ S.~Somo and H.~Hong, ``Modeling error analysis of shear predicting models for
 
 \bibitem{Cuenca20131089}
 E.~Cuenca, P.~Serna, and G.~Plizzari, ``Shear database for reinforced and
-  prestressed beams made with fiber reinforced concrete,'' pp.~1089--1100,
-  2013.
+  prestressed beams made with fiber reinforced concrete,'' in {\em Proceedings
+  of the 8th International Conference on Fracture Mechanics of Concrete and
+  Concrete Structures, FraMCoS 2013}, pp.~1089--1100, 2013.
 
 \bibitem{hodkova2011envimat}
 J.~Hodkov{\'a}, A.~Lup{\'\i}{\v{s}}ek, {\v{S}}.~Man{\v{c}}{\'\i}k, L.~Vochoc,
@@ -209,6 +198,10 @@ K.~Jensen, ``{CRISP-DM\ Process\ Diagram},'' Apr 2012.
 \newblock
   \url{http://commons.wikimedia.org/wiki/File:CRISP-DM_Process_Diagram.png}.
 
+\bibitem{ben2013pca}
+B.~Mabey, ``Pca for the uninitiated,'' 2013.
+\newblock \url{http://benmabey.com/presentations/pca-tutorial/#12}.
+
 \bibitem{citeulike:5485398}
 J.~A. Nelder and R.~W.~M. Wedderburn, ``{Generalized Linear Models},'' {\em
   Journal of the Royal Statistical Society. Series A (General)}, vol.~135,
@@ -227,6 +220,11 @@ P.~Werbos, {\em Beyond regression: New tools for prediction and analysis in the
 \bibitem{rummelhart1986learning}
 D.~Rummelhart, ``Learning representations by back-propagating errors,'' {\em
   Nature}, vol.~323, no.~9, pp.~533--536, 1986.
+
+\bibitem{larose2005discovering}
+D.~T. Larose, {\em Discovering knowledge in data: an introduction to data
+  mining}.
+\newblock John Wiley \& Sons, 2005.
 
 \bibitem{holland1975adaptation}
 J.~H. Holland, {\em Adaptation in natural and artificial systems: An
@@ -275,6 +273,13 @@ B.~E. Boser, I.~M. Guyon, and V.~N. Vapnik, ``A training algorithm for optimal
 H.~Drucker, C.~J. Burges, L.~Kaufman, A.~Smola, and V.~Vapnik, ``Support vector
   regression machines,'' {\em Advances in neural information processing
   systems}, vol.~9, pp.~155--161, 1997.
+
+\bibitem{verplancke2008support}
+T.~Verplancke, S.~Van~Looy, D.~Benoit, S.~Vansteelandt, P.~Depuydt,
+  F.~De~Turck, and J.~Decruyenaere, ``Support vector machine versus logistic
+  regression modeling for prediction of hospital mortality in critically ill
+  patients with haematological malignancies,'' {\em BMC Medical Informatics and
+  Decision Making}, vol.~8, no.~1, p.~56, 2008.
 
 \bibitem{macqueen67}
 J.~MacQueen, ``Some methods for classification and analysis of multivariate

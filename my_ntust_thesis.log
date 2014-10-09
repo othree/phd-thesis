@@ -1,4 +1,4 @@
-This is XeTeX, Version 3.1415926-2.5-0.9999.3 (TeX Live 2013) (format=xelatex 2013.12.14)  9 OCT 2014 17:56
+This is XeTeX, Version 3.1415926-2.5-0.9999.3 (TeX Live 2013) (format=xelatex 2013.12.14)  9 OCT 2014 18:30
 entering extended mode
  restricted \write18 enabled.
  file:line:error style messages enabled.
@@ -1517,7 +1517,9 @@ File: figures/1196px-CRISP-DM_Process_Diagram.png Graphic file (type QTm)
 <use  "figures/1196px-CRISP-DM_Process_Diagram.png" > [23
 
 ] [24] [25] [26]
-[27]
+File: figures/pca.png Graphic file (type QTm)
+
+<use  "figures/pca.png" > [27]
 Missing character: There is no 類 in font BiauKai/OT!
 Missing character: There is no 神 in font BiauKai/OT!
 Missing character: There is no 路 in font BiauKai/OT!
@@ -1540,17 +1542,17 @@ Missing character: There is no 若 in font BiauKai/OT!
  [28]
 File: figures/anns-network.png Graphic file (type QTm)
  <use  "figures/anns-network.png" > [29]
+[30]
 File: figures/gp-struct.pdf Graphic file (type QTm)
-
-<use  "figures/gp-struct.pdf" > [30] [31]
+ <use  "figures/gp-struct.pdf" > [31]
 File: figures/wgp-sample.pdf Graphic file (type QTm)
  <use  "figures/wgp-sample.pdf" >
-[32]
 File: figures/gp-unit.pdf Graphic file (type QTm)
- <use  "figures/gp-unit.pdf" >
+
+<use  "figures/gp-unit.pdf" >
 File: figures/wgp-unit.pdf Graphic file (type QTm)
- <use  "figures/wgp-unit.pdf" > [33]
-Overfull \hbox (7.78804pt too wide) in paragraph at lines 182--183
+ <use  "figures/wgp-unit.pdf" > [32] [33]
+Overfull \hbox (7.78804pt too wide) in paragraph at lines 191--192
 []\EU1/標楷體(0)/m/n/12 支 持 向 量 機  |（\EU1/TimesNewRoman(0)/m/n/12 Support Vector M
 achine, SVM\EU1/標楷體(0)/m/n/12 ）|  最 早 是 \EU1/TimesNewRoman(0)/m/n/12 BOSER [[]5
 3[]] \EU1/標楷體(0)/m/n/12 等 人，|  在 \EU1/TimesNewRoman(0)/m/n/12 1992 \EU1/標楷體(0)/
@@ -1657,7 +1659,7 @@ Underfull \hbox (badness 10000) detected at line 1
 
 
 ] [87]
-Underfull \hbox (badness 4543) in paragraph at lines 111--114
+Underfull \hbox (badness 4543) in paragraph at lines 100--103
 []\EU1/TimesNewRoman(0)/m/n/12 M. Sarıdemir, “Prediction of compressive strengt
 h of concretes containing
  []
@@ -1670,14 +1672,20 @@ h of concretes containing
 * 
 * Try to use `\setCJKmonofont[...]{...}' to define it.
 *************************************************
-LaTeX Font Info:    Try loading font information for EU1+lmtt on input line 210
+LaTeX Font Info:    Try loading font information for EU1+lmtt on input line 199
 .
 (/usr/local/texlive/2013/texmf-dist/tex/latex/euenc/eu1lmtt.fd
 File: eu1lmtt.fd 2009/10/30 v1.6 Font defs for Latin Modern
 )
-Underfull \hbox (badness 2512) in paragraph at lines 208--211
+Underfull \hbox (badness 2512) in paragraph at lines 197--200
 []\EU1/TimesNewRoman(0)/m/n/12 K. Jensen, “CRISP-DM Process Diagram,” Apr 2012.
   []$[][][][] [] [] [] [][][][][][][] []
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 202--204
+[]\EU1/TimesNewRoman(0)/m/n/12 B. Mabey, “Pca for the uninitiated,” 2013.  []$[
+][][][] [] [] [] [][][][][][][][] [] [][][] []
  []
 
 [90] [91]) (./backpages/my_appendix.tex [92] [93
@@ -1895,10 +1903,10 @@ Package atveryend Info: Empty hook `AtEndAfterFileList' on input line 104.
 Package atveryend Info: Empty hook `AtVeryVeryEnd' on input line 104.
  ) 
 Here is how much of TeX's memory you used:
- 28287 strings out of 493938
- 549291 string characters out of 6148856
- 587603 words of memory out of 5000000
- 31138 multiletter control sequences out of 15000+600000
+ 28291 strings out of 493938
+ 549334 string characters out of 6148856
+ 587653 words of memory out of 5000000
+ 31141 multiletter control sequences out of 15000+600000
  13339 words of font info for 91 fonts, out of 8000000 for 9000
  1144 hyphenation exceptions out of 8191
  46i,19n,48p,2437b,531s stack positions out of 5000i,500n,10000p,200000b,80000s
