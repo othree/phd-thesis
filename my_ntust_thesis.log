@@ -1,4 +1,4 @@
-This is XeTeX, Version 3.1415926-2.5-0.9999.3 (TeX Live 2013) (format=xelatex 2013.12.14)  7 OCT 2014 17:51
+This is XeTeX, Version 3.1415926-2.5-0.9999.3 (TeX Live 2013) (format=xelatex 2013.12.14)  9 OCT 2014 17:48
 entering extended mode
  restricted \write18 enabled.
  file:line:error style messages enabled.
@@ -1215,17 +1215,7 @@ Package: listings 2007/02/22 1.4 (Carsten Heinz)
 \mywatermark=\box77
 File: watermark/ntust_watermark.eps Graphic file (type eps)
  <watermark/ntust_watermark.eps>))
-(./my_ntust_thesis.aux
-
-LaTeX Warning: Label `eq:hitrate' multiply defined.
-
-
-LaTeX Warning: Label `eq:RMSE' multiply defined.
-
-
-LaTeX Warning: Label `appendix-re' multiply defined.
-
-)
+(./my_ntust_thesis.aux)
 \openout1 = `my_ntust_thesis.aux'.
 
 LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 49.
@@ -1244,7 +1234,8 @@ LaTeX Font Info:    Checking defaults for EU1/lmr/m/n on input line 49.
 LaTeX Font Info:    ... okay on input line 49.
 LaTeX Font Info:    Checking defaults for T3/cmr/m/n on input line 49.
 LaTeX Font Info:    Try loading font information for T3+cmr on input line 49.
- (/usr/local/texlive/2013/texmf-dist/tex/latex/tipa/t3cmr.fd
+
+(/usr/local/texlive/2013/texmf-dist/tex/latex/tipa/t3cmr.fd
 File: t3cmr.fd 2001/12/31 TIPA font definitions
 )
 LaTeX Font Info:    ... okay on input line 49.
@@ -1526,6 +1517,7 @@ File: figures/1196px-CRISP-DM_Process_Diagram.png Graphic file (type QTm)
 <use  "figures/1196px-CRISP-DM_Process_Diagram.png" > [23
 
 ] [24] [25] [26]
+[27]
 Missing character: There is no 類 in font BiauKai/OT!
 Missing character: There is no 神 in font BiauKai/OT!
 Missing character: There is no 路 in font BiauKai/OT!
@@ -1545,10 +1537,9 @@ Missing character: There is no 類 in font BiauKai/OT!
 Missing character: There is no 神 in font BiauKai/OT!
 Missing character: There is no 路 in font BiauKai/OT!
 Missing character: There is no 若 in font BiauKai/OT!
-
-[27]
+ [28]
 File: figures/anns-network.png Graphic file (type QTm)
- <use  "figures/anns-network.png" > [28] [29]
+ <use  "figures/anns-network.png" > [29]
 File: figures/gp-struct.pdf Graphic file (type QTm)
 
 <use  "figures/gp-struct.pdf" > [30] [31]
@@ -1901,17 +1892,13 @@ Package atveryend Info: Empty hook `AfterLastShipout' on input line 104.
  (./my_ntust_thesis.aux)
 Package atveryend Info: Empty hook `AtVeryEndDocument' on input line 104.
 Package atveryend Info: Empty hook `AtEndAfterFileList' on input line 104.
-
-
-LaTeX Warning: There were multiply-defined labels.
-
 Package atveryend Info: Empty hook `AtVeryVeryEnd' on input line 104.
  ) 
 Here is how much of TeX's memory you used:
- 28284 strings out of 493938
- 549252 string characters out of 6148856
- 587526 words of memory out of 5000000
- 31135 multiletter control sequences out of 15000+600000
+ 28287 strings out of 493938
+ 549291 string characters out of 6148856
+ 587603 words of memory out of 5000000
+ 31138 multiletter control sequences out of 15000+600000
  13339 words of font info for 91 fonts, out of 8000000 for 9000
  1144 hyphenation exceptions out of 8191
  46i,19n,48p,2437b,531s stack positions out of 5000i,500n,10000p,200000b,80000s

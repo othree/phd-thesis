@@ -438,7 +438,7 @@ RMSE~是本分析案例中最主要用來判斷模型品質的索引，定義如
 
 % RMSE is the index used in the current study to judge the quality of models, and is defined as the equation below:
 
-\begin{equation} RMSE = \sqrt{\dfrac{\sum{(y_i - \hat{y_i})^2}}{N}} \label{eq:RMSE}\end{equation}
+\begin{equation} \text{RMSE} = \sqrt{\dfrac{\sum{(y_i - \hat{y_i})^2}}{N}} \label{eq:RMSE2}\end{equation}
 
 其中~$N$~是資料的總數，~$y$~是使用探勘得到的關係方程式所求得的建築物耐震能力~$AC$~值，~$\hat{y}$~則是詳細評估的非線性分析所得到的建築物~$AC$~值，建築物的破壞地表加速度分布在~0.04~至~0.5~之間，國震中心專家則建議~RMSE~值需要低於~0.04~，此模型才夠有能力用來鑑別校舍的耐震能力優劣與否，表二中的控制組則是使用~SPSS Clemitine~的類神經網路所建立的模型，類神經網路的設定為使用~Exhaustive Prune method~來發展神經網路，初始神經網路為兩層隱藏層，分別有~30~個和~20~個神經元，訓練~250~個週期，結果的~RMSE~是~0.041~，非常接近目標的~0.04~，本分析使用了~GP~來建立校舍的~$AC$~值與其設計參數間的關係模型，結果的模型其品質和使用類神經網路所建立的模型非常接近，然而類神經網路所建立的模型其複雜度太高，且其機制為一黑盒子，而~GP~方法產生的模型就只是一個代表方程式的運算樹，可以非常快速的將結果拿到各種不同環境或平台中應用。
 

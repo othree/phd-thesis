@@ -22,7 +22,7 @@
 \contentsline {chapter}{\numberline {4}資料探勘}{23}{chapter.4}
 \contentsline {section}{\numberline {4.1}資料前處理方法}{26}{section.4.1}
 \contentsline {subsubsection}{主成分分析}{26}{section*.17}
-\contentsline {section}{\numberline {4.2}資料探勘方法}{26}{section.4.2}
+\contentsline {section}{\numberline {4.2}資料探勘方法}{27}{section.4.2}
 \contentsline {subsection}{\numberline {4.2.1}迴歸方法}{27}{subsection.4.2.1}
 \contentsline {subsubsection}{Generalized Linear Model}{27}{section*.18}
 \contentsline {subsubsection}{類神經網路}{28}{section*.19}
