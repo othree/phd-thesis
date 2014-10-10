@@ -1,5 +1,12 @@
 \begin{thebibliography}{10}
 
+\bibitem{verplancke2008support}
+T.~Verplancke, S.~Van~Looy, D.~Benoit, S.~Vansteelandt, P.~Depuydt,
+  F.~De~Turck, and J.~Decruyenaere, ``Support vector machine versus logistic
+  regression modeling for prediction of hospital mortality in critically ill
+  patients with haematological malignancies,'' {\em BMC Medical Informatics and
+  Decision Making}, vol.~8, no.~1, p.~56, 2008.
+
 \bibitem{building1997nehrp}
 B.~S. S.~C. (US) and A.~T. Council, {\em NEHRP guidelines for the seismic
   rehabilitation of buildings}, vol.~1.
@@ -274,13 +281,6 @@ H.~Drucker, C.~J. Burges, L.~Kaufman, A.~Smola, and V.~Vapnik, ``Support vector
   regression machines,'' {\em Advances in neural information processing
   systems}, vol.~9, pp.~155--161, 1997.
 
-\bibitem{verplancke2008support}
-T.~Verplancke, S.~Van~Looy, D.~Benoit, S.~Vansteelandt, P.~Depuydt,
-  F.~De~Turck, and J.~Decruyenaere, ``Support vector machine versus logistic
-  regression modeling for prediction of hospital mortality in critically ill
-  patients with haematological malignancies,'' {\em BMC Medical Informatics and
-  Decision Making}, vol.~8, no.~1, p.~56, 2008.
-
 \bibitem{macqueen67}
 J.~MacQueen, ``Some methods for classification and analysis of multivariate
   observations,'' in {\em Proceedings of the Fifth Berkeley Symposium on
@@ -290,6 +290,10 @@ J.~MacQueen, ``Some methods for classification and analysis of multivariate
 T.~Zhang, R.~Ramakrishnan, and M.~Livny, ``Birch: an efficient data clustering
   method for very large databases,'' in {\em ACM SIGMOD Record}, vol.~25,
   pp.~103--114, ACM, 1996.
+
+\bibitem{aldrich1995correlations}
+J.~Aldrich, ``Correlations genuine and spurious in pearson and yule,'' {\em
+  Statistical Science}, pp.~364--376, 1995.
 
 \bibitem{內政部營建署編輯委員會2005建築物耐震設計規範及解說}
 內政部營建署編輯委員會, {\em 建築物耐震設計規範及解說}.

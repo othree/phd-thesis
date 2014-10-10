@@ -3,44 +3,44 @@ Capacity: max_strings=35307, hash_size=35307, hash_prime=30011
 The top-level auxiliary file: my_ntust_thesis.aux
 The style file: ieeetr.bst
 Database file #1: my_bib.bib
-You've used 64 entries,
+You've used 65 entries,
             1876 wiz_defined-function locations,
-            836 strings with 15301 characters,
-and the built_in function-call counts, 16186 in all, are:
-= -- 1641
-> -- 591
+            843 strings with 15426 characters,
+and the built_in function-call counts, 16490 in all, are:
+= -- 1676
+> -- 595
 < -- 4
-+ -- 227
-- -- 163
-* -- 1123
-:= -- 2313
-add.period$ -- 76
-call.type$ -- 64
-change.case$ -- 54
++ -- 229
+- -- 164
+* -- 1140
+:= -- 2351
+add.period$ -- 77
+call.type$ -- 65
+change.case$ -- 55
 chr.to.int$ -- 0
-cite$ -- 64
-duplicate$ -- 825
-empty$ -- 1547
-format.name$ -- 163
-if$ -- 3953
+cite$ -- 65
+duplicate$ -- 842
+empty$ -- 1577
+format.name$ -- 164
+if$ -- 4030
 int.to.chr$ -- 0
-int.to.str$ -- 64
-missing$ -- 56
-newline$ -- 207
-num.names$ -- 66
-pop$ -- 193
+int.to.str$ -- 65
+missing$ -- 57
+newline$ -- 210
+num.names$ -- 67
+pop$ -- 196
 preamble$ -- 1
 purify$ -- 0
 quote$ -- 0
-skip$ -- 551
+skip$ -- 565
 stack$ -- 0
-substring$ -- 1046
-swap$ -- 328
+substring$ -- 1078
+swap$ -- 337
 text.length$ -- 4
 text.prefix$ -- 0
 top$ -- 0
 type$ -- 0
 warning$ -- 0
-while$ -- 161
-width$ -- 66
-write$ -- 635
+while$ -- 165
+width$ -- 67
+write$ -- 644
