@@ -528,7 +528,7 @@ $I$~是確保~$C_E$~值能趨於保守用的係數，在國震中心的設計中
 
 \subsection{結果}
 
-表~\ref{tab:gp-result}~顯示了國震中心初步評估~$Is$~值轉換成詳細評估~$AC$~的等價數值~$C_E$~與校舍實際進行詳細評估所得到的最小破壞地表加速度~$AC$~相比的~RMSE~，為值~0.067~，距離目標的~0.04~還有一段距離，圖~\ref{fig:wgp-tuning}~是~$C_E$~與~$AC$~的比較圖，可以發現其趨勢相近，加上修正因子~$T$~之後，~RMSE~降低為~0.045~，圖~13~顯示了~$C_E + T$~和~$AC$~的比較，可以發現其趨勢更為接近，因此可以確定修正因子確實可以將初步評估的結果調整的更好。
+表~\ref{tab:gp-result}~顯示了國震中心初步評估~$Is$~值轉換成詳細評估~$AC$~的等價數值~$C_E$~與校舍實際進行詳細評估所得到的最小破壞地表加速度~$AC$~相比的~RMSE~，值為~0.067~，距離目標的~0.04~還有一段距離，圖~\ref{fig:wgp-tuning}~是~$C_E$~與~$AC$~的比較圖，可以發現其趨勢相近，加上修正因子~$T$~之後，~RMSE~降低為~0.045~，圖~13~顯示了~$C_E + T$~和~$AC$~的比較，可以發現其趨勢更為接近，因此可以確定修正因子確實可以將初步評估的結果調整的更好。
 
 
 {\renewcommand{\arraystretch}{1.5}
@@ -598,7 +598,7 @@ $I$~是確保~$C_E$~值能趨於保守用的係數，在國震中心的設計中
 
 % In order to estimate the aseismic ability of a building, we need to obtained detailed information about its geometric dimensions, the properties of materials used, etc. and we may need to perform sampling and other experiments to obtain certain information e.g. the properties of materials used. Based on this information, a structural model of the building has to be constructed and then non-linear pushover analysis is used to perform estimation. This process is time-consuming, and technicians are required. It usually takes about one months to estimate the aseismic ability of a building.
 
-在校舍資訊與耐震能力之關係模型之分析中，本研究提出了基於~WGP~方法所建立的關係模型，只要透過校舍結構的基本參數就可以推估校舍的耐震能力，其前處理的工作可以分為兩個部分，第一個部分是資料的過濾與挑選，其而過濾與挑選的條件是基於專家的建議，第二個部分是找出不同資料屬性的重要性，第一步是先將和校舍結構非關以及明確不重要的資料屬性剃除，接著藉由將校舍分成不同子集，並逐步減少資料屬性，最後選出了~14~個資料屬性，然後基於這個子集進行資料探勘分析，相較於原來上百個資料屬性，本分析達到了一個非常高效的資料壓縮，減少了非常多的資料雜訊。
+在校舍資訊與耐震能力之關係模型之分析中，本研究提出了基於~WGP~方法所建立的關係模型，只要透過校舍結構的基本參數就可以推估校舍的耐震能力，其前處理的工作可以分為兩個部分，第一個部分是資料的過濾與挑選，過濾與挑選的條件是基於國震中心專家的建議，第二個部分是找出不同資料屬性的重要性，第一步是先將與校舍結構無關係以及明顯不重要的資料屬性剔除，接著藉由將挑選出比例較高的校舍資料子集，逐步減少資料屬性，最後選出了~14~個資料屬性，然後基於這個子集進行資料探勘分析，相較於原來上百個資料屬性，本分析的資料前處理達成非常高效的資料壓縮，減少了非常多的資料雜訊。
 
 % In this study, we adopted the WGP method to construct a relation model, which uses the basic design parameters of school buildings to estimate their aseismic ability. The pre-processing efforts carried out for the proposed prediction model can be divided into two parts. The first part is a data filter for selecting out data sets which are reasonable as typical school buildings. The selection conditions of this data filter is proposed based on judgment with expertise in structural engineering. The second part is the determination of the key properties used in the proposed model. We first eliminate some properties which are non-structural and low importance, and synthesize some properties with similarity. We further classifies school building records into subsets based on similarities in property values, and chooses one subset with major population as the data set for further studying. Based on this subset, we try to do further reduction and finally determine 14 properties which are optimal to represent the seismic characteristics of individual school buildings. In comparison with hundreds of properties in the original data, a very high reduction ratio is reached.
 
