@@ -1,9 +1,8 @@
 \contentsline {chapter}{論文摘要}{I}{section*.2}
-\contentsline {chapter}{Abstract}{III}{section*.3}
-\contentsline {chapter}{誌謝}{V}{chapter*.4}
-\contentsline {chapter}{目錄}{VII}{section*.5}
-\contentsline {chapter}{圖目錄}{XI}{section*.7}
-\contentsline {chapter}{表目錄}{XIII}{section*.9}
+\contentsline {chapter}{Abstract}{II}{section*.3}
+\contentsline {chapter}{目錄}{III}{section*.4}
+\contentsline {chapter}{圖目錄}{VII}{section*.6}
+\contentsline {chapter}{表目錄}{IX}{section*.8}
 \contentsline {chapter}{\numberline {1}緒論}{1}{chapter.1}
 \contentsline {section}{\numberline {1.1}動機與目的}{1}{section.1.1}
 \contentsline {section}{\numberline {1.2}研究方法}{3}{section.1.2}
@@ -21,42 +20,42 @@
 \contentsline {section}{\numberline {3.3}資料庫結構}{23}{section.3.3}
 \contentsline {chapter}{\numberline {4}資料探勘}{25}{chapter.4}
 \contentsline {section}{\numberline {4.1}資料前處理方法}{28}{section.4.1}
-\contentsline {subsubsection}{主成分分析}{28}{section*.17}
+\contentsline {subsubsection}{主成分分析}{28}{section*.16}
 \contentsline {section}{\numberline {4.2}資料探勘方法}{29}{section.4.2}
 \contentsline {subsection}{\numberline {4.2.1}迴歸方法}{30}{subsection.4.2.1}
-\contentsline {subsubsection}{Generalized Linear Model}{30}{section*.19}
-\contentsline {subsubsection}{類神經網路}{30}{section*.20}
-\contentsline {subsubsection}{基因規劃}{32}{section*.22}
-\contentsline {subsubsection}{加權基因規劃}{34}{section*.24}
+\contentsline {subsubsection}{Generalized Linear Model}{30}{section*.18}
+\contentsline {subsubsection}{類神經網路}{30}{section*.19}
+\contentsline {subsubsection}{基因規劃}{32}{section*.21}
+\contentsline {subsubsection}{加權基因規劃}{34}{section*.23}
 \contentsline {subsection}{\numberline {4.2.2}分類方法}{37}{subsection.4.2.2}
-\contentsline {subsubsection}{支持向量機}{37}{section*.27}
+\contentsline {subsubsection}{支持向量機}{37}{section*.26}
 \contentsline {subsection}{\numberline {4.2.3}分群方法}{38}{subsection.4.2.3}
-\contentsline {subsubsection}{K-means}{38}{section*.29}
-\contentsline {subsubsection}{兩步分群}{38}{section*.30}
+\contentsline {subsubsection}{K-means}{38}{section*.28}
+\contentsline {subsubsection}{兩步分群}{38}{section*.29}
 \contentsline {section}{\numberline {4.3}探勘結果指標}{39}{section.4.3}
-\contentsline {subsubsection}{決定係數}{39}{section*.31}
-\contentsline {subsubsection}{平均絕對百分比誤差}{39}{section*.32}
-\contentsline {subsubsection}{均方根誤差}{40}{section*.33}
-\contentsline {subsubsection}{命中率}{40}{section*.34}
+\contentsline {subsubsection}{決定係數}{39}{section*.30}
+\contentsline {subsubsection}{平均絕對百分比誤差}{39}{section*.31}
+\contentsline {subsubsection}{均方根誤差}{40}{section*.32}
+\contentsline {subsubsection}{命中率}{40}{section*.33}
 \contentsline {chapter}{\numberline {5}校舍資訊與耐震能力之關係模型}{43}{chapter.5}
 \contentsline {section}{\numberline {5.1}耐震能力是否足夠與校舍設計之關係模型}{44}{section.5.1}
 \contentsline {subsection}{\numberline {5.1.1}資料前處理}{44}{subsection.5.1.1}
 \contentsline {subsection}{\numberline {5.1.2}資料探勘與結果}{48}{subsection.5.1.2}
 \contentsline {section}{\numberline {5.2}耐震指標與校舍設計之關係模型}{49}{section.5.2}
 \contentsline {subsection}{\numberline {5.2.1}資料前處理}{50}{subsection.5.2.1}
-\contentsline {subsubsection}{K-means}{51}{section*.39}
-\contentsline {subsubsection}{Two-Step}{51}{section*.40}
+\contentsline {subsubsection}{K-means}{51}{section*.38}
+\contentsline {subsubsection}{Two-Step}{51}{section*.39}
 \contentsline {subsection}{\numberline {5.2.2}資料探勘}{52}{subsection.5.2.2}
-\contentsline {subsubsection}{廣義線性模型}{53}{section*.42}
-\contentsline {subsubsection}{Simple Regression}{53}{section*.43}
-\contentsline {subsubsection}{Artificial Neural Networks}{53}{section*.44}
+\contentsline {subsubsection}{廣義線性模型}{53}{section*.41}
+\contentsline {subsubsection}{Simple Regression}{53}{section*.42}
+\contentsline {subsubsection}{Artificial Neural Networks}{53}{section*.43}
 \contentsline {subsection}{\numberline {5.2.3}結果與驗證}{54}{subsection.5.2.3}
 \contentsline {section}{\numberline {5.3}耐震需求比與校舍設計之關係模型}{55}{section.5.3}
 \contentsline {subsection}{\numberline {5.3.1}資料前處理}{56}{subsection.5.3.1}
 \contentsline {subsection}{\numberline {5.3.2}資料探勘}{59}{subsection.5.3.2}
-\contentsline {subsubsection}{Genetic Programming}{59}{section*.47}
-\contentsline {subsubsection}{Weighted Genetic Programming}{61}{section*.49}
-\contentsline {subsubsection}{Capacity Index Formulation Tuning}{63}{section*.52}
+\contentsline {subsubsection}{Genetic Programming}{59}{section*.46}
+\contentsline {subsubsection}{Weighted Genetic Programming}{61}{section*.48}
+\contentsline {subsubsection}{Capacity Index Formulation Tuning}{63}{section*.51}
 \contentsline {subsection}{\numberline {5.3.3}結果}{64}{subsection.5.3.3}
 \contentsline {chapter}{\numberline {6}校舍資訊與破壞構件之關係模型}{69}{chapter.6}
 \contentsline {section}{\numberline {6.1}資料前處理}{69}{section.6.1}
@@ -68,10 +67,9 @@
 \contentsline {chapter}{\numberline {8}結論與未來展望}{87}{chapter.8}
 \contentsline {section}{\numberline {8.1}結論}{87}{section.8.1}
 \contentsline {section}{\numberline {8.2}未來展望}{89}{section.8.2}
-\contentsline {chapter}{參考文獻}{91}{section*.67}
-\contentsline {chapter}{附錄一：典型校舍初步評估表}{99}{chapter*.69}
-\contentsline {chapter}{附錄二：典型校舍詳細評估表}{101}{chapter*.70}
-\contentsline {chapter}{附錄三：典型校舍補強設計表}{107}{chapter*.71}
-\contentsline {chapter}{附錄四：竣工資料上傳表}{121}{chapter*.72}
-\contentsline {chapter}{授權書}{125}{section*.73}
+\contentsline {chapter}{參考文獻}{91}{section*.66}
+\contentsline {chapter}{附錄一：典型校舍初步評估表}{99}{chapter*.68}
+\contentsline {chapter}{附錄二：典型校舍詳細評估表}{101}{chapter*.69}
+\contentsline {chapter}{附錄三：典型校舍補強設計表}{107}{chapter*.70}
+\contentsline {chapter}{附錄四：竣工資料上傳表}{121}{chapter*.71}
 \contentsfinish 

@@ -37,5 +37,5 @@
 % 目前送出空白頁
 \cleardoublepage
 \phantomsection
-\newpage{\thispagestyle{empty}\addcontentsline{toc}{chapter}{\nameCopyrightForm}\mbox{}\clearpage}
-\newpage
+\includepdf[fitpaper=true,scale=1,pagecommand=\thispagestyle{empty}]{backpages/G-15.pdf}
+

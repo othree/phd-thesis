@@ -188,12 +188,12 @@ $g(.)$是為所選的鏈結函數，$E(y)$~是~$y$~的期望值，~$O$~是偏移
 
 \subsubsection{支持向量機}
 
-支持向量機（Support Vector Machine, SVM）最早是BOSER~\cite{boser1992}等人，在~1992~年的~COLT（Computational Learning Theory）所提出，~SVM~是一個基於統計學習理論的分類方法，用來處理二元分割的問題，其原理是將原本無法線性分割的問題如圖~\ref{fig:svm}(a)，將資料點轉換到一個不同維度的空間（kernel）後，假設該空間存在一超平面（hyperplane）如圖~\ref{fig:svm}(b)，此一超平面可以正確的將資料分開，並將尋找此一超平面的問題轉換為一最佳化問題，求解後將此一超平面轉換回原本維度的空間即可得到二元分割邊界的方程式。而除了分類問題，Harris Drucker, et. al.,\cite{drucker1997support}~將此二元分割問題轉換為迴歸分析問題，故~SVM~也可以處理迴歸問題。
+支持向量機（Support Vector Machine, SVM）最早是BOSER~\cite{boser1992}等人，在~1992~年的~COLT（Computational Learning Theory）所提出，~SVM~是一個基於統計學習理論的分類方法，用來處理二元分割的問題，其原理是將原本無法線性分割的問題如圖~\ref{fig:svm}(a)\cite{verplancke2008support}，將資料點轉換到一個不同維度的空間（kernel）後，假設該空間存在一超平面（hyperplane）如圖~\ref{fig:svm}(b)，此一超平面可以正確的將資料分開，並將尋找此一超平面的問題轉換為一最佳化問題，求解後將此一超平面轉換回原本維度的空間即可得到二元分割邊界的方程式。而除了分類問題，Harris Drucker, et. al.,\cite{drucker1997support}~將此二元分割問題轉換為迴歸分析問題，故~SVM~也可以處理迴歸問題。
 
 \begin{figure}[hbtp]
   \begin{center}
     \includegraphics[width=1.0\textwidth]{figures/svm.jpg}
-    \caption{SVM 示意圖\cite{verplancke2008support}} 
+    \caption{SVM 示意圖}
     \label{fig:svm}
   \end{center}
 \end{figure}

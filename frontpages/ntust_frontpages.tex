@@ -151,8 +151,18 @@
 %% 從摘要到本文之前的部份以小寫羅馬數字印頁碼
 % 但是從「書名頁」(但不印頁碼) 就開始計算
 %\setcounter{page}{1}
-\pagenumbering{Roman}
+
 %\pagenumbering{arabic}
+
+% 判斷是否要浮水印？
+\ifx\mywatermark\undefined 
+  \thispagestyle{empty}  % 無頁碼、無 header (無浮水印)
+\else
+  \thispagestyle{EmptyWaterMarkPage} % 無頁碼、有浮水印
+\fi
+
+\newpage{\thispagestyle{empty}}\mbox{}
+
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 %       指導教授推薦書 
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
@@ -163,13 +173,10 @@
 % 目前送出空白頁
 %\newpage{\thispagestyle{empty}\addcontentsline{toc}{chapter}{\nameInnerCover}\mbox{}\clearpage}%
 %\newpage
+\newpage{\thispagestyle{empty}}
+\includepdf[fitpaper=true,scale=1]{frontpages/D9505501_Doctor3151843.pdf}
 
-% 判斷是否要浮水印？
-\ifx\mywatermark\undefined 
-  \thispagestyle{empty}  % 無頁碼、無 header (無浮水印)
-\else
-  \thispagestyle{EmptyWaterMarkPage} % 無頁碼、有浮水印
-\fi
+\newpage{\thispagestyle{empty}}\mbox{}
 
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 %%no page number
@@ -294,17 +301,23 @@
 % create an entry in table of contents for 審定書
 % 目前送出空白頁
 
-%\newpage{\thispagestyle{empty}\addcontentsline{toc}{chapter}{\nameCommitteeForm}\mbox{}\clearpage}%
-%\newpage
+\newpage{\thispagestyle{empty}}
+\includepdf[fitpaper=true,scale=1]{frontpages/D9505501_Doctor615182.pdf}
+
+\newpage{\thispagestyle{empty}}\mbox{}
 
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 %       中文摘要 
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 %
 \newpage
+
+\setcounter{page}{1}
+\pagenumbering{Roman}
+
 \thispagestyle{plain}  % 無 header，但在浮水印模式下會有浮水印
 % create an entry in table of contents for 中文摘要
-\cleardoublepage
+%\cleardoublepage
 \phantomsection
 \addcontentsline{toc}{chapter}{\nameCabstract}
 
@@ -367,6 +380,8 @@
 %%%%%%%%%%%%%
 \input{frontpages/my_cabstract.tex}
 
+\newpage{\thispagestyle{empty}}\mbox{}\addtocounter{page}{-1}
+
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 %       英文摘要 
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
@@ -375,7 +390,7 @@
 \thispagestyle{plain}  % 無 header，但在浮水印模式下會有浮水印
 
 % create an entry in table of contents for 英文摘要
-\cleardoublepage
+%\cleardoublepage
 \phantomsection
 \addcontentsline{toc}{chapter}{\nameEabstract}
 
@@ -448,16 +463,18 @@
 %%%%%%%%%%%%%
 \input{frontpages/my_eabstract.tex}
 
+\newpage{\thispagestyle{empty}}\mbox{}\addtocounter{page}{-1}
+
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 %       誌謝 
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 %
 % Acknowledgment
-\newpage
-\chapter*{\protect\makebox[5cm][s]{\nameAckn}} %\makebox{} is fragile; need protect
+%\newpage
+%\chapter*{\protect\makebox[5cm][s]{\nameAckn}} %\makebox{} is fragile; need protect
 
-\addcontentsline{toc}{chapter}{\nameAckn}
-\input{frontpages/my_ackn.tex}
+%\addcontentsline{toc}{chapter}{\nameAckn}
+%\input{frontpages/my_ackn.tex}
 
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 %       目錄 
@@ -470,7 +487,7 @@
 
 \renewcommand{\contentsname}{\protect\makebox[5cm][s]{\nameToc}}
 %\makebox{} is fragile; need protect
-\cleardoublepage
+%\cleardoublepage
 \phantomsection
 \addcontentsline{toc}{chapter}{\nameToc}
 \setcounter{tocdepth}{2}
@@ -545,6 +562,7 @@
 %\addcontentsline{toc}{chapter}{\nameSlist}
 %\input{frontpages/my_symbols.tex}
 
+\cleardoublepage
 
 \newpage
 \setcounter{page}{1}

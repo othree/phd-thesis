@@ -1,12 +1,5 @@
 \begin{thebibliography}{10}
 
-\bibitem{verplancke2008support}
-T.~Verplancke, S.~Van~Looy, D.~Benoit, S.~Vansteelandt, P.~Depuydt,
-  F.~De~Turck, and J.~Decruyenaere, ``Support vector machine versus logistic
-  regression modeling for prediction of hospital mortality in critically ill
-  patients with haematological malignancies,'' {\em BMC Medical Informatics and
-  Decision Making}, vol.~8, no.~1, p.~56, 2008.
-
 \bibitem{building1997nehrp}
 B.~S. S.~C. (US) and A.~T. Council, {\em NEHRP guidelines for the seismic
   rehabilitation of buildings}, vol.~1.
@@ -275,6 +268,13 @@ B.~E. Boser, I.~M. Guyon, and V.~N. Vapnik, ``A training algorithm for optimal
   margin classifiers,'' in {\em Proceedings of the 5th Annual Workshop on
   Computational Learning Theory (COLT'92)} (D.~Haussler, ed.), (Pittsburgh, PA,
   USA), pp.~144--152, ACM Press, Jul 1992.
+
+\bibitem{verplancke2008support}
+T.~Verplancke, S.~Van~Looy, D.~Benoit, S.~Vansteelandt, P.~Depuydt,
+  F.~De~Turck, and J.~Decruyenaere, ``Support vector machine versus logistic
+  regression modeling for prediction of hospital mortality in critically ill
+  patients with haematological malignancies,'' {\em BMC Medical Informatics and
+  Decision Making}, vol.~8, no.~1, p.~56, 2008.
 
 \bibitem{drucker1997support}
 H.~Drucker, C.~J. Burges, L.~Kaufman, A.~Smola, and V.~Vapnik, ``Support vector
