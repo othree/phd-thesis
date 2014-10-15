@@ -1,4 +1,4 @@
-This is XeTeX, Version 3.1415926-2.5-0.9999.3 (TeX Live 2013) (format=xelatex 2013.12.14)  15 OCT 2014 16:20
+This is XeTeX, Version 3.1415926-2.5-0.9999.3 (TeX Live 2013) (format=xelatex 2013.12.14)  16 OCT 2014 00:03
 entering extended mode
  restricted \write18 enabled.
  file:line:error style messages enabled.
@@ -1628,7 +1628,7 @@ Underfull \vbox (badness 10000) has occurred while \output is active []
 
  [34]
 [35]
-Overfull \hbox (7.78804pt too wide) in paragraph at lines 191--192
+Overfull \hbox (7.78804pt too wide) in paragraph at lines 192--193
 []\EU1/標楷體(0)/m/n/12 支 持 向 量 機  |（\EU1/TimesNewRoman(0)/m/n/12 Support Vector M
 achine, SVM\EU1/標楷體(0)/m/n/12 ）|  最 早 是 \EU1/TimesNewRoman(0)/m/n/12 BOSER [[]5
 3[]] \EU1/標楷體(0)/m/n/12 等 人，|  在 \EU1/TimesNewRoman(0)/m/n/12 1992 \EU1/標楷體(0)/
@@ -1680,7 +1680,7 @@ Underfull \vbox (badness 10000) has occurred while \output is active []
 Underfull \vbox (badness 3302) has occurred while \output is active []
 
  [53]
-Overfull \hbox (7.3571pt too wide) in paragraph at lines 280--293
+Overfull \hbox (7.3571pt too wide) in paragraph at lines 281--294
  [] 
  []
 
@@ -1726,16 +1726,16 @@ File: figures/crack-flow.png Graphic file (type QTm)
 (./sections/retrofit-cost.tex [73] [74]
 Chapter 7.
 
-LaTeX Warning: Command \nobreakspace invalid in math mode on input line 7.
+LaTeX Warning: Command \nobreakspace invalid in math mode on input line 8.
 
 
-LaTeX Warning: Command \nobreakspace invalid in math mode on input line 7.
+LaTeX Warning: Command \nobreakspace invalid in math mode on input line 8.
 
 
-LaTeX Warning: Command \nobreakspace invalid in math mode on input line 7.
+LaTeX Warning: Command \nobreakspace invalid in math mode on input line 8.
 
 
-LaTeX Warning: Command \nobreakspace invalid in math mode on input line 7.
+LaTeX Warning: Command \nobreakspace invalid in math mode on input line 8.
 
 
 Underfull \vbox (badness 10000) has occurred while \output is active []
@@ -1744,16 +1744,16 @@ Underfull \vbox (badness 10000) has occurred while \output is active []
 
 ]
 
-LaTeX Warning: Command \nobreakspace invalid in math mode on input line 19.
-
-
-LaTeX Warning: Command \nobreakspace invalid in math mode on input line 20.
-
-
 LaTeX Warning: Command \nobreakspace invalid in math mode on input line 20.
 
 
 LaTeX Warning: Command \nobreakspace invalid in math mode on input line 21.
+
+
+LaTeX Warning: Command \nobreakspace invalid in math mode on input line 21.
+
+
+LaTeX Warning: Command \nobreakspace invalid in math mode on input line 22.
 
 
 Underfull \vbox (badness 10000) has occurred while \output is active []
@@ -2047,10 +2047,10 @@ Package atveryend Info: Empty hook `AtEndAfterFileList' on input line 104.
 Package atveryend Info: Empty hook `AtVeryVeryEnd' on input line 104.
  ) 
 Here is how much of TeX's memory you used:
- 28305 strings out of 493938
- 549642 string characters out of 6148856
- 587645 words of memory out of 5000000
- 31152 multiletter control sequences out of 15000+600000
+ 28311 strings out of 493938
+ 549726 string characters out of 6148856
+ 587845 words of memory out of 5000000
+ 31158 multiletter control sequences out of 15000+600000
  13339 words of font info for 91 fonts, out of 8000000 for 9000
  1144 hyphenation exceptions out of 8191
  46i,19n,48p,2437b,531s stack positions out of 5000i,500n,10000p,200000b,80000s
