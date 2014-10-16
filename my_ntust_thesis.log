@@ -1,4 +1,4 @@
-This is XeTeX, Version 3.1415926-2.5-0.9999.3 (TeX Live 2013) (format=xelatex 2013.12.14)  16 OCT 2014 00:38
+This is XeTeX, Version 3.1415926-2.5-0.9999.3 (TeX Live 2013) (format=xelatex 2013.12.14)  16 OCT 2014 17:35
 entering extended mode
  restricted \write18 enabled.
  file:line:error style messages enabled.
@@ -1680,7 +1680,10 @@ Underfull \vbox (badness 10000) has occurred while \output is active []
 Underfull \vbox (badness 3302) has occurred while \output is active []
 
  [53]
-Overfull \hbox (7.3571pt too wide) in paragraph at lines 281--294
+File: figures/is-glm.png Graphic file (type QTm)
+
+<use  "figures/is-glm.png" >
+Overfull \hbox (7.3571pt too wide) in paragraph at lines 290--303
  [] 
  []
 
@@ -1688,26 +1691,27 @@ Overfull \hbox (7.3571pt too wide) in paragraph at lines 281--294
 Underfull \vbox (badness 5245) has occurred while \output is active []
 
  [54]
+[55]
 Underfull \vbox (badness 10000) has occurred while \output is active []
 
- [55]
-[56] [57] [58]
+ [56]
+[57] [58] [59]
 Underfull \vbox (badness 7540) has occurred while \output is active []
 
- [59]
+ [60]
 File: figures/4-layer-gp.png Graphic file (type QTm)
 
-<use  "figures/4-layer-gp.png" > [60]
+<use  "figures/4-layer-gp.png" > [61]
 File: figures/4-layer-wgp.png Graphic file (type QTm)
  <use  "figures/4-layer-wgp.png" >
 File: figures/wgp.pdf Graphic file (type QTm)
 
-<use  "figures/wgp.pdf" > [61] [62]
+<use  "figures/wgp.pdf" > [62] [63]
 File: figures/4-layer-wgp.png Graphic file (type QTm)
  <use  "figures/4-layer-wgp.png" >
 Underfull \vbox (badness 10000) has occurred while \output is active []
 
- [63]
+ [64]
 File: figures/ce.pdf Graphic file (type QTm)
 
 <use  "figures/ce.pdf" >
@@ -1715,12 +1719,12 @@ File: figures/ce+T.pdf Graphic file (type QTm)
  <use  "figures/ce+T.pdf" >
 Underfull \vbox (badness 10000) has occurred while \output is active []
 
- [64]
-[65] [66]) (./sections/crack-component.tex [67] [68
-
-]
+ [65]
+[66] [67]) (./sections/crack-component.tex [68]
 Chapter 6.
-[69] [70] [71] [72]
+[69
+
+] [70] [71] [72]
 File: figures/crack-flow.png Graphic file (type QTm)
  <use  "figures/crack-flow.png" >)
 (./sections/retrofit-cost.tex [73] [74]
@@ -2047,10 +2051,10 @@ Package atveryend Info: Empty hook `AtEndAfterFileList' on input line 104.
 Package atveryend Info: Empty hook `AtVeryVeryEnd' on input line 104.
  ) 
 Here is how much of TeX's memory you used:
- 28311 strings out of 493938
- 549726 string characters out of 6148856
- 587845 words of memory out of 5000000
- 31158 multiletter control sequences out of 15000+600000
+ 28314 strings out of 493938
+ 549767 string characters out of 6148856
+ 587917 words of memory out of 5000000
+ 31160 multiletter control sequences out of 15000+600000
  13339 words of font info for 91 fonts, out of 8000000 for 9000
  1144 hyphenation exceptions out of 8191
  46i,19n,48p,2437b,531s stack positions out of 5000i,500n,10000p,200000b,80000s
