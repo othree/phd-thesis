@@ -3,7 +3,7 @@
 \chapter{校舍資訊與耐震能力之關係模型}
 \label{cha:ability} 
 
-在校舍耐震資料庫中，不同階段的調查資料有不同的校舍耐震能力索引，這些資料屬性都是以數值形式來量化校舍建築物的耐震能力，有了此一數值後，可以快速找出有安全疑慮的校舍，根據耐震能力排序，甚至推算會需要多少預算來補強多少棟校舍等等，都可以使用此數值作為依據來達成，可以說是非常重要的校舍特性，然而要取得此一數值非常耗時耗力，如果有其他快速便宜的方法可以取得此一數值，那便可以大幅度的減少校舍耐震能力補強作業的所需要的時間與經費，因此本研究的第一個資料探勘目標，便是找出預測耐震能力索引的預測模型，得到此一預測模型後，便可以根據校舍的設計參數與現況作為輸入參數，快速的得到該校舍的耐震能力索引參考值。
+在校舍耐震資料庫中，不同階段的調查資料有不同的校舍耐震能力索引，這些資料屬性都是以數值形式來量化校舍建築物的耐震能力，有了此一數值後，可以快速找出有安全疑慮的校舍，根據耐震能力排序，甚至要推算會需要多少預算來補強多少棟校舍時，都可以使用此數值作為依據來達成，可以說是非常重要的校舍特性，然而要取得此一數值非常耗時耗力，如果有其他快速便宜的方法可以取得此一數值，那便可以大幅度的減少校舍耐震能力補強作業的所需要的時間與經費，因此本研究的第一個資料探勘目標，便是找出預測耐震能力索引的預測模型，得到此一預測模型後，便可以根據校舍的設計參數與現況作為輸入參數，快速的得到該校舍的耐震能力索引參考值。
 
 初步評估階段資料的耐震指標（$Is$）是為專業人士於現場量測、調查後，使用國家地震中心的專家根據過往的實驗數據統計分析後，所設計出的一個評估表計算而得到的，為一初步的校舍耐震力評估值，較詳細評估所計算的耐震能力指標可靠度來的低，但仍是校舍補強計畫初期的篩選工作中非常重要的數值。詳細評估和補強設計階段的耐震能力指標則是耐震需求比（$CDR$），是由專業人士根據校舍的設計與實際狀況建製結構模型，並進行非線性的推垮分析所得到的，此數值與建築物之設計參數為高度非線性的關係，也是最接近校舍建築物實際耐震能力的量化指標。
 
@@ -14,11 +14,11 @@
 
 「校舍是否需要補強」此一指標其數值之基礎即為詳細評估的耐震能力指標~$CDR$~值，$CDR$~值超過~1~表示其耐震能力尚符合安全規範，反之，則是有安全疑慮，需要進一步補強或是拆除。而此一資料屬性則是標記各校舍是否真的需要進行耐震能力補強的三元指標，可能的數值有三個，包括了校舍無須補強、需要補牆和建議拆除，而本分析將此一三元指標轉換為一個二元指標，即耐震能力是否足夠的資訊，若耐震能力不足則需要補強或是拆除重建，此一資料也是教育部的校舍耐震能力補強計畫中，前期篩選工作的最主要目標。找到這個指標與校舍設計、現況等參數的關係模型，與~$Is$~值和~$CDR$~值關係模型一樣，此一關係模型對於校舍耐震能力補強計畫中，初期的篩選工作可以有很大的助益，也可以輔助決策者編定預算、快速的根據狀況決定不同計畫年度補強的規模等。
 
-本模型之構想為教育部或地方政府在訂定補強計畫或編列預算時，常需有整體需補強校舍之數量統計，依照目前校舍耐震評估與補強之流程如圖~\ref{fig:FLOW}~，需等到執行完詳細評估並通過審查決策後才能得之最後校舍是否需補強或拆除，過程需耗大量時間與金錢。使用此預測模型，可於短時間內，依據資料庫之現有資料，隨時立即做整體需補強校舍之預測。
+本模型之構想為教育部或地方政府在訂定補強計畫或編列預算時，需有管轄範圍內所有需補強校舍之數量統計，依照目前校舍耐震評估與補強之流程如圖~\ref{fig:FLOW}~，需等到執行完詳細評估並通過審查決策後才能得之最後校舍是否需補強或拆除，過程需耗大量時間與金錢。使用此關係模型，可於短時間內，依據資料庫之現有資料，隨時進行需補強校舍之數量與分佈之分析。
 
 \subsection{資料前處理}
 
-人工輸入的資料很容易發生單位錯誤或是格式不正確的資料，而資料的品質對於資料探勘的結果優劣影響很大，因此需要在資料前處理時把這些問題都處理過，資料前處理的最主要目標是讓處理過的資料能夠很確實的反映出分析問題所要尋找的資料特性，使用的方法包括資料過濾、屬性過濾、新屬性的生成等，本模型採用校舍資料庫中已存在之初步評估與詳細評估資料做為資料探勘輸入參數，前處理的第一個步驟為過濾不合理的資料，通常是人為疏失輸入的不合理資料，使用的過濾條件為國震中心建議的過濾條件：
+人工輸入的資料很容易有單位錯誤或是格式不正確的資料，而資料的品質對於資料探勘的結果優劣影響很大，因此需要在資料前處理時把這些問題都處理過，資料前處理的最主要目標是讓處理過的資料能夠很確實的反映出分析問題所要尋找的資料特性，使用的方法包括資料過濾、屬性過濾、新屬性的生成等，本模型採用校舍資料庫中已存在之初步評估與詳細評估資料做為資料探勘輸入參數，前處理的第一個步驟為過濾不合理的資料，通常是人為疏失輸入的不合理資料，使用的過濾條件為國震中心建議的過濾條件：
 
 \begin{itemize}
 \item 校舍總長或總深度超過兩百公尺
@@ -49,11 +49,11 @@
 \end{itemize}
 \end{multicols}
 
-探勘模型之屬性挑選分為輸入變數與輸出變數，本模型之輸出變數為校舍是否補強之欄位，輸入變數則是我們用來預測輸出變數之所用變數，以下為本預測模型屬 性集內之屬性介紹與選擇說明。
+探勘模型之屬性挑選分為輸入變數與輸出變數，本模型之輸出變數為校舍是否補強之欄位，輸入變數則是我們用來推斷輸出變數之所用變數，以下為本預測模型屬 性集內之屬性介紹與選擇說明。
 
 \begin{description}
   \item [一般工址或近斷層區域之工址設計水平譜加速度係數]
-  \cite{內政部營建署編輯委員會2005建築物耐震設計規範及解說} 即~$S_{aD}$~，隨建築物基本振動週期~$T$~與工址短週期與一秒週期之設計水平譜加速度係數~$S_{DS}$~與~$S_{D1}$~而改變，如表~\ref{tab:sad}，~$S_{DS}$~與~$S_{D1}$~之值可由校舍所在位置依規範查出。此係數是因校舍位址而改變，並且其~$S_{DS}$~與~$S_{D1}$~為根據所在震區而訂定，藉由此係數可間接知道該校舍可能靠近哪些震區，本分析採用此一屬性，此一屬性同時代表著地震潛勢之資訊，設想為可能某些地區的校舍可能其接受補強之機率較高，因此將此屬性納入屬性集。
+  \cite{內政部營建署編輯委員會2005建築物耐震設計規範及解說} 即~$S_{aD}$~，隨建築物基本振動週期~$T$~與工址短週期與一秒週期之設計水平譜加速度係數~$S_{DS}$~與~$S_{D1}$~而改變，如表~\ref{tab:sad}，~$S_{DS}$~與~$S_{D1}$~之值可由校舍所在位置依規範查出。此係數是因校舍位址而改變，並且其~$S_{DS}$~與~$S_{D1}$~為根據所在震區而訂定，藉由此係數可間接知道該校舍可能靠近哪些震區，本分析採用此一屬性，此一屬性同時代表著地震潛勢之資訊，設想為可能某些地區的校舍接受補強之機率較高，因此將此屬性納入屬性集。
 
 {\renewcommand{\arraystretch}{1.5}
 \begin{table}[hbtp]
@@ -86,15 +86,15 @@
 
   \begin{equation}T_{AC} = (4+1.8NF) ClaAc+(2.4+1.08NF) CorAc+2.6 InsAc \end{equation} 
 
-  其中~$NF$~為樓層數，~$ClaAc$~為一樓教室柱總斷面積，~$CorAc$~為一樓走廊外柱總斷面積，~$InsAc$~為一樓隔間柱總斷面積，其公式為根據三種類結構柱之單位斷面積極限剪力牆度計算公式~\cite{su2008master}~之加總，本分析將此屬性加入探勘模型之最初原因為該公式內有教室柱、走廊外柱與隔間柱於一樓的總斷面積，而此一數值和，並且因補強施工其所補強之面積愈大其所花錢就愈多。本分析經建立多組模型與各種屬性集之測試均發現該屬性對模型之預測結果有一定影響。
+  其中~$NF$~為樓層數，~$ClaAc$~為一樓教室柱總斷面積，~$CorAc$~為一樓走廊外柱總斷面積，~$InsAc$~為一樓隔間柱總斷面積，其公式為根據三種類結構柱之單位斷面積極限剪力牆度計算公式~\cite{su2008master}~之加總，本分析將此屬性加入探勘模型之最初原因為該公式內有教室柱、走廊外柱與隔間柱於一樓的總斷面積，而此一數值和便可呈現所有結構柱之資訊。本分析經建立多組模型與各種屬性集之測試均發現該屬性對模型之預測結果有一定影響。
 \item [平面及立面對稱性]
 初步評估表中的調整因子之一，可知該屬性為影響校舍耐震能力之屬性之一，校舍是否補強其最相關的為評估完之耐震能力，因此將該欄位加入屬性集。
 \item [軟弱層顯著性]
 初步評估表中的調整因子之一，可知軟弱層顯著性會影響結構物之耐震能力，結構物之耐震能力愈低，其接受補強的機率就愈高，因此將此屬性納入屬性集。
 \item [裂縫鏽蝕滲水等程度]
-初步評估表中的調整因子之一，可知該屬性為影響校舍耐震能力之屬性之一，校舍是否補強其最相關的為評估完之耐震能力，因此將該欄位加入屬性集。
+初步評估表中的調整因子之一，可知該屬性為影響校舍耐震能力之屬性之一，是最能代表校舍現況的屬性，因此將該欄位加入屬性集。
 \item [變形程度]
-初步評估表中的調整因子之一，可知該屬性為初步評估表中結果之影響因子，可影響評估最後結果之耐震能力，耐震能力愈低其接受補強機率就愈高，因此將之加入本屬性集。
+初步評估表中的調整因子之一，可知該屬性為初步評估表中結果之影響因子，可影響評估最後結果之耐震能力，因此將之加入本屬性集。
 \item [短柱嚴重性]
 初步評估表中的調整因子之一，短柱效應其影響校舍之耐震能力相較於其他影響因子相對於較大，校舍評估出來之耐震能力幾乎是校舍是否需補強之主要因素，因此該欄位更應該加入本探勘模型之屬性集。
 \item [耐震性能]
@@ -109,7 +109,7 @@
 
 探勘模型於建立屬性集後，接著即是依挑選之屬性設定最適合該探勘方法之資料格式及資料類型。
 
-本分析原先採用支撐向量機與~CHAID~決策樹進行資料探勘之建模，選擇此二種探勘方法，主因為本分析之預測目標，是否需補強其資料類型為一個二元屬性，只有需要補強和不需要補強兩種值，這種屬性的模型屬於分類類型的資料探勘知識，而支撐向量機和決策樹正好是非常適合這種類型知識的探勘方法，CHAID~經初步測試本分析之預測目標，其效果不錯，但支撐向量機其結果不如預期的好，因此本分析改為使用類神經網路，使用前處理完之~2203~筆資料並挑選屬性集內之欄位，將整體資料分為訓練區~70\%~與測試區~30\%~，做為探勘模型之訓練方法，使用~SPSS Clemitine~建立模型，其節點之設計如圖~\ref{fig:spss-d_isr}~所示。類神經網路模型的參數設定為使用~Multilayer Preceptron（MLP）形式之神經網路，隱藏層之設計為讓演算法尋找最佳的神經網路，其會從兩層隱藏層，各有兩個神經原節點開始慢慢拓展神經網路的大小，直到找到最適合此一問題的神經網路，停止條件則為訓練~15~分鐘後停止；CHAID~決策樹的訓練設定則為：最大決策樹深度為五層，停止條件為決策節點之資料筆數為總數之~1\%。兩種不同方法所訓練得到之模型的命中率結果如表~\ref{tab:d_is_r_result}。
+本分析原先採用支持向量機與~CHAID~決策樹進行資料探勘之建模，選擇此二種探勘方法，主因為本分析之預測目標，是否需補強其資料類型為一個二元屬性，只有需要補強和不需要補強兩種值，這種屬性的模型屬於分類類型的資料探勘知識，而支撐向量機和決策樹正好是非常適合這種類型知識的探勘方法，CHAID~經初步測試本分析之預測目標，其效果不錯，但支撐向量機其結果不如預期的好，因此本分析改為使用類神經網路，使用前處理完之~2203~筆資料並挑選屬性集內之欄位，將整體資料分為訓練區~70\%~與測試區~30\%~，做為探勘模型之訓練方法，使用~SPSS Clemitine~建立模型，其節點之設計如圖~\ref{fig:spss-d_isr}~所示。類神經網路模型的參數設定為使用~Multilayer Preceptron（MLP）形式之神經網路，隱藏層之設計為讓演算法尋找最佳的神經網路，其會從兩層隱藏層，各有兩個神經元節點開始慢慢拓展神經網路的大小，直到找到最適合此一問題的神經網路，停止條件則為訓練~15~分鐘後停止；CHAID~決策樹的訓練設定則為：最大決策樹深度為五層，停止條件為決策節點之資料筆數為總數之~1\%。兩種不同方法所訓練得到之模型的命中率結果如表~\ref{tab:d_is_r_result}。
 
 \begin{figure}[hbtp]
   \begin{center}
@@ -179,7 +179,7 @@
 
 % Clustering analysis of school buildings is based on the design patterns of school buildings; the goal is to find several design patterns. Hence, the attributes for analysis are the geometric information of school buildings, such as dimensions and quantity of walls and columns, and width and height of school buildings. Other attributes, such as year of construction and locale, may not be incorporated into PCA analysis. After continuous testing and adjustment, five major attributes are obtained and the importance of constitutional fields is considered as the basis for naming. The five attributes are as follows: corridor column information; classroom column design information; wall design information; data for number of walls; and, data for number of classroom columns.
 
-在前面的處理完成後，還使用分群分析將校舍分群，以幫助後續的~$Is$~值關係模型的建立，分群的目標是將校舍依照不同的設計模式特性區分開來，將相近設計的校舍放在同一群集，分群的依據是主成分分析法所找出的五種主要校舍設計相關屬性，圖~\ref{fig:spss-cluster}~是使用~SPSS Clemitine~進行此一分群分析時的節點設計圖，分別使用的~K-means~和~Two-Step~兩種分群演算法。
+在前面的處理完成後，還使用分群分析將校舍分群，以幫助後續的~$Is$~值關係模型的建立，分群的目標是將校舍依照不同的設計模式特性區分開來，將相近設計的校舍放在同一群集，分群的依據是主成分分析法所找出的五種主要校舍設計相關屬性，圖~\ref{fig:spss-cluster}~是使用~SPSS Clemitine~進行此一分群分析時的節點設計圖，分別使用的是~K-means~和~Two-Step~兩種分群演算法。
 
 \begin{figure}[hbtp]
   \begin{center}
@@ -193,7 +193,7 @@
 
 \subsubsection{K-means}
 
-此一分群方法最重要的設定參數是初始的群集數~$k$~，雖然有許多研究都在探討如何找出最佳的~$k$~值，但是目前仍沒有一個方法可以宣稱它找到~$k$~值是最佳的，唯有對該領域的專業了解以及詳細的測試才能得到最佳的 $k$ 值，在本分析案例中，~K-means~分群的停止條件是設定為~20~次迭代，如果~$k$~太大，那會造成分群結果無法在~20~次迭代內收斂，如果~$k$~小於~6~，則分群的結果就可以在~20~次迭代內完整的收斂，每筆資料都會故底定在所屬的群集內，不再變動，最後挑選的~$k$~值是~5~，而根據此一參數的分群結果可以找出三個主要的校舍群集，分別的比例是~28\%~、~56\%~和~16\%~。
+此一分群方法最重要的設定參數是初始的群集數~$k$~，雖然有許多研究都在探討如何找出最佳的~$k$~值，但是目前仍沒有一個方法可以宣稱它找到~$k$~值是最佳的，唯有對該領域的專業了解以及詳細的測試才能得到最佳的 $k$ 值，在本分析案例中，~K-means~分群的停止條件是設定為~20~次迭代，如果~$k$~太大，那會造成分群結果無法在~20~次迭代內收斂，如果~$k$~小於~6~，則分群的結果就可以在~20~次迭代內完整的收斂，每筆資料都會固定在所屬的群集內，不再變動，最後挑選的~$k$~值是~5~，而根據此一參數的分群結果可以找出三個主要的校舍群集，分別的比例是~28\%~、~56\%~和~16\%~。
 
 % The most important parameter with this clustering method is the initial group, k. Although many researchers have developed methods for choosing the initial K value, no method can confirm that it has found the best K value. The best K can be found only based on researcher understanding and problem testing. In this study, K-means clustering is set to stop after 20 iterations. If the K value is too large and cannot be completely converged after 20 operations, some data points will continue to change the clusters to which they belong. When the K value is reduced to <6, Clustering models can be completely converged after 20 iterations, become stable, and no longer change cluster label of all data bit. The K value chosen is 5, and three major clusters are obtained. The remaining two clusters have few data and are considered outliers. The distribution of three major clusters are 28\%, 56\%, and 16\%.
 
@@ -223,7 +223,7 @@ Two-Step~分群有兩個優點，一是時間複雜度低，運算時間與資�
 
 \subsubsection{廣義線性模型}
 
-廣義線性模型（GLM）是假設在輸入參數和預測目標之間有一個可以用連結函數表達的關係，這個連結函數可能是指數函數、對數函數、Logistic~函數等，經由一些測試資料的測試，選擇使用對數函數作為連結函數，並且根據實際的資料分佈選擇了常態分布作為輸入參數的分佈函數，而關係模型的分布也選擇常態分佈，因其表現較其他分布形式較好。
+廣義線性模型是假設在輸入參數和預測目標之間有一個可以用連結函數表達的關係，這個連結函數可能是指數函數、對數函數、Logistic~函數等，經由一些測試資料的測試，選擇使用對數函數作為連結函數，並且根據實際的資料分佈選擇了常態分布作為輸入參數的分佈函數，而關係模型的分布也選擇常態分佈，因其表現較其他分布形式較好。
 
 % The GLM assumes a relationship between input variables and a predictor; this relationship can be built by a link function such as identity function, log function, logit function, or power function. After available link functions testing on some data, the prediction model performs best when using log function as the link function; hence, this work chose the log function. The distribution function of the predictor is based on the actual distribution of data. This work chose the normal distribution, which is close to the real data distribution. The prediction model constructed using the normal distribution performed better than those with other distribution types.
 
@@ -351,7 +351,7 @@ Two-Step~分群有兩個優點，一是時間複雜度低，運算時間與資�
 
 \section{耐震需求比與校舍設計之關係模型}
 
-校舍耐震資料庫中，詳細評估表的耐震能力索引即為耐震需求比（$CDR$），其是用來評估校舍是否需要補強、甚至是拆除的最重要依據，此數值需要由專業人士進行完整且詳細的評估，此數值的取得非常耗時耗力，且評估需要之經費也不便宜，是一個與校舍結構材料、設計與現況等參數之間為高度非線性的關係的數值，如果能夠取得此一關係模型，對於校舍耐震能力補強計畫來說，絕對可以有很大的幫助。
+校舍耐震資料庫中，詳細評估表的耐震能力索引即為耐震需求比（$CDR$），其是用來評估校舍是否需要補強、甚至是拆除的最重要依據，此數值需要由專業人士進行完整且詳細的評估，取得非常耗時耗力，且評估需要之經費也不便宜，是一個與校舍結構材料、設計與現況等參數之間為高度非線性的關係的數值，如果能夠取得此一關係模型，對於校舍耐震能力補強計畫來說，絕對可以有很大的幫助。
 
 \subsection{資料前處理}
 
@@ -450,7 +450,7 @@ RMSE~是本分析案例中最主要用來判斷模型品質的索引，定義如
 
 \begin{equation} \text{RMSE} = \sqrt{\dfrac{\sum{(y_i - \hat{y_i})^2}}{N}} \label{eq:RMSE2}\end{equation}
 
-其中~$N$~是資料的總數，~$y$~是使用探勘得到的關係方程式所求得的建築物耐震能力~$AC$~值，~$\hat{y}$~則是詳細評估的非線性分析所得到的建築物~$AC$~值，建築物的破壞地表加速度分布在~0.04~至~0.5~之間，國震中心專家則建議~RMSE~值需要低於~0.04~，此模型才夠有能力用來鑑別校舍的耐震能力優劣與否，表二中的控制組則是使用~SPSS Clemitine~的類神經網路所建立的模型，類神經網路的設定為使用~Exhaustive Prune method~來發展神經網路，初始神經網路為兩層隱藏層，分別有~30~個和~20~個神經元，訓練~250~個週期，結果的~RMSE~是~0.041~，非常接近目標的~0.04~，本分析使用了~GP~來建立校舍的~$AC$~值與其設計參數間的關係模型，結果的模型其品質和使用類神經網路所建立的模型非常接近，然而類神經網路所建立的模型其複雜度太高，且其機制為一黑盒子，而~GP~方法產生的模型就只是一個代表方程式的運算樹，可以非常快速的將結果拿到各種不同環境或平台中應用。
+其中~$N$~是資料的總數，~$y$~是使用探勘得到的關係方程式所求得的建築物耐震能力~$AC$~值，~$\hat{y}$~則是詳細評估的非線性分析所得到的建築物~$AC$~值，建築物的破壞地表加速度分布在~0.04~至~0.5~之間，國震中心專家則建議~RMSE~值需要低於~0.04~，此模型才夠有能力用來鑑別校舍的耐震能力優劣與否，表二中的控制組則是使用~SPSS Clemitine~的類神經網路所建立的模型，類神經網路的設定為使用~Exhaustive Prune~方法來發展神經網路，初始神經網路為兩層隱藏層，分別有~30~個和~20~個神經元，訓練~250~個週期，結果的~RMSE~是~0.041~，非常接近目標的~0.04~，本分析使用了~GP~來建立校舍的~$AC$~值與其設計參數間的關係模型，結果的模型其品質和使用類神經網路所建立的模型非常接近，然而類神經網路所建立的模型其複雜度太高，且其機制為一黑盒子，而~GP~方法產生的模型就只是一個代表方程式的運算樹，可以非常快速的將結果拿到各種不同環境或平台中應用。
 
 % where n is the number of datasets, $y$ is the estimated value obtained from the equation, and $\hat{y}$ is the actual unit-less deviation index value (the smaller the better). The ground acceleration of the minimum destruction obtained from the nonlinear analysis was distributed between 0.04 and 0.5, and therefore, the relationship model has a sufficient recognition rate. Experts from NCREE recommend that the RMSE must be below 0.04. The control group is the relationship model obtained from the artificial neural network. In applying the relationship model constructed by SPSS Clementine and choosing the Exhaustive Prune method to adjust the number of tiers and nodes, the initial neural network has two hidden tiers with 30 and 20 neurons, respectively. The neurons have been trained for 250 iterations, and those with a low degree of importance are removed during the training period based on the situation. The resulting RMSE is 0.041, which is close to the target of 0.04. In this paper we use WGP to create an aseismic ability prediction model for real school buildings. The quality of our model is similar to models built using Artificial Neural Networks. However, Artificial Neural Network based models are complicated; their mechanism is in a black box. The WGP model, on the other hand, is just an equation of the building’s design parameters and its aseismic ability. Thus, it can easily be ported to other platforms and programming languages for use in many applications. The optimum model obtained from the GP pattern is represented by the relationship equation below. Function nodes in a tree topology, displayed in Figure 8, uses several symbols and text to represent the F of that node.
 
@@ -460,7 +460,7 @@ RMSE~是本分析案例中最主要用來判斷模型品質的索引，定義如
 %``÷'' 代表 $f = x_1 / x_2$; \\ \indent
 %``pow'' 代表次方函數 $f = {x_1} ^ {x_2}$
 
-然而使用~GP~方法所建立的關係模型其表現並不好，~RMSE~只能達到~0.056~，而根據圖~\ref{fig:4LGP}~可以發現，其實使用~GP~方法並沒有正確的建立~$AC$~和校舍設計參數間的關係模型，主因為其只使用了三個輸入參數，而且其方程式複雜度也不高，可以推斷此一個關係模型的複雜度很高，而~GP~方法並不能正確的找出這個關係。
+然而使用~GP~方法所建立的關係模型其表現並不好，~RMSE~只能達到~0.056~，而根據圖~\ref{fig:4LGP}~可以發現，其實使用~GP~方法並沒有正確的建立~$AC$~和校舍設計參數間的關係模型，主因為其只使用了三個輸入參數，且其方程式複雜度也不高，可以推斷此一個關係模型的複雜度很高，而~GP~方法並不能正確的找出這個關係。
 
 \begin{figure}[hbtp]
   \begin{center}
@@ -491,7 +491,7 @@ WGP~是本分析第二個使用的方法，和~GP~一樣選擇了五層的運算
 
 \begin{equation} AC = {({165 P_{10}}^{8.86 P_6} {P_4}^{4.86} + \dfrac{22.5 P_8 + 39.5 P_{10}}{P_{10}} )}^{-98.6 P_4{P_8}^{-1.3} - 133 P_{10} - 0.05 {P_7}^{1.38 P_{10}} }  \label{eq:WGP_AC}\end{equation}
 
-表~\ref{tab:gp-result}~列出了~WGP~方法所建立的校舍設計參數與其最小破壞地表加速度~$AC$~間關係模型的~RMSE~值，其值為~0.039~，比使用類神經網路所建立的關係模型表現還要好，圖~\ref{fig:WGP}~是此模型的推估值與實際直的比較圖，可以看得出來比使用~GP~所建立的模型要來的好。
+表~\ref{tab:gp-result}~列出了~WGP~方法所建立的校舍設計參數與其最小破壞地表加速度~$AC$~間關係模型的~RMSE~值，其值為~0.039~，比使用類神經網路所建立的關係模型表現還要好，圖~\ref{fig:WGP}~是此模型的推估值與實際值的比較圖，可以看得出來比使用~GP~所建立的模型要來的好。
 
 \begin{figure}[hbtp]
   \begin{center}
