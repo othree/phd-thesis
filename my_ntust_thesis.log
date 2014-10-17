@@ -1,4 +1,4 @@
-This is XeTeX, Version 3.1415926-2.5-0.9999.3 (TeX Live 2013) (format=xelatex 2013.12.14)  16 OCT 2014 17:35
+This is XeTeX, Version 3.1415926-2.5-0.9999.3 (TeX Live 2013) (format=xelatex 2013.12.14)  17 OCT 2014 15:31
 entering extended mode
  restricted \write18 enabled.
  file:line:error style messages enabled.
@@ -1532,11 +1532,11 @@ Underfull \vbox (badness 10000) has occurred while \output is active []
 Underfull \vbox (badness 10000) has occurred while \output is active []
 
  [2]
-[3] [4]) (./sections/relative-work.tex [5] [6
+[3] [4] [5]) (./sections/relative-work.tex [6]
+Chapter 2.
+[7
 
 ]
-Chapter 2.
-[7]
 Underfull \vbox (badness 2376) has occurred while \output is active []
 
  [8]
