@@ -1,4 +1,4 @@
-This is XeTeX, Version 3.1415926-2.5-0.9999.3 (TeX Live 2013) (format=xelatex 2013.12.14)  17 OCT 2014 16:14
+This is XeTeX, Version 3.1415926-2.5-0.9999.3 (TeX Live 2013) (format=xelatex 2013.12.14)  17 OCT 2014 16:18
 entering extended mode
  restricted \write18 enabled.
  file:line:error style messages enabled.
@@ -1701,10 +1701,17 @@ File: figures/ce+T.pdf Graphic file (type QTm)
 
 ]
 Chapter 6.
-[69] [70] [71] [72]
+[69] [70]
+Overfull \hbox (11.27158pt too wide) in paragraph at lines 64--65
+[]\EU1/標楷體(0)/m/n/12 此 一 屬 性 為 紀 錄 該 校 舍 是 否 作 為 緊 急 避 難 使 用，|  以 決 定 其 值 為 \EU
+1/TimesNewRoman(0)/m/n/12 1.25 \EU1/標楷體(0)/m/n/12 或 \EU1/TimesNewRoman(0)/m/n/1
+2 1.5 \EU1/標楷體(0)/m/n/12 ，|
+ []
+
+[71] [72]
 File: figures/crack-flow.png Graphic file (type QTm)
- <use  "figures/crack-flow.png" >)
-(./sections/retrofit-cost.tex [73] [74]
+ <use  "figures/crack-flow.png" >) (./sections/retrofit-cost.tex
+[73] [74]
 Chapter 7.
 
 LaTeX Warning: Command \nobreakspace invalid in math mode on input line 8.
@@ -2025,10 +2032,6 @@ Package atveryend Info: Empty hook `AfterLastShipout' on input line 104.
  (./my_ntust_thesis.aux)
 Package atveryend Info: Empty hook `AtVeryEndDocument' on input line 104.
 Package atveryend Info: Empty hook `AtEndAfterFileList' on input line 104.
-
-
-LaTeX Warning: Label(s) may have changed. Rerun to get cross-references right.
-
 Package atveryend Info: Empty hook `AtVeryVeryEnd' on input line 104.
  ) 
 Here is how much of TeX's memory you used:
