@@ -380,7 +380,7 @@
 %%%%%%%%%%%%%
 \input{frontpages/my_cabstract.tex}
 
-\newpage{\thispagestyle{empty}}\mbox{}\addtocounter{page}{-1}
+\newpage{\mbox{}}
 
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 %       英文摘要 
@@ -463,18 +463,21 @@
 %%%%%%%%%%%%%
 \input{frontpages/my_eabstract.tex}
 
-\newpage{\thispagestyle{empty}}\mbox{}\addtocounter{page}{-1}
+\newpage{}\mbox{}
 
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 %       誌謝 
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 %
 % Acknowledgment
-%\newpage
-%\chapter*{\protect\makebox[5cm][s]{\nameAckn}} %\makebox{} is fragile; need protect
+\newpage
+\chapter*{\protect\makebox[5cm][s]{\nameAckn}} %\makebox{} is fragile; need protect
 
-%\addcontentsline{toc}{chapter}{\nameAckn}
-%\input{frontpages/my_ackn.tex}
+\addcontentsline{toc}{chapter}{\nameAckn}
+\input{frontpages/my_ackn.tex}
+
+\newpage{}\mbox{}
+
 
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 %       目錄 
