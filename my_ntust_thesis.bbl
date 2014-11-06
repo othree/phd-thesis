@@ -304,6 +304,15 @@ J.~Aldrich, ``Correlations genuine and spurious in pearson and yule,'' {\em
   ``台灣中小學校舍結構耐震能力初步評估方法之探討,''
   Master's thesis, 國立台灣大學土木系, Jul 2008.
 
+\bibitem{modeler}
+{IBM}, ``{SPSS\ Modeler}.''
+\newblock
+  \url{http://www-01.ibm.com/software/analytics/spss/products/modeler/}.
+
+\bibitem{matlab}
+{MathWorks\ Inc.}, ``Matlab.''
+\newblock \url{http://www.mathworks.com/products/matlab/}.
+
 \bibitem{ncree2013moe}
 國家地震工程研究中心,
   ``高中職及國中小校舍結構耐震能力補強設計作業規範,''
