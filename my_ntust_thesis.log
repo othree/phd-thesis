@@ -1,4 +1,4 @@
-This is XeTeX, Version 3.1415926-2.5-0.9999.3 (TeX Live 2013) (format=xelatex 2013.12.14)  6 NOV 2014 18:00
+This is XeTeX, Version 3.1415926-2.5-0.9999.3 (TeX Live 2013) (format=xelatex 2013.12.14)  12 NOV 2014 17:25
 entering extended mode
  restricted \write18 enabled.
  file:line:error style messages enabled.
@@ -1690,22 +1690,21 @@ File: figures/4-layer-gp.png Graphic file (type QTm)
 
 <use  "figures/4-layer-gp.png" >
 File: figures/4-layer-wgp.png Graphic file (type QTm)
- <use  "figures/4-layer-wgp.png" > [61]
+ <use  "figures/4-layer-wgp.png" >
 File: figures/wgp.pdf Graphic file (type QTm)
 
-<use  "figures/wgp.pdf" >
+<use  "figures/wgp.pdf" > [61] [62]
+File: figures/4-layer-wgp.png Graphic file (type QTm)
+ <use  "figures/4-layer-wgp.png" > [63]
+File: figures/ce.pdf Graphic file (type QTm)
+
+<use  "figures/ce.pdf" >
+File: figures/ce+T.pdf Graphic file (type QTm)
+ <use  "figures/ce+T.pdf" >
 Underfull \vbox (badness 10000) has occurred while \output is active []
 
- [62]
-[63]
-File: figures/4-layer-wgp.png Graphic file (type QTm)
- <use  "figures/4-layer-wgp.png" > [64]
-File: figures/ce.pdf Graphic file (type QTm)
- <use  "figures/ce.pdf" >
-File: figures/ce+T.pdf Graphic file (type QTm)
-
-<use  "figures/ce+T.pdf" > [65] [66]) (./sections/crack-component.tex [67]
-[68
+ [64]
+[65] [66]) (./sections/crack-component.tex [67] [68
 
 ]
 Chapter 6.
