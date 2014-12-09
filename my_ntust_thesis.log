@@ -1,4 +1,4 @@
-This is XeTeX, Version 3.1415926-2.5-0.9999.3 (TeX Live 2013) (format=xelatex 2013.12.14)  18 NOV 2014 13:28
+This is XeTeX, Version 3.1415926-2.5-0.9999.3 (TeX Live 2013) (format=xelatex 2013.12.14)  9 DEC 2014 17:35
 entering extended mode
  restricted \write18 enabled.
  file:line:error style messages enabled.
@@ -1437,15 +1437,56 @@ Underfull \hbox (badness 10000) detected at line 340
 \EU1/KaitiTCRegular(0)/m/n/12 指 導 教 授：| 
  []
 
-(./frontpages/my_cabstract.tex) [1] [2] (./frontpages/my_eabstract.tex)
-[3] [4]
+(./frontpages/my_cabstract.tex)
+
+Package Fancyhdr Warning: \headheight is too small (12.0pt): 
+ Make it at least 16.0pt.
+ We now make it that large for the rest of the document.
+ This may cause the page layout to be inconsistent, however.
+
+[1]
+
+Package Fancyhdr Warning: \headheight is too small (12.0pt): 
+ Make it at least 16.0pt.
+ We now make it that large for the rest of the document.
+ This may cause the page layout to be inconsistent, however.
+
+[2] (./frontpages/my_eabstract.tex)
+
+Package Fancyhdr Warning: \headheight is too small (12.0pt): 
+ Make it at least 16.0pt.
+ We now make it that large for the rest of the document.
+ This may cause the page layout to be inconsistent, however.
+
+[3]
+
+Package Fancyhdr Warning: \headheight is too small (12.0pt): 
+ Make it at least 16.0pt.
+ We now make it that large for the rest of the document.
+ This may cause the page layout to be inconsistent, however.
+
+[4]
 Underfull \hbox (badness 10000) detected at line 474
 \EU1/KaitiTCRegular(0)/bx/n/20.74 誌 謝
  []
 
-(./frontpages/my_ackn.tex) [5
+(./frontpages/my_ackn.tex)
 
-] [6]
+Package Fancyhdr Warning: \headheight is too small (12.0pt): 
+ Make it at least 16.0pt.
+ We now make it that large for the rest of the document.
+ This may cause the page layout to be inconsistent, however.
+
+[5
+
+]
+
+Package Fancyhdr Warning: \headheight is too small (12.0pt): 
+ Make it at least 16.0pt.
+ We now make it that large for the rest of the document.
+ This may cause the page layout to be inconsistent, however.
+
+[6]
 Underfull \hbox (badness 10000) detected at line 497
 \EU1/KaitiTCRegular(0)/bx/n/20.74 目 錄
  []
@@ -1478,12 +1519,26 @@ Overfull \hbox (5.15427pt too wide) detected at line 6
 
 Underfull \vbox (badness 10000) has occurred while \output is active []
 
- [7
+
+
+Package Fancyhdr Warning: \headheight is too small (12.0pt): 
+ Make it at least 16.0pt.
+ We now make it that large for the rest of the document.
+ This may cause the page layout to be inconsistent, however.
+
+[7
 
 ]
 Underfull \vbox (badness 10000) has occurred while \output is active []
 
- [8]
+
+
+Package Fancyhdr Warning: \headheight is too small (12.0pt): 
+ Make it at least 16.0pt.
+ We now make it that large for the rest of the document.
+ This may cause the page layout to be inconsistent, however.
+
+[8]
 Overfull \hbox (2.49997pt too wide) detected at line 74
  []\EU1/TimesNewRoman(0)/m/n/12 105
  []
@@ -1497,7 +1552,21 @@ Overfull \hbox (2.05466pt too wide) detected at line 75
 \tf@toc=\write4
 \openout4 = `my_ntust_thesis.toc'.
 
- [9] [10
+
+
+Package Fancyhdr Warning: \headheight is too small (12.0pt): 
+ Make it at least 16.0pt.
+ We now make it that large for the rest of the document.
+ This may cause the page layout to be inconsistent, however.
+
+[9]
+
+Package Fancyhdr Warning: \headheight is too small (12.0pt): 
+ Make it at least 16.0pt.
+ We now make it that large for the rest of the document.
+ This may cause the page layout to be inconsistent, however.
+
+[10
 
 ]
 Underfull \hbox (badness 10000) detected at line 515
@@ -1507,12 +1576,25 @@ Underfull \hbox (badness 10000) detected at line 515
 (./my_ntust_thesis.lof
 Underfull \vbox (badness 10000) has occurred while \output is active []
 
- [11
+
+
+Package Fancyhdr Warning: \headheight is too small (12.0pt): 
+ Make it at least 16.0pt.
+ We now make it that large for the rest of the document.
+ This may cause the page layout to be inconsistent, however.
+
+[11
 
 ])
 \tf@lof=\write5
 \openout5 = `my_ntust_thesis.lof'.
 
+
+
+Package Fancyhdr Warning: \headheight is too small (12.0pt): 
+ Make it at least 16.0pt.
+ We now make it that large for the rest of the document.
+ This may cause the page layout to be inconsistent, however.
 
 [12]
 Underfull \hbox (badness 10000) detected at line 530
@@ -1523,10 +1605,24 @@ Underfull \hbox (badness 10000) detected at line 530
 \tf@lot=\write6
 \openout6 = `my_ntust_thesis.lot'.
 
- [13
 
 
-] [14
+Package Fancyhdr Warning: \headheight is too small (12.0pt): 
+ Make it at least 16.0pt.
+ We now make it that large for the rest of the document.
+ This may cause the page layout to be inconsistent, however.
+
+[13
+
+
+]
+
+Package Fancyhdr Warning: \headheight is too small (12.0pt): 
+ Make it at least 16.0pt.
+ We now make it that large for the rest of the document.
+ This may cause the page layout to be inconsistent, however.
+
+[14
 
 ]) (./sections/introduction.tex
 Chapter 1.
@@ -1534,58 +1630,253 @@ Missing character: There is no 數 in font Kaiti TC Regular/OT!
 
 Underfull \vbox (badness 10000) has occurred while \output is active []
 
- [1
+
+
+Package Fancyhdr Warning: \headheight is too small (12.0pt): 
+ Make it at least 16.0pt.
+ We now make it that large for the rest of the document.
+ This may cause the page layout to be inconsistent, however.
+
+[1
 
 ]
 Underfull \vbox (badness 10000) has occurred while \output is active []
 
- [2]
-[3] [4] [5]) (./sections/relative-work.tex [6]
+
+
+Package Fancyhdr Warning: \headheight is too small (12.0pt): 
+ Make it at least 16.0pt.
+ We now make it that large for the rest of the document.
+ This may cause the page layout to be inconsistent, however.
+
+[2]
+
+Package Fancyhdr Warning: \headheight is too small (12.0pt): 
+ Make it at least 16.0pt.
+ We now make it that large for the rest of the document.
+ This may cause the page layout to be inconsistent, however.
+
+[3]
+
+Package Fancyhdr Warning: \headheight is too small (12.0pt): 
+ Make it at least 16.0pt.
+ We now make it that large for the rest of the document.
+ This may cause the page layout to be inconsistent, however.
+
+[4]
+
+Package Fancyhdr Warning: \headheight is too small (12.0pt): 
+ Make it at least 16.0pt.
+ We now make it that large for the rest of the document.
+ This may cause the page layout to be inconsistent, however.
+
+[5]) (./sections/relative-work.tex
+
+Package Fancyhdr Warning: \headheight is too small (12.0pt): 
+ Make it at least 16.0pt.
+ We now make it that large for the rest of the document.
+ This may cause the page layout to be inconsistent, however.
+
+[6]
 Chapter 2.
+
+Package Fancyhdr Warning: \headheight is too small (12.0pt): 
+ Make it at least 16.0pt.
+ We now make it that large for the rest of the document.
+ This may cause the page layout to be inconsistent, however.
+
 [7
 
 ]
 Underfull \vbox (badness 2376) has occurred while \output is active []
 
- [8]
-[9] [10]) (./sections/database.tex [11] [12
+
+
+Package Fancyhdr Warning: \headheight is too small (12.0pt): 
+ Make it at least 16.0pt.
+ We now make it that large for the rest of the document.
+ This may cause the page layout to be inconsistent, however.
+
+[8]
+
+Package Fancyhdr Warning: \headheight is too small (12.0pt): 
+ Make it at least 16.0pt.
+ We now make it that large for the rest of the document.
+ This may cause the page layout to be inconsistent, however.
+
+[9]
+
+Package Fancyhdr Warning: \headheight is too small (12.0pt): 
+ Make it at least 16.0pt.
+ We now make it that large for the rest of the document.
+ This may cause the page layout to be inconsistent, however.
+
+[10]) (./sections/database.tex
+
+Package Fancyhdr Warning: \headheight is too small (12.0pt): 
+ Make it at least 16.0pt.
+ We now make it that large for the rest of the document.
+ This may cause the page layout to be inconsistent, however.
+
+[11]
+
+Package Fancyhdr Warning: \headheight is too small (12.0pt): 
+ Make it at least 16.0pt.
+ We now make it that large for the rest of the document.
+ This may cause the page layout to be inconsistent, however.
+
+[12
 
 ]
 Chapter 3.
 File: figures/trad-school-building.pdf Graphic file (type QTm)
-<use  "figures/trad-school-building.pdf" > [13] [14]
+<use  "figures/trad-school-building.pdf" >
+
+Package Fancyhdr Warning: \headheight is too small (12.0pt): 
+ Make it at least 16.0pt.
+ We now make it that large for the rest of the document.
+ This may cause the page layout to be inconsistent, however.
+
+[13]
+
+Package Fancyhdr Warning: \headheight is too small (12.0pt): 
+ Make it at least 16.0pt.
+ We now make it that large for the rest of the document.
+ This may cause the page layout to be inconsistent, however.
+
+[14]
 File: figures/survey-flow.pdf Graphic file (type QTm)
+ <use  "figures/survey-flow.pdf" >
 
-<use  "figures/survey-flow.pdf" > [15] [16] [17] [18]
+Package Fancyhdr Warning: \headheight is too small (12.0pt): 
+ Make it at least 16.0pt.
+ We now make it that large for the rest of the document.
+ This may cause the page layout to be inconsistent, however.
+
+[15]
+
+Package Fancyhdr Warning: \headheight is too small (12.0pt): 
+ Make it at least 16.0pt.
+ We now make it that large for the rest of the document.
+ This may cause the page layout to be inconsistent, however.
+
+[16]
+
+Package Fancyhdr Warning: \headheight is too small (12.0pt): 
+ Make it at least 16.0pt.
+ We now make it that large for the rest of the document.
+ This may cause the page layout to be inconsistent, however.
+
+[17]
+
+Package Fancyhdr Warning: \headheight is too small (12.0pt): 
+ Make it at least 16.0pt.
+ We now make it that large for the rest of the document.
+ This may cause the page layout to be inconsistent, however.
+
+[18]
 File: figures/capacity-curve.png Graphic file (type QTm)
-
-<use  "figures/capacity-curve.png" >
+ <use  "figures/capacity-curve.png" >
 Underfull \vbox (badness 3568) has occurred while \output is active []
 
- [19]
+
+
+Package Fancyhdr Warning: \headheight is too small (12.0pt): 
+ Make it at least 16.0pt.
+ We now make it that large for the rest of the document.
+ This may cause the page layout to be inconsistent, however.
+
+[19]
 File: figures/performance-point.png Graphic file (type QTm)
-
-<use  "figures/performance-point.png" >
+ <use  "figures/performance-point.png" >
 Underfull \vbox (badness 10000) has occurred while \output is active []
 
- [20]
+
+
+Package Fancyhdr Warning: \headheight is too small (12.0pt): 
+ Make it at least 16.0pt.
+ We now make it that large for the rest of the document.
+ This may cause the page layout to be inconsistent, however.
+
+[20]
 Underfull \vbox (badness 10000) has occurred while \output is active []
 
- [21]
+
+
+Package Fancyhdr Warning: \headheight is too small (12.0pt): 
+ Make it at least 16.0pt.
+ We now make it that large for the rest of the document.
+ This may cause the page layout to be inconsistent, however.
+
+[21]
 Underfull \vbox (badness 10000) has occurred while \output is active []
 
- [22]
+
+
+Package Fancyhdr Warning: \headheight is too small (12.0pt): 
+ Make it at least 16.0pt.
+ We now make it that large for the rest of the document.
+ This may cause the page layout to be inconsistent, however.
+
+[22]
 File: figures/school-er.pdf Graphic file (type QTm)
+ <use  "figures/school-er.pdf" >
 
-<use  "figures/school-er.pdf" > [23]) (./sections/method.tex [24]
+Package Fancyhdr Warning: \headheight is too small (12.0pt): 
+ Make it at least 16.0pt.
+ We now make it that large for the rest of the document.
+ This may cause the page layout to be inconsistent, however.
+
+[23]) (./sections/method.tex
+
+Package Fancyhdr Warning: \headheight is too small (12.0pt): 
+ Make it at least 16.0pt.
+ We now make it that large for the rest of the document.
+ This may cause the page layout to be inconsistent, however.
+
+[24]
 Chapter 4.
 File: figures/1196px-CRISP-DM_Process_Diagram.png Graphic file (type QTm)
-<use  "figures/1196px-CRISP-DM_Process_Diagram.png" > [25
+<use  "figures/1196px-CRISP-DM_Process_Diagram.png" >
 
-] [26] [27] [28]
+Package Fancyhdr Warning: \headheight is too small (12.0pt): 
+ Make it at least 16.0pt.
+ We now make it that large for the rest of the document.
+ This may cause the page layout to be inconsistent, however.
+
+[25
+
+]
+
+Package Fancyhdr Warning: \headheight is too small (12.0pt): 
+ Make it at least 16.0pt.
+ We now make it that large for the rest of the document.
+ This may cause the page layout to be inconsistent, however.
+
+[26]
+
+Package Fancyhdr Warning: \headheight is too small (12.0pt): 
+ Make it at least 16.0pt.
+ We now make it that large for the rest of the document.
+ This may cause the page layout to be inconsistent, however.
+
+[27]
+
+Package Fancyhdr Warning: \headheight is too small (12.0pt): 
+ Make it at least 16.0pt.
+ We now make it that large for the rest of the document.
+ This may cause the page layout to be inconsistent, however.
+
+[28]
 File: figures/pca.png Graphic file (type QTm)
+ <use  "figures/pca.png" >
 
-<use  "figures/pca.png" > [29]
+Package Fancyhdr Warning: \headheight is too small (12.0pt): 
+ Make it at least 16.0pt.
+ We now make it that large for the rest of the document.
+ This may cause the page layout to be inconsistent, however.
+
+[29]
 Missing character: There is no 類 in font Kaiti TC Regular/OT!
 Missing character: There is no 神 in font Kaiti TC Regular/OT!
 Missing character: There is no 路 in font Kaiti TC Regular/OT!
@@ -1608,25 +1899,50 @@ Missing character: There is no 若 in font Kaiti TC Regular/OT!
 
 Underfull \vbox (badness 1173) has occurred while \output is active []
 
- [30]
-File: figures/anns-network.png Graphic file (type QTm)
 
-<use  "figures/anns-network.png" >
+
+Package Fancyhdr Warning: \headheight is too small (12.0pt): 
+ Make it at least 16.0pt.
+ We now make it that large for the rest of the document.
+ This may cause the page layout to be inconsistent, however.
+
+[30]
+File: figures/anns-network.png Graphic file (type QTm)
+ <use  "figures/anns-network.png" >
 Underfull \vbox (badness 1292) has occurred while \output is active []
 
- [31]
+
+
+Package Fancyhdr Warning: \headheight is too small (12.0pt): 
+ Make it at least 16.0pt.
+ We now make it that large for the rest of the document.
+ This may cause the page layout to be inconsistent, however.
+
+[31]
 Underfull \vbox (badness 2707) has occurred while \output is active []
 
- [32]
-File: figures/gp-struct.pdf Graphic file (type QTm)
 
-<use  "figures/gp-struct.pdf" >
+
+Package Fancyhdr Warning: \headheight is too small (12.0pt): 
+ Make it at least 16.0pt.
+ We now make it that large for the rest of the document.
+ This may cause the page layout to be inconsistent, however.
+
+[32]
+File: figures/gp-struct.pdf Graphic file (type QTm)
+ <use  "figures/gp-struct.pdf" >
 Underfull \vbox (badness 10000) has occurred while \output is active []
 
- [33]
-File: figures/wgp-sample.pdf Graphic file (type QTm)
 
-<use  "figures/wgp-sample.pdf" >
+
+Package Fancyhdr Warning: \headheight is too small (12.0pt): 
+ Make it at least 16.0pt.
+ We now make it that large for the rest of the document.
+ This may cause the page layout to be inconsistent, however.
+
+[33]
+File: figures/wgp-sample.pdf Graphic file (type QTm)
+ <use  "figures/wgp-sample.pdf" >
 File: figures/gp-unit.pdf Graphic file (type QTm)
  <use  "figures/gp-unit.pdf" >
 File: figures/wgp-unit.pdf Graphic file (type QTm)
@@ -1634,7 +1950,20 @@ File: figures/wgp-unit.pdf Graphic file (type QTm)
 <use  "figures/wgp-unit.pdf" >
 Underfull \vbox (badness 10000) has occurred while \output is active []
 
- [34]
+
+
+Package Fancyhdr Warning: \headheight is too small (12.0pt): 
+ Make it at least 16.0pt.
+ We now make it that large for the rest of the document.
+ This may cause the page layout to be inconsistent, however.
+
+[34]
+
+Package Fancyhdr Warning: \headheight is too small (12.0pt): 
+ Make it at least 16.0pt.
+ We now make it that large for the rest of the document.
+ This may cause the page layout to be inconsistent, however.
+
 [35]
 Overfull \hbox (6.22203pt too wide) in paragraph at lines 192--193
 []\EU1/KaitiTCRegular(0)/m/n/12 支 持 向 量 機  |（\EU1/TimesNewRoman(0)/m/n/12 Suppo
@@ -1646,56 +1975,244 @@ Roman(0)/m/n/12 1992 \EU1/KaitiTCRegular(0)/m/n/12 年
 
 Underfull \vbox (badness 10000) has occurred while \output is active []
 
- [36]
-File: figures/svm.jpg Graphic file (type QTm)
 
-<use  "figures/svm.jpg" >
+
+Package Fancyhdr Warning: \headheight is too small (12.0pt): 
+ Make it at least 16.0pt.
+ We now make it that large for the rest of the document.
+ This may cause the page layout to be inconsistent, however.
+
+[36]
+File: figures/svm.jpg Graphic file (type QTm)
+ <use  "figures/svm.jpg" >
 Underfull \vbox (badness 10000) has occurred while \output is active []
 
- [37]
-[38] [39]
+
+
+Package Fancyhdr Warning: \headheight is too small (12.0pt): 
+ Make it at least 16.0pt.
+ We now make it that large for the rest of the document.
+ This may cause the page layout to be inconsistent, however.
+
+[37]
+
+Package Fancyhdr Warning: \headheight is too small (12.0pt): 
+ Make it at least 16.0pt.
+ We now make it that large for the rest of the document.
+ This may cause the page layout to be inconsistent, however.
+
+[38]
+
+Package Fancyhdr Warning: \headheight is too small (12.0pt): 
+ Make it at least 16.0pt.
+ We now make it that large for the rest of the document.
+ This may cause the page layout to be inconsistent, however.
+
+[39]
 Missing character: There is no （ in font Times New Roman/OT:script=latn;languag
 e=DFLT;mapping=tex-text;!
-) (./sections/aseicmic-ability.tex [40] [41] [42
+) (./sections/aseicmic-ability.tex
+
+Package Fancyhdr Warning: \headheight is too small (12.0pt): 
+ Make it at least 16.0pt.
+ We now make it that large for the rest of the document.
+ This may cause the page layout to be inconsistent, however.
+
+[40]
+
+Package Fancyhdr Warning: \headheight is too small (12.0pt): 
+ Make it at least 16.0pt.
+ We now make it that large for the rest of the document.
+ This may cause the page layout to be inconsistent, however.
+
+[41]
+
+Package Fancyhdr Warning: \headheight is too small (12.0pt): 
+ Make it at least 16.0pt.
+ We now make it that large for the rest of the document.
+ This may cause the page layout to be inconsistent, however.
+
+[42
 
 ]
 Chapter 5.
 
 Underfull \vbox (badness 10000) has occurred while \output is active []
 
- [43]
-[44] [45] [46] [47]
-File: figures/d_isr_flow.png Graphic file (type QTm)
- <use  "figures/d_isr_flow.png" > [48] [49]
-File: figures/spss-cluster.png Graphic file (type QTm)
 
-<use  "figures/spss-cluster.png" > [50]
+
+Package Fancyhdr Warning: \headheight is too small (12.0pt): 
+ Make it at least 16.0pt.
+ We now make it that large for the rest of the document.
+ This may cause the page layout to be inconsistent, however.
+
+[43]
+
+Package Fancyhdr Warning: \headheight is too small (12.0pt): 
+ Make it at least 16.0pt.
+ We now make it that large for the rest of the document.
+ This may cause the page layout to be inconsistent, however.
+
+[44]
+
+Package Fancyhdr Warning: \headheight is too small (12.0pt): 
+ Make it at least 16.0pt.
+ We now make it that large for the rest of the document.
+ This may cause the page layout to be inconsistent, however.
+
+[45]
+
+Package Fancyhdr Warning: \headheight is too small (12.0pt): 
+ Make it at least 16.0pt.
+ We now make it that large for the rest of the document.
+ This may cause the page layout to be inconsistent, however.
+
+[46]
+
+Package Fancyhdr Warning: \headheight is too small (12.0pt): 
+ Make it at least 16.0pt.
+ We now make it that large for the rest of the document.
+ This may cause the page layout to be inconsistent, however.
+
+[47]
+File: figures/d_isr_flow.png Graphic file (type QTm)
+ <use  "figures/d_isr_flow.png" >
+
+Package Fancyhdr Warning: \headheight is too small (12.0pt): 
+ Make it at least 16.0pt.
+ We now make it that large for the rest of the document.
+ This may cause the page layout to be inconsistent, however.
+
+[48]
+
+Package Fancyhdr Warning: \headheight is too small (12.0pt): 
+ Make it at least 16.0pt.
+ We now make it that large for the rest of the document.
+ This may cause the page layout to be inconsistent, however.
+
+[49]
+File: figures/spss-cluster.png Graphic file (type QTm)
+ <use  "figures/spss-cluster.png" >
+
+Package Fancyhdr Warning: \headheight is too small (12.0pt): 
+ Make it at least 16.0pt.
+ We now make it that large for the rest of the document.
+ This may cause the page layout to be inconsistent, however.
+
+[50]
 Underfull \vbox (badness 10000) has occurred while \output is active []
 
- [51]
-File: figures/spss-mining.png Graphic file (type QTm)
 
-<use  "figures/spss-mining.png" > [52] [53]
+
+Package Fancyhdr Warning: \headheight is too small (12.0pt): 
+ Make it at least 16.0pt.
+ We now make it that large for the rest of the document.
+ This may cause the page layout to be inconsistent, however.
+
+[51]
+File: figures/spss-mining.png Graphic file (type QTm)
+ <use  "figures/spss-mining.png" >
+
+Package Fancyhdr Warning: \headheight is too small (12.0pt): 
+ Make it at least 16.0pt.
+ We now make it that large for the rest of the document.
+ This may cause the page layout to be inconsistent, however.
+
+[52]
+
+Package Fancyhdr Warning: \headheight is too small (12.0pt): 
+ Make it at least 16.0pt.
+ We now make it that large for the rest of the document.
+ This may cause the page layout to be inconsistent, however.
+
+[53]
 File: figures/is-glm.png Graphic file (type QTm)
  <use  "figures/is-glm.png" >
 Overfull \hbox (7.3571pt too wide) in paragraph at lines 290--303
  [] 
  []
 
-[54] [55] [56] [57] [58] [59]
+
+Package Fancyhdr Warning: \headheight is too small (12.0pt): 
+ Make it at least 16.0pt.
+ We now make it that large for the rest of the document.
+ This may cause the page layout to be inconsistent, however.
+
+[54]
+
+Package Fancyhdr Warning: \headheight is too small (12.0pt): 
+ Make it at least 16.0pt.
+ We now make it that large for the rest of the document.
+ This may cause the page layout to be inconsistent, however.
+
+[55]
+
+Package Fancyhdr Warning: \headheight is too small (12.0pt): 
+ Make it at least 16.0pt.
+ We now make it that large for the rest of the document.
+ This may cause the page layout to be inconsistent, however.
+
+[56]
+
+Package Fancyhdr Warning: \headheight is too small (12.0pt): 
+ Make it at least 16.0pt.
+ We now make it that large for the rest of the document.
+ This may cause the page layout to be inconsistent, however.
+
+[57]
+
+Package Fancyhdr Warning: \headheight is too small (12.0pt): 
+ Make it at least 16.0pt.
+ We now make it that large for the rest of the document.
+ This may cause the page layout to be inconsistent, however.
+
+[58]
+
+Package Fancyhdr Warning: \headheight is too small (12.0pt): 
+ Make it at least 16.0pt.
+ We now make it that large for the rest of the document.
+ This may cause the page layout to be inconsistent, however.
+
+[59]
 Underfull \vbox (badness 10000) has occurred while \output is active []
 
- [60]
-File: figures/4-layer-gp.png Graphic file (type QTm)
 
-<use  "figures/4-layer-gp.png" >
+
+Package Fancyhdr Warning: \headheight is too small (12.0pt): 
+ Make it at least 16.0pt.
+ We now make it that large for the rest of the document.
+ This may cause the page layout to be inconsistent, however.
+
+[60]
+File: figures/4-layer-gp.png Graphic file (type QTm)
+ <use  "figures/4-layer-gp.png" >
 File: figures/4-layer-wgp.png Graphic file (type QTm)
  <use  "figures/4-layer-wgp.png" >
 File: figures/wgp.pdf Graphic file (type QTm)
 
-<use  "figures/wgp.pdf" > [61] [62]
+<use  "figures/wgp.pdf" >
+
+Package Fancyhdr Warning: \headheight is too small (12.0pt): 
+ Make it at least 16.0pt.
+ We now make it that large for the rest of the document.
+ This may cause the page layout to be inconsistent, however.
+
+[61]
+
+Package Fancyhdr Warning: \headheight is too small (12.0pt): 
+ Make it at least 16.0pt.
+ We now make it that large for the rest of the document.
+ This may cause the page layout to be inconsistent, however.
+
+[62]
 File: figures/4-layer-wgp-tuning.png Graphic file (type QTm)
  <use  "figures/4-layer-wgp-tuning.png" >
+
+Package Fancyhdr Warning: \headheight is too small (12.0pt): 
+ Make it at least 16.0pt.
+ We now make it that large for the rest of the document.
+ This may cause the page layout to be inconsistent, however.
+
 [63]
 File: figures/ce.pdf Graphic file (type QTm)
  <use  "figures/ce.pdf" >
@@ -1703,22 +2220,95 @@ File: figures/ce+T.pdf Graphic file (type QTm)
  <use  "figures/ce+T.pdf" >
 Underfull \vbox (badness 10000) has occurred while \output is active []
 
- [64]
-[65] [66]) (./sections/crack-component.tex [67] [68
+
+
+Package Fancyhdr Warning: \headheight is too small (12.0pt): 
+ Make it at least 16.0pt.
+ We now make it that large for the rest of the document.
+ This may cause the page layout to be inconsistent, however.
+
+[64]
+
+Package Fancyhdr Warning: \headheight is too small (12.0pt): 
+ Make it at least 16.0pt.
+ We now make it that large for the rest of the document.
+ This may cause the page layout to be inconsistent, however.
+
+[65]
+
+Package Fancyhdr Warning: \headheight is too small (12.0pt): 
+ Make it at least 16.0pt.
+ We now make it that large for the rest of the document.
+ This may cause the page layout to be inconsistent, however.
+
+[66]) (./sections/crack-component.tex
+
+Package Fancyhdr Warning: \headheight is too small (12.0pt): 
+ Make it at least 16.0pt.
+ We now make it that large for the rest of the document.
+ This may cause the page layout to be inconsistent, however.
+
+[67]
+
+Package Fancyhdr Warning: \headheight is too small (12.0pt): 
+ Make it at least 16.0pt.
+ We now make it that large for the rest of the document.
+ This may cause the page layout to be inconsistent, however.
+
+[68
 
 ]
 Chapter 6.
-[69] [70]
+
+Package Fancyhdr Warning: \headheight is too small (12.0pt): 
+ Make it at least 16.0pt.
+ We now make it that large for the rest of the document.
+ This may cause the page layout to be inconsistent, however.
+
+[69]
+
+Package Fancyhdr Warning: \headheight is too small (12.0pt): 
+ Make it at least 16.0pt.
+ We now make it that large for the rest of the document.
+ This may cause the page layout to be inconsistent, however.
+
+[70]
 Overfull \hbox (11.43358pt too wide) in paragraph at lines 64--65
 []\EU1/KaitiTCRegular(0)/m/n/12 此 一 屬 性 為 紀 錄 該 校 舍 是 否 作 為 緊 急 避 難 使 用，|  以 決 
 定 其 值 為 \EU1/TimesNewRoman(0)/m/n/12 1.25 \EU1/KaitiTCRegular(0)/m/n/12 或 \EU1/
 TimesNewRoman(0)/m/n/12 1.5 \EU1/KaitiTCRegular(0)/m/n/12 ，|
  []
 
-[71] [72]
+
+Package Fancyhdr Warning: \headheight is too small (12.0pt): 
+ Make it at least 16.0pt.
+ We now make it that large for the rest of the document.
+ This may cause the page layout to be inconsistent, however.
+
+[71]
+
+Package Fancyhdr Warning: \headheight is too small (12.0pt): 
+ Make it at least 16.0pt.
+ We now make it that large for the rest of the document.
+ This may cause the page layout to be inconsistent, however.
+
+[72]
 File: figures/crack-flow.png Graphic file (type QTm)
  <use  "figures/crack-flow.png" >) (./sections/retrofit-cost.tex
-[73] [74]
+
+Package Fancyhdr Warning: \headheight is too small (12.0pt): 
+ Make it at least 16.0pt.
+ We now make it that large for the rest of the document.
+ This may cause the page layout to be inconsistent, however.
+
+[73]
+
+Package Fancyhdr Warning: \headheight is too small (12.0pt): 
+ Make it at least 16.0pt.
+ We now make it that large for the rest of the document.
+ This may cause the page layout to be inconsistent, however.
+
+[74]
 Chapter 7.
 
 LaTeX Warning: Command \nobreakspace invalid in math mode on input line 8.
@@ -1735,7 +2325,14 @@ LaTeX Warning: Command \nobreakspace invalid in math mode on input line 8.
 
 Underfull \vbox (badness 10000) has occurred while \output is active []
 
- [75
+
+
+Package Fancyhdr Warning: \headheight is too small (12.0pt): 
+ Make it at least 16.0pt.
+ We now make it that large for the rest of the document.
+ This may cause the page layout to be inconsistent, however.
+
+[75
 
 ]
 
@@ -1753,48 +2350,161 @@ LaTeX Warning: Command \nobreakspace invalid in math mode on input line 22.
 
 Underfull \vbox (badness 10000) has occurred while \output is active []
 
- [76]
-[77] [78] [79] [80]
+
+
+Package Fancyhdr Warning: \headheight is too small (12.0pt): 
+ Make it at least 16.0pt.
+ We now make it that large for the rest of the document.
+ This may cause the page layout to be inconsistent, however.
+
+[76]
+
+Package Fancyhdr Warning: \headheight is too small (12.0pt): 
+ Make it at least 16.0pt.
+ We now make it that large for the rest of the document.
+ This may cause the page layout to be inconsistent, however.
+
+[77]
+
+Package Fancyhdr Warning: \headheight is too small (12.0pt): 
+ Make it at least 16.0pt.
+ We now make it that large for the rest of the document.
+ This may cause the page layout to be inconsistent, however.
+
+[78]
+
+Package Fancyhdr Warning: \headheight is too small (12.0pt): 
+ Make it at least 16.0pt.
+ We now make it that large for the rest of the document.
+ This may cause the page layout to be inconsistent, however.
+
+[79]
+
+Package Fancyhdr Warning: \headheight is too small (12.0pt): 
+ Make it at least 16.0pt.
+ We now make it that large for the rest of the document.
+ This may cause the page layout to be inconsistent, however.
+
+[80]
 Underfull \vbox (badness 7540) has occurred while \output is active []
 
- [81]
-File: figures/cob-flow.png Graphic file (type QTm)
 
-<use  "figures/cob-flow.png" > [82]
+
+Package Fancyhdr Warning: \headheight is too small (12.0pt): 
+ Make it at least 16.0pt.
+ We now make it that large for the rest of the document.
+ This may cause the page layout to be inconsistent, however.
+
+[81]
+File: figures/cob-flow.png Graphic file (type QTm)
+ <use  "figures/cob-flow.png" >
+
+Package Fancyhdr Warning: \headheight is too small (12.0pt): 
+ Make it at least 16.0pt.
+ We now make it that large for the rest of the document.
+ This may cause the page layout to be inconsistent, however.
+
+[82]
 File: figures/cob-chaid.pdf Graphic file (type QTm)
  <use  "figures/cob-chaid.pdf" >
 File: figures/cob-ann.pdf Graphic file (type QTm)
+ <use  "figures/cob-ann.pdf" >)
+(./sections/conclusion.tex
 
-<use  "figures/cob-ann.pdf" >) (./sections/conclusion.tex [83] [84]
+Package Fancyhdr Warning: \headheight is too small (12.0pt): 
+ Make it at least 16.0pt.
+ We now make it that large for the rest of the document.
+ This may cause the page layout to be inconsistent, however.
+
+[83]
+
+Package Fancyhdr Warning: \headheight is too small (12.0pt): 
+ Make it at least 16.0pt.
+ We now make it that large for the rest of the document.
+ This may cause the page layout to be inconsistent, however.
+
+[84]
 Chapter 8.
 File: figures/survey-flow-con.pdf Graphic file (type QTm)
 <use  "figures/survey-flow-con.pdf" >
 Underfull \vbox (badness 10000) has occurred while \output is active []
 
- [85
+
+
+Package Fancyhdr Warning: \headheight is too small (12.0pt): 
+ Make it at least 16.0pt.
+ We now make it that large for the rest of the document.
+ This may cause the page layout to be inconsistent, however.
+
+[85
 
 ]
 Underfull \vbox (badness 10000) has occurred while \output is active []
 
- [86]
-File: figures/big-picture.pdf Graphic file (type QTm)
 
-<use  "figures/big-picture.pdf" > [87]) (./backpages/ntust_backpages.tex
+
+Package Fancyhdr Warning: \headheight is too small (12.0pt): 
+ Make it at least 16.0pt.
+ We now make it that large for the rest of the document.
+ This may cause the page layout to be inconsistent, however.
+
+[86]
+File: figures/big-picture.pdf Graphic file (type QTm)
+ <use  "figures/big-picture.pdf" >
+
+Package Fancyhdr Warning: \headheight is too small (12.0pt): 
+ Make it at least 16.0pt.
+ We now make it that large for the rest of the document.
+ This may cause the page layout to be inconsistent, however.
+
+[87]) (./backpages/ntust_backpages.tex
+
+Package Fancyhdr Warning: \headheight is too small (12.0pt): 
+ Make it at least 16.0pt.
+ We now make it that large for the rest of the document.
+ This may cause the page layout to be inconsistent, however.
+
 [88] (./my_ntust_thesis.bbl
 Underfull \hbox (badness 10000) detected at line 1
 \EU1/KaitiTCRegular(0)/bx/n/20.74 參 考 文 獻
  []
 
+
+Package Fancyhdr Warning: \headheight is too small (12.0pt): 
+ Make it at least 16.0pt.
+ We now make it that large for the rest of the document.
+ This may cause the page layout to be inconsistent, however.
+
 [89
 
 
-] [90]
+]
+
+Package Fancyhdr Warning: \headheight is too small (12.0pt): 
+ Make it at least 16.0pt.
+ We now make it that large for the rest of the document.
+ This may cause the page layout to be inconsistent, however.
+
+[90]
 Underfull \hbox (badness 4543) in paragraph at lines 100--103
 []\EU1/TimesNewRoman(0)/m/n/12 M. Sarıdemir, “Prediction of compressive strengt
 h of concretes containing
  []
 
-[91] [92]
+
+Package Fancyhdr Warning: \headheight is too small (12.0pt): 
+ Make it at least 16.0pt.
+ We now make it that large for the rest of the document.
+ This may cause the page layout to be inconsistent, however.
+
+[91]
+
+Package Fancyhdr Warning: \headheight is too small (12.0pt): 
+ Make it at least 16.0pt.
+ We now make it that large for the rest of the document.
+ This may cause the page layout to be inconsistent, however.
+
+[92]
 *************************************************
 * xeCJK warning: "CJKfamily-Unknown"
 * 
@@ -1818,12 +2528,45 @@ Underfull \hbox (badness 10000) in paragraph at lines 202--204
 ][][][] [] [] [] [][][][][][][][] [] [][][] []
  []
 
-[93] [94] [95]) (./backpages/my_appendix.tex [96] [97
+
+Package Fancyhdr Warning: \headheight is too small (12.0pt): 
+ Make it at least 16.0pt.
+ We now make it that large for the rest of the document.
+ This may cause the page layout to be inconsistent, however.
+
+[93]
+
+Package Fancyhdr Warning: \headheight is too small (12.0pt): 
+ Make it at least 16.0pt.
+ We now make it that large for the rest of the document.
+ This may cause the page layout to be inconsistent, however.
+
+[94]
+
+Package Fancyhdr Warning: \headheight is too small (12.0pt): 
+ Make it at least 16.0pt.
+ We now make it that large for the rest of the document.
+ This may cause the page layout to be inconsistent, however.
+
+[95]) (./backpages/my_appendix.tex
+
+Package Fancyhdr Warning: \headheight is too small (12.0pt): 
+ Make it at least 16.0pt.
+ We now make it that large for the rest of the document.
+ This may cause the page layout to be inconsistent, however.
+
+[96]
+
+Package Fancyhdr Warning: \headheight is too small (12.0pt): 
+ Make it at least 16.0pt.
+ We now make it that large for the rest of the document.
+ This may cause the page layout to be inconsistent, however.
+
+[97
 
 ]
 File: appendix/20120516-Preliminary-Typical.pdf Graphic file (type QTm)
-
-<use  "appendix/20120516-Preliminary-Typical.pdf"  page1>
+ <use  "appendix/20120516-Preliminary-Typical.pdf"  page1>
 File: appendix/20120516-Preliminary-Typical.pdf Graphic file (type QTm)
 
 <use  "appendix/20120516-Preliminary-Typical.pdf"  page1>
@@ -1835,12 +2578,18 @@ File: appendix/20120516-Preliminary-Typical.pdf Graphic file (type QTm)
 <use  "appendix/20120516-Preliminary-Typical.pdf"  page1>
 File: appendix/20120516-Preliminary-Typical.pdf Graphic file (type QTm)
 
-<use  "appendix/20120516-Preliminary-Typical.pdf"  page1> [98] [99
+<use  "appendix/20120516-Preliminary-Typical.pdf"  page1> [98]
+
+Package Fancyhdr Warning: \headheight is too small (12.0pt): 
+ Make it at least 16.0pt.
+ We now make it that large for the rest of the document.
+ This may cause the page layout to be inconsistent, however.
+
+[99
 
 ]
 File: appendix/detailed-evaluation.pdf Graphic file (type QTm)
-
-<use  "appendix/detailed-evaluation.pdf"  page1>
+ <use  "appendix/detailed-evaluation.pdf"  page1>
 File: appendix/detailed-evaluation.pdf Graphic file (type QTm)
 
 <use  "appendix/detailed-evaluation.pdf"  page1>
@@ -1888,13 +2637,17 @@ File: appendix/detailed-evaluation.pdf Graphic file (type QTm)
 <use  "appendix/detailed-evaluation.pdf"  page5>
 File: appendix/detailed-evaluation.pdf Graphic file (type QTm)
 
-<use  "appendix/detailed-evaluation.pdf"  page5> [104] [105
+<use  "appendix/detailed-evaluation.pdf"  page5> [104]
+
+Package Fancyhdr Warning: \headheight is too small (12.0pt): 
+ Make it at least 16.0pt.
+ We now make it that large for the rest of the document.
+ This may cause the page layout to be inconsistent, however.
+
+[105
 
 ]
 File: appendix/retrofit.pdf Graphic file (type QTm)
-
-<use  "appendix/retrofit.pdf"  page1>
-File: appendix/retrofit.pdf Graphic file (type QTm)
  <use  "appendix/retrofit.pdf"  page1>
 File: appendix/retrofit.pdf Graphic file (type QTm)
 
@@ -1903,108 +2656,117 @@ File: appendix/retrofit.pdf Graphic file (type QTm)
  <use  "appendix/retrofit.pdf"  page1>
 File: appendix/retrofit.pdf Graphic file (type QTm)
 
-<use  "appendix/retrofit.pdf"  page1> [106]
+<use  "appendix/retrofit.pdf"  page1>
+File: appendix/retrofit.pdf Graphic file (type QTm)
+ <use  "appendix/retrofit.pdf"  page1>
+[106]
+File: appendix/retrofit.pdf Graphic file (type QTm)
+ <use  "appendix/retrofit.pdf"  page2>
 File: appendix/retrofit.pdf Graphic file (type QTm)
 
 <use  "appendix/retrofit.pdf"  page2>
 File: appendix/retrofit.pdf Graphic file (type QTm)
  <use  "appendix/retrofit.pdf"  page2>
+[107]
 File: appendix/retrofit.pdf Graphic file (type QTm)
-
-<use  "appendix/retrofit.pdf"  page2> [107]
+ <use  "appendix/retrofit.pdf"  page3>
 File: appendix/retrofit.pdf Graphic file (type QTm)
 
 <use  "appendix/retrofit.pdf"  page3>
 File: appendix/retrofit.pdf Graphic file (type QTm)
  <use  "appendix/retrofit.pdf"  page3>
+[108]
 File: appendix/retrofit.pdf Graphic file (type QTm)
-
-<use  "appendix/retrofit.pdf"  page3> [108]
+ <use  "appendix/retrofit.pdf"  page4>
 File: appendix/retrofit.pdf Graphic file (type QTm)
 
 <use  "appendix/retrofit.pdf"  page4>
 File: appendix/retrofit.pdf Graphic file (type QTm)
  <use  "appendix/retrofit.pdf"  page4>
+[109]
 File: appendix/retrofit.pdf Graphic file (type QTm)
-
-<use  "appendix/retrofit.pdf"  page4> [109]
+ <use  "appendix/retrofit.pdf"  page5>
 File: appendix/retrofit.pdf Graphic file (type QTm)
 
 <use  "appendix/retrofit.pdf"  page5>
 File: appendix/retrofit.pdf Graphic file (type QTm)
  <use  "appendix/retrofit.pdf"  page5>
+[110]
 File: appendix/retrofit.pdf Graphic file (type QTm)
-
-<use  "appendix/retrofit.pdf"  page5> [110]
+ <use  "appendix/retrofit.pdf"  page6>
 File: appendix/retrofit.pdf Graphic file (type QTm)
 
 <use  "appendix/retrofit.pdf"  page6>
 File: appendix/retrofit.pdf Graphic file (type QTm)
  <use  "appendix/retrofit.pdf"  page6>
+[111]
 File: appendix/retrofit.pdf Graphic file (type QTm)
-
-<use  "appendix/retrofit.pdf"  page6> [111]
+ <use  "appendix/retrofit.pdf"  page7>
 File: appendix/retrofit.pdf Graphic file (type QTm)
 
 <use  "appendix/retrofit.pdf"  page7>
 File: appendix/retrofit.pdf Graphic file (type QTm)
  <use  "appendix/retrofit.pdf"  page7>
+[112]
 File: appendix/retrofit.pdf Graphic file (type QTm)
-
-<use  "appendix/retrofit.pdf"  page7> [112]
+ <use  "appendix/retrofit.pdf"  page8>
 File: appendix/retrofit.pdf Graphic file (type QTm)
 
 <use  "appendix/retrofit.pdf"  page8>
 File: appendix/retrofit.pdf Graphic file (type QTm)
  <use  "appendix/retrofit.pdf"  page8>
+[113]
 File: appendix/retrofit.pdf Graphic file (type QTm)
-
-<use  "appendix/retrofit.pdf"  page8> [113]
+ <use  "appendix/retrofit.pdf"  page9>
 File: appendix/retrofit.pdf Graphic file (type QTm)
 
 <use  "appendix/retrofit.pdf"  page9>
 File: appendix/retrofit.pdf Graphic file (type QTm)
  <use  "appendix/retrofit.pdf"  page9>
+[114]
 File: appendix/retrofit.pdf Graphic file (type QTm)
-
-<use  "appendix/retrofit.pdf"  page9> [114]
+ <use  "appendix/retrofit.pdf"  page10>
 File: appendix/retrofit.pdf Graphic file (type QTm)
 
 <use  "appendix/retrofit.pdf"  page10>
 File: appendix/retrofit.pdf Graphic file (type QTm)
  <use  "appendix/retrofit.pdf"  page10>
+[115]
 File: appendix/retrofit.pdf Graphic file (type QTm)
-
-<use  "appendix/retrofit.pdf"  page10> [115]
+ <use  "appendix/retrofit.pdf"  page11>
 File: appendix/retrofit.pdf Graphic file (type QTm)
 
 <use  "appendix/retrofit.pdf"  page11>
 File: appendix/retrofit.pdf Graphic file (type QTm)
  <use  "appendix/retrofit.pdf"  page11>
+[116]
 File: appendix/retrofit.pdf Graphic file (type QTm)
-
-<use  "appendix/retrofit.pdf"  page11> [116]
+ <use  "appendix/retrofit.pdf"  page12>
 File: appendix/retrofit.pdf Graphic file (type QTm)
 
 <use  "appendix/retrofit.pdf"  page12>
 File: appendix/retrofit.pdf Graphic file (type QTm)
  <use  "appendix/retrofit.pdf"  page12>
+[117]
 File: appendix/retrofit.pdf Graphic file (type QTm)
-
-<use  "appendix/retrofit.pdf"  page12> [117]
+ <use  "appendix/retrofit.pdf"  page13>
 File: appendix/retrofit.pdf Graphic file (type QTm)
 
 <use  "appendix/retrofit.pdf"  page13>
 File: appendix/retrofit.pdf Graphic file (type QTm)
  <use  "appendix/retrofit.pdf"  page13>
-File: appendix/retrofit.pdf Graphic file (type QTm)
+[118]
 
-<use  "appendix/retrofit.pdf"  page13> [118] [119
+Package Fancyhdr Warning: \headheight is too small (12.0pt): 
+ Make it at least 16.0pt.
+ We now make it that large for the rest of the document.
+ This may cause the page layout to be inconsistent, however.
+
+[119
 
 ]
 File: appendix/cob.pdf Graphic file (type QTm)
-
-<use  "appendix/cob.pdf"  page1>
+ <use  "appendix/cob.pdf"  page1>
 File: appendix/cob.pdf Graphic file (type QTm)
  <use  "appendix/cob.pdf"  page1>
 File: appendix/cob.pdf Graphic file (type QTm)
@@ -2022,6 +2784,12 @@ File: appendix/cob.pdf Graphic file (type QTm)
 <use  "appendix/cob.pdf"  page2>
 File: appendix/cob.pdf Graphic file (type QTm)
  <use  "appendix/cob.pdf"  page2> [121])
+
+Package Fancyhdr Warning: \headheight is too small (12.0pt): 
+ Make it at least 16.0pt.
+ We now make it that large for the rest of the document.
+ This may cause the page layout to be inconsistent, however.
+
 [122
 
 ]
@@ -2045,12 +2813,12 @@ Package atveryend Info: Empty hook `AtEndAfterFileList' on input line 104.
 Package atveryend Info: Empty hook `AtVeryVeryEnd' on input line 104.
  ) 
 Here is how much of TeX's memory you used:
- 28321 strings out of 493938
- 550372 string characters out of 6148856
- 585215 words of memory out of 5000000
- 31163 multiletter control sequences out of 15000+600000
+ 28311 strings out of 493938
+ 549921 string characters out of 6148856
+ 585371 words of memory out of 5000000
+ 31153 multiletter control sequences out of 15000+600000
  13339 words of font info for 91 fonts, out of 8000000 for 9000
  1144 hyphenation exceptions out of 8191
- 46i,19n,48p,2437b,531s stack positions out of 5000i,500n,10000p,200000b,80000s
+ 46i,19n,48p,2437b,529s stack positions out of 5000i,500n,10000p,200000b,80000s
 
 Output written on my_ntust_thesis.pdf (143 pages).

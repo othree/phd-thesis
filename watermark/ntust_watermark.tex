@@ -43,14 +43,14 @@ width=2.5cm]{watermark/ntust_watermark.eps}}
 %% 則下面  >>> 與 <<< 之間的程式碼請關閉
 %% >>> 全篇浮水印
 
-%\PlaceWaterMark  % 每一頁都有浮水印 (除了 plain、empty 頁以外)
+\PlaceWaterMark  % 每一頁都有浮水印 (除了 plain、empty 頁以外)
 
 % 重新定義 plain 頁面
 % 每張 plain 頁面 (每一章的第一頁) 也加浮水印
 
 \fancypagestyle{plain}{%
 \fancyhead{}%
-%\PlaceWaterMark%
+\PlaceWaterMark%
 \fancyfoot{}%
 \fancyfoot[C]{\thepage}
 \renewcommand{\headrulewidth}{0pt}%
