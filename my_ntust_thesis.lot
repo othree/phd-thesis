@@ -3,17 +3,17 @@
 \addvspace {10\p@ }
 \addvspace {10\p@ }
 \addvspace {10\p@ }
-\contentsline {table}{\numberline {5-1}{\ignorespaces 一般工址或近斷層區域之工址設計水平譜加速度係數\relax }}{46}{table.caption.35}
-\contentsline {table}{\numberline {5-2}{\ignorespaces 「校舍是否需要補強」模型結果\relax }}{49}{table.caption.37}
-\contentsline {table}{\numberline {5-3}{\ignorespaces $Is$ 關係模型之交叉驗證結果\relax }}{54}{table.caption.46}
-\contentsline {table}{\numberline {5-4}{\ignorespaces $Is$ 關係模型之序列式分析結果\relax }}{56}{table.caption.47}
-\contentsline {table}{\numberline {5-5}{\ignorespaces GP 系統模型 RMSE 結果\relax }}{66}{table.caption.55}
-\contentsline {table}{\numberline {5-6}{\ignorespaces GP 系統屬性使用狀況\relax }}{66}{table.caption.57}
+\contentsline {table}{\numberline {5-1}{\ignorespaces 一般工址或近斷層區域之工址設計水平譜加速度係數\relax }}{46}{table.caption.37}
+\contentsline {table}{\numberline {5-2}{\ignorespaces 「校舍是否需要補強」模型結果\relax }}{49}{table.caption.39}
+\contentsline {table}{\numberline {5-3}{\ignorespaces $Is$ 關係模型之交叉驗證結果\relax }}{54}{table.caption.48}
+\contentsline {table}{\numberline {5-4}{\ignorespaces $Is$ 關係模型之序列式分析結果\relax }}{56}{table.caption.49}
+\contentsline {table}{\numberline {5-5}{\ignorespaces GP 系統模型 RMSE 結果\relax }}{66}{table.caption.57}
+\contentsline {table}{\numberline {5-6}{\ignorespaces GP 系統屬性使用狀況\relax }}{66}{table.caption.59}
 \addvspace {10\p@ }
-\contentsline {table}{\numberline {6-1}{\ignorespaces 破壞構件關係模型結果\relax }}{74}{table.caption.59}
+\contentsline {table}{\numberline {6-1}{\ignorespaces 破壞構件關係模型結果\relax }}{74}{table.caption.61}
 \addvspace {10\p@ }
-\contentsline {table}{\numberline {7-1}{\ignorespaces 補強工程參考單價之計價方式\relax }}{76}{table.caption.60}
-\contentsline {table}{\numberline {7-2}{\ignorespaces 補強經費關係模型結果\relax }}{82}{table.caption.62}
-\contentsline {table}{\numberline {7-3}{\ignorespaces 補強經費關係模型結果（不分測試集）\relax }}{83}{table.caption.63}
+\contentsline {table}{\numberline {7-1}{\ignorespaces 補強工程參考單價之計價方式\relax }}{76}{table.caption.62}
+\contentsline {table}{\numberline {7-2}{\ignorespaces 補強經費關係模型結果\relax }}{82}{table.caption.64}
+\contentsline {table}{\numberline {7-3}{\ignorespaces 補強經費關係模型結果（不分測試集）\relax }}{83}{table.caption.65}
 \addvspace {10\p@ }
 \contentsfinish 

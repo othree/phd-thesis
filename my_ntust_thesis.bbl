@@ -263,6 +263,10 @@ H.-C. Tsai and Y.-H. Lin, ``Predicting high-strength concrete parameters using
   weighted genetic programming,'' {\em Engineering with Computers}, vol.~27,
   no.~4, pp.~347--355, 2011.
 
+\bibitem{kass1980exploratory}
+G.~V. Kass, ``An exploratory technique for investigating large quantities of
+  categorical data,'' {\em Applied statistics}, pp.~119--127, 1980.
+
 \bibitem{boser1992}
 B.~E. Boser, I.~M. Guyon, and V.~N. Vapnik, ``A training algorithm for optimal
   margin classifiers,'' in {\em Proceedings of the 5th Annual Workshop on

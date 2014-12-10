@@ -1,12 +1,12 @@
 \renewcommand\thetable{\arabic{chapter}-\arabic{table}}
 %\renewcommand\thefigure{\arabic{chapter}-\arabic{figure}}
 \renewcommand{\theequation}{\arabic{chapter}-\arabic{equation}}
-\chapter{資料探勘}
+\chapter{資料探勘與探勘目標分析}
 \label{cha:data-mining} 
 
 過往在各種不同商業、工業、學術等領域都隨著產業逐步的數位化，有各種資料庫甚至資料倉儲系統的建置與資料收集，例如零售業的交易紀錄，各種學術實驗的結果記錄等等，而隨著時間推移，這些資料庫和倉儲系統收集的資料數量都成長的非常龐大，資料間的關係和複雜度也越來越複雜，這些資料除了當初建置的目的和資料的統計分析外，研究人員還開始思考更進一步的資料應用，希望能把資料中以往隱藏不可見的知識找出來，因此資料探勘（data mining）此一研究領域就因應而生。應用在資料探勘研究的演算法非常多種，包括統計、人工智慧（artificial intelligence）、機器學習（machine learning）、模式識別（pattern recognition）等，只要能夠用來在大量資料中尋找有用知識的方法，都可以作為資料探勘的演算法。
 
-資料探勘的流程也有多種規範，其中最廣為被使用的是~CRISP-DM\cite{shearer2000crisp}（Cross Industry Standard Process for Data Mining），是由~SPSS~以及~NCR~兩大廠商在~1990年開始發展的，它的流程架構如圖~\ref{fig:CRISP-DM}\cite{crispdmdiagram}~所示，將一個完整的資料探勘流程分為六個步驟，分別為：
+而資料探勘的結果優劣，除了演算法和欲解答問題間的契合度之外，整體資料探勘流程中，不同階段工作執行的品質也是很重要的因素，資料探勘的流程在不同領域有各種不同的規範，其中最廣為被使用的是~CRISP-DM\cite{shearer2000crisp}（Cross Industry Standard Process for Data Mining）這個跨領域的資料探勘流程，是由~SPSS~以及~NCR~兩大廠商在~1990年開始發展的，它的流程架構如圖~\ref{fig:CRISP-DM}\cite{crispdmdiagram}~所示，將一個完整的資料探勘流程分為六個步驟，分別為：
 
 \begin{figure}[hbtp]
   \begin{center}
@@ -185,6 +185,11 @@ $g(.)$是為所選的鏈結函數，$E(y)$~是~$y$~的期望值，~$O$~是偏移
 
 其中運算層節點的函數選擇有~$2^{NL} - 1$~個、參數層的參數選擇有~$2^{NL}$~個、以及參數的權重~$w$~有~$2^{NL + 1} - 2$~個。藉由這樣的運算樹設計，再透過~GA~最佳化輸入參數的選擇、不同運算節點的運算子和各個節點不同的權重，~WGP~方法便可以根據資料建立出一個屬性與所求目標的關係方程式。
 
+
+\subsubsection{CHAID 決策樹}
+
+Kass\cite{kass1980exploratory}
+
 \subsection{分類方法}
 
 \subsubsection{支持向量機}
@@ -271,4 +276,16 @@ K-means~是由~MacQueen\cite{macqueen67}~所提出，也是最常被使用的分
 \begin{equation} \text{Hit Rate} = \dfrac{ \sum{I\{y_i = \hat{y_i}\}} }{N} \label{eq:hitrate}\end{equation} 
 
 此公式表示關係模型之目標為非連續數值形式時，要完全預測正確才會記入命中，命中率越高代表關係模型的結果越好，是一個非常直觀的模型品質指標。
+
+
+
+\section{探勘目標分析}
+
+\begin{figure}[hbtp]
+  \begin{center}
+    \includegraphics[width=1.0\textwidth]{figures/big-picture.pdf}
+    \caption{知識挖掘規劃} 
+    \label{fig:bigpicture}
+  \end{center}
+\end{figure}
 
