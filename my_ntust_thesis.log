@@ -1,4 +1,4 @@
-This is XeTeX, Version 3.1415926-2.5-0.9999.3 (TeX Live 2013) (format=xelatex 2013.12.14)  12 DEC 2014 18:21
+This is XeTeX, Version 3.1415926-2.5-0.9999.3 (TeX Live 2013) (format=xelatex 2013.12.14)  15 DEC 2014 17:01
 entering extended mode
  restricted \write18 enabled.
  file:line:error style messages enabled.
@@ -2018,6 +2018,9 @@ Package Fancyhdr Warning: \headheight is too small (12.0pt):
  This may cause the page layout to be inconsistent, however.
 
 [41]
+Underfull \vbox (badness 1571) has occurred while \output is active []
+
+
 
 Package Fancyhdr Warning: \headheight is too small (12.0pt): 
  Make it at least 16.0pt.
