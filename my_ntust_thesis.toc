@@ -67,12 +67,12 @@
 \contentsline {section}{\numberline {7.1}資料前處理}{79}{section.7.1}
 \contentsline {section}{\numberline {7.2}資料探勘}{84}{section.7.2}
 \contentsline {section}{\numberline {7.3}結果}{85}{section.7.3}
-\contentsline {chapter}{\numberline {8}結論與未來展望}{87}{chapter.8}
-\contentsline {section}{\numberline {8.1}結論}{87}{section.8.1}
-\contentsline {section}{\numberline {8.2}未來展望}{89}{section.8.2}
-\contentsline {chapter}{參考文獻}{91}{section*.70}
-\contentsline {chapter}{附錄一：典型校舍初步評估表}{99}{chapter*.72}
-\contentsline {chapter}{附錄二：典型校舍詳細評估表}{101}{chapter*.73}
-\contentsline {chapter}{附錄三：典型校舍補強設計表}{107}{chapter*.74}
-\contentsline {chapter}{附錄四：竣工資料上傳表}{121}{chapter*.75}
+\contentsline {chapter}{\numberline {8}結論與未來展望}{89}{chapter.8}
+\contentsline {section}{\numberline {8.1}結論}{89}{section.8.1}
+\contentsline {section}{\numberline {8.2}未來展望}{91}{section.8.2}
+\contentsline {chapter}{參考文獻}{93}{section*.70}
+\contentsline {chapter}{附錄一：典型校舍初步評估表}{101}{chapter*.72}
+\contentsline {chapter}{附錄二：典型校舍詳細評估表}{103}{chapter*.73}
+\contentsline {chapter}{附錄三：典型校舍補強設計表}{109}{chapter*.74}
+\contentsline {chapter}{附錄四：竣工資料上傳表}{123}{chapter*.75}
 \contentsfinish 
