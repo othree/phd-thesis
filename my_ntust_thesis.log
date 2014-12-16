@@ -1,4 +1,4 @@
-This is XeTeX, Version 3.1415926-2.5-0.9999.3 (TeX Live 2013) (format=xelatex 2013.12.14)  15 DEC 2014 18:29
+This is XeTeX, Version 3.1415926-2.5-0.9999.3 (TeX Live 2013) (format=xelatex 2013.12.14)  16 DEC 2014 17:41
 entering extended mode
  restricted \write18 enabled.
  file:line:error style messages enabled.
@@ -1539,22 +1539,22 @@ Package Fancyhdr Warning: \headheight is too small (12.0pt):
  This may cause the page layout to be inconsistent, however.
 
 [8]
-Overfull \hbox (2.49997pt too wide) detected at line 74
+Overfull \hbox (2.49997pt too wide) detected at line 75
  []\EU1/TimesNewRoman(0)/m/n/12 101
  []
 
 
-Overfull \hbox (2.49997pt too wide) detected at line 75
+Overfull \hbox (2.49997pt too wide) detected at line 76
  []\EU1/TimesNewRoman(0)/m/n/12 103
  []
 
 
-Overfull \hbox (2.49997pt too wide) detected at line 76
+Overfull \hbox (2.49997pt too wide) detected at line 77
  []\EU1/TimesNewRoman(0)/m/n/12 109
  []
 
 
-Overfull \hbox (2.49997pt too wide) detected at line 77
+Overfull \hbox (2.49997pt too wide) detected at line 78
  []\EU1/TimesNewRoman(0)/m/n/12 123
  []
 
@@ -2001,9 +2001,6 @@ Package Fancyhdr Warning: \headheight is too small (12.0pt):
  This may cause the page layout to be inconsistent, however.
 
 [39]
-Missing character: There is no （ in font Times New Roman/OT:script=latn;languag
-e=DFLT;mapping=tex-text;!
-
 Underfull \vbox (badness 10000) has occurred while \output is active []
 
 
@@ -2014,6 +2011,16 @@ Package Fancyhdr Warning: \headheight is too small (12.0pt):
  This may cause the page layout to be inconsistent, however.
 
 [40]
+Missing character: There is no （ in font Times New Roman/OT:script=latn;languag
+e=DFLT;mapping=tex-text;!
+
+
+Package Fancyhdr Warning: \headheight is too small (12.0pt): 
+ Make it at least 16.0pt.
+ We now make it that large for the rest of the document.
+ This may cause the page layout to be inconsistent, however.
+
+[41]
 File: figures/big-picture.pdf Graphic file (type QTm)
  <use  "figures/big-picture.pdf" >
 
@@ -2022,33 +2029,21 @@ Package Fancyhdr Warning: \headheight is too small (12.0pt):
  We now make it that large for the rest of the document.
  This may cause the page layout to be inconsistent, however.
 
-[41]
-Underfull \vbox (badness 1571) has occurred while \output is active []
-
-
+[42]
 
 Package Fancyhdr Warning: \headheight is too small (12.0pt): 
  Make it at least 16.0pt.
  We now make it that large for the rest of the document.
  This may cause the page layout to be inconsistent, however.
 
-[42]) (./sections/aseicmic-ability.tex
+[43]) (./sections/aseicmic-ability.tex
 
 Package Fancyhdr Warning: \headheight is too small (12.0pt): 
  Make it at least 16.0pt.
  We now make it that large for the rest of the document.
  This may cause the page layout to be inconsistent, however.
 
-[43]
-
-Package Fancyhdr Warning: \headheight is too small (12.0pt): 
- Make it at least 16.0pt.
- We now make it that large for the rest of the document.
- This may cause the page layout to be inconsistent, however.
-
-[44
-
-]
+[44]
 Chapter 5.
 
 Underfull \vbox (badness 10000) has occurred while \output is active []
@@ -2060,7 +2055,9 @@ Package Fancyhdr Warning: \headheight is too small (12.0pt):
  We now make it that large for the rest of the document.
  This may cause the page layout to be inconsistent, however.
 
-[45]
+[45
+
+]
 
 Package Fancyhdr Warning: \headheight is too small (12.0pt): 
  Make it at least 16.0pt.
@@ -2851,10 +2848,10 @@ Package atveryend Info: Empty hook `AtEndAfterFileList' on input line 104.
 Package atveryend Info: Empty hook `AtVeryVeryEnd' on input line 104.
  ) 
 Here is how much of TeX's memory you used:
- 28319 strings out of 493938
- 550209 string characters out of 6148856
- 585548 words of memory out of 5000000
- 31161 multiletter control sequences out of 15000+600000
+ 28320 strings out of 493938
+ 550223 string characters out of 6148856
+ 585586 words of memory out of 5000000
+ 31162 multiletter control sequences out of 15000+600000
  13339 words of font info for 91 fonts, out of 8000000 for 9000
  1144 hyphenation exceptions out of 8191
  46i,19n,48p,2437b,529s stack positions out of 5000i,500n,10000p,200000b,80000s
