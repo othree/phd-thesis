@@ -24,7 +24,7 @@
 \item 校舍總長或總深度超過兩百公尺
 \item 有任意牆厚度超過五十公分
 \item 有任意柱的長或寬超過一百公分
-\item 柱間垮距超過八公尺或小於兩公尺
+\item 柱間跨距超過八公尺或小於兩公尺
 \end{itemize}
 
 第二個步驟則是資料集的挑選，挑選的過程可以減少資料複雜度，排除資料庫中的少數資料，並且減少屬性數量，挑選的條件為：典型校舍、鋼筋混凝土建築、單邊走廊且廊外無柱、無地下室、初步評估與詳細評估均顯示為已送出之資料；模型資料經篩選過後，探勘模型中的最後一個步驟就是屬性欄位的挑選，本模型挑選之屬性集如下：
@@ -378,8 +378,8 @@ Two-Step~分群有兩個優點，一是時間複雜度低，運算時間與資�
 
 \begin{itemize}
 \item 校舍深度介於六到二十公尺之間
-\item 校舍垮距介於二到八公尺之間
-\item 每間教室至少有一個垮、兩個柱
+\item 校舍跨距介於二到八公尺之間
+\item 每間教室至少有一個跨、兩個柱
 \item 是否有短住效應 % The number of columns in the classroom is low
 \item 校舍的破壞地表加速度是長向較小
 \end{itemize}
@@ -416,7 +416,7 @@ Two-Step~分群有兩個優點，一是時間複雜度低，運算時間與資�
 \end{itemize}
 \end{multicols}
 
-並依照順序編為 $P_1$ 到 $P_{12}$，其中~$S_{DS}$~是校舍的震區設計水平譜加速度係數，~$S_{D1}$~則是一秒週期的設計譜加速度，都是分析校舍耐震能力時非常重要的參數，另外也根據專家的建議，使用現有的資料組合出兩個新的屬性，分別是校舍的教室數量（$P_{13}$）和校舍建築物的垮距（$P_{14}$），以下介紹各輸入屬性：
+並依照順序編為 $P_1$ 到 $P_{12}$，其中~$S_{DS}$~是校舍的震區設計水平譜加速度係數，~$S_{D1}$~則是一秒週期的設計譜加速度，都是分析校舍耐震能力時非常重要的參數，另外也根據專家的建議，使用現有的資料組合出兩個新的屬性，分別是校舍的教室數量（$P_{13}$）和校舍建築物的跨距（$P_{14}$），以下介紹各輸入屬性：
 
 \begin{description}
   \item[樓層數]
@@ -439,8 +439,8 @@ Two-Step~分群有兩個優點，一是時間複雜度低，運算時間與資�
   代表工址所屬震區在堅實地盤下,設計地震作用時短週期結構之~5\%~阻尼譜加速度與重力加速度~$g$~之比值。是判斷結構物耐震能力是否足夠時的重要依據，因此將其納入輸入屬性中。
   \item[一秒週期的設計譜加速度，$S_{D1}$]
   代表工址所屬震區在堅實地盤下,設計地震作用與一秒週期結構之~5\%~阻尼譜加速度與重力加速度~$g$~之比值。
-  \item[教室數量、垮距]
-  校舍的教室數量以及垮距兩個屬性是在調查時並沒有調查的資料，不過可以由其他的屬性資料中推算得到，而在跟國震中心的專家討論過後，認為可以將此兩個屬性也加入此分析的輸入屬性，因其都可以代表校舍結構物的結構資訊，教室數量代表著典型校舍的隔間情形，也包含了隔間牆的分布，而垮距則可以代表校舍結構物中柱子的平均乘載量。
+  \item[教室數量、跨距]
+  校舍的教室數量以及跨距兩個屬性是在調查時並沒有調查的資料，不過可以由其他的屬性資料中推算得到，而在跟國震中心的專家討論過後，認為可以將此兩個屬性也加入此分析的輸入屬性，因其都可以代表校舍結構物的結構資訊，教室數量代表著典型校舍的隔間情形，也包含了隔間牆的分布，而跨距則可以代表校舍結構物中柱子的平均乘載量。
 \end{description}
 
 % After finalizing the data for the first and second stages, 107 datasets conform to the above condition. Twelve properties are then chosen for the screened data with reference to expert advice, displayed as P1 to P12 in Table 1. In addition to the screening based on existing properties, this study synthesizes two new properties, P13 and P14. They represent the number of classrooms and number of spans for a single classroom, respectively, based on expert advice and existing data. In P11, SDS stands for design spectral response accelerations at short-periods, and in P12, SD1 stands for design spectral response accelerations at 1 sec. These two parameters represent the magnitude of the seismic force at the building’s location, and are very important parameters for analyzing the aseismic ability of buildings by non-linear analysis.
@@ -599,7 +599,7 @@ $I$~是確保~$C_E$~值能趨於保守用的係數，在國震中心的設計中
 
 % Table 2 shows the RMSE after the revision. The RMSE of the IS formula used by NCREE in the preliminary appraisal is 0.067. Although there is still a gap between the target of 0.04 and this value, the emphasis is on the degree of relationship between them, and the main target is to screen out the school buildings with degrees of higher risk. Figure 13 shows the comparison between the CE converted from IS of NCREE, and the destructive ground acceleration obtained through linear analysis. Even though the data have the correct directional tendency, the model obtained from the GP method is better because of higher deviation, and a linear relationship. Subsequent to adding T to the revised formula, RMSE is reduced to 0.045. Figure 13 shows the comparison, and it can be seen that the directional tendency is quite close, thus reducing the deviation. A good revision effect is observed, making the screening result of the preliminary appraisal more accurate.
 
-表~\ref{tab:gp-attributes}~呈現了此分析中所有使用到的輸入參數，四層運算樹和五層運算數分別使用到的參數分開表示，其中：樓層數（$P_1$）、總樓地板面積（$P_{10}$）和單間教室的垮數（$P_{13}$）並沒有被使用到，其中前兩個參數對於校舍結構的耐震能力來說非常重要，在~$Is$~的推估過程中已經有使用到，而本分析的修正因子並沒有使用到可以顯示國震中心的初步評估已經很完整正確的表現出這兩個參數所造成的影響，而單間教室垮數的資訊則可能在初步評估的過程中已經將該資訊表現在評估公式內了，因此修正因子~$T$~的公式內並不包含它，不過此參數在前一個分析中依然有使用到，因此仍然有其重要性。
+表~\ref{tab:gp-attributes}~呈現了此分析中所有使用到的輸入參數，四層運算樹和五層運算數分別使用到的參數分開表示，其中：樓層數（$P_1$）、總樓地板面積（$P_{10}$）和單間教室的跨數（$P_{13}$）並沒有被使用到，其中前兩個參數對於校舍結構的耐震能力來說非常重要，在~$Is$~的推估過程中已經有使用到，而本分析的修正因子並沒有使用到可以顯示國震中心的初步評估已經很完整正確的表現出這兩個參數所造成的影響，而單間教室跨數的資訊則可能在初步評估的過程中已經將該資訊表現在評估公式內了，因此修正因子~$T$~的公式內並不包含它，不過此參數在前一個分析中依然有使用到，因此仍然有其重要性。
 
 {\renewcommand{\arraystretch}{1.5}
 \begin{table}[hbtp]
