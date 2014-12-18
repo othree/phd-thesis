@@ -29,51 +29,51 @@
 \contentsline {subsubsection}{基因規劃}{32}{section*.22}
 \contentsline {subsubsection}{加權基因規劃}{33}{section*.24}
 \contentsline {subsubsection}{CHAID 決策樹}{37}{section*.27}
-\contentsline {subsection}{\numberline {4.2.2}分類方法}{37}{subsection.4.2.2}
-\contentsline {subsubsection}{支持向量機}{37}{section*.28}
-\contentsline {subsection}{\numberline {4.2.3}分群方法}{38}{subsection.4.2.3}
-\contentsline {subsubsection}{K-means}{38}{section*.30}
-\contentsline {subsubsection}{兩步分群}{39}{section*.31}
-\contentsline {section}{\numberline {4.3}探勘結果指標}{39}{section.4.3}
-\contentsline {subsubsection}{敏感性分析}{39}{section*.32}
-\contentsline {subsubsection}{決定係數}{40}{section*.33}
-\contentsline {subsubsection}{平均絕對百分比誤差}{40}{section*.34}
-\contentsline {subsubsection}{均方根誤差}{41}{section*.35}
-\contentsline {subsubsection}{命中率}{41}{section*.36}
-\contentsline {section}{\numberline {4.4}探勘目標分析}{42}{section.4.4}
-\contentsline {chapter}{\numberline {5}校舍資訊與耐震能力之關係模型}{45}{chapter.5}
-\contentsline {section}{\numberline {5.1}耐震能力是否足夠與校舍設計之關係模型}{46}{section.5.1}
-\contentsline {subsection}{\numberline {5.1.1}資料前處理}{46}{subsection.5.1.1}
-\contentsline {subsection}{\numberline {5.1.2}資料探勘與結果}{50}{subsection.5.1.2}
-\contentsline {section}{\numberline {5.2}耐震指標與校舍設計之關係模型}{51}{section.5.2}
-\contentsline {subsection}{\numberline {5.2.1}資料前處理}{52}{subsection.5.2.1}
-\contentsline {subsubsection}{K-means}{53}{section*.43}
-\contentsline {subsubsection}{Two-Step}{54}{section*.44}
-\contentsline {subsection}{\numberline {5.2.2}資料探勘}{54}{subsection.5.2.2}
-\contentsline {subsubsection}{廣義線性模型}{54}{section*.46}
-\contentsline {subsubsection}{Simple Regression}{55}{section*.47}
-\contentsline {subsubsection}{Artificial Neural Networks}{55}{section*.48}
-\contentsline {subsection}{\numberline {5.2.3}結果與驗證}{56}{subsection.5.2.3}
-\contentsline {section}{\numberline {5.3}耐震需求比與校舍設計之關係模型}{58}{section.5.3}
-\contentsline {subsection}{\numberline {5.3.1}資料前處理}{58}{subsection.5.3.1}
-\contentsline {subsection}{\numberline {5.3.2}資料探勘}{62}{subsection.5.3.2}
-\contentsline {subsubsection}{Genetic Programming}{62}{section*.52}
-\contentsline {subsubsection}{Weighted Genetic Programming}{63}{section*.54}
-\contentsline {subsubsection}{Capacity Index Formulation Tuning}{64}{section*.57}
-\contentsline {subsection}{\numberline {5.3.3}結果}{66}{subsection.5.3.3}
-\contentsline {chapter}{\numberline {6}校舍資訊與破壞構件之關係模型}{71}{chapter.6}
-\contentsline {section}{\numberline {6.1}資料前處理}{71}{section.6.1}
-\contentsline {section}{\numberline {6.2}資料探勘與結果}{75}{section.6.2}
-\contentsline {chapter}{\numberline {7}校舍資訊與補強經費之關係模型}{77}{chapter.7}
-\contentsline {section}{\numberline {7.1}資料前處理}{79}{section.7.1}
-\contentsline {section}{\numberline {7.2}資料探勘}{84}{section.7.2}
-\contentsline {section}{\numberline {7.3}結果}{85}{section.7.3}
-\contentsline {chapter}{\numberline {8}結論與未來展望}{89}{chapter.8}
-\contentsline {section}{\numberline {8.1}結論}{89}{section.8.1}
-\contentsline {section}{\numberline {8.2}未來展望}{91}{section.8.2}
-\contentsline {chapter}{參考文獻}{93}{section*.71}
-\contentsline {chapter}{附錄一：典型校舍初步評估表}{101}{chapter*.73}
-\contentsline {chapter}{附錄二：典型校舍詳細評估表}{103}{chapter*.74}
-\contentsline {chapter}{附錄三：典型校舍補強設計表}{109}{chapter*.75}
-\contentsline {chapter}{附錄四：竣工資料上傳表}{123}{chapter*.76}
+\contentsline {subsection}{\numberline {4.2.2}分類方法}{38}{subsection.4.2.2}
+\contentsline {subsubsection}{支持向量機}{38}{section*.29}
+\contentsline {subsection}{\numberline {4.2.3}分群方法}{39}{subsection.4.2.3}
+\contentsline {subsubsection}{K-means}{39}{section*.31}
+\contentsline {subsubsection}{兩步分群}{40}{section*.32}
+\contentsline {section}{\numberline {4.3}探勘結果指標}{40}{section.4.3}
+\contentsline {subsubsection}{敏感度分析}{40}{section*.33}
+\contentsline {subsubsection}{決定係數}{41}{section*.34}
+\contentsline {subsubsection}{平均絕對百分比誤差}{41}{section*.35}
+\contentsline {subsubsection}{均方根誤差}{42}{section*.36}
+\contentsline {subsubsection}{命中率}{42}{section*.37}
+\contentsline {section}{\numberline {4.4}探勘目標分析}{43}{section.4.4}
+\contentsline {chapter}{\numberline {5}校舍資訊與耐震能力之關係模型}{47}{chapter.5}
+\contentsline {section}{\numberline {5.1}耐震能力是否足夠與校舍設計之關係模型}{48}{section.5.1}
+\contentsline {subsection}{\numberline {5.1.1}資料前處理}{48}{subsection.5.1.1}
+\contentsline {subsection}{\numberline {5.1.2}資料探勘與結果}{52}{subsection.5.1.2}
+\contentsline {section}{\numberline {5.2}耐震指標與校舍設計之關係模型}{53}{section.5.2}
+\contentsline {subsection}{\numberline {5.2.1}資料前處理}{54}{subsection.5.2.1}
+\contentsline {subsubsection}{K-means}{55}{section*.44}
+\contentsline {subsubsection}{Two-Step}{56}{section*.45}
+\contentsline {subsection}{\numberline {5.2.2}資料探勘}{56}{subsection.5.2.2}
+\contentsline {subsubsection}{廣義線性模型}{56}{section*.47}
+\contentsline {subsubsection}{Simple Regression}{57}{section*.48}
+\contentsline {subsubsection}{Artificial Neural Networks}{57}{section*.49}
+\contentsline {subsection}{\numberline {5.2.3}結果與驗證}{58}{subsection.5.2.3}
+\contentsline {section}{\numberline {5.3}耐震需求比與校舍設計之關係模型}{60}{section.5.3}
+\contentsline {subsection}{\numberline {5.3.1}資料前處理}{60}{subsection.5.3.1}
+\contentsline {subsection}{\numberline {5.3.2}資料探勘}{64}{subsection.5.3.2}
+\contentsline {subsubsection}{Genetic Programming}{64}{section*.53}
+\contentsline {subsubsection}{Weighted Genetic Programming}{65}{section*.55}
+\contentsline {subsubsection}{Capacity Index Formulation Tuning}{66}{section*.58}
+\contentsline {subsection}{\numberline {5.3.3}結果}{68}{subsection.5.3.3}
+\contentsline {chapter}{\numberline {6}校舍資訊與破壞構件之關係模型}{73}{chapter.6}
+\contentsline {section}{\numberline {6.1}資料前處理}{73}{section.6.1}
+\contentsline {section}{\numberline {6.2}資料探勘與結果}{77}{section.6.2}
+\contentsline {chapter}{\numberline {7}校舍資訊與補強經費之關係模型}{79}{chapter.7}
+\contentsline {section}{\numberline {7.1}資料前處理}{81}{section.7.1}
+\contentsline {section}{\numberline {7.2}資料探勘}{86}{section.7.2}
+\contentsline {section}{\numberline {7.3}結果}{87}{section.7.3}
+\contentsline {chapter}{\numberline {8}結論與未來展望}{91}{chapter.8}
+\contentsline {section}{\numberline {8.1}結論}{91}{section.8.1}
+\contentsline {section}{\numberline {8.2}未來展望}{93}{section.8.2}
+\contentsline {chapter}{參考文獻}{95}{section*.72}
+\contentsline {chapter}{附錄一：典型校舍初步評估表}{103}{chapter*.74}
+\contentsline {chapter}{附錄二：典型校舍詳細評估表}{105}{chapter*.75}
+\contentsline {chapter}{附錄三：典型校舍補強設計表}{111}{chapter*.76}
+\contentsline {chapter}{附錄四：竣工資料上傳表}{125}{chapter*.77}
 \contentsfinish 
