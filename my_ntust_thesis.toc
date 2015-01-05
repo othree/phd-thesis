@@ -64,16 +64,16 @@
 \contentsline {chapter}{\numberline {6}校舍資訊與破壞構件之關係模型}{73}{chapter.6}
 \contentsline {section}{\numberline {6.1}資料前處理}{73}{section.6.1}
 \contentsline {section}{\numberline {6.2}資料探勘與結果}{77}{section.6.2}
-\contentsline {chapter}{\numberline {7}校舍資訊與補強經費之關係模型}{79}{chapter.7}
-\contentsline {section}{\numberline {7.1}資料前處理}{81}{section.7.1}
-\contentsline {section}{\numberline {7.2}資料探勘}{86}{section.7.2}
-\contentsline {section}{\numberline {7.3}結果}{87}{section.7.3}
-\contentsline {chapter}{\numberline {8}結論與未來展望}{91}{chapter.8}
-\contentsline {section}{\numberline {8.1}結論}{91}{section.8.1}
-\contentsline {section}{\numberline {8.2}未來展望}{93}{section.8.2}
-\contentsline {chapter}{參考文獻}{95}{section*.72}
-\contentsline {chapter}{附錄一：典型校舍初步評估表}{103}{chapter*.74}
-\contentsline {chapter}{附錄二：典型校舍詳細評估表}{105}{chapter*.75}
-\contentsline {chapter}{附錄三：典型校舍補強設計表}{111}{chapter*.76}
-\contentsline {chapter}{附錄四：竣工資料上傳表}{125}{chapter*.77}
+\contentsline {chapter}{\numberline {7}校舍資訊與補強經費之關係模型}{81}{chapter.7}
+\contentsline {section}{\numberline {7.1}資料前處理}{83}{section.7.1}
+\contentsline {section}{\numberline {7.2}資料探勘}{88}{section.7.2}
+\contentsline {section}{\numberline {7.3}結果}{89}{section.7.3}
+\contentsline {chapter}{\numberline {8}結論與未來展望}{93}{chapter.8}
+\contentsline {section}{\numberline {8.1}結論}{93}{section.8.1}
+\contentsline {section}{\numberline {8.2}未來展望}{95}{section.8.2}
+\contentsline {chapter}{參考文獻}{97}{section*.74}
+\contentsline {chapter}{附錄一：典型校舍初步評估表}{105}{chapter*.76}
+\contentsline {chapter}{附錄二：典型校舍詳細評估表}{107}{chapter*.77}
+\contentsline {chapter}{附錄三：典型校舍補強設計表}{113}{chapter*.78}
+\contentsline {chapter}{附錄四：竣工資料上傳表}{127}{chapter*.79}
 \contentsfinish 
