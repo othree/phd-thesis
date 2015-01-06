@@ -1,4 +1,4 @@
-This is XeTeX, Version 3.1415926-2.5-0.9999.3 (TeX Live 2013) (format=xelatex 2013.12.14)  5 JAN 2015 18:28
+This is XeTeX, Version 3.1415926-2.5-0.9999.3 (TeX Live 2013) (format=xelatex 2013.12.14)  6 JAN 2015 16:59
 entering extended mode
  restricted \write18 enabled.
  file:line:error style messages enabled.
@@ -2145,9 +2145,6 @@ Package Fancyhdr Warning: \headheight is too small (12.0pt):
 [54]
 File: figures/spss-cluster.png Graphic file (type QTm)
  <use  "figures/spss-cluster.png" >
-Underfull \vbox (badness 10000) has occurred while \output is active []
-
-
 
 Package Fancyhdr Warning: \headheight is too small (12.0pt): 
  Make it at least 16.0pt.
@@ -2157,7 +2154,7 @@ Package Fancyhdr Warning: \headheight is too small (12.0pt):
 [55]
 File: figures/spss-mining.png Graphic file (type QTm)
  <use  "figures/spss-mining.png" >
-Underfull \vbox (badness 10000) has occurred while \output is active []
+Underfull \vbox (badness 1303) has occurred while \output is active []
 
 
 
@@ -2167,7 +2164,7 @@ Package Fancyhdr Warning: \headheight is too small (12.0pt):
  This may cause the page layout to be inconsistent, however.
 
 [56]
-Underfull \vbox (badness 1286) has occurred while \output is active []
+Underfull \vbox (badness 10000) has occurred while \output is active []
 
 
 
@@ -2177,11 +2174,6 @@ Package Fancyhdr Warning: \headheight is too small (12.0pt):
  This may cause the page layout to be inconsistent, however.
 
 [57]
-File: figures/is-glm.png Graphic file (type QTm)
- <use  "figures/is-glm.png" >
-Underfull \vbox (badness 3568) has occurred while \output is active []
-
-
 
 Package Fancyhdr Warning: \headheight is too small (12.0pt): 
  Make it at least 16.0pt.
@@ -2189,13 +2181,11 @@ Package Fancyhdr Warning: \headheight is too small (12.0pt):
  This may cause the page layout to be inconsistent, however.
 
 [58]
-Overfull \hbox (7.3571pt too wide) in paragraph at lines 307--320
+File: figures/is-glm.png Graphic file (type QTm)
+ <use  "figures/is-glm.png" >
+Overfull \hbox (7.3571pt too wide) in paragraph at lines 350--363
  [] 
  []
-
-
-Underfull \vbox (badness 10000) has occurred while \output is active []
-
 
 
 Package Fancyhdr Warning: \headheight is too small (12.0pt): 
@@ -2232,9 +2222,6 @@ Package Fancyhdr Warning: \headheight is too small (12.0pt):
  This may cause the page layout to be inconsistent, however.
 
 [63]
-Underfull \vbox (badness 2158) has occurred while \output is active []
-
-
 
 Package Fancyhdr Warning: \headheight is too small (12.0pt): 
  Make it at least 16.0pt.
@@ -2262,8 +2249,6 @@ Package Fancyhdr Warning: \headheight is too small (12.0pt):
  This may cause the page layout to be inconsistent, however.
 
 [66]
-File: figures/4-layer-wgp-tuning.png Graphic file (type QTm)
- <use  "figures/4-layer-wgp-tuning.png" >
 Underfull \vbox (badness 10000) has occurred while \output is active []
 
 
@@ -2274,10 +2259,13 @@ Package Fancyhdr Warning: \headheight is too small (12.0pt):
  This may cause the page layout to be inconsistent, however.
 
 [67]
+File: figures/4-layer-wgp-tuning.png Graphic file (type QTm)
+ <use  "figures/4-layer-wgp-tuning.png" >
 File: figures/ce.pdf Graphic file (type QTm)
  <use  "figures/ce.pdf" >
 File: figures/ce+T.pdf Graphic file (type QTm)
- <use  "figures/ce+T.pdf" >
+
+<use  "figures/ce+T.pdf" >
 
 Package Fancyhdr Warning: \headheight is too small (12.0pt): 
  Make it at least 16.0pt.
@@ -2351,14 +2339,14 @@ Package Fancyhdr Warning: \headheight is too small (12.0pt):
 
 [76]
 File: figures/crack-flow.png Graphic file (type QTm)
- <use  "figures/crack-flow.png" >) (./sections/retrofit-cost.tex
+ <use  "figures/crack-flow.png" >
 
 Package Fancyhdr Warning: \headheight is too small (12.0pt): 
  Make it at least 16.0pt.
  We now make it that large for the rest of the document.
  This may cause the page layout to be inconsistent, however.
 
-[77]
+[77]) (./sections/retrofit-cost.tex
 
 Package Fancyhdr Warning: \headheight is too small (12.0pt): 
  Make it at least 16.0pt.
@@ -2466,9 +2454,6 @@ Package Fancyhdr Warning: \headheight is too small (12.0pt):
 [87]
 File: figures/cob-flow.png Graphic file (type QTm)
  <use  "figures/cob-flow.png" >
-Underfull \vbox (badness 1571) has occurred while \output is active []
-
-
 
 Package Fancyhdr Warning: \headheight is too small (12.0pt): 
  Make it at least 16.0pt.
@@ -2508,7 +2493,9 @@ Package Fancyhdr Warning: \headheight is too small (12.0pt):
  We now make it that large for the rest of the document.
  This may cause the page layout to be inconsistent, however.
 
-[92]
+[92
+
+]
 Chapter 8.
 File: figures/survey-flow-con.pdf Graphic file (type QTm)
 <use  "figures/survey-flow-con.pdf" >
@@ -2521,9 +2508,7 @@ Package Fancyhdr Warning: \headheight is too small (12.0pt):
  We now make it that large for the rest of the document.
  This may cause the page layout to be inconsistent, however.
 
-[93
-
-]
+[93]
 Underfull \vbox (badness 10000) has occurred while \output is active []
 
 
@@ -2896,10 +2881,10 @@ Package atveryend Info: Empty hook `AtEndAfterFileList' on input line 106.
 Package atveryend Info: Empty hook `AtVeryVeryEnd' on input line 106.
  ) 
 Here is how much of TeX's memory you used:
- 28388 strings out of 493938
- 551180 string characters out of 6148856
- 595817 words of memory out of 5000000
- 31224 multiletter control sequences out of 15000+600000
+ 28389 strings out of 493938
+ 551207 string characters out of 6148856
+ 586878 words of memory out of 5000000
+ 31225 multiletter control sequences out of 15000+600000
  13339 words of font info for 91 fonts, out of 8000000 for 9000
  1144 hyphenation exceptions out of 8191
  46i,19n,48p,2437b,529s stack positions out of 5000i,500n,10000p,200000b,80000s

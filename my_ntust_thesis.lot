@@ -6,17 +6,18 @@
 \contentsline {table}{\numberline {5-1}{\ignorespaces 一般工址或近斷層區域之工址設計水平譜加速度係數\relax }}{50}{table.caption.39}
 \contentsline {table}{\numberline {5-2}{\ignorespaces 「校舍是否需要補強」模型結果\relax }}{53}{table.caption.41}
 \contentsline {table}{\numberline {5-3}{\ignorespaces 校舍是否需要補強模型與\nobreakspace {}$Is$\nobreakspace {}值之比較\relax }}{53}{table.caption.42}
-\contentsline {table}{\numberline {5-4}{\ignorespaces $Is$ 關係模型之交叉驗證結果\relax }}{60}{table.caption.51}
-\contentsline {table}{\numberline {5-5}{\ignorespaces $Is$ 關係模型之序列式分析結果\relax }}{60}{table.caption.52}
-\contentsline {table}{\numberline {5-6}{\ignorespaces GP 系統模型 RMSE 結果\relax }}{70}{table.caption.60}
-\contentsline {table}{\numberline {5-7}{\ignorespaces GP 系統屬性使用狀況\relax }}{70}{table.caption.62}
+\contentsline {table}{\numberline {5-4}{\ignorespaces 耐震能力是否足夠類神經網路關係模型屬性重要度\relax }}{54}{table.caption.43}
+\contentsline {table}{\numberline {5-5}{\ignorespaces $Is$ 關係模型之交叉驗證結果\relax }}{60}{table.caption.52}
+\contentsline {table}{\numberline {5-6}{\ignorespaces $Is$ 關係模型之序列式分析結果\relax }}{60}{table.caption.53}
+\contentsline {table}{\numberline {5-7}{\ignorespaces GP 系統模型 RMSE 結果\relax }}{70}{table.caption.61}
+\contentsline {table}{\numberline {5-8}{\ignorespaces GP 系統屬性使用狀況\relax }}{70}{table.caption.63}
 \addvspace {10\p@ }
-\contentsline {table}{\numberline {6-1}{\ignorespaces 破壞構件關係模型結果\relax }}{78}{table.caption.64}
-\contentsline {table}{\numberline {6-2}{\ignorespaces 破壞構件關係模型屬性重要度\relax }}{79}{table.caption.65}
+\contentsline {table}{\numberline {6-1}{\ignorespaces 破壞構件關係模型結果\relax }}{78}{table.caption.65}
+\contentsline {table}{\numberline {6-2}{\ignorespaces 破壞構件關係模型屬性重要度\relax }}{79}{table.caption.66}
 \addvspace {10\p@ }
-\contentsline {table}{\numberline {7-1}{\ignorespaces 補強工程參考單價之計價方式\relax }}{82}{table.caption.66}
-\contentsline {table}{\numberline {7-2}{\ignorespaces 補強經費關係模型結果\relax }}{89}{table.caption.68}
-\contentsline {table}{\numberline {7-3}{\ignorespaces 補強經費關係模型結果（不分測試集）\relax }}{90}{table.caption.69}
-\contentsline {table}{\numberline {7-4}{\ignorespaces 補強經費關係模型屬性重要度\relax }}{91}{table.caption.72}
+\contentsline {table}{\numberline {7-1}{\ignorespaces 補強工程參考單價之計價方式\relax }}{82}{table.caption.67}
+\contentsline {table}{\numberline {7-2}{\ignorespaces 補強經費關係模型結果\relax }}{88}{table.caption.69}
+\contentsline {table}{\numberline {7-3}{\ignorespaces 補強經費關係模型結果（不分測試集）\relax }}{89}{table.caption.70}
+\contentsline {table}{\numberline {7-4}{\ignorespaces 補強經費類神經網路關係模型屬性重要度\relax }}{91}{table.caption.73}
 \addvspace {10\p@ }
 \contentsfinish 
