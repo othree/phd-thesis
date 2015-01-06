@@ -47,7 +47,7 @@
 \contentsline {subsection}{\numberline {5.1.2}資料探勘與結果}{52}{subsection.5.1.2}
 \contentsline {section}{\numberline {5.2}耐震指標與校舍設計之關係模型}{53}{section.5.2}
 \contentsline {subsection}{\numberline {5.2.1}資料前處理}{54}{subsection.5.2.1}
-\contentsline {subsubsection}{K-means}{56}{section*.45}
+\contentsline {subsubsection}{K-means}{55}{section*.45}
 \contentsline {subsubsection}{Two-Step}{56}{section*.46}
 \contentsline {subsection}{\numberline {5.2.2}資料探勘}{56}{subsection.5.2.2}
 \contentsline {subsubsection}{廣義線性模型}{57}{section*.48}
@@ -63,7 +63,7 @@
 \contentsline {subsection}{\numberline {5.3.3}結果}{68}{subsection.5.3.3}
 \contentsline {chapter}{\numberline {6}校舍資訊與破壞構件之關係模型}{73}{chapter.6}
 \contentsline {section}{\numberline {6.1}資料前處理}{73}{section.6.1}
-\contentsline {section}{\numberline {6.2}資料探勘與結果}{76}{section.6.2}
+\contentsline {section}{\numberline {6.2}資料探勘與結果}{77}{section.6.2}
 \contentsline {chapter}{\numberline {7}校舍資訊與補強經費之關係模型}{81}{chapter.7}
 \contentsline {section}{\numberline {7.1}資料前處理}{83}{section.7.1}
 \contentsline {section}{\numberline {7.2}資料探勘}{88}{section.7.2}

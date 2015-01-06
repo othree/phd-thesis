@@ -20,7 +20,7 @@
 \contentsline {figure}{\numberline {4.9}{\ignorespaces 知識挖掘規劃\relax }}{43}{figure.caption.38}
 \addvspace {10\p@ }
 \contentsline {figure}{\numberline {5.1}{\ignorespaces SPSS Modeler 探勘「校舍是否需要補強」之流程設計\relax }}{52}{figure.caption.40}
-\contentsline {figure}{\numberline {5.2}{\ignorespaces SPSS Modeler 建立校舍群集之流程設計\relax }}{55}{figure.caption.44}
+\contentsline {figure}{\numberline {5.2}{\ignorespaces SPSS Modeler 建立校舍群集之流程設計\relax }}{56}{figure.caption.44}
 \contentsline {figure}{\numberline {5.3}{\ignorespaces SPSS Modeler 建立 $Is$ 關係模型之流程設計\relax }}{57}{figure.caption.47}
 \contentsline {figure}{\numberline {5.4}{\ignorespaces GLM 加 K-means 建立之 $Is$ 關係模型預測值 vs 實際值\relax }}{59}{figure.caption.51}
 \contentsline {figure}{\numberline {5.5}{\ignorespaces 四層 GP 運算樹形式之 $CDR$ 關係模型\relax }}{65}{figure.caption.55}
@@ -31,7 +31,7 @@
 \contentsline {subfigure}{\numberline {(a)}{\ignorespaces {$C_E$}}}{69}{figure.caption.62}
 \contentsline {subfigure}{\numberline {(b)}{\ignorespaces {$C_E+T$}}}{69}{figure.caption.62}
 \addvspace {10\p@ }
-\contentsline {figure}{\numberline {6.1}{\ignorespaces 構件破壞模型探勘流程\relax }}{77}{figure.caption.64}
+\contentsline {figure}{\numberline {6.1}{\ignorespaces 構件破壞模型探勘流程\relax }}{78}{figure.caption.64}
 \addvspace {10\p@ }
 \contentsline {figure}{\numberline {7.1}{\ignorespaces 補強經費模型探勘流程\relax }}{88}{figure.caption.68}
 \contentsline {figure}{\numberline {7.2}{\ignorespaces 補強經費實際值 vs CHAID 模型預估值\relax }}{90}{figure.caption.71}

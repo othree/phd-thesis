@@ -18,7 +18,7 @@
 
 \subsection{資料前處理}
 
-人工輸入的資料很容易有單位錯誤或是格式不正確的資料，而資料的品質對於資料探勘的結果優劣影響很大，因此需要在資料前處理時把這些問題都處理過，資料前處理的最主要目標是讓處理過的資料能夠很確實的反映出分析問題所要尋找的資料特性，使用的方法包括資料過濾、屬性過濾、新屬性的生成等，本模型採用校舍資料庫中已存在之初步評估與詳細評估資料做為資料探勘輸入參數，前處理的第一個步驟為過濾不合理的資料，通常是人為疏失輸入的不合理資料，使用的過濾條件為國震中心建議的過濾條件：
+本資料探勘分析所使用之資料為耐震資料庫中，2013~年之資料，而由於資料庫中之資料均為人工輸入，人工輸入的資料很容易有單位錯誤或是格式不正確的資料，而資料的品質對於資料探勘的結果優劣影響很大，因此需要在資料前處理時把這些問題都處理過，資料前處理的最主要目標是讓處理過的資料能夠很確實的反映出分析問題所要尋找的資料特性，使用的方法包括資料過濾、屬性過濾、新屬性的生成等，本模型採用校舍資料庫中已存在之初步評估與詳細評估資料做為資料探勘輸入參數，前處理的第一個步驟為過濾不合理的資料，通常是人為疏失輸入的不合理資料，使用的過濾條件為國震中心建議的過濾條件：
 
 \begin{itemize}
 \item 校舍總長或總深度超過兩百公尺
@@ -223,7 +223,7 @@
 
 \subsection{資料前處理}
 
-首先，從國震中心的校舍耐震資料庫中，將各棟校舍的~$Is$~值與其校舍的相關資料挑出並整合在一起，第一步是過濾掉明顯不合理的錯誤資料，過濾的方法則是使用國震中心建議的過濾條件，大約有八百筆資料符合這組基本的過濾條件，而在初步的過濾之後，前處理的第二個步驟則是減少資料屬性的維度，主成分分析（principal component analysis）是很常使用的資料前處理方法，這個分析方法可以找出所有資料屬性中，重要度較高的屬性，它是把原始的多個資料屬性，透過向量轉換的方式，線性組合出主要的資料屬性。
+本資料探勘分析使用的是校舍耐震資料庫中，2010~年之資料，是從國震中心的校舍耐震資料庫中，將各棟校舍的~$Is$~值與其校舍的相關資料挑出並整合在一起，資料前處理的第一步是過濾掉明顯不合理的錯誤資料，過濾的方法則是使用國震中心建議的過濾條件，大約有八百筆資料符合這組基本的過濾條件，而在初步的過濾之後，前處理的第二個步驟則是減少資料屬性的維度，主成分分析（principal component analysis, PCA）是很常使用的資料前處理方法，這個分析方法可以找出所有資料屬性中，重要度較高的屬性，它是把原始的多個資料屬性，透過向量轉換的方式，線性組合出主要的資料屬性。
 
 % Roughly 800 bits of valid data are obtained. After filtering using these conditions. Principal component analysis (PCA) is then used to reduce the dimensionality of data attributes. Notably, PCA, a very common data preparation method, can identify very important attributes among various attributes. The goal is to convert the original variables through vector transition into mutually independent variables of a linear combination. The ideal situation is that principal components obtained from linear combination retain most of the information of original variables.
 
