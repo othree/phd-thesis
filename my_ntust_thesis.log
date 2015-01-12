@@ -1,4 +1,4 @@
-This is XeTeX, Version 3.1415926-2.5-0.9999.3 (TeX Live 2013) (format=xelatex 2013.12.14)  12 JAN 2015 16:46
+This is XeTeX, Version 3.1415926-2.5-0.9999.3 (TeX Live 2013) (format=xelatex 2013.12.14)  12 JAN 2015 16:50
 entering extended mode
  restricted \write18 enabled.
  file:line:error style messages enabled.
@@ -1410,35 +1410,31 @@ File: se-ascii-print.def 2011/12/02 v1.10 stringenc: Printable ASCII characters
 [1
 
 ] [2]
-File: frontpages/D9505501_Doctor3151843.pdf Graphic file (type QTm)
- <use  "frontpages/D9505501_Doctor3151843.pdf"  page1>
-File: frontpages/D9505501_Doctor3151843.pdf Graphic file (type QTm)
+File: frontpages/002.pdf Graphic file (type QTm)
+ <use  "frontpages/002.pdf"  page1>
+File: frontpages/002.pdf Graphic file (type QTm)
+ <use  "frontpages/002.pdf"  page1>
+File: frontpages/002.pdf Graphic file (type QTm)
 
-<use  "frontpages/D9505501_Doctor3151843.pdf"  page1>
-File: frontpages/D9505501_Doctor3151843.pdf Graphic file (type QTm)
+<use  "frontpages/002.pdf"  page1>
+File: frontpages/002.pdf Graphic file (type QTm)
+ <use  "frontpages/002.pdf"  page1>
+File: frontpages/002.pdf Graphic file (type QTm)
 
-<use  "frontpages/D9505501_Doctor3151843.pdf"  page1>
-File: frontpages/D9505501_Doctor3151843.pdf Graphic file (type QTm)
+<use  "frontpages/002.pdf"  page1> [3] [4]
+File: frontpages/003.pdf Graphic file (type QTm)
+ <use  "frontpages/003.pdf"  page1>
+File: frontpages/003.pdf Graphic file (type QTm)
 
-<use  "frontpages/D9505501_Doctor3151843.pdf"  page1>
-File: frontpages/D9505501_Doctor3151843.pdf Graphic file (type QTm)
+<use  "frontpages/003.pdf"  page1>
+File: frontpages/003.pdf Graphic file (type QTm)
+ <use  "frontpages/003.pdf"  page1>
+File: frontpages/003.pdf Graphic file (type QTm)
 
-<use  "frontpages/D9505501_Doctor3151843.pdf"  page1> [3] [4]
-File: frontpages/D9505501_Doctor615182.pdf Graphic file (type QTm)
-
-<use  "frontpages/D9505501_Doctor615182.pdf"  page1>
-File: frontpages/D9505501_Doctor615182.pdf Graphic file (type QTm)
-
-<use  "frontpages/D9505501_Doctor615182.pdf"  page1>
-File: frontpages/D9505501_Doctor615182.pdf Graphic file (type QTm)
-
-<use  "frontpages/D9505501_Doctor615182.pdf"  page1>
-File: frontpages/D9505501_Doctor615182.pdf Graphic file (type QTm)
-
-<use  "frontpages/D9505501_Doctor615182.pdf"  page1>
-File: frontpages/D9505501_Doctor615182.pdf Graphic file (type QTm)
-
-<use  "frontpages/D9505501_Doctor615182.pdf"  page1> [5] [6]
+<use  "frontpages/003.pdf"  page1>
+File: frontpages/003.pdf Graphic file (type QTm)
+ <use  "frontpages/003.pdf"  page1> [5]
+[6]
 Underfull \hbox (badness 10000) detected at line 337
 \EU1/KaitiTCRegular(0)/m/n/12 學 生：| 
  []
@@ -2909,7 +2905,7 @@ Package atveryend Info: Empty hook `AtVeryVeryEnd' on input line 106.
  ) 
 Here is how much of TeX's memory you used:
  28389 strings out of 493938
- 551207 string characters out of 6148856
+ 551096 string characters out of 6148856
  588878 words of memory out of 5000000
  31225 multiletter control sequences out of 15000+600000
  13339 words of font info for 91 fonts, out of 8000000 for 9000
