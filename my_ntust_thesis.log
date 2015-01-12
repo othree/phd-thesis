@@ -1,4 +1,4 @@
-This is XeTeX, Version 3.1415926-2.5-0.9999.3 (TeX Live 2013) (format=xelatex 2013.12.14)  12 JAN 2015 16:50
+This is XeTeX, Version 3.1415926-2.5-0.9999.3 (TeX Live 2013) (format=xelatex 2013.12.14)  12 JAN 2015 16:53
 entering extended mode
  restricted \write18 enabled.
  file:line:error style messages enabled.
@@ -1435,12 +1435,12 @@ File: frontpages/003.pdf Graphic file (type QTm)
 File: frontpages/003.pdf Graphic file (type QTm)
  <use  "frontpages/003.pdf"  page1> [5]
 [6]
-Underfull \hbox (badness 10000) detected at line 337
+Underfull \hbox (badness 10000) detected at line 339
 \EU1/KaitiTCRegular(0)/m/n/12 學 生：| 
  []
 
 
-Underfull \hbox (badness 10000) detected at line 340
+Underfull \hbox (badness 10000) detected at line 342
 \EU1/KaitiTCRegular(0)/m/n/12 指 導 教 授：| 
  []
 
@@ -1473,7 +1473,7 @@ Package Fancyhdr Warning: \headheight is too small (12.0pt):
  This may cause the page layout to be inconsistent, however.
 
 [4]
-Underfull \hbox (badness 10000) detected at line 474
+Underfull \hbox (badness 10000) detected at line 476
 \EU1/KaitiTCRegular(0)/bx/n/20.74 誌 謝
  []
 
@@ -1494,7 +1494,7 @@ Package Fancyhdr Warning: \headheight is too small (12.0pt):
  This may cause the page layout to be inconsistent, however.
 
 [6]
-Underfull \hbox (badness 10000) detected at line 497
+Underfull \hbox (badness 10000) detected at line 499
 \EU1/KaitiTCRegular(0)/bx/n/20.74 目 錄
  []
 
@@ -1586,7 +1586,7 @@ Package Fancyhdr Warning: \headheight is too small (12.0pt):
 [10
 
 ]
-Underfull \hbox (badness 10000) detected at line 515
+Underfull \hbox (badness 10000) detected at line 517
 \EU1/KaitiTCRegular(0)/bx/n/20.74 圖 目 錄
  []
 
@@ -1614,7 +1614,7 @@ Package Fancyhdr Warning: \headheight is too small (12.0pt):
  This may cause the page layout to be inconsistent, however.
 
 [12]
-Underfull \hbox (badness 10000) detected at line 530
+Underfull \hbox (badness 10000) detected at line 532
 \EU1/KaitiTCRegular(0)/bx/n/20.74 表 目 錄
  []
 
