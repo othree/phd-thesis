@@ -7,10 +7,10 @@
 \contentsline {table}{\numberline {5-2}{\ignorespaces 「校舍是否需要補強」模型結果\relax }}{53}{table.caption.41}
 \contentsline {table}{\numberline {5-3}{\ignorespaces 校舍是否需要補強模型與\nobreakspace {}$Is$\nobreakspace {}值之比較\relax }}{53}{table.caption.42}
 \contentsline {table}{\numberline {5-4}{\ignorespaces 耐震能力是否足夠類神經網路關係模型屬性重要度\relax }}{54}{table.caption.43}
-\contentsline {table}{\numberline {5-5}{\ignorespaces $Is$ 關係模型之交叉驗證結果\relax }}{60}{table.caption.52}
-\contentsline {table}{\numberline {5-6}{\ignorespaces $Is$ 關係模型之序列式分析結果\relax }}{60}{table.caption.53}
-\contentsline {table}{\numberline {5-7}{\ignorespaces GP 系統模型 RMSE 結果\relax }}{70}{table.caption.61}
-\contentsline {table}{\numberline {5-8}{\ignorespaces GP 系統屬性使用狀況\relax }}{70}{table.caption.63}
+\contentsline {table}{\numberline {5-5}{\ignorespaces $Is$ 關係模型之交叉驗證結果\relax }}{59}{table.caption.52}
+\contentsline {table}{\numberline {5-6}{\ignorespaces $Is$ 關係模型之序列式分析結果\relax }}{61}{table.caption.53}
+\contentsline {table}{\numberline {5-7}{\ignorespaces GP 系統模型 RMSE 結果\relax }}{71}{table.caption.61}
+\contentsline {table}{\numberline {5-8}{\ignorespaces GP 系統屬性使用狀況\relax }}{71}{table.caption.63}
 \addvspace {10\p@ }
 \contentsline {table}{\numberline {6-1}{\ignorespaces 破壞構件關係模型結果\relax }}{78}{table.caption.65}
 \contentsline {table}{\numberline {6-2}{\ignorespaces 破壞構件關係模型屬性重要度\relax }}{79}{table.caption.66}
