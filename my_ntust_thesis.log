@@ -1,4 +1,4 @@
-This is XeTeX, Version 3.1415926-2.5-0.9999.3 (TeX Live 2013) (format=xelatex 2013.12.14)  13 JAN 2015 15:32
+This is XeTeX, Version 3.1415926-2.5-0.9999.3 (TeX Live 2013) (format=xelatex 2013.12.14)  13 JAN 2015 15:33
 entering extended mode
  restricted \write18 enabled.
  file:line:error style messages enabled.
@@ -1674,7 +1674,7 @@ Package Fancyhdr Warning: \headheight is too small (12.0pt):
 
 [3]
 
-LaTeX Warning: Command \nobreakspace invalid in math mode on input line 42.
+LaTeX Warning: Command \nobreakspace invalid in math mode on input line 43.
 
 
 Package Fancyhdr Warning: \headheight is too small (12.0pt): 
