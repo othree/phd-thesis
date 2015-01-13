@@ -22,24 +22,24 @@
 \contentsline {chapter}{\numberline {4}資料探勘與探勘目標分析}{27}{chapter.4}
 \contentsline {section}{\numberline {4.1}資料前處理方法}{30}{section.4.1}
 \contentsline {subsubsection}{主成分分析}{31}{section*.17}
-\contentsline {section}{\numberline {4.2}資料探勘方法}{31}{section.4.2}
+\contentsline {section}{\numberline {4.2}資料探勘方法}{32}{section.4.2}
 \contentsline {subsection}{\numberline {4.2.1}迴歸方法}{32}{subsection.4.2.1}
 \contentsline {subsubsection}{Generalized Linear Model}{32}{section*.19}
-\contentsline {subsubsection}{類神經網路}{32}{section*.20}
-\contentsline {subsubsection}{基因規劃}{34}{section*.22}
-\contentsline {subsubsection}{加權基因規劃}{35}{section*.24}
-\contentsline {subsubsection}{CHAID 決策樹}{39}{section*.27}
-\contentsline {subsection}{\numberline {4.2.2}分類方法}{40}{subsection.4.2.2}
-\contentsline {subsubsection}{支持向量機}{40}{section*.29}
-\contentsline {subsection}{\numberline {4.2.3}分群方法}{41}{subsection.4.2.3}
-\contentsline {subsubsection}{K-means}{41}{section*.31}
+\contentsline {subsubsection}{類神經網路}{33}{section*.20}
+\contentsline {subsubsection}{基因規劃}{35}{section*.22}
+\contentsline {subsubsection}{加權基因規劃}{37}{section*.24}
+\contentsline {subsubsection}{CHAID 決策樹}{40}{section*.27}
+\contentsline {subsection}{\numberline {4.2.2}分類方法}{41}{subsection.4.2.2}
+\contentsline {subsubsection}{支持向量機}{41}{section*.29}
+\contentsline {subsection}{\numberline {4.2.3}分群方法}{42}{subsection.4.2.3}
+\contentsline {subsubsection}{K-means}{42}{section*.31}
 \contentsline {subsubsection}{兩步分群}{42}{section*.32}
-\contentsline {section}{\numberline {4.3}探勘結果指標}{42}{section.4.3}
-\contentsline {subsubsection}{敏感度分析}{42}{section*.33}
+\contentsline {section}{\numberline {4.3}探勘結果指標}{43}{section.4.3}
+\contentsline {subsubsection}{敏感度分析}{43}{section*.33}
 \contentsline {subsubsection}{決定係數}{43}{section*.34}
-\contentsline {subsubsection}{平均絕對百分比誤差}{43}{section*.35}
+\contentsline {subsubsection}{平均絕對百分比誤差}{44}{section*.35}
 \contentsline {subsubsection}{均方根誤差}{44}{section*.36}
-\contentsline {subsubsection}{命中率}{44}{section*.37}
+\contentsline {subsubsection}{命中率}{45}{section*.37}
 \contentsline {section}{\numberline {4.4}探勘目標分析}{45}{section.4.4}
 \contentsline {chapter}{\numberline {5}校舍資訊與耐震能力之關係模型}{49}{chapter.5}
 \contentsline {section}{\numberline {5.1}耐震能力是否足夠與校舍設計之關係模型}{50}{section.5.1}
