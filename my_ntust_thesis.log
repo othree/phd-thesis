@@ -1,4 +1,4 @@
-This is XeTeX, Version 3.1415926-2.5-0.9999.3 (TeX Live 2013) (format=xelatex 2013.12.14)  14 JAN 2015 17:04
+This is XeTeX, Version 3.1415926-2.5-0.9999.3 (TeX Live 2013) (format=xelatex 2013.12.14)  14 JAN 2015 17:34
 entering extended mode
  restricted \write18 enabled.
  file:line:error style messages enabled.
@@ -2257,6 +2257,9 @@ Package Fancyhdr Warning: \headheight is too small (12.0pt):
  This may cause the page layout to be inconsistent, however.
 
 [66]
+Underfull \vbox (badness 10000) has occurred while \output is active []
+
+
 
 Package Fancyhdr Warning: \headheight is too small (12.0pt): 
  Make it at least 16.0pt.
@@ -2266,9 +2269,6 @@ Package Fancyhdr Warning: \headheight is too small (12.0pt):
 [67]
 File: figures/4-layer-gp.png Graphic file (type QTm)
  <use  "figures/4-layer-gp.png" >
-Underfull \vbox (badness 10000) has occurred while \output is active []
-
-
 
 Package Fancyhdr Warning: \headheight is too small (12.0pt): 
  Make it at least 16.0pt.
@@ -2299,11 +2299,9 @@ Package Fancyhdr Warning: \headheight is too small (12.0pt):
 [70]
 File: figures/4-layer-wgp-tuning.png Graphic file (type QTm)
  <use  "figures/4-layer-wgp-tuning.png" >
-File: figures/ce.pdf Graphic file (type QTm)
- <use  "figures/ce.pdf" >
-File: figures/ce+T.pdf Graphic file (type QTm)
+Underfull \vbox (badness 7704) has occurred while \output is active []
 
-<use  "figures/ce+T.pdf" >
+
 
 Package Fancyhdr Warning: \headheight is too small (12.0pt): 
  Make it at least 16.0pt.
@@ -2311,6 +2309,10 @@ Package Fancyhdr Warning: \headheight is too small (12.0pt):
  This may cause the page layout to be inconsistent, however.
 
 [71]
+File: figures/ce.pdf Graphic file (type QTm)
+ <use  "figures/ce.pdf" >
+File: figures/ce+T.pdf Graphic file (type QTm)
+ <use  "figures/ce+T.pdf" >
 
 Package Fancyhdr Warning: \headheight is too small (12.0pt): 
  Make it at least 16.0pt.
@@ -2920,10 +2922,6 @@ Package atveryend Info: Empty hook `AfterLastShipout' on input line 106.
  (./my_ntust_thesis.aux)
 Package atveryend Info: Empty hook `AtVeryEndDocument' on input line 106.
 Package atveryend Info: Empty hook `AtEndAfterFileList' on input line 106.
-
-
-LaTeX Warning: Label(s) may have changed. Rerun to get cross-references right.
-
 Package atveryend Info: Empty hook `AtVeryVeryEnd' on input line 106.
  ) 
 Here is how much of TeX's memory you used:

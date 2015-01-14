@@ -230,7 +230,7 @@
 
 \subsection{資料前處理}
 
-本資料探勘分析使用的是校舍耐震資料庫中，2010~年之資料，是從國震中心的校舍耐震資料庫中，將各棟校舍的~$Is$~值與其校舍的相關資料挑出並整合在一起，資料前處理的第一步是過濾掉明顯不合理的錯誤資料，過濾的方法則是使用國震中心建議的過濾條件，大約有八百筆資料符合這組基本的過濾條件，而在初步的過濾之後，前處理的第二個步驟則是減少資料屬性的維度，主成分分析（principal component analysis, PCA）是很常使用的資料前處理方法，這個分析方法可以找出所有資料屬性中，重要度較高的屬性，它是把原始的多個資料屬性，透過向量轉換的方式，線性組合出主要的資料屬性。
+本資料探勘分析使用的是校舍耐震資料庫中，2010~年時典型校舍已經有完成詳細評估之校舍資料，是從國震中心的校舍耐震資料庫中，將各棟校舍的~$Is$~值與其校舍的相關資料挑出並整合在一起，資料前處理的第一步是過濾掉明顯不合理的錯誤資料，過濾的方法則是使用國震中心建議的過濾條件，大約有八百筆資料符合這組基本的過濾條件，而在初步的過濾之後，前處理的第二個步驟則是減少資料屬性的維度，主成分分析（principal component analysis, PCA）是很常使用的資料前處理方法，這個分析方法可以找出所有資料屬性中，重要度較高的屬性，它是把原始的多個資料屬性，透過向量轉換的方式，線性組合出主要的資料屬性。
 
 % Roughly 800 bits of valid data are obtained. After filtering using these conditions. Principal component analysis (PCA) is then used to reduce the dimensionality of data attributes. Notably, PCA, a very common data preparation method, can identify very important attributes among various attributes. The goal is to convert the original variables through vector transition into mutually independent variables of a linear combination. The ideal situation is that principal components obtained from linear combination retain most of the information of original variables.
 
@@ -422,7 +422,7 @@ Two-Step~分群有兩個優點，一是時間複雜度低，運算時間與資�
 
 \subsection{資料前處理}
 
-本分析中第一個前處理工作就是資料過濾，要把有問題的資料，不合理的資料都過濾掉，過濾的條件則是依照國震中心所建議的典型校舍特性的過濾條件：
+本分析使用之資料為~2011~年時典型校舍已經有完成詳細評估之校舍資料，資料前處理的第一個步驟就是資料合理性分析，要把有問題的資料，不合理的資料都過濾掉，過濾的條件則是依照國震中心所建議的典型校舍特性的過濾條件：
 
 % Manually inputting data may result in incorrect units or formats because controlling data quality in the real world is difficult. Hence, it is necessary to pre-process data before building the relational model. Quality, as an important part of soft computing and data analysis, has considerable influence on subsequent analytic results or even on the reliability of the generated model. Apart from the actual data, the researcher also refers to expert advice from NCREE for data pre-processing. The main target of data pre-processing is to ensure the accuracy and adjustment of the data in a format that clearly reflects the target of analysis. Pre-processing includes data screening, property screening, and new property synthesis. Data screening is divided into two stages. The first stage is the rationality screening of the data. Pre-existing mistakes are unavoidable because the data in the School Building Database were entered manually; the obligation is to identify such mistakes. Most of the school buildings were I-type shaped buildings; a very common design. . With regard to the properties of these school buildings, the NCREE (2005) suggests the following screening conditions:
 
@@ -434,10 +434,35 @@ Two-Step~分群有兩個優點，一是時間複雜度低，運算時間與資�
 \item 校舍的破壞地表加速度是長向較小
 \end{itemize}
 
+接著，由於校舍資料庫中的原始資料是詳細記錄整個調查評估流程的所有資料，因此每棟校舍都會有上百個資料屬性，資要前處理的第二個步驟就是要對這些大量的資料屬性篩選與合併，依照前面所介紹的屬性挑選原則，並與國震中心之專家討論過後，過濾掉大部分的屬性，所挑選出來的屬性為：
 
-由於並不是所有的校舍都有進行過詳細評估，因此第二個步驟就是要挑選出同時有基本設計資料以及詳細評估的~$CDR$~值的資料，接著，由於校舍資料庫中的原始資料，每棟校舍都有上百個資料屬性，因此接著要對屬性進行篩選與合併，與國震中心之專家討論過後，挑選過濾掉大部分的屬性，但是仍然有約三十多個屬性，因此為了能夠繼續減少資料屬性，本分析接著還繼續對這些資料的屬性進行分類，根據其屬性分布挑選出一組典型校舍子集來分析，這個挑選出來的子集其特性為：
+\begin{multicols}{2}
+\begin{itemize}
+\item 樓層數（$P_1$）
+\item 鋼筋強度（$P_2$）
+\item 混凝土強度（$P_3$）
+\item 校舍長度（$P_4$）
+\item 校舍深度（$P_5$）
+\item 教室柱數量（$P_6$）
+\item 教室柱斷面積（$P_7$）
+\item 是否有走廊（$P_8$）
+\item 二樓樓地板面積（$P_9$）
+\item 總樓地板面積（$P_{10}$）
+\item $S_{DS}$（$P_{11}$）
+\item $S_{D1}$（$P_{12}$）
+\item 走廊柱數量
+\item 走廊柱斷面積
+\item 其它教室柱數量
+\item 其它教室柱斷面積
+\item 是否有~RC~牆
+\item 是否有四面圍束磚牆
+\item 是否有三面圍束磚牆
+\end{itemize}
+\end{multicols}
 
 % In the second stage, choosing school buildings with both basic design parameters and minimum destruction ground acceleration is necessary because not all school buildings have detailed information.￼According to the raw data in the seismic￼assessment database for school buildings, each data set contains hundreds of properties. Based on our judgment with expert which are non-structural and low importance, and synthesize some properties with similarity. There are still more than 30 properties left after this reduction process. This study further classifies school building records into subsets based on similarities in property values, and chooses one subset with major population as the data set for further studying. After the classification of school buildings, we try to do further reduction and finally determine a set of key properties which is optimal to represent the seismic characteristics of individual school buildings. The choice is based on data distribution, and a subset that correctly represents I-shaped school buildings. The features of this subset adopted in this study are listed below:
+
+其中~$S_{DS}$~是校舍的震區設計水平譜加速度係數，~$S_{D1}$~則是一秒週期的設計譜加速度，都是分析校舍耐震能力時非常重要的參數。而為了能夠繼續減少資料屬性的數量，本分析接著還繼續對這些資料進行子資料集的挑選，一樣是依照前面所介紹的子資料集挑選原則，根據其屬性分布挑選出一組典型校舍子集來分析，這個挑選出來的子資料集之特性為：
 
 \begin{itemize}
 \item 沒有走廊柱
@@ -447,26 +472,7 @@ Two-Step~分群有兩個優點，一是時間複雜度低，運算時間與資�
 \item 沒有三面圍束磚牆
 \end{itemize}
 
-最後前處理完成的資料總共有~107~筆。並且依照專家建議挑選出~12~個屬性：
-
-\begin{multicols}{2}
-\begin{itemize}
-\item 樓層數
-\item 鋼筋強度
-\item 混凝土強度
-\item 校舍長度
-\item 校舍深度
-\item 教室柱數量
-\item 教室柱斷面積
-\item 是否有走廊
-\item 二樓樓地板面積
-\item 總樓地板面積
-\item $S_{DS}$
-\item $S_{D1}$
-\end{itemize}
-\end{multicols}
-
-並依照順序編為 $P_1$ 到 $P_{12}$，其中~$S_{DS}$~是校舍的震區設計水平譜加速度係數，~$S_{D1}$~則是一秒週期的設計譜加速度，都是分析校舍耐震能力時非常重要的參數，另外也根據專家的建議，使用現有的資料組合出兩個新的屬性，分別是校舍的教室數量（$P_{13}$）和校舍建築物的跨距（$P_{14}$），以下介紹各輸入屬性：
+根據這五個條件可以減少七個資料屬性，包括了是否有~RC~牆、是否有四面圍束磚牆、是否有三面圍束磚牆以及其它教室柱及走廊柱的斷面積和數量。到此一步驟完成的資料總共有~107~筆，每筆資料有~12~個屬性。並依照順序編為 $P_1$ 到 $P_{12}$，另外也根據專家的建議，使用現有的資料組合出兩個新的屬性，分別是校舍的教室數量（$P_{13}$）和校舍建築物的跨距（$P_{14}$），以下介紹各輸入屬性：
 
 \begin{description}
   \item[樓層數]
