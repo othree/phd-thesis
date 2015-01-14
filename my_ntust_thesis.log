@@ -1,4 +1,4 @@
-This is XeTeX, Version 3.1415926-2.5-0.9999.3 (TeX Live 2013) (format=xelatex 2013.12.14)  14 JAN 2015 17:48
+This is XeTeX, Version 3.1415926-2.5-0.9999.3 (TeX Live 2013) (format=xelatex 2013.12.14)  14 JAN 2015 18:05
 entering extended mode
  restricted \write18 enabled.
  file:line:error style messages enabled.
@@ -2453,9 +2453,6 @@ Package Fancyhdr Warning: \headheight is too small (12.0pt):
  This may cause the page layout to be inconsistent, however.
 
 [84]
-Underfull \vbox (badness 10000) has occurred while \output is active []
-
-
 
 Package Fancyhdr Warning: \headheight is too small (12.0pt): 
  Make it at least 16.0pt.
@@ -2463,9 +2460,6 @@ Package Fancyhdr Warning: \headheight is too small (12.0pt):
  This may cause the page layout to be inconsistent, however.
 
 [85]
-Underfull \vbox (badness 2626) has occurred while \output is active []
-
-
 
 Package Fancyhdr Warning: \headheight is too small (12.0pt): 
  Make it at least 16.0pt.
@@ -2494,11 +2488,6 @@ Package Fancyhdr Warning: \headheight is too small (12.0pt):
  This may cause the page layout to be inconsistent, however.
 
 [89]
-File: figures/cob-flow.png Graphic file (type QTm)
- <use  "figures/cob-flow.png" >
-Underfull \vbox (badness 10000) has occurred while \output is active []
-
-
 
 Package Fancyhdr Warning: \headheight is too small (12.0pt): 
  Make it at least 16.0pt.
@@ -2506,6 +2495,8 @@ Package Fancyhdr Warning: \headheight is too small (12.0pt):
  This may cause the page layout to be inconsistent, however.
 
 [90]
+File: figures/cob-flow.png Graphic file (type QTm)
+ <use  "figures/cob-flow.png" >
 
 Package Fancyhdr Warning: \headheight is too small (12.0pt): 
  Make it at least 16.0pt.
@@ -2516,7 +2507,8 @@ Package Fancyhdr Warning: \headheight is too small (12.0pt):
 File: figures/cob-chaid.pdf Graphic file (type QTm)
  <use  "figures/cob-chaid.pdf" >
 File: figures/cob-ann.pdf Graphic file (type QTm)
- <use  "figures/cob-ann.pdf" >
+ <use  "figures/cob-ann.pdf" >)
+(./sections/conclusion.tex
 
 Package Fancyhdr Warning: \headheight is too small (12.0pt): 
  Make it at least 16.0pt.
@@ -2530,7 +2522,7 @@ Package Fancyhdr Warning: \headheight is too small (12.0pt):
  We now make it that large for the rest of the document.
  This may cause the page layout to be inconsistent, however.
 
-[93]) (./sections/conclusion.tex
+[93]
 
 Package Fancyhdr Warning: \headheight is too small (12.0pt): 
  Make it at least 16.0pt.
