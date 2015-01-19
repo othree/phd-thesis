@@ -61,9 +61,10 @@
 \contentsline {subsubsection}{Weighted Genetic Programming}{68}{section*.56}
 \contentsline {subsubsection}{Capacity Index Formulation Tuning}{70}{section*.59}
 \contentsline {subsection}{\numberline {5.3.3}結果}{72}{subsection.5.3.3}
-\contentsline {chapter}{\numberline {6}校舍資訊與破壞構件之關係模型}{75}{chapter.6}
+\contentsline {chapter}{\numberline {6}校舍資訊與構件破壞情形之關係模型}{75}{chapter.6}
 \contentsline {section}{\numberline {6.1}資料前處理}{75}{section.6.1}
-\contentsline {section}{\numberline {6.2}資料探勘與結果}{79}{section.6.2}
+\contentsline {section}{\numberline {6.2}資料探勘}{79}{section.6.2}
+\contentsline {section}{\numberline {6.3}結果}{80}{section.6.3}
 \contentsline {chapter}{\numberline {7}校舍資訊與補強經費之關係模型}{83}{chapter.7}
 \contentsline {section}{\numberline {7.1}資料前處理}{85}{section.7.1}
 \contentsline {section}{\numberline {7.2}資料探勘}{90}{section.7.2}
