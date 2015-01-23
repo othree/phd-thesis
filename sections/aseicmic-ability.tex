@@ -604,18 +604,18 @@ CDR~是詳細評估所得到的，校舍建築物的耐震能力指標，是校�
 
 \begin{equation} C_E = f(Is) = \dfrac{Is \times Demand \times I}{80}  \label{eq:CE}\end{equation}
 
-$I$~是確保~$C_E$~值能趨於保守用的係數，在國震中心的設計中，校舍的~$I$~定為常數，為~1.25~，~$C_E$~即為最小破壞地表加速度，不過其可靠度較詳細評估所得到的數值低，因此本研究下一個分析目標即為修正初步評估的公式，為~$C_E$~加上一個調整因子~$T$~，可以讓其結果更接近詳細評估所得到的最小破壞地表加速度。
+$I$~是確保~$C_E$~值能趨於保守用的係數，在國震中心的設計中，校舍的~$I$~定為常數，為~1.25~，~$C_E$~即為最小破壞地表加速度，不過其可靠度較詳細評估所得到的數值低，因此本研究下一個分析目標即為修正初步評估的公式，為~$C_E$~加上一個修正因子~$T_{adj}$~，可以讓其結果更接近詳細評估所得到的最小破壞地表加速度。
 
 % I is the usage coefficient that intends to keep the seismic design at the conservative side, and prevents miscalculations caused by the insufficient estimation of the earthquake destruction. For this study, I is set to a constant of 1.25 for school buildings. Demand is set to different recommended values based on the positions of the school buildings. It represents the minimum ground acceleration that the buildings can withstand in the area. The School Building Database contains the demand data that was determined by engineers, based on the actual situations. This study adds T to CE as a revised formula, such that it is closer to the minimum destruction ground acceleration AC, of school buildings obtained from nonlinear analysis.
 
-\begin{equation} A_C = C_E + T  \label{eq:AC}\end{equation}
+\begin{equation} A_C = C_E + T_{adj}  \label{eq:AC}\end{equation}
 
-基於之前的結果，本分析只使用~WGP~來分析，基因演算的參數也和之前一樣，~4~或~5~層的運算樹，~200~個初始基因，~5000~個演化週期，交配率為~0.8~，突變率為~0.1~，訓練出~30~組模型後，從中挑選出最好的模型，結果~$T$~的模型為一個~4~層的運算樹，如圖~\ref{fig:4LWGPTuning}。
+基於之前的結果，本分析只使用~WGP~來分析，基因演算的參數也和之前一樣，~4~或~5~層的運算樹，~200~個初始基因，~5000~個演化週期，交配率為~0.8~，突變率為~0.1~，訓練出~30~組模型後，從中挑選出最好的模型，結果~$T_{adj}$~的模型為一個~4~層的運算樹，如圖~\ref{fig:4LWGPTuning}。
 
 \begin{figure}[hbtp]
   \begin{center}
     \includegraphics[width=1.0\textwidth]{figures/4-layer-wgp-tuning.png}
-    \caption{四層 WGP 運算樹形式之 $T$ 值關係模型}
+    \caption{四層 WGP 運算樹形式之 $T_{adj}$ 值關係模型}
     \label{fig:4LWGPTuning}
   \end{center}
 \end{figure}
@@ -627,7 +627,7 @@ $I$~是確保~$C_E$~值能趨於保守用的係數，在國震中心的設計中
 
 \subsection{結果}
 
-表~\ref{tab:gp-result}~顯示了國震中心初步評估~$Is$~值轉換成詳細評估~$A_C$~的等價數值~$C_E$~與校舍實際進行詳細評估所得到的最小破壞地表加速度~$A_C$~相比的~RMSE~，值為~0.067~，距離目標的~0.04~還有一段距離，圖~\ref{fig:wgp-tuning}~是~$C_E$~與~$A_C$~的比較圖，可以發現其趨勢相近，加上四層運算樹所建立之修正因子~$T$~之後，~RMSE~降低為~0.045~，圖~13~顯示了~$C_E + T$~和~$A_C$~的比較，可以發現其趨勢更為接近，因此可以確定修正因子確實可以將初步評估的結果調整的更好。
+表~\ref{tab:gp-result}~顯示了國震中心初步評估~$Is$~值轉換成詳細評估~$A_C$~的等價數值~$C_E$~與校舍實際進行詳細評估所得到的最小破壞地表加速度~$A_C$~相比的~RMSE~，值為~0.067~，距離目標的~0.04~還有一段距離，圖~\ref{fig:wgp-tuning}~是~$C_E$~與~$A_C$~的比較圖，可以發現其趨勢相近，加上四層運算樹所建立之修正因子~$T_{adj}$~之後，~RMSE~降低為~0.045~，圖~13~顯示了~$C_E + T_{adj}$~和~$A_C$~的比較，可以發現其趨勢更為接近，因此可以確定修正因子確實可以將初步評估的結果調整的更好。
 
 
 {\renewcommand{\arraystretch}{1.5}
@@ -658,18 +658,18 @@ $I$~是確保~$C_E$~值能趨於保守用的係數，在國震中心的設計中
       \label{fig:ce}
     }
     \\
-    \subfigure[$C_E+T$]{
+    \subfigure[$C_E+T_{adj}$]{
       \includegraphics[width=0.65\textwidth]{figures/ce+T.pdf}
       \label{fig:cet}
     }
-    \caption{WGP 建立之 $T$ 值關係模型預測值 vs 實際值}
+    \caption{WGP 建立之 $T_{adj}$ 值關係模型預測值 vs 實際值}
     \label{fig:wgp-tuning}
   \end{center}
 \end{figure}
 
 % Table 2 shows the RMSE after the revision. The RMSE of the IS formula used by NCREE in the preliminary appraisal is 0.067. Although there is still a gap between the target of 0.04 and this value, the emphasis is on the degree of relationship between them, and the main target is to screen out the school buildings with degrees of higher risk. Figure 13 shows the comparison between the CE converted from IS of NCREE, and the destructive ground acceleration obtained through linear analysis. Even though the data have the correct directional tendency, the model obtained from the GP method is better because of higher deviation, and a linear relationship. Subsequent to adding T to the revised formula, RMSE is reduced to 0.045. Figure 13 shows the comparison, and it can be seen that the directional tendency is quite close, thus reducing the deviation. A good revision effect is observed, making the screening result of the preliminary appraisal more accurate.
 
-表~\ref{tab:gp-attributes}~呈現了此分析中所有使用到的輸入參數，四層運算樹和五層運算數分別使用到的參數分開表示，其中：樓層數（$P_1$）、總樓地板面積（$P_{10}$）和單間教室的跨數（$P_{13}$）並沒有被使用到，其中前兩個參數對於校舍結構的耐震能力來說非常重要，在~$Is$~的推估過程中已經有使用到，而本分析的修正因子並沒有使用到可以顯示國震中心的初步評估已經很完整正確的表現出這兩個參數所造成的影響，而單間教室跨數的資訊則可能在初步評估的過程中已經將該資訊表現在評估公式內了，因此修正因子~$T$~的公式內並不包含它，不過此參數在前一個分析中依然有使用到，因此仍然有其重要性。
+表~\ref{tab:gp-attributes}~呈現了此分析中所有使用到的輸入參數，四層運算樹和五層運算數分別使用到的參數分開表示，其中：樓層數（$P_1$）、總樓地板面積（$P_{10}$）和單間教室的跨數（$P_{13}$）並沒有被使用到，其中前兩個參數對於校舍結構的耐震能力來說非常重要，在~$Is$~的推估過程中已經有使用到，而本分析的修正因子並沒有使用到可以顯示國震中心的初步評估已經很完整正確的表現出這兩個參數所造成的影響，而單間教室跨數的資訊則可能在初步評估的過程中已經將該資訊表現在評估公式內了，因此修正因子~$T_{adj}$~的公式內並不包含它，不過此參數在前一個分析中依然有使用到，因此仍然有其重要性。
 
 {\renewcommand{\arraystretch}{1.5}
 \begin{table}[hbtp]

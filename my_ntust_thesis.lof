@@ -26,10 +26,10 @@
 \contentsline {figure}{\numberline {5.5}{\ignorespaces 四層 GP 運算樹形式之 $CDR$ 關係模型\relax }}{70}{figure.caption.56}
 \contentsline {figure}{\numberline {5.6}{\ignorespaces 四層 WGP 運算樹形式之 $CDR$ 關係模型\relax }}{71}{figure.caption.58}
 \contentsline {figure}{\numberline {5.7}{\ignorespaces WGP 建立之 $CDR$ 關係模型預測值 vs 實際值\relax }}{71}{figure.caption.59}
-\contentsline {figure}{\numberline {5.8}{\ignorespaces 四層 WGP 運算樹形式之 $T$ 值關係模型\relax }}{73}{figure.caption.61}
-\contentsline {figure}{\numberline {5.9}{\ignorespaces WGP 建立之 $T$ 值關係模型預測值 vs 實際值\relax }}{74}{figure.caption.63}
+\contentsline {figure}{\numberline {5.8}{\ignorespaces 四層 WGP 運算樹形式之 $T_{adj}$ 值關係模型\relax }}{73}{figure.caption.61}
+\contentsline {figure}{\numberline {5.9}{\ignorespaces WGP 建立之 $T_{adj}$ 值關係模型預測值 vs 實際值\relax }}{74}{figure.caption.63}
 \contentsline {subfigure}{\numberline {(a)}{\ignorespaces {$C_E$}}}{74}{figure.caption.63}
-\contentsline {subfigure}{\numberline {(b)}{\ignorespaces {$C_E+T$}}}{74}{figure.caption.63}
+\contentsline {subfigure}{\numberline {(b)}{\ignorespaces {$C_E+T_{adj}$}}}{74}{figure.caption.63}
 \addvspace {10\p@ }
 \contentsline {figure}{\numberline {6.1}{\ignorespaces 構件破壞模型探勘流程\relax }}{82}{figure.caption.65}
 \addvspace {10\p@ }
