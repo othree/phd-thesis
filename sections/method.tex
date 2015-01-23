@@ -130,7 +130,7 @@ $g(.)$是為所選的鏈結函數，$E(y)$~是~$y$~的期望值，~$O$~是偏移
 
 加權基因規劃（Weighted Genetic Programming，WGP）是由~Tsai\cite{tsai2011predicting}~所提出，基於~GP~ 方法發展而來，不同之處在於其運算樹的每個節點前都加上一個權重~$w$~，最佳化的過程除了對方程式結構和參數的選擇最佳化外，還要同時最佳化所有的權重，因此其輸出的關係方程式可能性遠大於~GP~方法，故可以處理更為複雜的問題。~WGP~的運算樹結構如圖~\ref{fig:WGP-sample}~，每個運算樹都可以組成一個數學方程式，如圖~\ref{fig:WGP-sample}~之運算樹即可組成方程式如下：
 
-\begin{equation} w_1(w_3(\dfrac{w_7P_2}{w_8P_6}) - w_4sin(w_9c))+w_2 \times cos(w_{12}c \times w_{11}P_1) \label{eq:WGP-sample}\end{equation} 
+\begin{equation} w_1(w_3(\dfrac{w_7P_2}{w_8P_6}) - w_4sin(w_9\bar{C}))+w_2 \times cos(w_{12}c \times w_{11}P_1) \label{eq:WGP-sample}\end{equation} 
 
 
 \begin{figure}[hbtp]
@@ -178,9 +178,9 @@ $g(.)$是為所選的鏈結函數，$E(y)$~是~$y$~的期望值，~$O$~是偏移
 
 其中~$NI$~為輸入參數的數量，$P_j$~為第~$j$~個輸入參數，$x_1$、$x_2$可能為輸入參數的任一個，而輸入參數也可能為常數~$1$。
 
-運算樹的層數~$NL$~定義為有運算節點的層數，即運算層的層數，運算樹的層數大小會影響到需要最佳化的基因數量~$N$，其公式為：
+運算樹的層數~$NL$~定義為有運算節點的層數，即運算層的層數，運算樹的層數大小會影響到需要最佳化的基因數量~$N_g$，其公式為：
 
-\begin{equation} N = 2^{NL} - 1 + 2^{NL} + 2^{NL + 1} - 2 = 2^{NL + 2} - 3  \label{eq:WGP-N}\end{equation}
+\begin{equation} N_g = 2^{NL} - 1 + 2^{NL} + 2^{NL + 1} - 2 = 2^{NL + 2} - 3  \label{eq:WGP-N}\end{equation}
 
 
 其中運算層節點的函數選擇有~$2^{NL} - 1$~個、參數層的參數選擇有~$2^{NL}$~個、以及參數的權重~$w$~有~$2^{NL + 1} - 2$~個。藉由這樣的運算樹設計，再透過~GA~最佳化輸入參數的選擇、不同運算節點的運算子和各個節點不同的權重，~WGP~方法便可以根據資料建立出一個屬性與所求目標的關係方程式。

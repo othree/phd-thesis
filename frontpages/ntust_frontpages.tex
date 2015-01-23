@@ -550,22 +550,22 @@
 % Symbol list
 % define new environment, based on standard description environment
 % adapted from p.60~64, <<The LaTeX Companion>>, 1994, ISBN 0-201-54199-8
-%\newcommand{\SymEntryLabel}[1]%
-% {\makebox[3cm][l]{#1}}
+\newcommand{\SymEntryLabel}[1]%
+ {\makebox[3cm][l]{#1}}
+
+\newenvironment{SymEntry}
+   {\begin{list}{}%
+       {\renewcommand{\makelabel}{\SymEntryLabel}%
+        \setlength{\labelwidth}{3cm}%
+        \setlength{\leftmargin}{\labelwidth}%
+        }%
+   }%
+   {\end{list}}
 %
-%\newenvironment{SymEntry}
-%   {\begin{list}{}%
-%       {\renewcommand{\makelabel}{\SymEntryLabel}%
-%        \setlength{\labelwidth}{3cm}%
-%        \setlength{\leftmargin}{\labelwidth}%
-%        }%
-%   }%
-%   {\end{list}}
-%%
-%\newpage
-%\chapter*{\protect\makebox[5cm][s]{\nameSlist}} %\makebox{} is fragile; need protect
-%\addcontentsline{toc}{chapter}{\nameSlist}
-%\input{frontpages/my_symbols.tex}
+\newpage
+\chapter*{\protect\makebox[5cm][s]{\nameSlist}} %\makebox{} is fragile; need protect
+\addcontentsline{toc}{chapter}{\nameSlist}
+\input{frontpages/my_symbols.tex}
 
 \cleardoublepage
 
