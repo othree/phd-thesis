@@ -5,9 +5,9 @@
 \contentsline {chapter}{圖目錄}{XI}{section*.7}
 \contentsline {chapter}{表目錄}{XIII}{section*.9}
 \contentsline {chapter}{\numberline {1}緒論}{1}{chapter.1}
-\contentsline {section}{\numberline {1.1}動機與目的}{1}{section.1.1}
+\contentsline {section}{\numberline {1.1}動機與目的}{2}{section.1.1}
 \contentsline {section}{\numberline {1.2}研究方法}{4}{section.1.2}
-\contentsline {section}{\numberline {1.3}論文架構}{6}{section.1.3}
+\contentsline {section}{\numberline {1.3}論文架構}{7}{section.1.3}
 \contentsline {chapter}{\numberline {2}相關研究}{9}{chapter.2}
 \contentsline {section}{\numberline {2.1}應用關聯式資料庫於營建工程相關領域之研究}{9}{section.2.1}
 \contentsline {section}{\numberline {2.2}資料探勘於營建工程領域之研究}{10}{section.2.2}

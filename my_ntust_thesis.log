@@ -1,4 +1,4 @@
-This is XeTeX, Version 3.1415926-2.5-0.9999.3 (TeX Live 2013) (format=xelatex 2013.12.14)  24 JAN 2015 01:19
+This is XeTeX, Version 3.1415926-2.5-0.9999.3 (TeX Live 2013) (format=xelatex 2013.12.14)  24 JAN 2015 01:26
 entering extended mode
  restricted \write18 enabled.
  file:line:error style messages enabled.
@@ -1523,11 +1523,6 @@ Overfull \hbox (1.15817pt too wide) detected at line 4
  []
 
 
-Overfull \hbox (5.15427pt too wide) detected at line 6
- []\EU1/TimesNewRoman(0)/m/n/12 XIII
- []
-
-
 Underfull \vbox (badness 10000) has occurred while \output is active []
 
 
@@ -1683,9 +1678,6 @@ Package Fancyhdr Warning: \headheight is too small (12.0pt):
 
 [3]
 
-LaTeX Warning: Command \nobreakspace invalid in math mode on input line 45.
-
-
 Package Fancyhdr Warning: \headheight is too small (12.0pt): 
  Make it at least 16.0pt.
  We now make it that large for the rest of the document.
@@ -1693,13 +1685,16 @@ Package Fancyhdr Warning: \headheight is too small (12.0pt):
 
 [4]
 
+LaTeX Warning: Command \nobreakspace invalid in math mode on input line 46.
+
+
 Package Fancyhdr Warning: \headheight is too small (12.0pt): 
  Make it at least 16.0pt.
  We now make it that large for the rest of the document.
  This may cause the page layout to be inconsistent, however.
 
 [5]
-Underfull \vbox (badness 5592) has occurred while \output is active []
+Underfull \vbox (badness 10000) has occurred while \output is active []
 
 
 
