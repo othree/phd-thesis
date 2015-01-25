@@ -237,14 +237,23 @@ K-means~是由~MacQueen\cite{macqueen67}~所提出，也是最常被使用的分
 
 % Based on of the massive volume of basic data for school buildings in the database, this study chooses two-step clustering method. The basic concept was first proposed by Zhang, Ramakrishnan and Livny~\cite{zhang1996birch} for handling large amounts of data. This method has two major steps. The first step sequences data and pre-clusters sequences into small subclusters based on the similarity of adjacent data, thereby reducing the amount of data. The second step divides several small subclusters into the desired number of clusters using a hierarchical clustering method. The hierarchical clustering method then combines close subclusters slowly until the stop condition is met. The computing speed of this method is influenced slightly by the volume of data.
 
-%\section{探勘結果驗證方法與指標}
-\section{探勘結果指標}
+\section{探勘結果驗證方法與指標}
+%\section{探勘結果指標}
 
-%\subsection{驗證方法}
+\subsection{驗證方法}
 
-%\subsubsection{10 fold cross validation}
+如果只使用一組資料來訓練並建立模型，其最常可能發生的就問題是過適（over fitting）的狀況，過適指的是所建立的模型套用在當初訓練用的資料集上有很高的正確率，但是一旦使用現實世界其它的新資料，就會發現模型完全無法得到適當的輸出，而為了解決這個狀況，在訓練得到模型之後還要經過驗證，要驗證模型的品質或是演算法的可靠性，單靠一組資料作訓練是不夠客觀的，因此實務上會將資料集分為訓練資料集和測試資料集，只使用訓練資料集做模型的訓練和建立，然後再用測試資料集來驗證模型的品質和可靠性，如此可以確保模型中完全沒有測試資料的資訊在其中。訓練資料集和測試資料集的比例並沒有硬性的規範，原則上則是希望能盡量多訓練資料，但是測試資料也不能過少，否則驗證的結果也會不客觀，本研究則是以訓練資料集~70\%\~80\%~和測試資料集~20\%\~30\%~的比例做為基礎，並輔以~10~群交叉驗證或~random subsampling~方法來做模型品質的評估。
 
-%\subsection{結果指標}
+\subsubsection{$k$~群交叉驗證}
+
+$k$~群交叉驗證（$k$-Fold Cross Validation）是很常見的模型的品質驗證方法，其作法是先將資料隨機分為~$k$~群，然後先挑出第一群資料做為測試資料集，剩餘九組資料做為訓練資料集，照此組合建立模型並計算模型的品質（performance） ，接著重複此步驟但是挑選第二群資料做為測試資料集，剩餘九組資料做為訓練資料集，一樣建立模型並計算模型品質，重複以上流程直到~$k$~組資料都被挑選為訓練資料集過，如此會得到~$k$~組模型的品質數據，取平均即可做為代表的模型品質數據，$k$~通常會用~10~，此時又稱為~10~群交叉驗證。
+
+
+\subsubsection{Random Subsampling}
+
+Random subsampling~是較好實做的驗證方法，其作法是先照設定的比例隨機挑選資料為測試資料集，剩餘資料做為訓練資料集，然後訓練並建立模型，計算模型的品質，重複此步驟~$k'$~次，會得到~$k'$~組模型的品質數據，取平均即可做為代表的模型品質數據，$k'$~的數字通常是大於~$5$~。此方法和~$k$~群交叉驗證最主要的差異在於單筆資料可能會重複做為測試集資料，並且不會所有的資料都會做為測試集資料。
+
+\subsection{結果指標}
 
 要驗證資料探勘所取得模型的可靠度如何，有很多的指標可以使用，分別可以從不同的角度呈現出模型的優劣，而本研究使用決定係數~$R^2$~做為判斷模型優劣的主要指標，並以其他的指標來做為輔助。
 
