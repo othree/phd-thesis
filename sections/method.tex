@@ -60,9 +60,38 @@
 
 \section{資料探勘方法}
 
-資料探勘的方法分為分類、分群、迴歸以及尋找關聯~\cite{fayyad1996data}~，其中迴歸是最常使用到的一種，本研究的主要目標皆可以歸納為迴歸類的問題，因此使用到的迴歸演算法最多，接著才是作為輔助用的分類和分群演算法。
+資料探勘的方法分為分類、分群、迴歸以及尋找關聯~\cite{fayyad1996data}~，其中迴歸是最常使用到的一種，其如圖~\ref{fig:dm-regression}~所示，目標是找出在空間中散佈的資料點的散佈的模式，如圖中的虛線即為迴歸方程式，資料點的散佈皆是在此一虛線周邊，透過輸入參數，也就是空間座標軸的數值，就可以找出對應的目標屬性數值，常用做預測模型使用。
 
-迴歸、分類、分群三種資料探勘所建立的模型可以簡單的定義為：
+\begin{figure}[hbtp]
+  \begin{center}
+    \includegraphics[width=0.6\textwidth]{figures/dm-regression.pdf}
+    \caption{迴歸方法示意圖} 
+    \label{fig:dm-regression}
+  \end{center}
+\end{figure}
+
+分類方法指的是在空間中散佈的資料點，如果另外有一個二元或是多元屬性是該資料點很重要的狀態資訊，例如校舍資料庫當中的資料點，類似的重要屬性可能就是校舍耐震能力是否足夠，而分類方法就是在空間中尋找如何區分這個重要屬性的邊界，例如圖~\ref{fig:dm-classification}~當中的資料點分為實心和空心兩種，而分類方法就是要尋找圖中虛線橢圓形的方程式，其可以用來將兩種資料點區分開來。
+
+\begin{figure}[hbtp]
+  \begin{center}
+    \includegraphics[width=0.6\textwidth]{figures/dm-classification.pdf}
+    \caption{分類方法示意圖} 
+    \label{fig:dm-classification}
+  \end{center}
+\end{figure}
+
+分群方法如圖~\ref{fig:dm-clustering}~所示，指的是要找出空間中的資料點，是否有特別集中在幾個地方的方法，也就是找出群集，和分群方法最主要的不同是，這些資料點屬於哪一個群集的資訊一開始是不屬於資料點的任何一個屬性的。
+
+\begin{figure}[hbtp]
+  \begin{center}
+    \includegraphics[width=0.6\textwidth]{figures/dm-clustering.pdf}
+    \caption{分群方法示意圖} 
+    \label{fig:dm-clustering}
+  \end{center}
+\end{figure}
+
+
+本研究的主要目標皆可以歸納為迴歸類的問題，因此使用到的迴歸演算法最多，接著才是作為輔助用的分類和分群演算法。迴歸、分類、分群三種資料探勘所建立的模型可以簡單的定義為：
 
 \begin{equation} y = f(x) \label{eq:ModelEqu}\end{equation} 
 
@@ -207,7 +236,7 @@ CHAID（Chi-squared Automatic Interaction Detector）是由~Kass\cite{kass1980ex
 
 \begin{figure}[hbtp]
   \begin{center}
-    \includegraphics[width=1.0\textwidth]{figures/svm.jpg}
+    \includegraphics[width=1.0\textwidth]{figures/svm.pdf}
     \caption{SVM 示意圖}
     \label{fig:svm}
   \end{center}
