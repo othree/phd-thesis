@@ -295,6 +295,11 @@ T.~Zhang, R.~Ramakrishnan, and M.~Livny, ``Birch: an efficient data clustering
   method for very large databases,'' in {\em ACM SIGMOD Record}, vol.~25,
   pp.~103--114, ACM, 1996.
 
+\bibitem{geisser1975predictive}
+S.~Geisser, ``The predictive sample reuse method with applications,'' {\em
+  Journal of the American Statistical Association}, vol.~70, no.~350,
+  pp.~320--328, 1975.
+
 \bibitem{aldrich1995correlations}
 J.~Aldrich, ``Correlations genuine and spurious in pearson and yule,'' {\em
   Statistical Science}, pp.~364--376, 1995.
